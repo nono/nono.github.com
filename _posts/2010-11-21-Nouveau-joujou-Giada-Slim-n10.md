@@ -8,6 +8,7 @@ J'ai acheté un [Giada Slim n10](http://www.giadatech.com/index.php?app=product&
 ![Giada Slim n10](/public/giada.jpg)
 
 J'ai commencé à jouer avec en installant dessus :
+
 * une debian (pas de problème particulier)
 * [OpenSSH](http://www.openssh.com/), évidemment
 * [Bip](http://bip.milkypond.org/), un proxy IRC

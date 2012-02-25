@@ -33,4 +33,5 @@ Elle enregistre automatiquement chaque fichier .css quand Vim perd le focus (et 
 Le dernier truc n'en est pas vraiment un, je voulais juste vous faire part du dernier plugin que j'ai développé pour Vim.
 Celui-ci permet d'avoir la coloration syntaxique pour [le framework Merb, la bibliothèque Datamapper](http://www.vim.org/scripts/script.php?script_id=2417) et [le framework javascript jQuery](http://www.vim.org/scripts/script.php?script_id=2416).
 Voici un petit screenshot de ce que cela donne chez moi :
-(![Screenshot](http://blog.menfin.info/public/Gvim_merb_datamapper_jquery.png])
+
+![Screenshot](http://blog.menfin.info/public/Gvim_merb_datamapper_jquery.png)
