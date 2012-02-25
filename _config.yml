@@ -2,9 +2,11 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title 
 
+production_url : http://blog.menfin.info
 exclude: ["Rakefile"]
-markdown: rdiscount
-pygments: true
+markdown: redcarpet2
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 
 title : M'enfin ?!?
 tagline: Site Tagline
@@ -13,8 +15,6 @@ author :
   email : bmichel@menfin.info
   github : nono
   twitter : brmichel
-
-production_url : http://blog.menfin.info
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 JB :
@@ -68,4 +68,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
