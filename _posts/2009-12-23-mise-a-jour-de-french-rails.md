@@ -10,5 +10,4 @@ Je viens de mettre à jour ce plugin pour qu'il traduise également les 'new' et
 Maintenant, ce sera 'nouveau' et 'modifier', ai-je décidé.
 
 Enfin, tant qu'à resortir ce plugin du grenier, j'en ai également profité pour faire quelque chose que j'aurais dû faire depuis un certain temps : le passer en gem.
-Il est disponible sur [http://gemcutter.org/gems/french_rails](gemcutter) et peut donc s'installer d'un simple `gem install french_rails`.
-
+Il est disponible sur [Rubygems](http://rubygems.org/gems/french_rails) et peut donc s'installer d'un simple `gem install french_rails`.
