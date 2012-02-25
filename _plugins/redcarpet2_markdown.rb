@@ -1,3 +1,5 @@
+# Encoding: utf-8
+
 require 'fileutils'
 require 'digest/md5'
 require 'redcarpet'
@@ -29,6 +31,13 @@ class Redcarpet2Markdown < Redcarpet::Render::HTML
       File.open(path, 'w') {|f| f.print(content) }
       content
     end
+  end
+
+  def normal_text(text)
+    text.gsub('« ', '«&nbsp;').
+         gsub(/ ([:;»!?])/, '&nbsp;\1').
+         gsub(' -- ', '—').
+         gsub('...', '…')
   end
 end
 
