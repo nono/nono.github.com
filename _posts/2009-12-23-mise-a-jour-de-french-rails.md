@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mise à jour de FrenchRails"
-category: RAils
+category: Rails
 ---
 J'ai un petit plugin pour Rails qui permet de localiser facilement une application Rails : [FrenchRails](http://github.com/nono/french-rails/tree/master).
 Pour ceux qui auraient raté [l'épisode précédent](http://blog.menfin.info/post/2009/03/18/Un-plugin-RoR-nomme-FrenchRails), en gros, ça permet de prendre en compte le fait que 0 est un singulier en français (alors que c'est pluriel en anglais).
