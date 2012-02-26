@@ -524,6 +524,11 @@ pre {
   color: #bbddbb;
   border: 0;
 }
+.the-footer .avatar {
+  float: right;
+  margin-top: 64px;
+  margin-right: 540px;
+}
 .the-footer ul {
   list-style: square;
   padding-left: 1em;
