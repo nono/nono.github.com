@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Un plugin RoR nommé FrenchRails</title>
+	<meta name="author" content="Bruno Michel">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="/atom.xml" rel="alternate" title="Un plugin RoR nommé FrenchRails" type="application/atom+xml">
+    <script src="/assets/themes/the-minimum/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">M'enfin ?!?</a></p>
+				<nav class="nav-global">
+					<ul>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="category"><a href="/categories.html">catégories</a></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">Un plugin RoR nommé FrenchRails</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<p>Comme vous le savez déjà sûrement, je suis en train de re-écrire <a href="http://linuxfr.org">LinuxFr.org</a> en <a href="http://rubyonrails.org">Rails</a>.
+Et quand j'ai montré où j'en étais, on m'a remonté un bug étrange : j'affiche "0 commentaires" avec un s à la fin, ce qui est grammaticalement incorrect.</p>
+
+<p><code>&lt;interruption culturelle&gt;</code>
+Pour ceux qui ne sont pas très calés en internationalisation, sachez que les règles qui définissent singulier et pluriel ne sont pas les mêmes selon les langues (en fait, certaines langues ont mêmes plusieurs sortes de pluriels).
+En particulier, il y a une différence importante entre le français et l'anglais : en français, 0 est singulier, alors qu'il est pluriel en anglais.
+Ruby on Rails utilisant par défaut l'anglais, on comprend mieux d'où vient le 's' à la fin de "0 commentaires".
+<code>&lt;/interruption culturelle&gt;</code></p>
+
+<p>J'utilise l'helper <code>pluralize</code>, et comme Rails a intégré une gestion de l'internationalisation à la version 2.2, je pensais qu'il suffirait de déclarer la locale pour que cela marche.
+Hé bien, non.
+Première surprise : l'helper <code>pluralize</code> ne passe pas par la partie I18n, mais utilise une règle en dure pour savoir si un nombre est singulier ou pluriel.
+Bon, ce n'est pas grave, ce n'est pas ça qui va m'arrêter : un petit monkey-patching et c'est réglé.</p>
+
+<p>Sauf que, deuxième surprise, cela ne marche toujours pas&nbsp;!
+Le backend d'I18n fourni avec Rails (I18n::Backend::Simple) ne connaît que la règle pour l'anglais, et ne tient donc pas compte de la locale.
+Après quelques errements et expérimentations, j'ai réussi à trouver un moyen relativement simple de corriger cela (créer un backend qui hérite de I18n::Backend::Simple, avec juste la méthode pluralize redéfinie).
+Et là, joie, ça marche :-)</p>
+
+<p>Comme tout cela m'a pris quelques heures, j'en ai fait un plugin : <a href="http://github.com/nono/french-rails/tree/master">FrenchRails</a>.
+J'espère que cela pourra servir à d'autres personnes.
+En tout cas, moi, je compte l'utiliser sur plusieurs projets.</p>
+
+<p>Dernière chose : si vous avez des besoins plus compliqués que les miens (au hasard, gérer plusieurs langues), ne cherchez pas à utiliser ce plugin, parter plutôt sur une solution plus costaud comme <a href="http://github.com/joshmh/globalize2/tree/master">Globalize2</a>.</p>
+
+					<div class="meta">
+						<p class="date-publish">
+							Publié le  
+							<date class="date-pub" title="2009-03-17T00:00:00+01:00" datetime="2009-03-17T00:00:00+01:00" pubdate>
+                                <span class="day">
+                                    17
+                                </span>/<span class="month">
+                                    03
+                                </span>/<span class="year">
+                                    2009
+                                </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">Catégorie : </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Rails-ref">
+    		Rails <span>9</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'menfin'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/LinuxFr/2009/02/08/Commentaires-LinuxFr" title="View LinuxFr.org avec des commentaires et des réponses aux commentaires, et des réponses aux réponses, etc.">&laquo; LinuxFr.org avec des commentaires et des réponses aux commentaires, et des réponses aux réponses, etc.</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/Rails/2009/05/03/Railroad" title="View Railroad">Railroad &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<img src="/public/bruno.png" alt="" class="avatar" />
+					<h4>À propos</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">Bruno Michel</span> - <span class="fn email">bmichel AT menfin DOT info</span></address></li>
+						<li class="github"><a href="http://github.com/nono/" rel="me">github.com/nono</a></li>
+						<li class="twitter"><a href="http://twitter.com/brmichel/" rel="me">twitter.com/brmichel</a></li>
+						<li class="rss"><a href="/atom.xml">Subscribe to ATOM feed</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                    ♡2006 by Bruno Michel. Copying is an act of love. Please copy and share.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+</body>
+</html>
+
