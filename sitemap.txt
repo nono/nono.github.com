@@ -6,6 +6,7 @@ http://blog.menfin.info/pages.html
 http://blog.menfin.info/tags.html
 http://blog.menfin.info/sitemap.txt
 
+http://blog.menfin.info/Blog/2012/02/29/changement-de-moteur-pour-ce-blog
 http://blog.menfin.info/Rails/2011/06/27/Rails-ou-sinatra
 http://blog.menfin.info/Lifehacks/2010/11/21/Nouveau-joujou-Giada-Slim-n10
 http://blog.menfin.info/Ruby/2010/07/11/presentation-rapide-de-ruby-19-aux-RMLL
