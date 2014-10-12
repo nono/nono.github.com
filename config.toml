@@ -1,0 +1,31 @@
+baseurl = "http://blog.menfin.info"
+languageCode = "fr-fr"
+title = "M'enfin ?!?"
+
+[author]
+    name = "Bruno Michel"
+
+[params]
+    Copyright = "♡2006 by Bruno Michel. Copying is an act of love. Please copy and share."
+    sidebartitle = "M'enfin ?!?"
+    sidebartagline = "Some blah blah by Bruno Michel"
+
+[[menu.social]]
+    pre = "<i class='fa fa-file-text-o'></i>"
+    url = "http://www.doyoubuzz.com/bruno-michel"
+    identifier = "Résumé"
+
+[[menu.social]]
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "https://www.twitter.com/brmichel"
+    identifier = "twitter"
+
+[[menu.social]]
+    pre = "<i class='fa fa-github'></i>"
+    url = "https://github.com/nono"
+    identifier = "github"
+
+[[menu.social]]
+    pre = "<i class='fa fa-linux'></i>"
+    url = "http://linuxfr.org/users/nono"
+    identifier = "LinuxFr.org"
