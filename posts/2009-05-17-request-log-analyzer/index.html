@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title> Request-log-analyzer // M&#39;enfin ?!? </title>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+  <meta property="og:title" content="Request-log-analyzer" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://blog.menfin.info/posts/2009-05-17-request-log-analyzer/" />
+
+
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://blog.menfin.info/css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="M&#39;enfin ?!?" />
+
+  
+  <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/tomorrow-night-bright.min.css">
+  <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">M&#39;enfin ?!?</h1>
+    <h2 class="brand-tagline">Some blah blah by Bruno Michel</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://blog.menfin.info">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/index.xml">Feed</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="https://www.twitter.com/brmichel" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="https://github.com/nono" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://linuxfr.org/users/nono" target="_blank"><i class='fa fa-linux'></i></a>
+        
+      
+        
+        <a href="http://www.doyoubuzz.com/bruno-michel" target="_blank"><i class='fa fa-file-text-o'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/2009-05-17-request-log-analyzer/">Request-log-analyzer</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>17</sup></span><span class="post-date-separator">/</span><span class="post-date-month">May</span> <span class="post-date-year">2009</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-rails" href="/categories/rails">Rails</a> 
+				
+				</div>
+			
+
+			
+
+			
+
+            <p>Dans la série des outils pour Rails que j&rsquo;apprécie, je vais vous parler de <a href="http://github.com/wvanbergen/request-log-analyzer/tree/master">request-log-analyzer</a>.
+Pourquoi lui ? Parce qu&rsquo;il m&rsquo;a rendu bien service cette semaine.</p>
+
+<p>Request-log-analyser est un outil très simple qui permet d&rsquo;analyser les logs de Rails pour découvrir les requêtes HTTP qui consomment du temps CPU.
+En pratique, ça s&rsquo;installe simplement avec gem, puis on le lance pour générer un rapport (j&rsquo;aime bien la version HTML) :</p>
+
+<pre><code>gem install request-log-analyzer
+request-log-analyzer --output HTML --file report.html log/production.log
+firefox report.html
+</code></pre>
+
+<p>Le rapport nous fournit un certain nombres d&rsquo;informations que les hits sur chaque page, les codes HTTP renvoyés, les requêtes les plus lourdes.
+Pour ma part, je me sers surtout du tableau des 20 requêtes HTTP les plus longues en temps cumulé (<em>Request duration - top 20 by cumulative time</em>).
+Cela me donne une liste d&rsquo;actions à bencher pour lesquelles une optimisation est toujours bonne à prendre.
+Je passe également un peu de temps à regarder si ces requêtes apparaissent dans les 20 requêtes les plus lourdes pour la base et les 20 requêtes avec le temps de rendering le plus long (toujours en temps cumulé).
+Je peux ainsi avoir une idée de ce qui prend du temps, et de valider ainsi que les résultats du bench collent avec ça.
+Si je vois qu&rsquo;une requête HTTP passe beaucoup de temps sur la base de données, mais que les résultats du bench ne montrent pas ça, je vais probablement importer la base de données du serveur de production et l&rsquo;utiliser pour refaire les benchs.</p>
+
+<p>Un autre tableau intéressant est la liste des requêtes bloquantes (<em>Process blockers (&gt; 1 sec duration)</em>).
+Si je vois des requêtes faire pas mal de hits dans cette liste, je sais qu&rsquo;il va falloir les surveiller de près.</p>
+
+<p>Voilà, request-log-analyzer n&rsquo;est pas un outil magique. Il ne fait qu&rsquo;une chose, mais il le fait bien. Et c&rsquo;est très utile pour savoir par où commencer à optimiser un site.</p>
+
+	
+			
+
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/2009-05-21-annotez-vos-modeles/">Annotez vos modèles</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/2009-05-03-Railroad/">Railroad</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>♡2006 by Bruno Michel. Copying is an act of love. Please copy and share.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

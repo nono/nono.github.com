@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Outils on M&#39;enfin ?!? </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://blog.menfin.info/categories/outils/index.xml/</link>
+    <language>fr-fr</language>
+    <author>Bruno Michel</author>
+    
+    <updated>Tue, 02 Dec 2008 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Le navigateur web Arora</title>
+      <link>http://blog.menfin.info/posts/2008-12-02-la-navigateur-web-Aroha/</link>
+      <pubDate>Tue, 02 Dec 2008 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2008-12-02-la-navigateur-web-Aroha/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai récemment eu besoin de résoudre des bugs sur &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; qui était lié au moteur javascript de Safari
+(les &lt;a href=&#34;https://linuxfr.org/tracker/883.html&#34;&gt;#883&lt;/a&gt; et &lt;a href=&#34;https://linuxfr.org/tracker/900.html&#34;&gt;#900&lt;/a&gt; si vous voulez tout savoir).
+Étant sous GNU/Linux, je ne pouvais pas installer Safari, et bien entendu, je n&amp;rsquo;arrivais pas à reproduire les bugs sous Firefox.
+Toutefois, le moteur de Safari, Webkit, est libre, et il en existe des ports sous GNU/Linux.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai d&amp;rsquo;abord essayé epiphany-webkit, et j&amp;rsquo;ai pu constaté le problème mais pas faire grand chose de plus.
+Epiphany ne me donnait pas accès à un débugger javascript et ne me donnait même pas accès à l&amp;rsquo;erreur js.
+Après une phase de recherche sur google, j&amp;rsquo;ai tenté un navigateur web que je ne connaissais pas (même de nom) : &lt;a href=&#34;http://code.google.com/p/arora/&#34;&gt;Aroha&lt;/a&gt;.
+Il dispose de l&amp;rsquo;outil &lt;a href=&#34;http://mapopa.blogspot.com/2008/07/enabling-webkits-webinspector-in-arora.html&#34;&gt;Web Inspector&lt;/a&gt; (en gros, un équivalent de Firebug pour Safari), ce qui m&amp;rsquo;a donné l&amp;rsquo;erreur javascript et permis de faire quelques tests dans la console intégrée.
+Bref, même si ce navigateur n&amp;rsquo;a rien de révolutionnaire, je suis bien content de pouvoir utiliser le Web Inspector de Webkit sous linux.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Outils pour tracer des graphes</title>
+      <link>http://blog.menfin.info/posts/2008-05-09-outils-pour-tracer-des-graphes/</link>
+      <pubDate>Fri, 09 May 2008 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2008-05-09-outils-pour-tracer-des-graphes/</guid>
+      <description>&lt;p&gt;Je cherche depuis un certain temps un outil pour tracer des graphes.
+En général, j&amp;rsquo;utilise la suite &lt;a href=&#34;http://www.graphviz.org/&#34;&gt;Graphviz&lt;/a&gt; pour faire cela.
+Le principe est relativement simple : on décrit le graphe dans un fichier au format dot, puis on utilise un des 5 outils (dot, neato, fdp, circo et twopi) pour générer une image.
+Cela marche plutôt bien, mais les graphes générés sont sobres, pour ne pas dire moches (voir la &lt;a href=&#34;http://www.graphviz.org/Gallery.php&#34;&gt;galerie&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Je connaissais également &lt;a href=&#34;http://www.opte.org/maps/&#34;&gt;LGL&lt;/a&gt;, mais il est surtout adapté pour tracer des graphes avec beaucoup de noeuds et/ou arêtes.
+Il existe aussi des outils pour tracer des diagrammes (genre &lt;a href=&#34;http://live.gnome.org/Dia&#34;&gt;Dia&lt;/a&gt;) qui peuvent être utilisés pour tracer des graphes, mais je préfère de loin l&amp;rsquo;approche de graphviz.&lt;/p&gt;
+
+&lt;p&gt;Et récemment, je suis tombé sur &lt;a href=&#34;http://nodebox.net/code/index.php/Graphing&#34;&gt;Nodebox&lt;/a&gt; : le choc, des jolis graphes !
+Malheureusement, Nodebox fonctionne sous MacOSX.
+Il existe bien &lt;a href=&#34;http://dev.nodebox.net/wiki/Qt&#34;&gt;un port pour GNU/Linux sous QT&lt;/a&gt;, mais je n&amp;rsquo;arrive pas à utiliser le module Graph avec celui-ci :/
+&lt;a href=&#34;http://shoebox.sollec.org/&#34;&gt;Shoebox&lt;/a&gt; est une réécriture de nodebox (sous Cairo ce coup-ci), mais j&amp;rsquo;ai l&amp;rsquo;impression qu&amp;rsquo;il n&amp;rsquo;est pas encore assez avancé pour faire quelque chose d&amp;rsquo;utile avec.&lt;/p&gt;
+
+&lt;p&gt;Toujours à partir de Nodebox, j&amp;rsquo;ai découvert &lt;a href=&#34;https://networkx.lanl.gov/wiki&#34;&gt;NetworkX&lt;/a&gt;, mais, si j&amp;rsquo;ai bien compris, c&amp;rsquo;est une surcouche à Graphviz.
+&lt;a href=&#34;https://networkx.lanl.gov/wiki/gallery&#34;&gt;Les exemples de la gallerie&lt;/a&gt; me semblent quand même plus jolis que ceux de GraphViz.
+Est-ce que l&amp;rsquo;auteur de NetworkX a passé du temps pour faire ces exemples ou est-ce que je me suis trompé sur NetworkX ?
+Je ne saurais dire, mais cela vaudrait sûrement le coup que j&amp;rsquo;y rejette un coup d&amp;rsquo;oeil à l&amp;rsquo;occasion.&lt;/p&gt;
+
+&lt;p&gt;Enfin, la solution viendra peut être du Javascript.
+Le &lt;a href=&#34;http://blog.thejit.org/?page_id=14&#34;&gt;JavaScript Information Visualization Toolkit (JIT)&lt;/a&gt; est une bibliothèque pour tracer des graphes.
+Ce n&amp;rsquo;est pas aussi simple que GraphViz et, pour le moment, limité aux arbres, mais cela pourrait devenir une solution intéressante.
+Le projet &lt;a href=&#34;http://dev.jquery.com/~john/processing.js/&#34;&gt;Processing.js&lt;/a&gt; montre que l&amp;rsquo;on peut utiliser la balise Canvas pour faire un rendu qui n&amp;rsquo;a rien à envier au Desktop.
+Alors qui sait, peut être que JIT pourra vraiment devenir la solution pour tracer de jolis graphes même si l&amp;rsquo;utilisation de javascript peut surprendre pour cela&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

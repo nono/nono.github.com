@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-  <title> 404 Page not found // M&#39;enfin ?!? </title>
+  <title> Git // M&#39;enfin ?!? </title>
   <link href="http://gmpg.org/xfn/11" rel="profile">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
@@ -12,11 +12,11 @@
 <meta name="keywords" content="">
 <meta name="author" content="">
 
-  <meta property="og:title" content="404 Page not found" />
+  <meta property="og:title" content="Git" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://blog.menfin.info/404/" />
+<meta property="og:url" content="http://blog.menfin.info/categories/git/" />
 
 
   
@@ -38,7 +38,7 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="http://blog.menfin.info/index.xml/" rel="alternate" type="application/rss+xml" title="M&#39;enfin ?!?" />
+  <link href="http://blog.menfin.info/categories/git/index.xml/" rel="alternate" type="application/rss+xml" title="M&#39;enfin ?!?" />
 
   
   <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/tomorrow-night-bright.min.css">
@@ -52,10 +52,9 @@
   
 </head>
 
-
 <body>
-<div id="layout" class="pure-g">
-  <div class="sidebar pure-u-1 pure-u-md-1-4">
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
   <div class="header">
     
 
@@ -98,20 +97,50 @@
 </div>
 
 
-  <div class="content pure-u-1 pure-u-md-3-4">
-    <a name="top"></a>
+    <div class="content pure-u-1 pure-u-md-3-4">
+      <a name="top"></a>
+      
 
-    <div class="posts">
-      <section  class="post">
-        <header class="post-header">
-          <h1 class="post-title">404 Page not found</h1>
-        </header>
-      </section>
-    </div>
-  </div>
-</div>
+      <div class="posts">
+        
+          <section  class="post">
+            <header class="post-header">
+            
+            <h1 class="post-title">
+              <a href="/posts/2008-03-15-git-branch-dans-le-prompt-zsh/">Afficher la branche Git courante dans le prompt de ZSH</a>
+            </h1>
+            </header>
+            <p class="post-meta">
+            	
+		          <span class="post-date">
+		            <span class="post-date-day"><sup>15</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Mar</span> <span class="post-date-year">2008</span>
+		          </span>
+      				
+      				
+      					
+      				
+              
+                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>1 min. read</em></span>
+              
+      				
+      					<div class="post-categories">
+      					
+      						<a class="post-category post-category-git" href="/categories/git">Git</a> 
+      					
+      					</div>
+      				
+            </p>
+            <article class="post-summary">
+            	Je suis tombé sur un tips bien sympa : Show Your GIT Branch Name In Your Prompt. Il y est expliqué comment avoir la branche Git en cours dans son prompt avec Bash. J&rsquo;ai adapaté ca pour zsh. Voici un extrait de mon zshrc : export PS1='%~ $(git_branch)%# ' function git_branch { git branch --no-color 2&gt; /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /' } setopt PROMPT_SUBST La seule difficulté fût de se rendre compte qu&rsquo;il fallait activer une option pour que ca marche, et de savoir quelle était cette option (PROMPT_SUBST en l&rsquo;occurence).
+            </article>
+			<div class="read-more-link">
+				<a href="/posts/2008-03-15-git-branch-dans-le-prompt-zsh/"><span class="read-more-slashes">//</span>Read More...</a>
+			</div>
+          </section>
+        
+      </div>
 
-<div class="footer">
+      <div class="footer">
 	<hr class="thin" />
 	<div class="pure-menu pure-menu-horizontal pure-menu-open">
 		<ul class="footer-menu">
@@ -119,7 +148,10 @@
 		</ul>
 	</div>
 
-	<p>&copy; . All rights reserved. </p>
+	<p>♡2006 by Bruno Michel. Copying is an act of love. Please copy and share.</p>
 </div>
+    </div>
+  </div>
+  
 </body>
 </html>
