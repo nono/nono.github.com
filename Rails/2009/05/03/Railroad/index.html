@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Railroad</title>
+	<meta name="author" content="Bruno Michel">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="/atom.xml" rel="alternate" title="Railroad" type="application/atom+xml">
+    <script src="/assets/themes/the-minimum/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">M'enfin ?!?</a></p>
+				<nav class="nav-global">
+					<ul>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="category"><a href="/categories.html">catégories</a></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">Railroad</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<p>Je commence une série d'articles sur des outils qu'il m'arrive d'utiliser quand je fais du développement Rails et qui mériterait, à mon avis, d'être plus connu.
+Le premier article de la série est <a href="http://railroad.rubyforge.org/">Railroad</a>.</p>
+
+<p>Railroad est un script Ruby qui permet de générer des graphes à partir d'une application d'une Rails, ce qui peut être très pratique pour accompagner une documentation quand on a la flemme de faire ces diagrammes soi-même.
+Railroad permet de générer 3 types de graphes : un pour les modèles, un pour les controlleurs et un pour les machines à états d<em>'acts_as_state_machine</em>.
+Les diagrammes sont générés au format .dot, ce qui permet d'en faire facilement des .png ou des .svg avec la suite <a href="http://www.graphviz.org/">graphviz</a>.</p>
+
+<p>L'auteur du script original ne maintient plus ce script mais on peut en trouver des forks sur <a href="http://github.com/">Github</a>.
+Je conseille <a href="http://github.com/ddollar/railroad/tree/master">la branche de David Dollar</a> :
+elle fonctionne avec les dernières versions de Rails et comporte mes patchs (<a href="http://github.com/ddollar/railroad/commit/70b77a233d298356178a10f253f8d201cf5cad40">1</a> <a href="http://github.com/ddollar/railroad/commit/a8815fc3ba8df8db44d078dbf2046ddf99538120">2</a> et <a href="http://github.com/ddollar/railroad/commit/96fb1c540dfc8e2300969e4778a7c7bff9563c59">3</a>).</p>
+
+<p>En pratique, on installe le gem <code>ddollar-railroad</code>, on ajoute une ligne à son fichier <code>Rakefile</code> et roulez jeunesse :</p>
+<div class="highlight"><pre><code class="text">gem install ddollar-railroad
+echo &quot;require &#39;railroad/tasks/diagrams&#39; if RAILS_ENV == &#39;development&#39;&quot; &gt;&gt; Rakefile
+rake doc:diagrams
+</code></pre>
+</div>
+
+<p>On obtient 3 diagrammes dans doc/diagrams (à condition que graphviz soit installé).
+Voici, par exemple, ceux que j'obtiens pour <a href="http://github.com/nono/linuxfr.org/tree/master">la version Rails</a> de <a href="http://linuxfr.org">LinuxFr.org</a> :</p>
+
+<p><img src="/public/railroad_controllers.png" alt="Railroad - controllers">
+<img src="/public/railroad_models.png" alt="Railroad - models">
+<img src="/public/railroad_states.png" alt="Railroad - states"></p>
+
+					<div class="meta">
+						<p class="date-publish">
+							Publié le  
+							<date class="date-pub" title="2009-05-03T00:00:00+02:00" datetime="2009-05-03T00:00:00+02:00" pubdate>
+                                <span class="day">
+                                    03
+                                </span>/<span class="month">
+                                    05
+                                </span>/<span class="year">
+                                    2009
+                                </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">Catégorie : </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Rails-ref">
+    		Rails <span>9</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'menfin'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/Rails/2009/03/17/un-plugin-Rails-nomm%C3%A9-French-Rails" title="View Un plugin RoR nommé FrenchRails">&laquo; Un plugin RoR nommé FrenchRails</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/Rails/2009/05/17/request-log-analyzer" title="View Request-log-analyzer">Request-log-analyzer &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<img src="/public/bruno.png" alt="" class="avatar" />
+					<h4>À propos</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">Bruno Michel</span> - <span class="fn email">bmichel AT menfin DOT info</span></address></li>
+						<li class="github"><a href="http://github.com/nono/" rel="me">github.com/nono</a></li>
+						<li class="twitter"><a href="http://twitter.com/brmichel/" rel="me">twitter.com/brmichel</a></li>
+						<li class="rss"><a href="/atom.xml">Subscribe to ATOM feed</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                    ♡2006 by Bruno Michel. Copying is an act of love. Please copy and share.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+</body>
+</html>
+

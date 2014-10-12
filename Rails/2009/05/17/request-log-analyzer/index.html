@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Request-log-analyzer</title>
+	<meta name="author" content="Bruno Michel">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="/atom.xml" rel="alternate" title="Request-log-analyzer" type="application/atom+xml">
+    <script src="/assets/themes/the-minimum/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">M'enfin ?!?</a></p>
+				<nav class="nav-global">
+					<ul>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="category"><a href="/categories.html">catégories</a></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">Request-log-analyzer</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<p>Dans la série des outils pour Rails que j'apprécie, je vais vous parler de <a href="http://github.com/wvanbergen/request-log-analyzer/tree/master">request-log-analyzer</a>.
+Pourquoi lui&nbsp;? Parce qu'il m'a rendu bien service cette semaine.</p>
+
+<p>Request-log-analyser est un outil très simple qui permet d'analyser les logs de Rails pour découvrir les requêtes HTTP qui consomment du temps CPU.
+En pratique, ça s'installe simplement avec gem, puis on le lance pour générer un rapport (j'aime bien la version HTML) :</p>
+<div class="highlight"><pre><code class="text">gem install request-log-analyzer
+request-log-analyzer --output HTML --file report.html log/production.log
+firefox report.html
+</code></pre>
+</div>
+
+<p>Le rapport nous fournit un certain nombres d'informations que les hits sur chaque page, les codes HTTP renvoyés, les requêtes les plus lourdes.
+Pour ma part, je me sers surtout du tableau des 20 requêtes HTTP les plus longues en temps cumulé (<em>Request duration - top 20 by cumulative time</em>).
+Cela me donne une liste d'actions à bencher pour lesquelles une optimisation est toujours bonne à prendre.
+Je passe également un peu de temps à regarder si ces requêtes apparaissent dans les 20 requêtes les plus lourdes pour la base et les 20 requêtes avec le temps de rendering le plus long (toujours en temps cumulé).
+Je peux ainsi avoir une idée de ce qui prend du temps, et de valider ainsi que les résultats du bench collent avec ça.
+Si je vois qu'une requête HTTP passe beaucoup de temps sur la base de données, mais que les résultats du bench ne montrent pas ça, je vais probablement importer la base de données du serveur de production et l'utiliser pour refaire les benchs.</p>
+
+<p>Un autre tableau intéressant est la liste des requêtes bloquantes (<em>Process blockers (> 1 sec duration)</em>).
+Si je vois des requêtes faire pas mal de hits dans cette liste, je sais qu'il va falloir les surveiller de près.</p>
+
+<p>Voilà, request-log-analyzer n'est pas un outil magique. Il ne fait qu'une chose, mais il le fait bien. Et c'est très utile pour savoir par où commencer à optimiser un site.</p>
+
+					<div class="meta">
+						<p class="date-publish">
+							Publié le  
+							<date class="date-pub" title="2009-05-17T00:00:00+02:00" datetime="2009-05-17T00:00:00+02:00" pubdate>
+                                <span class="day">
+                                    17
+                                </span>/<span class="month">
+                                    05
+                                </span>/<span class="year">
+                                    2009
+                                </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">Catégorie : </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Rails-ref">
+    		Rails <span>9</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'menfin'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/Rails/2009/05/03/Railroad" title="View Railroad">&laquo; Railroad</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/Rails/2009/05/21/annotez-vos-modeles" title="View Annotez vos modèles">Annotez vos modèles &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<img src="/public/bruno.png" alt="" class="avatar" />
+					<h4>À propos</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">Bruno Michel</span> - <span class="fn email">bmichel AT menfin DOT info</span></address></li>
+						<li class="github"><a href="http://github.com/nono/" rel="me">github.com/nono</a></li>
+						<li class="twitter"><a href="http://twitter.com/brmichel/" rel="me">twitter.com/brmichel</a></li>
+						<li class="rss"><a href="/atom.xml">Subscribe to ATOM feed</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                    ♡2006 by Bruno Michel. Copying is an act of love. Please copy and share.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+</body>
+</html>
+

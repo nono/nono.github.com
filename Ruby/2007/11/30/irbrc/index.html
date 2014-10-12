@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>IRB, un outil à (re)découvrir</title>
+	<meta name="author" content="Bruno Michel">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="/atom.xml" rel="alternate" title="IRB, un outil à (re)découvrir" type="application/atom+xml">
+    <script src="/assets/themes/the-minimum/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<p class="logo"><a href="/">M'enfin ?!?</a></p>
+				<nav class="nav-global">
+					<ul>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="category"><a href="/categories.html">catégories</a></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">IRB, un outil à (re)découvrir</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<p>IRB est un outil génial pour tester rapidement un truc en <a href="http://www.ruby-lang.org/fr/">Ruby</a>.
+C'est une sorte d'interpréteur Ruby qui fonctionne comme un shell :
+vous tapez une ligne de Ruby, irb l'interprête et vous donne le résultat, vous tapez une autre ligne, irb l'interprête en tenant compte de la première ligne, et ainsi de suite.
+Voici par exemple ce que cela donne (avec en gras, ce que j'ai tapé) :
+<code>ruby
+&gt; titi = 2 + 3
+5
+&gt; toto = titi * 4
+20
+</code></p>
+
+<p>Pour ceux qui veulent en savoir plus, je recommande de lire
+<a href="http://poignantguide.net/ruby/expansion-pak-1.html">le chapitre consacré à IRB</a> dans
+<a href="http://fr.poignantguide.net/">Le Guide (Poignant) de Why's vers Ruby</a> et d'essayer ca dans
+<a href="http://tryruby.hobix.com/">Try Ruby</a> qui est, en gros, un IRB dans votre navigateur web.</p>
+
+<p>Il est possible de configurer IRB via le fichier <code>$HOME/.irbrc</code> : changer le prompt, charger des fichiers, activer l'auto-complétion, etc.
+<a href="http://quotedprintable.com/2007/9/13/my-irbrc">Comme</a>
+<a href="http://drnicwilliams.com/2006/10/12/my-irbrc-for-consoleirb/">d'autres</a>
+<a href="http://redhanded.hobix.com/inspect/stickItInYourIrbrcMethodfinder.html">personnes</a>
+<a href="http://blog.nicksieger.com/articles/2006/05/30/irbrc-on-windows">l'ont</a>
+<a href="http://ruby.tie-rack.org/3/my-irbrc/">fait</a>
+<a href="http://errtheblog.com/post/26">avant</a>
+<a href="http://romeda.org/blog/2006/11/irbrc.html">moi</a>,
+je poste mon fichier de conf <code>.irbrc</code> pour que chacun puisse s'en inspirer (et aussi pour le retrouver plus facilement quand je ne suis pas chez moi&nbsp;;-)</p>
+<div class="highlight"><pre><code class="ruby"><span class="nb">require</span> <span class="s2">&quot;yaml&quot;</span>
+<span class="nb">require</span> <span class="s2">&quot;irb/completion&quot;</span>
+
+<span class="no">IRB</span><span class="o">.</span><span class="n">conf</span><span class="o">[</span><span class="ss">:USE_REALINE</span><span class="o">]</span> <span class="o">=</span> <span class="kp">true</span>
+<span class="no">IRB</span><span class="o">.</span><span class="n">conf</span><span class="o">[</span><span class="ss">:PROMPT_MODE</span><span class="o">]</span> <span class="o">=</span> <span class="ss">:SIMPLE</span>
+
+<span class="c1"># History with readline</span>
+<span class="no">HISTFILE</span> <span class="o">=</span> <span class="s2">&quot;~/.irb.hist&quot;</span>
+<span class="no">MAXHISTSIZE</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="c1"># what? (gem install what_methods)</span>
+<span class="nb">require</span> <span class="s2">&quot;what_methods&quot;</span>
+
+<span class="c1"># Wirble (gem install wirble)</span>
+<span class="nb">require</span> <span class="s2">&quot;wirble&quot;</span>
+<span class="no">Wirble</span><span class="o">.</span><span class="n">init</span>
+<span class="no">Wirble</span><span class="o">.</span><span class="n">colorize</span>
+
+<span class="c1"># Just for Rails...</span>
+<span class="k">if</span> <span class="no">ENV</span><span class="o">[</span><span class="s2">&quot;RAILS_ENV&quot;</span><span class="o">]</span>
+  <span class="no">IRB</span><span class="o">.</span><span class="n">conf</span><span class="o">[</span><span class="ss">:IRB_RC</span><span class="o">]</span> <span class="o">=</span> <span class="no">Proc</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span>
+    <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="no">Logger</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="no">STDOUT</span><span class="p">)</span>
+    <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span><span class="o">.</span><span class="n">instance_eval</span> <span class="p">{</span> <span class="k">alias</span> <span class="ss">:[]</span> <span class="ss">:find</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+</div>
+
+					<div class="meta">
+						<p class="date-publish">
+							Publié le  
+							<date class="date-pub" title="2007-11-30T00:00:00+01:00" datetime="2007-11-30T00:00:00+01:00" pubdate>
+                                <span class="day">
+                                    30
+                                </span>/<span class="month">
+                                    11
+                                </span>/<span class="year">
+                                    2007
+                                </span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">Catégorie : </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/categories.html#Ruby-ref">
+    		Ruby <span>5</span>
+    	</a></li>
+    
+  
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'menfin'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/Matériel/2007/11/26/disque-dur-MyBook" title="View Nouveau disque dur : MyBook World Edition">&laquo; Nouveau disque dur : MyBook World Edition</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/Matériel/2007/12/01/mercurial-sur-mon-MyBook" title="View Mercurial sur mon MyBook">Mercurial sur mon MyBook &raquo;</a></li>
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<img src="/public/bruno.png" alt="" class="avatar" />
+					<h4>À propos</h4>
+					<ul>
+						<li class="contact"><address><span class="author fn n">Bruno Michel</span> - <span class="fn email">bmichel AT menfin DOT info</span></address></li>
+						<li class="github"><a href="http://github.com/nono/" rel="me">github.com/nono</a></li>
+						<li class="twitter"><a href="http://twitter.com/brmichel/" rel="me">twitter.com/brmichel</a></li>
+						<li class="rss"><a href="/atom.xml">Subscribe to ATOM feed</a></li>
+					</ul>
+				</div><!-- misc -->
+				<p class="licence">
+                    ♡2006 by Bruno Michel. Copying is an act of love. Please copy and share.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+</body>
+</html>
+
