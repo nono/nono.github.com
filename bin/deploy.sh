@@ -4,7 +4,7 @@ echo -e "\033[0;32mDeploying updates to Github...\033[0m"
 
 # Build the project
 hugo -t hugo-redlounge
-ln -s index.xml public/atom.xml
+cp public/index.xml public/atom.xml
 
 # Add changes to git
 git add -A
