@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Links on M&#39;enfin ?!? </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://blog.menfin.info/categories/links/index.xml/</link>
+    <language>fr-fr</language>
+    <author>Bruno Michel</author>
+    
+    <updated>Sun, 12 Oct 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>5 links for a rainy day</title>
+      <link>http://blog.menfin.info/posts/2014-10-12-some-links-for-a-rainy-day/</link>
+      <pubDate>Sun, 12 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2014-10-12-some-links-for-a-rainy-day/</guid>
+      <description>
+
+&lt;p&gt;It&amp;rsquo;s sunday, it&amp;rsquo;s raining, so I&amp;rsquo;ve decided to geek. I&amp;rsquo;ve rebuilt this blog.
+Yeah, again ! And to test it, what&amp;rsquo;s better than publishing a new post? So,
+I&amp;rsquo;ve put here 5 links to keep you busy too:&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Hugo is a fast and modern static website engine. You write some markdown, you
+run hugo and it generates a static website, that you can host on github pages
+for example. It&amp;rsquo;s what I&amp;rsquo;m using now for this blog.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a young project, but it&amp;rsquo;s already very usable, a bit more generic and
+powerful than Jekyll. &lt;a href=&#34;http://gohugo.io/overview/introduction&#34;&gt;The documentation&lt;/a&gt;
+is nice. Since it&amp;rsquo;s written in golang, it&amp;rsquo;s very fast. And the live reload is
+so cool!&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;&lt;a href=&#34;https://github.com/t4t5/sweetalert&#34;&gt;Sweet Alert&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;JavaScript&amp;rsquo;s alert and confirm are common. But they are ugly. It was time to
+have a replacement for them. This JS library is easy to install and use. And
+it offers a nice Wow effect for your users.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;&lt;a href=&#34;http://dotgo.sourcegraph.com/&#34;&gt;Live blogging of dotGo&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Sourcegraph has live blogged the dotGo conference. If you are interested by
+golang, you should read it. You can learn some news, like the new
+&lt;a href=&#34;https://code.google.com/p/go/source/browse/cmd/gorename/main.go?repo=tools&#34;&gt;gorename&lt;/a&gt;
+command.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;&lt;a href=&#34;https://www.facebook.com/notes/facebook-engineering/the-mature-optimization-handbook/10151784131623920&#34;&gt;The Mature Optimization Handbook&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Carlos Bueno, an engineer at Facebook, has written an handbook about when and
+how optimize our code. I&amp;rsquo;ve just read the first sections, but it seems like a
+very valuable read.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;&lt;a href=&#34;https://codefights.com/&#34;&gt;Code Fights&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;This game has only one rule:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;There is one logic bug on one line of this JS code. Find it, fix it, hit submit!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;After several tries, my best score is 942. Can you beat it?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
