@@ -1,0 +1,1635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>M'enfin ?!?</title>
+ <link href="http://blog.menfin.info/atom.xml" rel="self"/>
+ <link href="http://blog.menfin.info"/>
+ <updated>2012-02-29T01:02:59+01:00</updated>
+ <id>http://blog.menfin.info</id>
+ <author>
+   <name>Bruno Michel</name>
+   <email>bmichel AT menfin DOT info</email>
+ </author>
+
+ 
+ <entry>
+   <title>Changement de moteur pour ce blog</title>
+   <link href="http://blog.menfin.info/Blog/2012/02/29/changement-de-moteur-pour-ce-blog"/>
+   <updated>2012-02-29T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Blog/2012/02/29/changement-de-moteur-pour-ce-blog</id>
+   <content type="html">&lt;p&gt;Ce blog existe depuis quelques années maintenant—2006, ça ne me rajeunit
+pas&amp;nbsp;! Et jusque là, c'était un &lt;a href=&quot;http://fr.dotclear.org/&quot;&gt;dotclear&lt;/a&gt; hébergé
+gracieusement chez &lt;a href=&quot;http://gandi.net&quot;&gt;gandi&lt;/a&gt; qui le faisait tourner.
+Techniquement, ça marchait bien, mais j'ai quand même eu envie de changer pour
+autre chose, &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; en l'occurrence.&lt;/p&gt;
+
+&lt;p&gt;Pourquoi&amp;nbsp;? J'ai déjà du mal à me motiver pour écrire dessus, mais le fait de
+devoir retrouver mes identifiants gandi et redécouvrir la syntaxe wiki de
+dotclear a chaque fois finisse de me décourager. Avec cette nouvelle version,
+je peux écrire et publier des billets avec les outils que j'utilise
+quotidiennement : vim, markdown, ruby et git.&lt;/p&gt;
+
+&lt;p&gt;Je vais donc donner une nouvelle chance à ce blog. Pas sûr du tout que je
+publie plus de choses dessus. Mais si je n'essaye pas, ça ne risque pas
+d'arriver&amp;nbsp;;-)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rails ou Sinatra ?</title>
+   <link href="http://blog.menfin.info/Rails/2011/06/27/Rails-ou-sinatra"/>
+   <updated>2011-06-27T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Rails/2011/06/27/Rails-ou-sinatra</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Ruby on Rails&lt;/a&gt; ou
+&lt;a href=&quot;http://www.sinatrarb.com/&quot;&gt;Sinatra&lt;/a&gt;, comment choisir entre les deux&amp;nbsp;? C'est
+une question que j'entends régulièrement et pour laquelle, je suis toujours un
+peu embêté d'avoir un pointeur tout prêt vers un article qui expliquerait
+cela. Encore aujourd'hui, la question &lt;a href=&quot;https://twitter.com/#!/delaBruyne/status/85433554179342336&quot;&gt;m'a été
+posée&lt;/a&gt; et j'ai eu
+beau chercher, je n'ai rien trouvé de bien concluant.&lt;/p&gt;
+
+&lt;p&gt;On est jamais mieux servi que par soi-même, et c'est donc l'occasion de
+réveiller ce blog qui commençait à prendre la poussière.&lt;/p&gt;
+
+&lt;p&gt;Donc Rails ou Sinatra&amp;nbsp;? Ça dépend mais la plupart du temps, il est assez
+facile de choisir l'un ou l'autre. Ils ont des philosophies assez différentes
+et couvrent ainsi des problématiques différentes.&lt;/p&gt;
+
+&lt;p&gt;Commençons par Ruby on Rails. Il a été développé par &lt;a href=&quot;http://en.wikipedia.org/wiki/David_Heinemeier_Hansson&quot;&gt;David Heinemeier
+Hansson&lt;/a&gt; pour
+développer des applications web rapidement mais en gardant du code
+maintenable. Rails est donc fait pour permettre aux personnes dont le métier
+est de construire des applications web (développeurs, intégrateurs, etc.) de
+pouvoir faire ça le plus efficacement possible. On retrouve ainsi le
+&lt;em&gt;scaffold&lt;/em&gt; qui permet de gagner du temps en début de projet et de nombreuses
+conventions pour aller plus vite dans les cas courants. Mais cela a aussi des
+inconvénients : Rails est un gros framework et apprendre à s'en servir
+correctement demande un investissement initial en temps qui est loin d'être
+négligeable. Si on veut vraiment être efficace, il faut respecter l'&lt;em&gt;esprit&lt;/em&gt;
+de Ruby on Rails et ses manières de faire, mais aussi connaître les
+bibliothèques qui vont bien, les fameuses &lt;em&gt;gems&lt;/em&gt; comme
+&lt;a href=&quot;https://github.com/plataformatec/devise&quot;&gt;Devise&lt;/a&gt; ou
+&lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;De l'autre coté, Sinatra a des ambitions toutes autres : il veut juste
+permettre à des développeurs Ruby de faire des applications web simples avec
+le minimum d'efforts. Cela commence avec une API extrêmement simple qui permet
+de démarrer tout de suite sans avoir à apprendre grand chose. Pour cela,
+Sinatra se contente du minimum et n'essaye pas d'offrir plein de choses dès le
+départ. C'est ainsi un projet avec une taille beaucoup plus réduite mais qui
+offre plus de libertés. Là où les projets Rails sont toujours organisés d'une
+façon semblables pour permettre aux développeurs et intégrateurs de passer
+facilement d'un projet à l'autre, Sinatra est bien plus souple et peut, par
+exemple, venir ajouter une interface web à un projet déjà existant. Sa
+simplicité est également intéressante pour les débutants qui peuvent ainsi
+&lt;a href=&quot;http://www.sinatrarb.com/intro-fr.html&quot;&gt;faire très rapidement des choses&lt;/a&gt;
+sans avoir, au préalable, à lire un bouquin complet. Et rien n'interdit de
+passer à Rails plus tard.&lt;/p&gt;
+
+&lt;p&gt;Pour résumer, Ruby on Rails est un rouleur compresseur qui permet de
+construire très rapidement des applications web de qualité pour les personnes
+dont c'est le métier, alors que Sinatra couvre d'autres besoins : il permet de
+découvrir Ruby ou le développement web en douceur pour les débutants et offre
+une souplesse incroyable pour les hackers confirmés.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Nouveau joujou : Giada Slim n10</title>
+   <link href="http://blog.menfin.info/Lifehacks/2010/11/21/Nouveau-joujou-Giada-Slim-n10"/>
+   <updated>2010-11-21T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Lifehacks/2010/11/21/Nouveau-joujou-Giada-Slim-n10</id>
+   <content type="html">&lt;p&gt;J'ai acheté un &lt;a href=&quot;http://www.giadatech.com/index.php?app=product&amp;amp;act=show&amp;amp;id=37&quot;&gt;Giada Slim n10&lt;/a&gt;. Ça ressemble à ça :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/giada.jpg&quot; alt=&quot;Giada Slim n10&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;J'ai commencé à jouer avec en installant dessus :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;une debian (pas de problème particulier)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openssh.com/&quot;&gt;OpenSSH&lt;/a&gt;, évidemment&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://bip.milkypond.org/&quot;&gt;Bip&lt;/a&gt;, un proxy IRC&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.nginx.org/Main&quot;&gt;Nginx&lt;/a&gt;, un serveur web&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.rutschle.net/tech/sslh.shtml&quot;&gt;Sllh&lt;/a&gt; pour avoir ssh ET https sur le port 443.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L'achat est tout neuf, donc je n'ai pas encore beaucoup de recul, mais dans l'ensemble, j'en suis très satisfait. Un seul regret, le ventilo n'est pas aussi silencieux que je le voudrais. J'ai trouvé sur &lt;a href=&quot;http://www.blogeee.net/forum/viewtopic.php?p=209248#p209248&quot;&gt;un forum&lt;/a&gt; comment régler ça dans le bios, mais ce n'est pas encore parfait. Pour mémoire, ça se règle dans le menu chipset &gt; MCP fan control, et les valeurs à renseigner sont :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SMART Fan0 Min temperature : 40 (la valeur se modifie avec les touches + et -)&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Max temperature : 90&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Min duty cycle : 30&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Max duty cycle : 255&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Présentation rapide de Ruby 1.9 aux RMLL</title>
+   <link href="http://blog.menfin.info/Ruby/2010/07/11/presentation-rapide-de-ruby-19-aux-RMLL"/>
+   <updated>2010-07-11T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Ruby/2010/07/11/presentation-rapide-de-ruby-19-aux-RMLL</id>
+   <content type="html">&lt;p&gt;Cette semaine, s'est tenue la 11ème édition des
+&lt;a href=&quot;http://2010.rmll.info/&quot;&gt;Rencontres Mondiales du Logiciel Libre&lt;/a&gt;
+à Bordeaux. J'en ai profité pour faire une
+&lt;a href=&quot;http://2010.rmll.info/Presentation-rapide-de-Ruby-1-9.html&quot;&gt;présentation rapide de Ruby 1.9&lt;/a&gt;.
+Les slides sont en ligne sur &lt;a href=&quot;http://rmll2010-ruby19.heroku.com/&quot;&gt;http://rmll2010-ruby19.heroku.com/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un ami, &lt;a href=&quot;http://wtf.cyprio.net/&quot;&gt;oz&lt;/a&gt;, m'a prêté le livre &lt;strong&gt;Confessions of a
+public speaker&lt;/strong&gt; de &lt;a href=&quot;http://www.scottberkun.com/&quot;&gt;Scott Berkun&lt;/a&gt;. C'est u
+livre très intéressant qui vous donne des conseils pratiques sur comment
+donner de meilleurs présentations. Je n'ai malheureusement pas eu le temps de
+le lire entièrement avant ma présentation aux RMLL, et encore moins
+d'appliquer les conseils, mais j'ai vraiment le sentiment que les conseils
+sont pertinents et m'auraient permis de faire une bien meilleure présentation.
+En tout cas, je suis bien décidé à essayer d'en appliquer quelques uns à la
+prochaine présentation que je ferais, puis de plus en plus si cela marche
+comme prévu.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>French_Rails compatible avec Rails3.0.0.beta4</title>
+   <link href="http://blog.menfin.info/Rails/2010/06/09/frenchrails-compatible-avec-rails3"/>
+   <updated>2010-06-09T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Rails/2010/06/09/frenchrails-compatible-avec-rails3</id>
+   <content type="html">&lt;p&gt;Une &lt;a href=&quot;http://weblog.rubyonrails.org/2010/6/8/rails-3-0-beta-4-now-rc-in-days&quot;&gt;nouvelle version beta de
+Rails3&lt;/a&gt;
+vient de sortir. Elle utilise une version plus récente
+d'&lt;a href=&quot;http://github.com/svenfuchs/i18n&quot;&gt;i18n&lt;/a&gt;, ce qui faisait que mon plugin
+&lt;a href=&quot;http://github.com/nono/french-rails&quot;&gt;French Rails&lt;/a&gt; ne fonctionnait plus. J'ai
+corrigé ça et sorti une nouvelle version :
+&lt;a href=&quot;http://rubygems.org/gems/french_rails/versions/0.2.2&quot;&gt;la 0.2.2&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Se fixer des objectifs SMART</title>
+   <link href="http://blog.menfin.info/Lifehacks/2010/05/23/objectifs-smart"/>
+   <updated>2010-05-23T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Lifehacks/2010/05/23/objectifs-smart</id>
+   <content type="html">&lt;p&gt;Se fixer des objectifs est très souvent une bonne chose. Pour tirer pleinement profit de ces objectifs, il est important de bien les formuler. Pourtant, nous avons souvent tendance à nous contenter d'objectifs flous : je veux perdre du poids, je veux faire plus de sport, je veux manger plus sainement, etc. Il existe un truc qui pourra vous aider pour ça : les objectifs &lt;strong&gt;SMART&lt;/strong&gt;. Ce sont 5 critères qui vous forcent à vous poser les bonnes questions quand vous choisissez un objectif :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spécifique : soyez précis sur ce que vous voulez atteindre. Ne vous contentez pas de dire que vous voulez faire du sport, mais demandez-vous quel(s) sport(s) et à quelle fréquence.&lt;/li&gt;
+&lt;li&gt;Mesurable : à tout moment, vous devriez être capable de savoir si vous avez accompli votre objectif sans savoir à réfléchir. Idéalement, vous devriez juste avoir à comparer une mesure avec votre objectif pour savoir si vous l'avez atteint. Si vous souhaitez perdre du poids et que vous fixez comme objectif de perdre 3 kilos, il est alors facile de vous peser pour voir si vous avez perdu ces 3 kilos ou non.&lt;/li&gt;
+&lt;li&gt;Atteignable : votre objectif doit être ambitieux, mais vous devez pouvoir l'atteindre. Si vous n'êtes pas sûr de pouvoir le faire, peut-être feriez-vous mieux de le découper en plusieurs étapes et vous fixer des objectifs intermédiaires. Plutôt que de vouloir courir directement un marathon, commencez par courir 10 Km, puis passez au semi-marathon avant de viser le marathon.&lt;/li&gt;
+&lt;li&gt;Réaliste : votre objectif ne doit pas dépendre de ressources matérielles (argent, matière, temps) que vous n'avez pas. De même, il ne doit pas dépendre du comportement d'autres personnes. Si votre objectif est d'obtenir une promotion, demandez-vous si vous êtes vraiment en position de faire la différence. Une astuce consiste à transformer un objectif qui porte sur des résultats qui ne dépendent pas de nous en un ou plusieurs objectifs sur des moyens pour obtenir ce résultat. Par exemple, un meilleur objectif pourrait être de finir tel projet en avance, ce qui augmenterait grandement vos chances d'obtenir la promotion visée.&lt;/li&gt;
+&lt;li&gt;Limité dans le Temps : fixez-vous une date limite à laquelle l'objectif devra être accompli. Sans ça, vous risquez très fortement de laisser glisser vos objectifs, privilégiant toujours les tâches urgentes et remettant vos objectifs à plus tard.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Voilà, j'espère que ces 5 critères vous permettront de mieux cerner vos objectifs, et d'augmenter ainsi les chances de les réussir.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Discipline contre motivation</title>
+   <link href="http://blog.menfin.info/Lifehacks/2010/02/28/discipline-contre-motivation"/>
+   <updated>2010-02-28T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Lifehacks/2010/02/28/discipline-contre-motivation</id>
+   <content type="html">&lt;p&gt;Comme beaucoup de personnes, il vous est arrivé d'essayer de prendre de nouvelles habitudes.
+Ces résolutions vous semblaient être les bonnes choses, et avec un peu de discipline, ça n'aurait pas dû être difficile de les tenir.
+Pourtant, au bout d'une semaine ou deux, vous constatez que c'est un échec.&lt;/p&gt;
+
+&lt;p&gt;Que s'est-il passé et comment faire en sorte de réussir la prochaine fois sont sûrement deux questions qui vous trottent dans la tête.
+Je ne prétends pas avoir toutes les réponses, mais je souhaite vous proposer une piste qui, je l'espère, pourra vous aider dans vos réflexions.&lt;/p&gt;
+
+&lt;h3 id=&quot;toc_30&quot;&gt;La discipline&lt;/h3&gt;
+
+&lt;p&gt;Comme moi par le passé, vous vous êtes sûrement dit que prendre une nouvelle habitude ne devait pas être difficile.
+C'est juste une question de volonté et de discipline après tout.
+Et c'est justement là que le bât blesse.&lt;/p&gt;
+
+&lt;p&gt;Nous n'avons qu'une quantité très limitée de volonté que nous pouvons utiliser chaque jour.
+La majeure partie du temps, nous nous reposons sur des habitudes ou nous faisons des choses plaisantes qui ne demande aucune volonté.
+Demandez-vous combien de fois avez-vous réellement fait preuve de volonté aujourd'hui ou hier&amp;nbsp;?
+Pour ma part, la réponse est invariablement bien peu (trop peu).&lt;/p&gt;
+
+&lt;p&gt;Alors, est-on condamné à ne pouvoir faire que très peu de nouvelles choses, et à faire ça dans la douleur&amp;nbsp;?
+Non, non et NON&amp;nbsp;! Il existe d'autres leviers qui vous permettront d'avancer.
+La motivation est l'un d'eux.&lt;/p&gt;
+
+&lt;h3 id=&quot;toc_31&quot;&gt;La motivation&lt;/h3&gt;
+
+&lt;p&gt;La motivation, c'est un ensemble de moyens pour vous encourager à faire une action, quand se dire que «&amp;nbsp;c'est la bonne chose à faire&amp;nbsp;» ne suffit plus.
+Ce sont &lt;em&gt;les carottes&lt;/em&gt; pour vous faire avancer.
+Il existe de nombreux moyens pour se motiver, mais généralement ceux-ci rentrent dans l'un des deux thèmes suivants :
+apprécier l'activité en question et s'engager publiquement.&lt;/p&gt;
+
+&lt;h4 id=&quot;toc_32&quot;&gt;Apprécier l'activité&lt;/h4&gt;
+
+&lt;p&gt;Il est évident que l'on aura beaucoup plus de facilités à faire une action à laquelle on prend du plaisir que si c'est une corvée.
+On peut ainsi chercher des éléments qui vont plaisir.
+Par exemple, se mettre au footing peut ne être très plaisant au début, mais si vous accompagnez votre séance de footing par votre album musical préféré sur un lecteur mp3, cela la rendra plus appréciable.&lt;/p&gt;
+
+&lt;p&gt;Si malgré ça, vous avez du mal à rendre l'activité elle-même agréable, vous pouvez compenser en vous offrant une récompense.
+Pour ma part, je suis un grand gourmand, et manger une barre céréales avant de faire du sport fait partie des choses que j'apprécie.
+Mettre une croix sur un &lt;a href=&quot;http://blog.menfin.info/post/2010/02/15/Se-motiver-avec-un-Seinfeld-Calendar&quot;&gt;Seinfeld Calendar&lt;/a&gt; a également un coté très gratifiant.&lt;/p&gt;
+
+&lt;h4 id=&quot;toc_33&quot;&gt;S'engager publiquement&lt;/h4&gt;
+
+&lt;p&gt;L'engagement public est également un moyen très efficace pour nous aider à tenir une résolution.
+L'idée est que nous détestons profondément ne pas tenir nos engagements, et nous pouvons nous servir de ça pour nous mettre un peu de pression (pas trop quand même), ce qui nous forcera à agir.&lt;/p&gt;
+
+&lt;p&gt;Par exemple, parler à tous vos collègues de votre nouvelle résolution vous obligera à vous y tenir, car ils reviendront vers vous pour en parler.
+Et la crainte de la honte de ne pas avoir tenu ses engagements est une source de motivation très puissante.&lt;/p&gt;
+
+&lt;p&gt;Parler de sa résolution sur son blog ou sur un forum spécialisé peut également une approche très efficace.
+Vous vous sentirez engagé à donner régulièrement des nouvelles, et vous aurez peut-être la chance d'avoir des conseils dans les périodes difficiles.&lt;/p&gt;
+
+&lt;p&gt;Pour conclure, je vous encourage à essayer de trouver des éléments de motivation avant d'entreprendre une nouvelle habitude.
+Une méthode pour cela est le &lt;a href=&quot;http://www.couchet.org/blog/index.php5?post/2009/12/30/408-le-guide-pour-tenir-nos-resolutions-de-nouvel-an&quot;&gt;le guide pour tenir nos résolutions de nouvel an&lt;/a&gt;.
+Et si vous souhaitez creuser la question de la motivation, il existe un ebook, &lt;a href=&quot;http://themotivationhandbook.com/&quot;&gt;The essential motivation handbook&lt;/a&gt;, très complet sur le sujet, au prix de 15$ (soit environ 11€).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Se motiver avec un Seinfeld Calendar</title>
+   <link href="http://blog.menfin.info/Lifehacks/2010/02/15/se-motiver-avec-un-seinfeld-calendar"/>
+   <updated>2010-02-15T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Lifehacks/2010/02/15/se-motiver-avec-un-seinfeld-calendar</id>
+   <content type="html">&lt;p&gt;Comme promis, pour vous éclairer sur les
+&lt;a href=&quot;/post/2010/02/15/Changement-de-direction-pour-ce-blog&quot;&gt;&lt;strong&gt;lifehacks&lt;/strong&gt;&lt;/a&gt;, je
+vais donner un premier exemple : le &lt;a href=&quot;http://lifehacker.com/281626/jerry-seinfelds-productivity-secret&quot;&gt;Seinfeld
+Calendar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;La légende veut que ce soit Jerry Seinfeld l'inventeur de ce hack. Quand on a
+lui a demandé quel était son secret, il a commencé à répondre de manière
+plutôt banale : «&amp;nbsp;Pour devenir un bon comique, il faut faire de bonnes
+blagues, et pour faire de bonnes blagues, il faut travailler chaque jour&amp;nbsp;». Le
+secret est donc de s'entrainer tous les jours.&lt;/p&gt;
+
+&lt;p&gt;Mais là où ça devient intéressant, c'est qu'il ne s'est pas arrêté là. Il a
+monté un système ingénieux pour se forcer à travailler chaque jour. Pour ça,
+le matériel nécessaire est réduit à un calendrier (si possible, assez grand et
+surtout bien visible) et à un feutre (rouge de préférence). Il explique alors
+que chaque jour où le travail est fait, il coche le jour sur le calendrier
+avec le feutre rouge. Au bout de quelques jours, les croix au feutre
+commencent à former une chaîne, et le but est alors de ne pas casser la chaîne
+: «&amp;nbsp;&lt;em&gt;Don't break the chain&lt;/em&gt;&amp;nbsp;».&lt;/p&gt;
+
+&lt;p&gt;Cette technique est très efficace pour se motiver, car elle nous oblige à
+dépasser nos excuses. Même si la journée a été difficile, on a envie de cocher
+sa case pour ne pas avoir à recommencer à zéro une chaîne de 10, 20 ou 30
+cases. Par contre, le revers de la médaille est que si l'on rate un jour, même
+pour une raison valable, le risque est grand de ne pas recommencer tout de
+suite, voir de ne pas recommencer du tout.&lt;/p&gt;
+
+&lt;p&gt;Pour mettre en place cette technique, vous pouvez bien entendu utiliser le
+calendrier et le feutre, mais si vous pouvez également vous tourner vers une
+version électronique. Les sites suivants permettent de faire son &lt;strong&gt;Seinfeld
+Calendar&lt;/strong&gt; en ligne :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://dailystamp.com/home&quot;&gt;Daily Stamp&lt;/a&gt; (mon préféré)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dontbreakthechain.com/&quot;&gt;Don't break the chain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://smarterfitter.com/chain&quot;&gt;Seinfeldian Chain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://calendaraboutnothing.com/&quot;&gt;Calendar about nothing&lt;/a&gt; (les cases
+sont cochés automatiquement en fonction des commits sur github -&gt; &lt;a href=&quot;http://calendaraboutnothing.com/%7Enono&quot;&gt;exemple
+avec mon compte&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bon, ce n'est pas tout ça, mais je dois vous laisser : j'ai du travail à faire
+sur &lt;a href=&quot;http://linuxfr.org/&quot;&gt;LinuxFr.org&lt;/a&gt; pour cocher &lt;a href=&quot;http://dailystamp.com/stamps/2082&quot;&gt;ma case
+d'aujourd'hui&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Changement de direction pour ce blog</title>
+   <link href="http://blog.menfin.info/Blog/2010/02/15/changement-de-direction-pour-ce-blog"/>
+   <updated>2010-02-15T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Blog/2010/02/15/changement-de-direction-pour-ce-blog</id>
+   <content type="html">&lt;p&gt;Comme vous avez pu le constater, ce blog est encore moins actif ces derniers
+temps qu'il n'a pu l'être auparavant. La raison est simple : j'écris
+principalement des billets techniques autour du web et du développement, or
+ces sujets sont également ceux que j'utilise pour publier sur le &lt;a href=&quot;http://dev.af83.com&quot;&gt;devblog
+d'af83&lt;/a&gt;, la société qui m'emploie.&lt;/p&gt;
+
+&lt;p&gt;Pour autant, je ne vais pas fermer ce blog. J'ai toujours des choses à dire
+dont je ne souhaite pas qu'elle soit associées à mon employeur. Je vais
+également en profiter pour diversifier ce blog. Cela s'applique dès
+aujourd'hui avec la création d'une nouvelle catégorie : «&amp;nbsp;Lifehacks&amp;nbsp;».&lt;/p&gt;
+
+&lt;p&gt;Ce terme, &lt;em&gt;lifehacks&lt;/em&gt;, est un anglicisme décrivant les astuces, techniques,
+outils, méthodes et habitudes qui permettent d'optimiser sa vie quotidienne
+(personnelle et professionnelle). Certains se sont risqués à traduire cela par
+«&amp;nbsp;astuces de vie&amp;nbsp;», mais je préfère nettement la version originale.&lt;/p&gt;
+
+&lt;p&gt;Les &lt;em&gt;lifehacks&lt;/em&gt; peuvent concerner la gestion du temps, de la productivité,
+de la motivation, des connaissances, etc. Bref, beaucoup de choses que l'on
+aurait tendance à classer dans la catégorie «&amp;nbsp;Développement personnel&amp;nbsp;». Je
+vois pourtant une différence importante entre les méthodes de développement
+personnel et les &lt;em&gt;lifehacks&lt;/em&gt;. Les premières cherchent à partir de grands
+principes généraux, et de ces principes découlent des règles qui peuvent nous
+aider dans notre vie de tous les jours. C'est un tout que l'on accepte ou
+refuse en bloc. A l'inverse, les &lt;em&gt;lifehacks&lt;/em&gt; sont un ensemble hétéroclites
+de trucs et astuces faciles à mettre en place dans lequel on peut piocher pour
+choisir ce qui nous conviennent le mieux.&lt;/p&gt;
+
+&lt;p&gt;J'espère que cette courte introduction vous donnera envie d'en savoir plus. Et
+comme j'ai conscience que ça doit être encore assez abstrait pour vous, je
+vais rapidement écrire un billet montrant un de ces &lt;em&gt;lifehacks&lt;/em&gt; : le
+&lt;em&gt;Seinfeld Calendar&lt;/em&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mise à jour de FrenchRails</title>
+   <link href="http://blog.menfin.info/Rails/2009/12/23/mise-a-jour-de-french-rails"/>
+   <updated>2009-12-23T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Rails/2009/12/23/mise-a-jour-de-french-rails</id>
+   <content type="html">&lt;p&gt;J'ai un petit plugin pour Rails qui permet de localiser facilement une application Rails : &lt;a href=&quot;http://github.com/nono/french-rails/tree/master&quot;&gt;FrenchRails&lt;/a&gt;.
+Pour ceux qui auraient raté &lt;a href=&quot;http://blog.menfin.info/post/2009/03/18/Un-plugin-RoR-nomme-FrenchRails&quot;&gt;l'épisode précédent&lt;/a&gt;, en gros, ça permet de prendre en compte le fait que 0 est un singulier en français (alors que c'est pluriel en anglais).&lt;/p&gt;
+
+&lt;p&gt;Je viens de mettre à jour ce plugin pour qu'il traduise également les 'new' et 'edit' qui se balladent dans les URL générées par Rails.
+Maintenant, ce sera 'nouveau' et 'modifier', ai-je décidé.&lt;/p&gt;
+
+&lt;p&gt;Enfin, tant qu'à resortir ce plugin du grenier, j'en ai également profité pour faire quelque chose que j'aurais dû faire depuis un certain temps : le passer en gem.
+Il est disponible sur &lt;a href=&quot;http://rubygems.org/gems/french_rails&quot;&gt;Rubygems&lt;/a&gt; et peut donc s'installer d'un simple &lt;code&gt;gem install french_rails&lt;/code&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Je m'interroge sur twitter</title>
+   <link href="http://blog.menfin.info/Divers/2009/12/13/je-m-interroge-sur-twitter"/>
+   <updated>2009-12-13T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Divers/2009/12/13/je-m-interroge-sur-twitter</id>
+   <content type="html">&lt;p&gt;Je connais &lt;a href=&quot;http://twitter.com&quot;&gt;Twitter&lt;/a&gt; depuis longtemps, mais je n'ai jamais senti le besoin de m'y inscrire.
+Et pourtant, récemment, j'ai créé &lt;a href=&quot;http://twitter.com/brmichel&quot;&gt;un compte twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_28&quot;&gt;Pourquoi&amp;nbsp;?&lt;/h2&gt;
+
+&lt;p&gt;Je n'ai pas eu une soudaine révélation sur twitter.
+Je ne vois pas d'intérêt particulier à twitter, comparé aux autres moyens de communications à ma disposition.
+Autant pour Facebook, je peux voir un intérêt (mais je ne suis pas prêt à accepter les atteintes à ma vie privée qui en découlerait), autant pour twitter, je reste perplexe.&lt;/p&gt;
+
+&lt;p&gt;Alors pourquoi me suis-je inscrit&amp;nbsp;?
+Principalement par curiosité.
+Je travaille sur ce que pourrait-être le web de demain (&lt;a href=&quot;http://twitter.com/nodzle&quot;&gt;Nodzle&lt;/a&gt;), et twitter est sensé être le meilleur représentant du web temps-réel.
+On m'a fait remarquer que le meilleur moyen de découvrir twitter est encore de l'essayer, principe qui peut être illustré par cette citation :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Twitter is like sex. You can read all the stuff (or look at it) about sex all you want, but if you’ve never had it, you simply have no idea what it’s like.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;toc_29&quot;&gt;Et alors&amp;nbsp;?&lt;/h2&gt;
+
+&lt;p&gt;OK, j'ai donc créé un compte twitter et j'ai commencé à twitter.
+Mais ai-je été touché par la grâce divine et suis-je devenu un fervent défenseur du twit&amp;nbsp;?&lt;/p&gt;
+
+&lt;p&gt;Non, loin de là.
+Pour le moment, l'usage que j'en fais est très proche de l'IRC, mais avec de gros défauts :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;je n'ai pas trouvé comment faire l'auto-complétion des nicks ou des hashtags&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;je ne sais pas non plus comment voir les réponses à une question intéressante posée par une personne que je suis&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;déjà confronté aux spams :/&lt;/li&gt;
+&lt;li&gt;c'est dur de relire les anciens messages…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bref, je ne me suis pas converti à la religion twitter, mais je vais continuer à l'utiliser pour voir si mon opinion évolue.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Annotez vos modèles</title>
+   <link href="http://blog.menfin.info/Rails/2009/05/21/annotez-vos-modeles"/>
+   <updated>2009-05-21T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Rails/2009/05/21/annotez-vos-modeles</id>
+   <content type="html">&lt;p&gt;Quand je travaille sur des modèles dans Rails, j'ai souvent besoin de regarder la liste des champs de ce modèle.
+Vous savez, ces petites questions toutes bêtes que l'on se pose tous : c'est &lt;code&gt;firstname&lt;/code&gt; ou &lt;code&gt;first_name&lt;/code&gt;&amp;nbsp;? &lt;code&gt;phone&lt;/code&gt; ou &lt;code&gt;mobile&lt;/code&gt;&amp;nbsp;? &lt;code&gt;name&lt;/code&gt; ou &lt;code&gt;title&lt;/code&gt;&amp;nbsp;? &lt;code&gt;description&lt;/code&gt; ou &lt;code&gt;body&lt;/code&gt;&amp;nbsp;?&lt;/p&gt;
+
+&lt;p&gt;Pour répondre à ces questions, il faut aller chercher dans &lt;code&gt;db/schema.rb&lt;/code&gt;, fichier que l'on a rarement sous les yeux.
+Mais j'ai mieux à vous proposer : &lt;a href=&quot;http://github.com/ctran/annotate_models/tree/master&quot;&gt;Annotate&lt;/a&gt;.
+C'est un gem qui ajoute un commentaire en haut de chacun de vos modèles (et tests unitaires) avec la déclaration du modèle en question.&lt;/p&gt;
+
+&lt;p&gt;Voici un exemple tiré de ma réécriture de &lt;a href=&quot;http://linuxfr.org/&quot;&gt;LinuxFr.org&lt;/a&gt; en Rails :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# == Schema Information&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Schema version: 20090120005239&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Table name: news&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#  id          :integer(4)      not null, primary key&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#  state       :string(255)     default(&amp;quot;draft&amp;quot;), not null&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#  title       :string(255)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#  body        :text&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#  second_part :text&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#  section_id  :integer(4)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#  created_at  :datetime&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#  updated_at  :datetime&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Pour l'utiliser, c'est on ne peut plus simple.
+On fait un &lt;code&gt;gem install annotate&lt;/code&gt; pour l'installer, puis on lance &lt;code&gt;annotate&lt;/code&gt; quand on veut mettre à jour les commentaires.
+Pour ma part, je fais ça après chaque &lt;code&gt;rake db:migrate&lt;/code&gt;, mais libre à chacun de le lancer quand il le souhaite.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Request-log-analyzer</title>
+   <link href="http://blog.menfin.info/Rails/2009/05/17/request-log-analyzer"/>
+   <updated>2009-05-17T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Rails/2009/05/17/request-log-analyzer</id>
+   <content type="html">&lt;p&gt;Dans la série des outils pour Rails que j'apprécie, je vais vous parler de &lt;a href=&quot;http://github.com/wvanbergen/request-log-analyzer/tree/master&quot;&gt;request-log-analyzer&lt;/a&gt;.
+Pourquoi lui&amp;nbsp;? Parce qu'il m'a rendu bien service cette semaine.&lt;/p&gt;
+
+&lt;p&gt;Request-log-analyser est un outil très simple qui permet d'analyser les logs de Rails pour découvrir les requêtes HTTP qui consomment du temps CPU.
+En pratique, ça s'installe simplement avec gem, puis on le lance pour générer un rapport (j'aime bien la version HTML) :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;gem install request-log-analyzer
+request-log-analyzer --output HTML --file report.html log/production.log
+firefox report.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Le rapport nous fournit un certain nombres d'informations que les hits sur chaque page, les codes HTTP renvoyés, les requêtes les plus lourdes.
+Pour ma part, je me sers surtout du tableau des 20 requêtes HTTP les plus longues en temps cumulé (&lt;em&gt;Request duration - top 20 by cumulative time&lt;/em&gt;).
+Cela me donne une liste d'actions à bencher pour lesquelles une optimisation est toujours bonne à prendre.
+Je passe également un peu de temps à regarder si ces requêtes apparaissent dans les 20 requêtes les plus lourdes pour la base et les 20 requêtes avec le temps de rendering le plus long (toujours en temps cumulé).
+Je peux ainsi avoir une idée de ce qui prend du temps, et de valider ainsi que les résultats du bench collent avec ça.
+Si je vois qu'une requête HTTP passe beaucoup de temps sur la base de données, mais que les résultats du bench ne montrent pas ça, je vais probablement importer la base de données du serveur de production et l'utiliser pour refaire les benchs.&lt;/p&gt;
+
+&lt;p&gt;Un autre tableau intéressant est la liste des requêtes bloquantes (&lt;em&gt;Process blockers (&gt; 1 sec duration)&lt;/em&gt;).
+Si je vois des requêtes faire pas mal de hits dans cette liste, je sais qu'il va falloir les surveiller de près.&lt;/p&gt;
+
+&lt;p&gt;Voilà, request-log-analyzer n'est pas un outil magique. Il ne fait qu'une chose, mais il le fait bien. Et c'est très utile pour savoir par où commencer à optimiser un site.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Railroad</title>
+   <link href="http://blog.menfin.info/Rails/2009/05/03/Railroad"/>
+   <updated>2009-05-03T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Rails/2009/05/03/Railroad</id>
+   <content type="html">&lt;p&gt;Je commence une série d'articles sur des outils qu'il m'arrive d'utiliser quand je fais du développement Rails et qui mériterait, à mon avis, d'être plus connu.
+Le premier article de la série est &lt;a href=&quot;http://railroad.rubyforge.org/&quot;&gt;Railroad&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Railroad est un script Ruby qui permet de générer des graphes à partir d'une application d'une Rails, ce qui peut être très pratique pour accompagner une documentation quand on a la flemme de faire ces diagrammes soi-même.
+Railroad permet de générer 3 types de graphes : un pour les modèles, un pour les controlleurs et un pour les machines à états d&lt;em&gt;'acts_as_state_machine&lt;/em&gt;.
+Les diagrammes sont générés au format .dot, ce qui permet d'en faire facilement des .png ou des .svg avec la suite &lt;a href=&quot;http://www.graphviz.org/&quot;&gt;graphviz&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;L'auteur du script original ne maintient plus ce script mais on peut en trouver des forks sur &lt;a href=&quot;http://github.com/&quot;&gt;Github&lt;/a&gt;.
+Je conseille &lt;a href=&quot;http://github.com/ddollar/railroad/tree/master&quot;&gt;la branche de David Dollar&lt;/a&gt; :
+elle fonctionne avec les dernières versions de Rails et comporte mes patchs (&lt;a href=&quot;http://github.com/ddollar/railroad/commit/70b77a233d298356178a10f253f8d201cf5cad40&quot;&gt;1&lt;/a&gt; &lt;a href=&quot;http://github.com/ddollar/railroad/commit/a8815fc3ba8df8db44d078dbf2046ddf99538120&quot;&gt;2&lt;/a&gt; et &lt;a href=&quot;http://github.com/ddollar/railroad/commit/96fb1c540dfc8e2300969e4778a7c7bff9563c59&quot;&gt;3&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;En pratique, on installe le gem &lt;code&gt;ddollar-railroad&lt;/code&gt;, on ajoute une ligne à son fichier &lt;code&gt;Rakefile&lt;/code&gt; et roulez jeunesse :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;gem install ddollar-railroad
+echo &amp;quot;require &amp;#39;railroad/tasks/diagrams&amp;#39; if RAILS_ENV == &amp;#39;development&amp;#39;&amp;quot; &amp;gt;&amp;gt; Rakefile
+rake doc:diagrams
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On obtient 3 diagrammes dans doc/diagrams (à condition que graphviz soit installé).
+Voici, par exemple, ceux que j'obtiens pour &lt;a href=&quot;http://github.com/nono/linuxfr.org/tree/master&quot;&gt;la version Rails&lt;/a&gt; de &lt;a href=&quot;http://linuxfr.org&quot;&gt;LinuxFr.org&lt;/a&gt; :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/railroad_controllers.png&quot; alt=&quot;Railroad - controllers&quot;&gt;
+&lt;img src=&quot;/public/railroad_models.png&quot; alt=&quot;Railroad - models&quot;&gt;
+&lt;img src=&quot;/public/railroad_states.png&quot; alt=&quot;Railroad - states&quot;&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Un plugin RoR nommé FrenchRails</title>
+   <link href="http://blog.menfin.info/Rails/2009/03/17/un-plugin-Rails-nomm%C3%A9-French-Rails"/>
+   <updated>2009-03-17T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Rails/2009/03/17/un-plugin-Rails-nommé-French-Rails</id>
+   <content type="html">&lt;p&gt;Comme vous le savez déjà sûrement, je suis en train de re-écrire &lt;a href=&quot;http://linuxfr.org&quot;&gt;LinuxFr.org&lt;/a&gt; en &lt;a href=&quot;http://rubyonrails.org&quot;&gt;Rails&lt;/a&gt;.
+Et quand j'ai montré où j'en étais, on m'a remonté un bug étrange : j'affiche &quot;0 commentaires&quot; avec un s à la fin, ce qui est grammaticalement incorrect.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;interruption culturelle&amp;gt;&lt;/code&gt;
+Pour ceux qui ne sont pas très calés en internationalisation, sachez que les règles qui définissent singulier et pluriel ne sont pas les mêmes selon les langues (en fait, certaines langues ont mêmes plusieurs sortes de pluriels).
+En particulier, il y a une différence importante entre le français et l'anglais : en français, 0 est singulier, alors qu'il est pluriel en anglais.
+Ruby on Rails utilisant par défaut l'anglais, on comprend mieux d'où vient le 's' à la fin de &quot;0 commentaires&quot;.
+&lt;code&gt;&amp;lt;/interruption culturelle&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;J'utilise l'helper &lt;code&gt;pluralize&lt;/code&gt;, et comme Rails a intégré une gestion de l'internationalisation à la version 2.2, je pensais qu'il suffirait de déclarer la locale pour que cela marche.
+Hé bien, non.
+Première surprise : l'helper &lt;code&gt;pluralize&lt;/code&gt; ne passe pas par la partie I18n, mais utilise une règle en dure pour savoir si un nombre est singulier ou pluriel.
+Bon, ce n'est pas grave, ce n'est pas ça qui va m'arrêter : un petit monkey-patching et c'est réglé.&lt;/p&gt;
+
+&lt;p&gt;Sauf que, deuxième surprise, cela ne marche toujours pas&amp;nbsp;!
+Le backend d'I18n fourni avec Rails (I18n::Backend::Simple) ne connaît que la règle pour l'anglais, et ne tient donc pas compte de la locale.
+Après quelques errements et expérimentations, j'ai réussi à trouver un moyen relativement simple de corriger cela (créer un backend qui hérite de I18n::Backend::Simple, avec juste la méthode pluralize redéfinie).
+Et là, joie, ça marche :-)&lt;/p&gt;
+
+&lt;p&gt;Comme tout cela m'a pris quelques heures, j'en ai fait un plugin : &lt;a href=&quot;http://github.com/nono/french-rails/tree/master&quot;&gt;FrenchRails&lt;/a&gt;.
+J'espère que cela pourra servir à d'autres personnes.
+En tout cas, moi, je compte l'utiliser sur plusieurs projets.&lt;/p&gt;
+
+&lt;p&gt;Dernière chose : si vous avez des besoins plus compliqués que les miens (au hasard, gérer plusieurs langues), ne cherchez pas à utiliser ce plugin, parter plutôt sur une solution plus costaud comme &lt;a href=&quot;http://github.com/joshmh/globalize2/tree/master&quot;&gt;Globalize2&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>LinuxFr.org avec des commentaires et des réponses aux commentaires, et des réponses aux réponses, etc.</title>
+   <link href="http://blog.menfin.info/LinuxFr/2009/02/08/Commentaires-LinuxFr"/>
+   <updated>2009-02-08T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/LinuxFr/2009/02/08/Commentaires-LinuxFr</id>
+   <content type="html">&lt;p&gt;Les développements continuent d'avancer pour la refonte en Rails de &lt;a href=&quot;http://linuxfr.org&quot;&gt;LinuxFr.org&lt;/a&gt;.
+Je me suis attaqué à un refactoring des commentaires.
+Les fils de discussions de LinuxFr.org sous forme d'arbres sont une des forces du site : ils permettent de suivre les discussions très intéressantes (et les trolls, bien sûr).
+Malheureusement, c'est aussi une structure qui se prête assez mal aux bases de données relationnelles.
+J'étais d'abord sur une technique d'ensembles imbriqués («&amp;nbsp;nested set&amp;nbsp;»), avec le plugin rails &lt;a href=&quot;http://github.com/collectiveidea/awesome_nested_set&quot;&gt;awesome nested set&lt;/a&gt;, mais celui-ci ne fournissait pas les méthodes qui m'intéressaient.
+Par exemple, je veux pouvoir construire tout un arbre de discussions en effectuant une seule requête SQL.
+J'aurais pu compléter ce plugin, mais quitte à écrire du code, j'ai préféré partir sur une structure plus adaptée à mon cas :
+le chemin matérialisé («&amp;nbsp;materialized path&amp;nbsp;») consiste à garder pour chaque commentaire la liste de tous les IDs des commentaires parents dans un champs sérialisé.
+J'ai fait cela aujourd'hui et j'ai déjà une version fonctionnelle.
+La preuve en images :
+&lt;a href=&quot;/public/LinuxFr_refonte_commentaires.png&quot;&gt;Les threads de commentaires en cours de développement&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Dans les jours qui viennent, je pense me concentrer sur les dépêches et les commentaires (nettoyer le code, rajouter les fonctionnalités vraiment essentielles, corriger un ou deux bugs que j'ai remarqué, etc.).
+Je pourrais ensuite me pencher sur une nouvelle partie (la tribune ou le tracker, je ne sais pas encore).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Attention les yeux, ça va piquer !</title>
+   <link href="http://blog.menfin.info/LinuxFr/2009/02/04/Attention-les-yeux"/>
+   <updated>2009-02-04T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/LinuxFr/2009/02/04/Attention-les-yeux</id>
+   <content type="html">&lt;p&gt;J'ai repris mes développements sur LinuxFr.org, avec comme règle, d'en faire un peu tous les jours.
+Pour le moment, cela marche pas trop mal.
+Là, ça fait 5 jours de suite que je commite, et j'ai pu avancer sur les dépêches (aussi bien, création que toute la partie backend de modération).
+Pourvu que ça dure.&lt;/p&gt;
+
+&lt;p&gt;Sinon, je n'avais pas écrit la moindre de ligne de CSS jusque hier, et je commençais sérieusement à m'y perdre dans les différents blocs et balises qui structurent les pages.
+J'ai donc commencé à faire une CSS temporaire qui me servira juste pour le développement.
+Voici une capture de ce que cela donne (attention les yeux) :
+&lt;a href=&quot;/public/LinuxFr_refonte_rails.png&quot;&gt;Premier screenshot de la refonte de LinuxFr.org en Rails&lt;/a&gt;
+Je vous rassure, je ne compte pas garder la moindre ligne de cette feuille de style pour la version finale.
+En fait, j'espère bien ne pas avoir à faire la feuille de style finale, je ne suis pas très doué pour ça.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>LinuxFr.org sur des Rails</title>
+   <link href="http://blog.menfin.info/LinuxFr/2009/01/19/LinuxFr.org-sur-des-rails"/>
+   <updated>2009-01-19T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/LinuxFr/2009/01/19/LinuxFr.org-sur-des-rails</id>
+   <content type="html">&lt;p&gt;Pour 2009, je n'ai pris qu'une bonne résolution, mais elle est de taille. 
+Ceux qui ont lu &lt;a href=&quot;http://linuxfr.org/%7Eetix/27721.html&quot;&gt;ce journal sur LinuxFr.org&lt;/a&gt; savent déjà en quoi elle consiste.
+Pour les autres, la voici : je compte refaire le site &lt;a href=&quot;http://linuxfr.org&quot;&gt;LinuxFr.org&lt;/a&gt; en &lt;a href=&quot;http://www.rubyonrails.org&quot;&gt;Ruby on Rails&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;C'est un défi de taille, car la version actuelle existe depuis de nombreuses années, et a accumulé un grand nombre de fonctionnalités au fil du temps.
+Pour situer, je viens de récupérer la dernière version, elle comporte 18 000 lignes de code (pour les templates), auxquelles on peut ajouter à peu près autant de lignes pour les feuilles de styles.
+En plus, le site a un fort traffic (en gros, 280 000 pages vues par jour), ce qui oblige à se pencher très sérieusement sur les questions de performance et de sécurité.&lt;/p&gt;
+
+&lt;p&gt;J'ai attaqué le développement le 5 janvier, et on peut suivre &lt;a href=&quot;http://github.com/nono/linuxfr.org/commits/master&quot;&gt;les commits sur Github&lt;/a&gt;.
+Pour le moment, j'ai commencé à poser les bases pour les utilisateurs et les contenus (principalement, journaux et forums).
+J'ai également mis en place les commentaires, mais je ne suis pas satisfait du modèle de données, et je vais donc sûrement refaire ça rapidement.
+Mais la semaine prochaine, je vais surtout me concentrer sur les dépêches : proposition d'une dépêche par un lecteur authentifié ou non, relecture et modération par les&amp;nbsp;??AMR](admodérolecteurs = admins + modérateurs + relecteurs??, puis affichage sur la home page, les listings de dépêches et les flux RSS.&lt;/p&gt;
+
+&lt;p&gt;En bref, c'est un projet qui en est encore à ses débuts, et quasiment tout reste à faire.
+Je n'ai pas pu avancer beaucoup cette semaine, mais ma motivation reste intacte.
+Je vais tout faire pour éviter ces périodes creuses, car le seul moyen de sortir un projet de cette taille est d'en faire un peu tous les jours.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The broken window theory</title>
+   <link href="http://blog.menfin.info/Divers/2008/12/09/The-broken-window-theory"/>
+   <updated>2008-12-09T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Divers/2008/12/09/The-broken-window-theory</id>
+   <content type="html">&lt;p&gt;La théorie des fenêtres cassées («&amp;nbsp;The broken window theory&amp;nbsp;») a inspiré les forces de police de New York et d'autres villes importantes pour lutter contre la criminalité.&lt;/p&gt;
+
+&lt;p&gt;Cette théorie postule que la différence entre un immeuble propre et joli, et un autre en très mauvais état peut être la conséquence d'une simple fenêtre cassée.
+Cette simple fenêtre cassée laisse une impression de négligence et d'impunité.
+Des personnes commencent à laisser traîner des détritus, puis des tags apparaissent, et en un rien de temps, l'immeuble est devenu insalubre et mal fréquenté.
+La morale&amp;nbsp;? Il ne faut pas laisser traîner des fenêtres cassées, mais au contraire, les réparer de suite pour éviter que des dégâts plus sérieux n'arrivent.
+Jusqu'à récemment, cette théorie n'était qu'une hypothèse, mais &lt;a href=&quot;http://www.economist.com/science/displaystory.cfm?story_id=12630201&amp;amp;CFID=31056247&amp;amp;CFTOKEN=41038121&quot;&gt;des études récentes&lt;/a&gt; viennent soutenir cette théorie.&lt;/p&gt;
+
+&lt;p&gt;Chose intéressante, &lt;a href=&quot;http://www.pragprog.com/titles/tpp/the-pragmatic-programmer&quot;&gt;les pragmatics programmers&lt;/a&gt; ont appliqué cette théorie au développement logiciel.
+Les fenêtres cassées sont alors tous les &lt;em&gt;code smells&lt;/em&gt; : le test unitaire qui ne passe pas, le module mal documenté, le FIXME qui traîne, la fonction mal implémentée…
+Il est alors important de corriger au plus vite ces petits défauts, sans quoi ils vont s'accumuler et donner une mauvaise impression de la qualité du code.
+Et alors, ce seront des défauts de plus en plus en gros qui vont arriver, chaque développeur se disant que ce n'est pas grave s'il introduit un nouveau code louche pour gagner du temps, car d'autres développeurs l'ont déjà fait ailleurs.
+Le même développeur qui aurait une base de code propre, sans &lt;em&gt;fenêtres cassées&lt;/em&gt;, n'aurait pourtant pas osé être le premier à écrire du code sale (surtout s'il sait que son code fera l'objet d'un code review, mais c'est un autre sujet).&lt;/p&gt;
+
+&lt;p&gt;Pour avoir déjà rencontré souvent ce cas de figure, je sais que cette analogie est très pertinente.
+&lt;strong&gt;Ne laissez pas des fenêtres cassées dans votre code&amp;nbsp;!&lt;/strong&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Le navigateur web Arora</title>
+   <link href="http://blog.menfin.info/Outils/2008/12/02/la-navigateur-web-Aroha"/>
+   <updated>2008-12-02T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Outils/2008/12/02/la-navigateur-web-Aroha</id>
+   <content type="html">&lt;p&gt;J'ai récemment eu besoin de résoudre des bugs sur &lt;a href=&quot;http://linuxfr.org/&quot;&gt;LinuxFr.org&lt;/a&gt; qui était lié au moteur javascript de Safari
+(les &lt;a href=&quot;https://linuxfr.org/tracker/883.html&quot;&gt;#883&lt;/a&gt; et &lt;a href=&quot;https://linuxfr.org/tracker/900.html&quot;&gt;#900&lt;/a&gt; si vous voulez tout savoir).
+Étant sous GNU/Linux, je ne pouvais pas installer Safari, et bien entendu, je n'arrivais pas à reproduire les bugs sous Firefox.
+Toutefois, le moteur de Safari, Webkit, est libre, et il en existe des ports sous GNU/Linux.&lt;/p&gt;
+
+&lt;p&gt;J'ai d'abord essayé epiphany-webkit, et j'ai pu constaté le problème mais pas faire grand chose de plus.
+Epiphany ne me donnait pas accès à un débugger javascript et ne me donnait même pas accès à l'erreur js.
+Après une phase de recherche sur google, j'ai tenté un navigateur web que je ne connaissais pas (même de nom) : &lt;a href=&quot;http://code.google.com/p/arora/&quot;&gt;Aroha&lt;/a&gt;.
+Il dispose de l'outil &lt;a href=&quot;http://mapopa.blogspot.com/2008/07/enabling-webkits-webinspector-in-arora.html&quot;&gt;Web Inspector&lt;/a&gt; (en gros, un équivalent de Firebug pour Safari), ce qui m'a donné l'erreur javascript et permis de faire quelques tests dans la console intégrée.
+Bref, même si ce navigateur n'a rien de révolutionnaire, je suis bien content de pouvoir utiliser le Web Inspector de Webkit sous linux.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Encore plus de tips pour Vim</title>
+   <link href="http://blog.menfin.info/Vim/2008/10/31/Nouveaux-tips-Vim"/>
+   <updated>2008-10-31T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Vim/2008/10/31/Nouveaux-tips-Vim</id>
+   <content type="html">&lt;p&gt;Dans la série des astuces pour Vim, voici le troisième épisode (&lt;a href=&quot;http://blog.menfin.info/post/2007/11/18/Tips-pour-Vim&quot;&gt;le premier se trouve par ici&lt;/a&gt; et &lt;a href=&quot;http://blog.menfin.info/post/2008/01/22/Nouveaux-tips-pour-vim&quot;&gt;le second par là&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Jamis Buck, l'auteur de &lt;a href=&quot;http://www.capify.org/&quot;&gt;Capistrano&lt;/a&gt;, revient sous Vim après plusieurs années de textmate.
+La bonne nouvelle, c'est qu'il ne peut pas se passer de Cmd-T pour trouver des fichiers, et qu'&lt;a href=&quot;http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim&quot;&gt;il a donc développé un plugin Vim pour faire cela&lt;/a&gt; : &lt;a href=&quot;http://github.com/jamis/fuzzy_file_finder/tree/master&quot;&gt;Fuzzy File Finder&lt;/a&gt;.
+Je vous conseille fortement de l'essayer, ca simplifie vraiment la vie pour ouvrir des fichiers bien planqués dans des sous-répertoires.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;La recherche sous Vim se fait en tapant &lt;code&gt;/&lt;/code&gt; puis l'expression recherchée.
+Je suppose que vous connaissiez cette commande, mais saviez-vous que l'on peut spécifier un déplacement en tapant un deuxième &lt;code&gt;/&lt;/code&gt; puis le déplacement voulu&amp;nbsp;?
+Par exemple, &lt;code&gt;/foo/e+1&lt;/code&gt; placera le curseur sur le premier caractère après foo.
+Ceci est très pratique quand on répète plusieurs fois la même recherche.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Si vous débuggez souvent des feuilles de style CSS, vous êtes amené à faire beaucoup d'allers-retours entre votre navigateur web et Vim.
+Et à chaque fois que vous faîtes une modification, vous êtes obligés de taper &lt;ESC&gt;:w&lt;CR&gt; pour la tester.
+Pour gagner quelques touches à chaque itération, je vous propose de rajouter la ligne suivante à votre fichier &lt;code&gt;.vimrc&lt;/code&gt; :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;vim&quot;&gt;autocmd &lt;span class=&quot;nb&quot;&gt;FocusLost&lt;/span&gt; *.css :&lt;span class=&quot;k&quot;&gt;up&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Elle enregistre automatiquement chaque fichier .css quand Vim perd le focus (et uniquement s'il y a des changements à enregistrer).&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Le dernier truc n'en est pas vraiment un, je voulais juste vous faire part du dernier plugin que j'ai développé pour Vim.
+Celui-ci permet d'avoir la coloration syntaxique pour &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=2417&quot;&gt;le framework Merb, la bibliothèque Datamapper&lt;/a&gt; et &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=2416&quot;&gt;le framework javascript jQuery&lt;/a&gt;.
+Voici un petit screenshot de ce que cela donne chez moi :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://blog.menfin.info/public/Gvim_merb_datamapper_jquery.png&quot; alt=&quot;Screenshot&quot;&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Recherches Google</title>
+   <link href="http://blog.menfin.info/Humour/2008/10/25/recherches-google"/>
+   <updated>2008-10-25T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Humour/2008/10/25/recherches-google</id>
+   <content type="html">&lt;p&gt;Voici quelques recherches google qui ont amenées des personnes sur ce blog :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;php sql comme rails&lt;/code&gt; : il existe des ORM en PHP, mais franchement, ce n'est pas à la hauteur de Rails.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vim ^m&lt;/code&gt; : je suppose que cette personne a ouvert un fichier provenant de windows sous Vim. Dans ce cas, les retours à la ligne apparaissent en &lt;sup&gt;M.&lt;/sup&gt; Pour les convertir en retour à la ligne UNIX, il est possible d'utiliser l'utilitaire dos2unix ou alors, directement depuis vim, taper :%s/&lt;sup&gt;M//g&lt;/sup&gt; (attention, pour taper &lt;sup&gt;M,&lt;/sup&gt; il faut utiliser la combinaison CTRL-V CTRL-M, sinon cela ne fonctionne pas).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;faire un copier coller avec un mac&lt;/code&gt; : Pomme-C Pomme-V, non&amp;nbsp;?&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;se qui me menque le plus&lt;/code&gt; : probablement un correcteur orthographique et grammatical.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;j&amp;#39;ai plus d&amp;#39;sou&amp;quot;&lt;/code&gt; : je ne vois pas ce que je peux y faire.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;templeet&lt;/code&gt; : hein, il y a encore des gens qui cherchent ça&amp;nbsp;?!? Alors, pour info, c'est &lt;a href=&quot;http://templeet.org/&quot;&gt;un framework PHP&lt;/a&gt; qui a pris un méchant coup de vieux ces 5 dernières années.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;garder fenetre premier plan mac os x&lt;/code&gt; : je ne suis jamais arrivé à garder une fenêtre au premier plan sous Mac OSX. Les solutions&amp;nbsp;? Passer à un vrai window manager sous GNU/Linux ou utiliser des Post-its à la place.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>RubyflowFr, premiers retours</title>
+   <link href="http://blog.menfin.info/Ruby/2008/09/10/rubyflowfr-premiers-retours"/>
+   <updated>2008-09-10T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Ruby/2008/09/10/rubyflowfr-premiers-retours</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://flow.rubyfrance.org&quot;&gt;RubyflowFr&lt;/a&gt; est en ligne depuis une dizaine de jours.
+C'est l'occasion de faire un premier retour dessus :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;18 posts&lt;/li&gt;
+&lt;li&gt;8 utilisateurs enregistrés&lt;/li&gt;
+&lt;li&gt;environ 1500 pages vues&lt;/li&gt;
+&lt;li&gt;une trentaine de personnes suivent quotidiennement les flux RSS, d'après Feedburner&lt;/li&gt;
+&lt;li&gt;déjà des changements de CSS&amp;nbsp;!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Merci à Nicolas Gruson pour ces modifications de CSS qui améliorent grandement la lisibilité du site.
+Bref, cela démarre pas mal, même si j'aimerais bien que plus de personnes &lt;a href=&quot;http://flow.rubyfrance.org/items/new&quot;&gt;proposent des liens&lt;/a&gt; (il n'y a pas besoin de compte pour cela).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>RubyflowFr est en ligne</title>
+   <link href="http://blog.menfin.info/Ruby/2008/09/02/rubyflowfr-est-en-ligne"/>
+   <updated>2008-09-02T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Ruby/2008/09/02/rubyflowfr-est-en-ligne</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.rubyflow.com/&quot;&gt;Rubyflow&lt;/a&gt; est une application de publications de liens à destination de la communauté Ruby.
+Peter Cooper a libéré le code source de cette application, aussi &lt;a href=&quot;http://rubyfrance.org/&quot;&gt;Ruby France&lt;/a&gt; a décidé d'en sortir une version française destinée à la communauté française des rubyistes et railers.&lt;/p&gt;
+
+&lt;p&gt;L'adresse du site est &lt;a href=&quot;http://flow.rubyfrance.org/&quot;&gt;http://flow.rubyfrance.org/&lt;/a&gt; .
+Bien entendu, vous êtes encouragés à partager vos liens sur Ruby, Rails, Merb ou autres en les postant accompagnés d'une courte description.
+Vous savez ce qu'il vous reste à faire&amp;nbsp;;)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Firefox et about:config</title>
+   <link href="http://blog.menfin.info/Astuces/2008/08/18/firefox-et-about-config"/>
+   <updated>2008-08-18T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Astuces/2008/08/18/firefox-et-about-config</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.mozilla-europe.org/fr/&quot;&gt;Firefox&lt;/a&gt; est le navigateur que j'utilise tous les jours, et ce depuis un certain nombre d'années.
+Au fil du temps, je me suis habitué à un certain nombre de préférences, dont certaines doivent être configurées depuis la page &lt;code&gt;about:config&lt;/code&gt;.
+Pour ceux qui ne connaissent pas cette page, je dirais juste qu'il suffit de taper about:config dans la barre d'adresse de firefox pour accéder à un écran qui permet de modifier de nombreuses fonctionnalités avancées.
+Les noms et valeurs des préférences sont souvent obscurs.
+Il existe une &lt;a href=&quot;http://preferential.mozdev.org/preferences.html&quot;&gt;liste relativement complète de ces préférences&lt;/a&gt;, mais voici ceux que j'utilise le plus souvent :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;browser.tabs.closeButtons&lt;/code&gt; à &lt;code&gt;3&lt;/code&gt; pour avoir un seul bouton fermer les onglets, tout à droite de la barre d'onglets, comme dans les anciennes versions de firefox.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;browser.backspace_action&lt;/code&gt; à &lt;code&gt;0&lt;/code&gt; pour que la touche&amp;nbsp;??backspace](retour arrière?? permette de revenir en arrière dans l'historique.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;middlemouse.contentLoadURL&lt;/code&gt; à &lt;code&gt;true&lt;/code&gt; pour pouvoir aller sur l'URL dans le presse-papier en cliquant juste sur le bouton du milieu de la souris (à la façon d'un coller sous UNIX).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;browser.blink_allowed&lt;/code&gt; à &lt;code&gt;false&lt;/code&gt; pour désactiver les clignotements provoqués par les balises &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rails et la sécurité</title>
+   <link href="http://blog.menfin.info/Rails/2008/07/18/programmez-rails-et-la-securite"/>
+   <updated>2008-07-18T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Rails/2008/07/18/programmez-rails-et-la-securite</id>
+   <content type="html">&lt;h2 id=&quot;toc_20&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;La sécurité des applications web est souvent un sujet délicat : peu de temps à y consacrer, mais cela peut avoir des conséquences assez graves.
+Pas de panique&amp;nbsp;!
+&lt;a href=&quot;http://rubyonrails.com&quot;&gt;Ruby on Rails&lt;/a&gt; est bien armé et avec un peu de rigueur, on peut se protéger sans trop de difficultés.
+Nous allons voir les principaux types d'attaques et comment les éviter.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_21&quot;&gt;Injections SQL&lt;/h2&gt;
+
+&lt;p&gt;Commençons par un grand classique : &lt;a href=&quot;http://fr.wikipedia.org/wiki/Injection_SQL&quot;&gt;les injections SQL&lt;/a&gt;.
+Une injection SQL consiste simplement à envoyer des données non prévues dans une requête SQL.
+Prenons comme exemple une application web où les utilisateurs sont authentifiés de la manière suivante :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@current_user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:conditions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;login=&amp;#39;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:login&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;#39; AND password=&amp;#39;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;#39;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;En temps normal, quand Joe s'authentifie, la requête SQL suivante est exécutée :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;login&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Joe&amp;#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;0521bc575b0ff61daa62494c7ae9c5b6&amp;#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LIMIT&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Mais supposons maintenant que Kevin, un Script Kiddie, passe dans le coin et décide de mettre &lt;code&gt;&amp;quot;Joe&amp;#39;; --&amp;quot;&lt;/code&gt; dans le champ login.
+La requête SQL va alors ressembler à :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;login&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Joe&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;--&amp;#39; AND password=&amp;#39;00000000000000000000000000000000&amp;#39; LIMIT 1;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Kevin a réussi à se faire passer pour Joe sans connaître son mot de passe&amp;nbsp;!&lt;/p&gt;
+
+&lt;p&gt;Heureusement, Active Record permet de &lt;a href=&quot;http://manuals.rubyonrails.com/read/chapter/43&quot;&gt;nous en protéger assez facilement&lt;/a&gt;.
+Pour cela, il suffit d'utiliser les formes échappées comme cela :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@current_user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:conditions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;login=? AND password=?&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:login&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ou de façon équivalente :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@current_user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:conditions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:login&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:login&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Dans les 2 cas, Active Record rajoutera un caractère &lt;code&gt;&amp;#39;\&amp;#39;&lt;/code&gt; devant chaque apostrophe de façon à éviter les injections SQL.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_22&quot;&gt;L'authentification et la gestion des droits&lt;/h2&gt;
+
+&lt;p&gt;Pour la grande majorité des projets, l'authentification (et la gestion des droits qui vont avec) est un passage obligé.
+Pour cela, il existe un certain nombre de points importants à respecter comme le chiffrement des mots de passe stockés en base de données
+(ce que nous n'avons pas fait dans l'exemple précédent).
+Les erreurs sont vite arrivées, aussi je vous recommande d'utiliser des plugins reconnus comme &lt;a href=&quot;http://agilewebdevelopment.com/plugins/restful_authentication&quot;&gt;Restful Authentication&lt;/a&gt;, &lt;a href=&quot;http://agilewebdevelopment.com/plugins/openidauthentication&quot;&gt;OpenID Authentication&lt;/a&gt; et &lt;a href=&quot;http://www.writertopia.com/developers/authorization&quot;&gt;Authorization&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il ne vous reste plus qu'à faire attention à un dernier détail : mettre en cache des pages nécessitant une authentification est une mauvaise idée.
+En effet, ces pages vont alors être servies par le serveur web sans passer Rails, et donc sans vérification de l'authentification.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_23&quot;&gt;Se protéger des données forgées&lt;/h2&gt;
+
+&lt;p&gt;L'étape suivante consiste à bien sécuriser l'accès aux données, aussi bien en lecture qu'en écriture.
+En effet, Rails possède quelques raccourcis très pratiques, mais qui peuvent poser problème quand ils sont mal maîtrisés.
+Le plus courant est &lt;a href=&quot;http://manuals.rubyonrails.com/read/chapter/47&quot;&gt;l'affectation de masse&lt;/a&gt;, technique qui consiste à créer un objet Active Record directement depuis les paramètres de la requête HTTP.
+Par exemple, la création d'un compte utilisateur pourra s'effectuer de la façon suivante :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supposons maintenant que la table &lt;code&gt;&amp;#39;users&amp;#39;&lt;/code&gt; comporte un champ &lt;code&gt;&amp;#39;admin&amp;#39;&lt;/code&gt; qui vaut &lt;code&gt;0&lt;/code&gt; par défaut ou &lt;code&gt;1&lt;/code&gt; pour les super-utilisateurs.
+Un utilisateur malveillant pourrait forger la requête HTTP pour ajouter un paramètre &lt;code&gt;user[admin)=1&lt;/code&gt; afin de gagner les pouvoirs réservés aux admins.
+La première solution pour se protéger de cette attaque consiste à écrire explicitement quels sont les paramètres autorisés :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;:login&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:login&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;:email&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;:password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;:cgu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:cgu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Mais ceci peut vite devenir pénible quand on commence à avoir des formulaires un peu conséquents.
+C'est pourquoi on lui préfère généralement la deuxième solution : la déclaration dans le modèle de la liste des attributs qui ne peuvent pas être modifiés.
+Cette déclaration se fait à l'aide de la méthode &lt;strong&gt;&lt;code&gt;attr_protected&lt;/code&gt;&lt;/strong&gt; comme suit :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;attr_protected&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:admin&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Nous pouvons de nouveau utiliser l'affectation de masse sans craindre qu'un utilisateur se fasse passer pour un admin, Rails s'occupe de filtrer les paramètres.&lt;/p&gt;
+
+&lt;p&gt;Dans le même style, un attaquant peut essayer de &lt;a href=&quot;http://www.therailsway.com/2007/3/26/association-proxies-are-your-friend&quot;&gt;forger des URL&lt;/a&gt;.
+Si, par exemple, l'utilisateur authentifié peut supprimer l'item n°123 qui lui appartient, en appelant l'URL &lt;code&gt;/items/delete/123&lt;/code&gt;, alors que se passera-t-il s'il appelle la même URL pour l'item n°456 qui ne lui appartient pas&amp;nbsp;?
+La réponse dépend du code de la méthode &lt;code&gt;delete&lt;/code&gt;.
+Une implémentation de base pourrait ressembler à :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ItemsController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ApplicationController&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;
+        &lt;span class=&quot;no&quot;&gt;Item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Pour se protéger des URL forgées, on pourrait la transformer en :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ItemsController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ApplicationController&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt;
+        &lt;span class=&quot;vi&quot;&gt;@item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@current_user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;vi&quot;&gt;@item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;delete&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@item&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ce n'est pas parfait (on pourrait vérifier que c'est bien une requête de type POST), mais c'est déjà beaucoup mieux.&lt;/p&gt;
+
+&lt;p&gt;Un dernier petit truc pour la route avant de passer à autre chose.
+Si vous avez une API pour laquelle vous utilisez la sérialisation XML, il peut être intéressant de surcharger &lt;code&gt;ActiveRecord#to_xml&lt;/code&gt; pour que le champ &lt;code&gt;secret_field&lt;/code&gt; n'y apparaisse pas :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;to_xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{})&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:except&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:secret_field&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;toc_24&quot;&gt;Cross-Site Scripting&lt;/h2&gt;
+
+&lt;p&gt;Jusque maintenant, nous avons vu des attaques directes : un utilisateur essaye de s'en prendre à notre site.
+Il existe également des attaques plus pernicieuses que l'on classe sous le nom de &lt;a href=&quot;http://fr.wikipedia.org/wiki/Cross_site_scripting&quot;&gt;Cross-Site Scripting&lt;/a&gt; (XSS en abrégé).
+Leur but est de s'en prendre aux utilisateurs de notre site en glissant des cochonneries sur notre site.
+Ceci peut aller du spammeur qui mettra une balise &lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; vers son site dans tous les formulaires qui lui passent sous la main à l'injection de javascript non maîtrisé.&lt;/p&gt;
+
+&lt;p&gt;Par exemple, quelqu'un crée un item dont la description est la suivante :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;http://www.programmez.com/&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Si maintenant un visiteur affiche la description de cet item, il sera redirigé vers le site &lt;a href=&quot;http://www.programmez.com&quot;&gt;www.programmez.com&lt;/a&gt;.
+Vous vous dites que c'est ennuyeux mais pas bien méchant&amp;nbsp;?
+Oui, mais la même technique permet de voler les cookies et donc les sessions associées.
+Nous allons donc chercher à nous protéger de ces failles XSS.&lt;/p&gt;
+
+&lt;p&gt;Pour cela, il est important de faire une distinction entre 2 cas : est-ce que le champ que vous allez afficher peut contenir des balises HTML ou non&amp;nbsp;?
+Pour afficher le nom d'un item, on sera dans le premier cas, à savoir pas de balises HTML : on veut juste afficher le nom tel que l'a rentré son propriétaire.
+Par contre, on peut souhaiter être plus souple pour la description de l'item et laisser la possibilité d'avoir un titre (balise &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;), du gras (&lt;code&gt;&amp;lt;b&amp;gt;&lt;/code&gt;) ou de l'italique (&lt;code&gt;&amp;lt;i&amp;gt;&lt;/code&gt;).
+Ces 2 cas ne se traitent pas de la même façon.
+Pour le premier cas, Rails nous offre un moyen simple de nous en protéger : le helper &lt;strong&gt;&lt;code&gt;h&lt;/code&gt;&lt;/strong&gt;.
+En pratique, à chaque fois que l'on souhaitera afficher le titre d'un item, on procédera de la manière suivante :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;&amp;lt;%=h @item.title %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ce &lt;code&gt;h&lt;/code&gt; va convertir les caractères qui pourraient être interprétés par un navigateur web en l'entité HTML correspondante. Problème résolu.&lt;/p&gt;
+
+&lt;p&gt;Le deuxième cas est par contre plus difficile à traiter.
+Vous pouvez être tenté d'utiliser un moteur de formatage de texte comme &lt;a href=&quot;http://whytheluckystiff.net/ruby/redcloth/&quot;&gt;RedCloth&lt;/a&gt;.
+Attention, cela ne suffit pas à filtrer &lt;a href=&quot;http://www.rorsecurity.info/2007/08/20/redcloth-security-thoughts/&quot;&gt;toutes les attaques&lt;/a&gt;&amp;nbsp;!
+Pour votre tranquillité, il vaut mieux utiliser le plugin &lt;a href=&quot;http://svn.techno-weenie.net/projects/plugins/white_list/&quot;&gt;WhiteList&lt;/a&gt;.
+Depuis Rails 2.0, ce plugin fait partie du framework et peut s'utiliser de la façon suivante :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;&amp;lt;%= sanitize @item.description, :tags =&amp;gt; %w(b i h1) %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Il est possible de déclarer les balises autorisées de manière globale : je vous renvoie à la &lt;a href=&quot;http://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html#M000936&quot;&gt;documentation officielle&lt;/a&gt;.
+Et pour ceux qui veulent être sûrs de ne pas oublier d'appel à &lt;code&gt;h&lt;/code&gt; ou à &lt;code&gt;sanitize&lt;/code&gt;, il existe des moteurs de template alternatifs comme &lt;a href=&quot;http://wiki.rubyonrails.com/rails/pages/Safe+ERB&quot;&gt;Safe ERB&lt;/a&gt; ou &lt;a href=&quot;http://www.kuwata-lab.com/erubis/&quot;&gt;Erubis&lt;/a&gt;.
+Ces moteurs adoptent l'approche opposée :
+ils filtrent par défaut tous les éléments &lt;code&gt;&amp;lt;%= %&amp;gt;&lt;/code&gt;, charge au développeur d'indiquer explicitement ceux pour lequel le moteur ne fera pas de filtrage.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_25&quot;&gt;Cross-Site Request Forgeries&lt;/h2&gt;
+
+&lt;p&gt;Juste avant de finir, je voudrais juste dire un mot sur un dernier type d'attaques.
+Les CSRF, abréviation de Cross-Site Request Forgery, sont des attaques complexes qui visent à forcer l'utilisateur à envoyer une requête HTTP vers notre site lorsque celui-ci visitera le site de l'attaquant.
+Je vous renvoie à &lt;a href=&quot;http://fr.wikipedia.org/wiki/Cross-Site_Request_Forgeries&quot;&gt;wikipedia&lt;/a&gt; si vous voulez comprendre comment fonctionne ce type d'attaques.
+Sachez que Rails vous protège de celles-ci depuis la version 2.0 et qu'il existe un plugin pour les versions plus anciennes : &lt;a href=&quot;http://svn.techno-weenie.net/projects/plugins/csrf_killer/&quot;&gt;CSRF-killer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_26&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Nous avons pu voir qu'en prenant quelques bonnes habitudes, on pouvait développer des applications sûres en Rails.
+Il reste cependant des sujets que je n'ai pas abordés comme &lt;a href=&quot;http://www.igvita.com/blog/2006/10/10/securing-your-rails-environment/&quot;&gt;l'administration de Rails&lt;/a&gt;, &lt;a href=&quot;http://www.rorsecurity.info/2007/03/15/apache-2-file-privileges-and-modules/&quot;&gt;apache&lt;/a&gt; ou &lt;a href=&quot;http://www.rorsecurity.info/2007/02/25/securing-mysql/&quot;&gt;MySQL&lt;/a&gt; (&lt;a href=&quot;http://www.rorsecurity.info/2007/02/27/rails%e2%80%99-friends-securing-mysql-continued/&quot;&gt;suite&lt;/a&gt;), &lt;a href=&quot;http://www.rorsecurity.info/2007/03/27/working-with-files-in-rails/&quot;&gt;la manipulation des fichiers&lt;/a&gt; ou encore &lt;a href=&quot;http://railscasts.com/episodes/9&quot;&gt;le filtrage des informations sensibles dans les logs&lt;/a&gt;.
+Il est également important de se tenir au courant des mises à jour de sécurité de Rails et des plugins que vous utilisez.&lt;/p&gt;
+
+&lt;p&gt;Je remercie Benoît Sibaud pour sa relecture attentive.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_27&quot;&gt;Références&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.rorsecurity.info/ruby-on-rails-security-cheatsheet/&quot;&gt;http://www.rorsecurity.info/ruby-on-rails-security-cheatsheet/&lt;/a&gt;
+&lt;a href=&quot;http://www.quarkruby.com/2007/9/20/ruby-on-rails-security-guide&quot;&gt;http://www.quarkruby.com/2007/9/20/ruby-on-rails-security-guide&lt;/a&gt;
+&lt;a href=&quot;http://blog.innerewut.de/2008/1/3/24c3-ruby-on-rails-security&quot;&gt;http://blog.innerewut.de/2008/1/3/24c3-ruby-on-rails-security&lt;/a&gt;
+&lt;a href=&quot;http://www.owasp.org/index.php/OWASP_AppSec_FAQ&quot;&gt;http://www.owasp.org/index.php/OWASP_AppSec_FAQ&lt;/a&gt;
+&lt;a href=&quot;http://www.owasp.org/index.php/Top_10_2007&quot;&gt;http://www.owasp.org/index.php/Top_10_2007&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>LinuxFR.org a dix ans, soirée Firefox 3 et autres joyeusetés</title>
+   <link href="http://blog.menfin.info/LinuxFr/2008/06/28/linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes"/>
+   <updated>2008-06-28T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/LinuxFr/2008/06/28/linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes</id>
+   <content type="html">&lt;p&gt;Je n'ai pas pour habitude de faire des billets en vrac, mais ce sera exceptionnellement le cas.
+Je souhaite en effet vous parler de plusieurs points qui n'attendront pas :&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_16&quot;&gt;LinuxFR a 10 ans&amp;nbsp;!&lt;/h2&gt;
+
+&lt;p&gt;Hé oui, c'est aujourd'hui, le 28 juin, que &lt;a href=&quot;http://linuxfr.org&quot;&gt;LinuxFR&lt;/a&gt; fête &lt;a href=&quot;https://linuxfr.org/2008/06/28/24276.html&quot;&gt;10 ans de dépêches, journaux et autres informations autour de Linux et des Logiciels Libres&lt;/a&gt;.
+J'espère que LinuxFR pourra continuer à animer la vie de la communauté du Logiciel Libre pour encore quelques années.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_17&quot;&gt;Soirée Firefox 3&lt;/h2&gt;
+
+&lt;p&gt;Hier soir avait lieu la soirée Firefox 3.
+Je dois avouer que j'ai été déçu par la soirée : peu de monde, pas de musique, l'ambiance n'était pas au rendez-vous :/
+&lt;a href=&quot;http://standblog.org/&quot;&gt;Tristan Nitot&lt;/a&gt; a pris &lt;a href=&quot;http://www.flickr.com/photos/nitot/sets/72157605857467802/&quot;&gt;des photos de la soirée&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_18&quot;&gt;RMLL du 1er au 5 juillet&lt;/h2&gt;
+
+&lt;p&gt;La semaine prochaine, ce sera &lt;a href=&quot;Rencontre%20Mondiale%20du%20Logiciel%20Libre&quot;&gt;RMLL&lt;/a&gt;.
+Ca se passe à Mont-de-Marsan, et j'y serais pour tenir le stand de &lt;a href=&quot;http://rubyfrance.org/&quot;&gt;Ruby France&lt;/a&gt; et donner &lt;a href=&quot;http://2008.rmll.info/10-ans-de-LinuxFR-org.html&quot;&gt;une conférence sur LinuxFR&lt;/a&gt;.
+J'espère y croiser des lecteurs de mon blog&amp;nbsp;;)&lt;/p&gt;
+
+&lt;p&gt;Un gros merci à &lt;a href=&quot;http://www.af83.com&quot;&gt;AF83&lt;/a&gt; qui me laisse y aller pendant mes jours de boulot.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_19&quot;&gt;Do You Buzz&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.doyoubuzz.com/&quot;&gt;Do You Buzz&lt;/a&gt; est un nouveau service en ligne pour publier son CV.
+Chose intéressante, c'est le premier site développé avec le framework &lt;a href=&quot;http://turb.ulenc.es/&quot;&gt;Turbulences&lt;/a&gt; en dehors d'AF83.&lt;/p&gt;
+
+&lt;p&gt;Le site est encore en bêta privée, mais il marche déjà très bien et l'interface est vraiment agréable à utiliser.
+J'en sais quelque chose, car je fais parti des premiers beta-testeurs (mon CV est visible sur &lt;a href=&quot;http://www.doyoubuzz.com/bruno-michel&quot;&gt;http://www.doyoubuzz.com/bruno-michel&lt;/a&gt; ).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Github theme for Vim</title>
+   <link href="http://blog.menfin.info/Vim/2008/05/30/github-theme-for-vim"/>
+   <updated>2008-05-30T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Vim/2008/05/30/github-theme-for-vim</id>
+   <content type="html">&lt;p&gt;Scott Becker has made a &lt;a href=&quot;http://synthesis.sbecker.net/articles/2008/05/28/github-theme-for-textmate&quot;&gt;Github theme for Textmate&lt;/a&gt;,
+so I've decided to made a Github theme for ViM.&lt;/p&gt;
+
+&lt;p&gt;It's available on github: &lt;a href=&quot;http://github.com/nono/github_vim_theme/tree/master&quot;&gt;Github Vim Theme&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Outils pour tracer des graphes</title>
+   <link href="http://blog.menfin.info/Outils/2008/05/09/outils-pour-tracer-des-graphes"/>
+   <updated>2008-05-09T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Outils/2008/05/09/outils-pour-tracer-des-graphes</id>
+   <content type="html">&lt;p&gt;Je cherche depuis un certain temps un outil pour tracer des graphes.
+En général, j'utilise la suite &lt;a href=&quot;http://www.graphviz.org/&quot;&gt;Graphviz&lt;/a&gt; pour faire cela.
+Le principe est relativement simple : on décrit le graphe dans un fichier au format dot, puis on utilise un des 5 outils (dot, neato, fdp, circo et twopi) pour générer une image.
+Cela marche plutôt bien, mais les graphes générés sont sobres, pour ne pas dire moches (voir la &lt;a href=&quot;http://www.graphviz.org/Gallery.php&quot;&gt;galerie&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Je connaissais également &lt;a href=&quot;http://www.opte.org/maps/&quot;&gt;LGL&lt;/a&gt;, mais il est surtout adapté pour tracer des graphes avec beaucoup de noeuds et/ou arêtes.
+Il existe aussi des outils pour tracer des diagrammes (genre &lt;a href=&quot;http://live.gnome.org/Dia&quot;&gt;Dia&lt;/a&gt;) qui peuvent être utilisés pour tracer des graphes, mais je préfère de loin l'approche de graphviz.&lt;/p&gt;
+
+&lt;p&gt;Et récemment, je suis tombé sur &lt;a href=&quot;http://nodebox.net/code/index.php/Graphing&quot;&gt;Nodebox&lt;/a&gt; : le choc, des jolis graphes&amp;nbsp;!
+Malheureusement, Nodebox fonctionne sous MacOSX.
+Il existe bien &lt;a href=&quot;http://dev.nodebox.net/wiki/Qt&quot;&gt;un port pour GNU/Linux sous QT&lt;/a&gt;, mais je n'arrive pas à utiliser le module Graph avec celui-ci :/
+&lt;a href=&quot;http://shoebox.sollec.org/&quot;&gt;Shoebox&lt;/a&gt; est une réécriture de nodebox (sous Cairo ce coup-ci), mais j'ai l'impression qu'il n'est pas encore assez avancé pour faire quelque chose d'utile avec.&lt;/p&gt;
+
+&lt;p&gt;Toujours à partir de Nodebox, j'ai découvert &lt;a href=&quot;https://networkx.lanl.gov/wiki&quot;&gt;NetworkX&lt;/a&gt;, mais, si j'ai bien compris, c'est une surcouche à Graphviz.
+&lt;a href=&quot;https://networkx.lanl.gov/wiki/gallery&quot;&gt;Les exemples de la gallerie&lt;/a&gt; me semblent quand même plus jolis que ceux de GraphViz.
+Est-ce que l'auteur de NetworkX a passé du temps pour faire ces exemples ou est-ce que je me suis trompé sur NetworkX&amp;nbsp;?
+Je ne saurais dire, mais cela vaudrait sûrement le coup que j'y rejette un coup d'oeil à l'occasion.&lt;/p&gt;
+
+&lt;p&gt;Enfin, la solution viendra peut être du Javascript.
+Le &lt;a href=&quot;http://blog.thejit.org/?page_id=14&quot;&gt;JavaScript Information Visualization Toolkit (JIT)&lt;/a&gt; est une bibliothèque pour tracer des graphes.
+Ce n'est pas aussi simple que GraphViz et, pour le moment, limité aux arbres, mais cela pourrait devenir une solution intéressante.
+Le projet &lt;a href=&quot;http://dev.jquery.com/%7Ejohn/processing.js/&quot;&gt;Processing.js&lt;/a&gt; montre que l'on peut utiliser la balise Canvas pour faire un rendu qui n'a rien à envier au Desktop.
+Alors qui sait, peut être que JIT pourra vraiment devenir la solution pour tracer de jolis graphes même si l'utilisation de javascript peut surprendre pour cela…&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Annonces RailsConf 2008</title>
+   <link href="http://blog.menfin.info/Rails/2008/05/08/annonces-railsconf"/>
+   <updated>2008-05-08T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Rails/2008/05/08/annonces-railsconf</id>
+   <content type="html">&lt;p&gt;La &lt;a href=&quot;http://en.oreilly.com/rails2008/&quot;&gt;RailsConf 2008&lt;/a&gt;, la grande messe annuelle des railers, aura lieu du 29 mai au 6 juin.
+A cette occasion, un certain nombre d'annonces devrait être faites.
+Bien entendu, la plus attendue sera celle de &lt;a href=&quot;%7Chttp://rubyonrails.com&quot;&gt;Ruby on Rails&lt;/a&gt; 2.1.
+Mais c'est loin d'être la seule.
+Coté framework, on devrait également entendre parler de &lt;a href=&quot;http://www.merbivore.com/&quot;&gt;Merb&lt;/a&gt; dont la version 1.0 devrait être annoncée par ce RailsConf si tout va bien.&lt;/p&gt;
+
+&lt;p&gt;On attend également beaucoup de choses pour les interpréteurs Ruby :
+arrivée du tout nouveau &lt;a href=&quot;http://ruby.gemstone.com/&quot;&gt;MagLev&lt;/a&gt;, &lt;a href=&quot;http://rubini.us/&quot;&gt;Rubinius&lt;/a&gt; faisant tourner des applis Rails, &lt;a href=&quot;http://jruby.codehaus.org/&quot;&gt;JRuby&lt;/a&gt; plus rapide que l'interpréteur Ruby officiel pour les applis Rails&amp;nbsp;?
+Pour le moment, ce ne sont que des objectifs (ou au mieux des rumeurs), mais on sent une certaine agitation de ce coté-là.&lt;/p&gt;
+
+&lt;p&gt;Enfin, la mode est au moteur de réseaux sociaux, et le RailsConf sera l'endroit pour en parler, mais ceci fera l'objet d'un autre post sur ce blog&amp;nbsp;;-)
+Bref, plein de bonnes choses en vue qui me feront regretter de ne pas pouvoir y aller…&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dossier Ruby on Rails dans programmez</title>
+   <link href="http://blog.menfin.info/Ruby/2008/04/02/mon-article-dans-programmez"/>
+   <updated>2008-04-02T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Ruby/2008/04/02/mon-article-dans-programmez</id>
+   <content type="html">&lt;p&gt;La revue &lt;a href=&quot;http://www.programmez.com&quot;&gt;Programmez&lt;/a&gt; sort un dossier sur &lt;a href=&quot;http://www.rubyonrails.com&quot;&gt;Ruby on Rails&lt;/a&gt;.
+La &lt;a href=&quot;http://programmez.com/magazine_articles.php?id_article=1031&amp;amp;&amp;amp;titre=RUBY%20on%20Railq&quot;&gt;première partie de ce dossier&lt;/a&gt;
+est sortie ce mois-ci, et la suite sera pour le mois prochain.
+Si je vous parle de cela, c'est parce que j'ai l'honneur de participer à ce dossier : j'ai écrit le dossier sur Rails et la sécurité.
+Vous n'aurez plus d'excuses pour ne pas suivre les règles de bases pour s'assurer de la sécurité de son appli rails.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Afficher la branche Git courante dans le prompt de ZSH</title>
+   <link href="http://blog.menfin.info/Git/2008/03/15/git-branch-dans-le-prompt-zsh"/>
+   <updated>2008-03-15T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Git/2008/03/15/git-branch-dans-le-prompt-zsh</id>
+   <content type="html">&lt;p&gt;Je suis tombé sur un tips bien sympa :
+&lt;a href=&quot;http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/&quot;&gt;Show Your GIT Branch Name In Your Prompt&lt;/a&gt;.
+Il y est expliqué comment avoir la branche &lt;a href=&quot;http://git.or.cz/&quot;&gt;Git&lt;/a&gt; en cours dans son prompt avec &lt;a href=&quot;http://www.gnu.org/software/bash/&quot;&gt;Bash&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;J'ai adapaté ca pour &lt;a href=&quot;http://www.zsh.org/&quot;&gt;zsh&lt;/a&gt;. Voici un extrait de mon &lt;code&gt;zshrc&lt;/code&gt; :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;export PS1=&amp;#39;%~ $(git_branch)%# &amp;#39;
+
+function git_branch {
+  git branch --no-color 2&amp;gt; /dev/null | sed -e &amp;#39;/^[^*]/d&amp;#39; -e &amp;#39;s/* \(.*\)/(\1) /&amp;#39;
+}
+
+setopt PROMPT_SUBST
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;La seule difficulté fût de se rendre compte qu'il fallait activer une option pour que ca marche, et de savoir quelle était cette option (&lt;code&gt;PROMPT_SUBST&lt;/code&gt; en l'occurence).&lt;/p&gt;
+
+&lt;p&gt;Ainsi que je suis sous un répertoire normal, j'ai un prompt de la forme &lt;code&gt;~/Desktop %&lt;/code&gt;, et quand je suis dans un répertoire versionné sous Git, ca donne : &lt;code&gt;~/mon_projet (ma_branche) %&lt;/code&gt;.
+Ce n'est pas grand chose, mais comme il paraît que c'est une bonne pratique de faire des branches sous Git, autant avoir en permance le nom de la branche courante sous les yeux.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PS&lt;/strong&gt; : j'ai des invitations pour &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt; si ca intéresse des gens.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Portrait of a N00b</title>
+   <link href="http://blog.menfin.info/Divers/2008/02/12/Portrait-of-a-noob"/>
+   <updated>2008-02-12T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Divers/2008/02/12/Portrait-of-a-noob</id>
+   <content type="html">&lt;p&gt;Steve Yegge, un blogger influent qui travaille chez Google, a posté un article
+intitulé «&amp;nbsp;&lt;a href=&quot;http://steve-yegge.blogspot.com/2008/02/portrait-of-n00b.html&quot;&gt;Portrait of a N00b&lt;/a&gt;&amp;nbsp;».
+Comme à son habitude, c'est un très long post où il explique les différences
+dans la manière de coder (et commenter son code) entre un développeur peu
+expérimenté et un développeur avec 20 ans d'expérience.&lt;/p&gt;
+
+&lt;p&gt;S'en suit une digression très intéressante entre langages à typage statique
+(Ocaml, Haskell), langages à typage dynamique (Perl, Python, Ruby), et les
+langages classiques (C++, Java) à typage statique mais qui vous laisse tricher
+avec les types. On y trouve quelques perles :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If static types are comments, then I think we can conclude that people who
+rely too much on static types, people who really love the static modeling
+process, are n00bs.&lt;/p&gt;
+
+&lt;p&gt;You can write C++ like straight C code if you like, using buffers and
+pointers and nary a user-defined type to be found. Or you can spend weeks
+agonizing over template metaprogramming with your peers, trying to force
+the type system to do something it's just not powerful enough to express.&lt;/p&gt;
+
+&lt;p&gt;Perl, Python and Ruby fail to attract many Java and C++ programmers because,
+well, they force you to get stuff done.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Mais le plus simple reste d'aller lire l'original : &lt;a href=&quot;http://steve-yegge.blogspot.com/2008/02/portrait-of-n00b.html&quot;&gt;Portrait of a N00b&lt;/a&gt;.
+C'est long, mais ca en vaut largement la lecture. Et si vous avez encore du
+temps, les autres articles sont aussi des lectures recommandées.&lt;/p&gt;
+
+&lt;p&gt;Ai-je précisé que je me retrouve plus dans la peau du dév expérimenté que du
+N00b, même si c'est un prétentieux, vu que je suis encore vraiment loin
+d'avoir 20 ans d'expérience&amp;nbsp;?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Nouveaux tips pour vim</title>
+   <link href="http://blog.menfin.info/Vim/2008/01/22/De-nouveaux-tips-pour-vim"/>
+   <updated>2008-01-22T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Vim/2008/01/22/De-nouveaux-tips-pour-vim</id>
+   <content type="html">&lt;p&gt;Voici une nouvelle fournée de tips pour Vim. Pour les retardataires, la première série est toujours disponible &lt;a href=&quot;http://blog.menfin.info/post/2007/11/18/Tips-pour-Vim&quot;&gt;par là&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CTRL+v&lt;/code&gt; reste une valeur sûre : ca active la sélection rectangulaire. Suivie de &lt;code&gt;I&lt;/code&gt;, ca permet d'insérer un même texte sur plusieurs lignes. Au contraire, avec &lt;code&gt;x&lt;/code&gt;, on peut supprimer une colonne.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:Man&lt;/code&gt; permet d'afficher une page de man directement dans Vim (avec la coloration syntaxique)&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;j'ai rajouté la ligne suivante dans mon &lt;code&gt;vimrc&lt;/code&gt; pour pouvoir insérer facilement des Lorem ipsum :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;iab lorem Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.&amp;lt;cr&amp;gt;Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.&amp;lt;cr&amp;gt;Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Voilà, c'est tout pour aujourd'hui.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mercurial sur mon MyBook</title>
+   <link href="http://blog.menfin.info/Matériel/2007/12/01/mercurial-sur-mon-MyBook"/>
+   <updated>2007-12-01T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Matériel/2007/12/01/mercurial-sur-mon-MyBook</id>
+   <content type="html">&lt;p&gt;J'ai installé &lt;a href=&quot;http://www.selenic.com/mercurial/&quot;&gt;mercurial&lt;/a&gt; sur mon MyBook.
+Ce n'est pas très compliqué, mais voici quand même la méthode que j'ai utilisée pour ceux qui n'ont pas envie de chercher.
+La première chose à faire, c'est se connecter en ssh (si sshd n'est activé, vous pouvez le faire grâce à &lt;a href=&quot;http://martin.hinner.info/mybook/sshaccess.php&quot;&gt;la méthode de Martin Hinner&lt;/a&gt;).
+Ensuite, comme mercurial est en &lt;a href=&quot;http://www.python.org/&quot;&gt;Python&lt;/a&gt;, il faut installer Python :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;$ cd /tmp
+$ wget http://www.python.org/ftp/python/2.5.1/Python-2.5.1.tar.bz2
+$ tar xvjf Python-2.5.1.tar.bz2
+$ cd Python-2.5.1
+$ ./configure --disable-ipv6 --disable-shared --with-cxx=no --with-threads
+$ make
+$ sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Puis, on peut passer à l'install de mercurial proprement dit :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;$ cd /tmp
+$ wget http://www.selenic.com/mercurial/release/mercurial-0.9.5.tar.gz
+$ tar xvzf mercurial-0.9.5.tar.gz
+$ cd mercurial-0.9.5
+$ make
+$ sudo make install-bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Un petit &lt;code&gt;hg -v&lt;/code&gt; pour tester, et c'est déjà fini.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>IRB, un outil à (re)découvrir</title>
+   <link href="http://blog.menfin.info/Ruby/2007/11/30/irbrc"/>
+   <updated>2007-11-30T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Ruby/2007/11/30/irbrc</id>
+   <content type="html">&lt;p&gt;IRB est un outil génial pour tester rapidement un truc en &lt;a href=&quot;http://www.ruby-lang.org/fr/&quot;&gt;Ruby&lt;/a&gt;.
+C'est une sorte d'interpréteur Ruby qui fonctionne comme un shell :
+vous tapez une ligne de Ruby, irb l'interprête et vous donne le résultat, vous tapez une autre ligne, irb l'interprête en tenant compte de la première ligne, et ainsi de suite.
+Voici par exemple ce que cela donne (avec en gras, ce que j'ai tapé) :
+&lt;code&gt;ruby
+&amp;gt; titi = 2 + 3
+5
+&amp;gt; toto = titi * 4
+20
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour ceux qui veulent en savoir plus, je recommande de lire
+&lt;a href=&quot;http://poignantguide.net/ruby/expansion-pak-1.html&quot;&gt;le chapitre consacré à IRB&lt;/a&gt; dans
+&lt;a href=&quot;http://fr.poignantguide.net/&quot;&gt;Le Guide (Poignant) de Why's vers Ruby&lt;/a&gt; et d'essayer ca dans
+&lt;a href=&quot;http://tryruby.hobix.com/&quot;&gt;Try Ruby&lt;/a&gt; qui est, en gros, un IRB dans votre navigateur web.&lt;/p&gt;
+
+&lt;p&gt;Il est possible de configurer IRB via le fichier &lt;code&gt;$HOME/.irbrc&lt;/code&gt; : changer le prompt, charger des fichiers, activer l'auto-complétion, etc.
+&lt;a href=&quot;http://quotedprintable.com/2007/9/13/my-irbrc&quot;&gt;Comme&lt;/a&gt;
+&lt;a href=&quot;http://drnicwilliams.com/2006/10/12/my-irbrc-for-consoleirb/&quot;&gt;d'autres&lt;/a&gt;
+&lt;a href=&quot;http://redhanded.hobix.com/inspect/stickItInYourIrbrcMethodfinder.html&quot;&gt;personnes&lt;/a&gt;
+&lt;a href=&quot;http://blog.nicksieger.com/articles/2006/05/30/irbrc-on-windows&quot;&gt;l'ont&lt;/a&gt;
+&lt;a href=&quot;http://ruby.tie-rack.org/3/my-irbrc/&quot;&gt;fait&lt;/a&gt;
+&lt;a href=&quot;http://errtheblog.com/post/26&quot;&gt;avant&lt;/a&gt;
+&lt;a href=&quot;http://romeda.org/blog/2006/11/irbrc.html&quot;&gt;moi&lt;/a&gt;,
+je poste mon fichier de conf &lt;code&gt;.irbrc&lt;/code&gt; pour que chacun puisse s'en inspirer (et aussi pour le retrouver plus facilement quand je ne suis pas chez moi&amp;nbsp;;-)&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;yaml&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;irb/completion&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;IRB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:USE_REALINE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;IRB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:PROMPT_MODE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:SIMPLE&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# History with readline&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;HISTFILE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;~/.irb.hist&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;MAXHISTSIZE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# what? (gem install what_methods)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;what_methods&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Wirble (gem install wirble)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;wirble&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Wirble&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Wirble&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colorize&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Just for Rails...&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ENV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;RAILS_ENV&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;IRB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:IRB_RC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Proc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;logger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;STDOUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance_eval&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:[]&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:find&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Nouveau disque dur : MyBook World Edition</title>
+   <link href="http://blog.menfin.info/Matériel/2007/11/26/disque-dur-MyBook"/>
+   <updated>2007-11-26T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Matériel/2007/11/26/disque-dur-MyBook</id>
+   <content type="html">&lt;p&gt;Je viens de m'acheter un disque dur externe Western Digital MyBook World
+Edition. La bête doit principalement me servir pour mes sauvegardes, mais avec
+ses 500 Go, je devrais avoir de la place pour d'autres choses. J'ai choisi ce
+modèle car je voulais un disque dur branché sur de l'ethernet, pas en usb, et
+qu'en plus j'avais lu sur
+&lt;a href=&quot;http://jeromeandrieux.blogspot.com/2007/06/nastty-convi-wd-mybook.html&quot;&gt;http://jeromeandrieux.blogspot.com/2007/06/nastty-convi-wd-mybook.html&lt;/a&gt; qu'il
+avait le bon goût de tourner sous linux (les sources du firmware sous licence
+GPL sont disponibles sur
+&lt;a href=&quot;http://support.wdc.com/download/index.asp?cxml=n&amp;amp;pid=30&amp;amp;swid=64&quot;&gt;http://support.wdc.com/download/index.asp?cxml=n&amp;amp;pid=30&amp;amp;swid=64&lt;/a&gt; ).&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_14&quot;&gt;Ce que j'ai déjà fait&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;le brancher&lt;/li&gt;
+&lt;li&gt;aller sur l'interface web : http://admin:123456@&lt;l'adresse IP du Mybook&gt;&lt;/li&gt;
+&lt;li&gt;rajouter un utilisateur sur cette interface&lt;/li&gt;
+&lt;li&gt;activer l'accès ssh grâce à [la méthode de Martin Hinner|&lt;a href=&quot;http://martin.hinner.info/mybook/sshaccess.php&quot;&gt;http://martin.hinner.info/mybook/sshaccess.php&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;se logger en ssh dessus avec l'utilisateur créé précédement&lt;/li&gt;
+&lt;li&gt;désactiver mionet toujours grâce à [&lt;a href=&quot;http://martin.hinner.info/mybook/disable_mionet.php%7CMartin&quot;&gt;http://martin.hinner.info/mybook/disable_mionet.php|Martin&lt;/a&gt; Hinner]&lt;/li&gt;
+&lt;li&gt;faire joujou avec l'interface web&lt;/li&gt;
+&lt;li&gt;et finalement commencer mes sauvegardes à la main (à coups de scp)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;toc_15&quot;&gt;Ce qu'il reste à faire&lt;/h2&gt;
+
+&lt;p&gt;Visiblement, il est possible de faire des choses bien sympathiques comme
+installer &lt;a href=&quot;http://vsftpd.beasts.org/%7Cvsftpd&quot;&gt;vsftpd&lt;/a&gt; (un serveur FTP bien secure),
+&lt;a href=&quot;http://samba.anu.edu.au/rsync/&quot;&gt;rsync&lt;/a&gt; ou encore &lt;a href=&quot;http://php.net&quot;&gt;PHP&lt;/a&gt; (en
+réutilisant le lighttpd de l'interface web) dessus :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://martin.hinner.info/mybook/packages.php&quot;&gt;http://martin.hinner.info/mybook/packages.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://mybookworld.wikidot.com/hacks-and-howto&quot;&gt;http://mybookworld.wikidot.com/hacks-and-howto&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://chayden.dyndns.info/info/mybookworld:top&quot;&gt;http://chayden.dyndns.info/info/mybookworld:top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.welped.com/2007/08/29/hacking-the-mybook-world-edition-into-a-php-powered-web-server/&quot;&gt;http://www.welped.com/2007/08/29/hacking-the-mybook-world-edition-into-a-php-powered-web-server/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il est également possible de mettre en veille le disque dur d'après
+&lt;a href=&quot;http://kyyhkynen.net/stuff/mybook/&quot;&gt;http://kyyhkynen.net/stuff/mybook/&lt;/a&gt; .&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Tips pour Vim</title>
+   <link href="http://blog.menfin.info/Vim/2007/11/17/Tips-ViM"/>
+   <updated>2007-11-17T00:00:00+01:00</updated>
+   <id>hhttp://blog.menfin.info/Vim/2007/11/17/Tips-ViM</id>
+   <content type="html">&lt;p&gt;Voici quelques trucs pour ViM que j'ai utilisé aujourd'hui :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;mettre &lt;code&gt;au BufRead,BufNewFile /etc/apache/** setf apache2&lt;/code&gt; dans le fichier &lt;code&gt;$HOME/.vim/ftdetect/apache.vim&lt;/code&gt; pour que les fichiers &lt;code&gt;/etc/apache2&lt;/code&gt; soient bien reconnus comme des fichiers de conf d'apache (pour la coloration syntaxique)&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%&lt;/code&gt; pour sauter d'une parenthèse ouvrante à la parenthèse fermante qui lui correspond (et vice-versa) : c'est un déplacement classique dans ViM, mais ca fait toujours plaisir quand on a des dizaines de parenthèses qui s'ouvrent et se ferment dans tous les sens&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;248|&lt;/code&gt; permet de se déplacer au 248ème caractère de la ligne courante&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gg247&amp;lt;barre d&amp;#39;espacement&amp;gt;&lt;/code&gt; permet de se déplacer au 248ème caractère du fichier (en fait, ca permet de se placer sur le premier caractère, puis d'avancer 247 fois d'un caractère).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bref, rien d'extraordinaire, mais je suis bien malheureux quand je me retrouve sous un autre éditeur et que je ne peux plus utiliser ces petits trucs.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Ce qui me manque sous Mac OSX</title>
+   <link href="http://blog.menfin.info/OS/2007/10/22/Mac-OSX"/>
+   <updated>2007-10-22T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/OS/2007/10/22/Mac-OSX</id>
+   <content type="html">&lt;p&gt;J'utilise GNU/Linux depuis plusieurs années, mais depuis quelques mois, je suis
+sous Mac OSX au boulot. Dans l'ensemble, je dois avouer que c'est très joli et
+facile à utiliser. Mais sur certains points, j'ai trouvé Mac OSX très mal foutu
+par rapport à ce que l'on peut trouver sous GNU/Linux. Voici une petite liste
+des trucs qui m'ont le plus géné (et qui me gênent encore) :&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_9&quot;&gt;1 - Le clavier&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Le clavier de mon mac m'a longtemps dérouté, et encore maintenant, je ne sais
+pas comment se nomme toutes les touches. Et faire certains caractères est
+mission impossible si personne ne vous aide la première fois : faut savoir que
+pour faire un pipe |, il faut une combinaison de 3 touches dont la lettre l.
+C'est pas marqué sur le clavier, et c'est vraiment pas intuitif.&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_10&quot;&gt;2 - L'absence de bureaux virtuels&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Par défaut, il n'y a pas de bureaux virtuels sous Mac OSX. Il parait qu'on peut
+installer des softwares pour faire ca, mais je n'ai pas essayé. Est-ce qu'Apple
+aurait peur d'être poursuivi à cause du brevet sur les bureaux virtuels
+$$&lt;a href=&quot;http://yro.slashdot.org/yro/04/02/25/1346201.shtml$$&quot;&gt;http://yro.slashdot.org/yro/04/02/25/1346201.shtml$$&lt;/a&gt;&amp;nbsp;?&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_11&quot;&gt;3 - Le Window Manager sous évolué&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Je ne comprends pas que le Window Manager soit aussi peu évolué. J'ai peut-être
+été habitué à des Window Manager très perfectionnés sous GNU/Linux, mais le
+choc a été dur : je n'ai pas trouvé comment garder une fenêtre au premier plan,
+comment avoir l'auto-focus, etc. Je ne sais pas pour vous, mais pour moi, ce
+sont vraiment des fonctions de base.&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_12&quot;&gt;4 - La barre de menu&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Mais quelle idée d'aller mettre la barre de menu à cet endroit&amp;nbsp;? Je travaille
+sur un portable avec un deuxième écran. Pas de chance, la barre de menu ne
+s'affiche que en haut de l'écran du portable, et pas du tout sur mon écran LCD
+20&quot;. Mon curseur de souris fait des kilomètres à cause de ce menu mal placé.&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_13&quot;&gt;5 - Le copier-coller&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Tout le reste, je pense que je peux survivre avec, mais le copier-coller, c'est
+vraiment le truc qui me mine la vie. Explications : sous GNU/Linux, il suffit
+de sélectionner du texte pour qu'il soit copié, et un clic avec le bouton du
+milieu de la souris, c'est collé. Bref, c'est simple, clair, net, efficace.
+Sous Mac OSX, il faut faire &lt;code&gt;&amp;lt;Touche dont je ne connais pas le nom&amp;gt;-C&lt;/code&gt; pour
+copier et &lt;code&gt;&amp;lt;Touche dont je ne connais toujours pas le nom&amp;gt;-V&lt;/code&gt; pour coller. Et là, 100 fois
+par jour, je me retrouve à souligner du texte pour le copier, puis quand je le
+colle, je me rends compte que ce n'est pas du tout cela que je voulais coller,
+et &lt;code&gt;#!@%&amp;amp;?&lt;/code&gt;, il faut effacer le texte que je viens de coller, et resélectionner
+le texte qui m'intéresse, faire &lt;code&gt;&amp;lt;truc&amp;gt;-C&lt;/code&gt;, &lt;code&gt;&amp;lt;truc&amp;gt;-V&lt;/code&gt;, et tout ca pour un simple
+copier-coller.&lt;/p&gt;
+
+&lt;p&gt;J'ai eu beau chercher sur Internet, je n'ai rien trouvé pour avoir le
+copier-coller façon UNIX sous Mac OSX. Si quelqu'un a la solution, je suis prêt
+à lui payer une pinte de bière.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>SEPT RAISONS POUR LESQUELLES JE CONTINUE A UTILISER TEMPLEET ALORS QUE JE POURRAIS UTILISER RUBY ON RAILS</title>
+   <link href="http://blog.menfin.info/Humour/2007/09/23/7-raisons-pour-continuer-avec-templeet"/>
+   <updated>2007-09-23T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Humour/2007/09/23/7-raisons-pour-continuer-avec-templeet</id>
+   <content type="html">&lt;p&gt;Ce texte est une parodie de &lt;a href=&quot;http://www.oreillynet.com/ruby/blog/2007/09/7_reasons_i_switched_back_to_p_1.html&quot;&gt;http://www.oreillynet.com/ruby/blog/2007/09/7_reasons_i_switched_back_to_p_1.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Je m'occupe du site &lt;a href=&quot;http://linuxfr.org/&quot;&gt;LinuxFR.org&lt;/a&gt;.
+C'est codé avec le merveilleux framework &lt;a href=&quot;http://templeet.org/&quot;&gt;Templeet&lt;/a&gt;.
+Le site pourrait être refait avec &lt;a href=&quot;http://rubyonrails.com/&quot;&gt;Ruby On Rails&lt;/a&gt;,
+mais je vais vous expliquer en 7 raisons pourquoi je préfère Templeet.&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_2&quot;&gt;1 - Templeet fait tout ce dont j'ai besoin&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Qu'est-ce que Ruby on Rails peut faire que Templeet ne peut pas faire&amp;nbsp;?
+… &lt;em&gt;je réfléchis&lt;/em&gt; …
+Bon, en fait, la liste est longue, mais est-ce que j'ai vraiment besoin de tout ca&amp;nbsp;?
+C'est vrai qui se sert de Jabber, OpenID, de validation automatique de formulaire ou encore d'AJAX&amp;nbsp;?
+Sur LinuxFR.org, on utilise rien de tout ca, c'est donc que je n'en ai pas besoin.&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_3&quot;&gt;2 - Les vrais hommes travaillent directement sur la prod&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Sur LinuxFR.org, on travaille directement sur le serveur de prod.
+On est des vrais hommes, on n'a pas besoin d'un serveur de dev.
+Puis, franchement, changer les habitudes du jour au lendemain, ce serait trop dur.&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_4&quot;&gt;3 - La vie serait trop monotone sans les bugs templeet&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;J'admire l'équipe qui développe Ruby on Rails,
+travailler en permanence sur du code testé et qui fonctionne correctement, ca doit lassant.
+Pour ma part, je préfère travailler avec les bugs de templeet, sans tests unitaires.
+C'est beaucoup plus joyeux :)&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_5&quot;&gt;4 - Templeet, c'est super performant&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Vous ne me croyez pas&amp;nbsp;?
+Et pourtant, un benchmark a prouvé scientifiquement que Templeet est plus rapide qu'Apache :
+&lt;a href=&quot;https://linuxfr.org//2003/04/07/12001.html&quot;&gt;https://linuxfr.org//2003/04/07/12001.html&lt;/a&gt;
+Alors que Ruby on Rails, c'est bien connu depuis l'affaire twitter, ca scale pas.&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_6&quot;&gt;5 - J'aime la syntaxe LISP&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Avec Templeet, pas de risque de se reposer sur un éditeur de texte :
+je fais tout de tête, y compris compter les parenthèses.
+Ainsi, l'édition du code repose uniquement sur moi, et je peux faire exactement ce que je veux.&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_7&quot;&gt;6 - Configurer templeet, j'en rêve la nuit&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;A propos de ce que j'aime, la configuration de templeet, c'est que du bonheur&amp;nbsp;!
+Je passe des nuits à imaginer des solutions pour éliminer ce &lt;code&gt;templeet.php&lt;/code&gt; de l'URL
+ou à réfléchir sur des algorithmes évolutionnaires pour ajuster les variables templeet.&lt;/p&gt;
+
+&lt;h1 id=&quot;toc_8&quot;&gt;7 - Les sites web c'est comme les petites amies : je veux être le seul à m'en occupper&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Avec templeet, je suis de n'avoir jamais à partager mon site web avec qui que ce soit.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Copier-Coller depuis ViM</title>
+   <link href="http://blog.menfin.info/Vim/2006/07/11/copier-coller-depuis-vim"/>
+   <updated>2006-07-11T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Vim/2006/07/11/copier-coller-depuis-vim</id>
+   <content type="html">&lt;p&gt;Dans mon dernier billet, j'écrivais que je rédige mes billets avec ViM, puis que je fais un copier-coller vers l'interface web de Dotclear.
+Pour cela, je fais la combinaison de touches suivantes :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;gg      Aller au début du fichier et
+&amp;quot;*      utiliser le registre &amp;quot;* pour ...
+yG      ... copier le texte jusqu&amp;#39;à la fin du fichier.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Et comme le registe &lt;code&gt;&amp;quot;*&lt;/code&gt; correspond au &lt;em&gt;clipboard&lt;/em&gt;, je peux ensuite coller mon texte dans mon navigateur web (firefox).&lt;/p&gt;
+
+&lt;p&gt;Mais pour ce post, j'ai décidé de suivre
+&lt;a href=&quot;http://blog.menfin.info/post/2006/07/09/Coloration-syntaxique-dans-Vim-pour-les-billets-Dotclear#c45302&quot;&gt;le conseil de Romuald&lt;/a&gt;
+et d'utiliser l'extension &lt;a href=&quot;http://mozex.mozdev.org/&quot;&gt;Mozex&lt;/a&gt;, et à première vue, ca paraît pas mal.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Coloration syntaxique dans Vim pour les billets Dotclear</title>
+   <link href="http://blog.menfin.info/Vim/2006/07/10/fichier-de-syntaxe-vim-pour-dotclear"/>
+   <updated>2006-07-10T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Vim/2006/07/10/fichier-de-syntaxe-vim-pour-dotclear</id>
+   <content type="html">&lt;p&gt;Je ne sais pas pour vous, mais moi, j'ai horreur de devoir taper du texte dans mon navigateur web.
+Aussi, dès que je tape plus de quelques lignes, j'utilise ViM, puis je fais un copier-coller vers firefox.
+Cela me permet par exemple de profiter de la coloration syntaxique.&lt;/p&gt;
+
+&lt;p&gt;En particulier, je tape mes billets sous ViM, et je me suis donc créé le fichier de syntaxe pour là aussi avoir la coloration syntaxique.
+Ce fichier est téléchargeable ici : &lt;a href=&quot;http://blog.menfin.info/public/dotclear.vim&quot;&gt;dotclear.vim&lt;/a&gt;
+Il faut le placer dans le répertoire &lt;code&gt;~/.vim/syntax/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Et pour que ViM sache automatiquement que les fichiers avec l'extension &lt;code&gt;.dc&lt;/code&gt; sont au format &lt;code&gt;dotclear&lt;/code&gt;, il suffit de créer un fichier &lt;code&gt;~/.vim/ftdetect/dotclear.vim&lt;/code&gt; avec le contenu suivant :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;vim&quot;&gt;au &lt;span class=&quot;nb&quot;&gt;BufRead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;BufNewFile&lt;/span&gt; *.dc  &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;dotclear
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Templates dans vim 2 / 2</title>
+   <link href="http://blog.menfin.info/Vim/2006/07/09/templates-dans-vim-2-sur2"/>
+   <updated>2006-07-09T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Vim/2006/07/09/templates-dans-vim-2-sur2</id>
+   <content type="html">&lt;p&gt;Comme promis, nous allons donc voir comment avoir des templates un peu plus dynamiques. Le langage de script de vim n'étant pas des plus sympathiques, je préfère appeler un programme externe.
+Pour cela, nous allons remplacer la ligne que nous avions insérée dans le fichier vimrc par celle-là :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;vim&quot;&gt;au &lt;span class=&quot;nb&quot;&gt;BufNewFile&lt;/span&gt; * &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;r&lt;span class=&quot;p&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.vim/&lt;/span&gt;skeleton.rb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ici, c'est un script en ruby (&lt;code&gt;skeleton.rb&lt;/code&gt;) qui est appelé.
+Pour le moment, ce script ne reçoit aucun paramètre.
+Pas terrible pour savoir quel template utiliser&amp;nbsp;!
+Pour régler ce problème, nous pouvons passer par exemple le nom du fichier, avec son chemin complet.
+Il suffit de rajouter &lt;code&gt;%:p&lt;/code&gt; toujours à la me ligne du fichier vimrc.
+&lt;code&gt;%&lt;/code&gt; indique le fichier courant, et &lt;code&gt;:p&lt;/code&gt; est un modificateur pour avoir le chemin complet.&lt;/p&gt;
+
+&lt;p&gt;Mais, &lt;strong&gt;ViM&lt;/strong&gt; fait déjà de la détection de &lt;em&gt;filetype&lt;/em&gt;, aussi il peut être intéressant de passer ce &lt;em&gt;filetype&lt;/em&gt; à notre script.
+Pour cela, nous allons encore modifier notre ligne :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;vim&quot;&gt;au &lt;span class=&quot;nb&quot;&gt;BufNewFile&lt;/span&gt; * :exe&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;0r! ~/.vim/skeleton.rb %:p &amp;quot;&lt;/span&gt; . &amp;amp;&lt;span class=&quot;k&quot;&gt;filetype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : comme il n'est pas possible à ma connaissance de passer directement le filtype à la commande r!, je construit d'abord la chaîne de cractère avec toute la commande et le filetype, puis je l'éxécute.&lt;/p&gt;
+
+&lt;p&gt;Maintenant que nous pouvons appeller un script avec le chemin du fichier et son &lt;em&gt;filetype&lt;/em&gt;, je pense qu'on peut dire que c'est gagné.
+Voici à titre d'exemple le script que j'utilise :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Author: Bruno Michel &amp;lt;bmichel@menfin.info&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Licence: MIT &amp;lt;http://www.opensource.org/licenses/mit-license.html&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;erb&amp;#39;&lt;/span&gt;
+
+
+&lt;span class=&quot;no&quot;&gt;SKELETON_DIR&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expand_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;~/.vim/skeleton&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;EXTENSION&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;erb&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filetype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ARGV&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;basename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;skeletons&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filetype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;skeleton&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;skeletons&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;SKELETON_DIR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EXTENSION&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exist?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readable?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;skeleton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nil?&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;skeleton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ERB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;binding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : si vous voulez utiliser ce script, n'oubliez pas de le rendre exécutable (&lt;code&gt;chmod a+x ~/.vim/skeleton.rb&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;Ce script va chercher un fichier &lt;code&gt;.erb&lt;/code&gt; dans le répertoire &lt;code&gt;~/.vim/skeleton&lt;/code&gt; dont le nom correspond soit au nom du nouveau fichier, soit à son filetype.
+Et dans ce répertoire, on trouve, par exemple, &lt;code&gt;ruby.erb&lt;/code&gt; :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Author: Bruno Michel &amp;lt;bmichel@menfin.info&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Licence: MIT &amp;lt;http://www.opensource.org/licenses/mit-license.html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ou &lt;code&gt;README.erb&lt;/code&gt; :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;&amp;lt;%= `figlet -c README` %&amp;gt;
+&amp;lt;%# figlet: http://www.figlet.org %&amp;gt;
+
+Author: Bruno Michel &amp;lt;bmichel@menfin.info&amp;gt;
+Date: &amp;lt;%= Date.today.strftime(&amp;quot;%d/%m/%y&amp;quot;) %&amp;gt;
+Time: &amp;lt;%= Time.now.strftime(&amp;quot;%H:%M:%S&amp;quot;) %&amp;gt;
+&amp;lt;% directory = File.dirname(file) %&amp;gt;
+Project: &amp;lt;%= File.split(directory).last %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Et voilà, mission accomplie, nous avons des templates dynamiques, avec notamment la possibilité d'insérer la date ou l'heure courante.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Templates dans vim 1 / 2</title>
+   <link href="http://blog.menfin.info/Vim/2006/07/05/templates-dans-vim-1-sur2"/>
+   <updated>2006-07-05T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Vim/2006/07/05/templates-dans-vim-1-sur2</id>
+   <content type="html">&lt;p&gt;Hop, pour ce premier tips, je vais vous montrer comment utiliser des templates dans Vim. Par exemple, supposons que je veuille avoir ces quelques lignes :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Author: Bruno Michel &amp;lt;bmichel@menfin.info&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Licence: MIT &amp;lt;http://www.opensource.org/licenses/mit-license.html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;au début de chaque nouveau script ruby.&lt;/p&gt;
+
+&lt;h2 id=&quot;toc_0&quot;&gt;Mode d'emploi&lt;/h2&gt;
+
+&lt;p&gt;Pour cela, nous allons faire simple :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;créer un fichier avec ce template, et le placer dans le répertoire &lt;code&gt;~/vim/templates&lt;/code&gt; :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;$ mkdir -p ~/.vim/templates
+$ echo &amp;quot;#!/usr/bin/env ruby&amp;quot; &amp;gt; ~/.vim/templates/ruby
+$ ...
+$ echo  &amp;quot;#-------------------------------------------------------------------&amp;quot; &amp;gt;&amp;gt; ~/.vim/templates/ruby
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;modifier son fichier de configuration de vim :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;$ vim ~/.vimrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;et rajouter la ligne suivante :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;vim&quot;&gt;au &lt;span class=&quot;nb&quot;&gt;BufNewFile&lt;/span&gt; *.rb &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;r &lt;span class=&quot;p&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.vim/&lt;/span&gt;templates/&lt;span class=&quot;k&quot;&gt;ruby&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;quitter et vérifier que cela fonctionne :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;:wq
+$ vim foo.rb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;toc_1&quot;&gt;Explications &lt;/h2&gt;
+
+&lt;p&gt;La ligne ajoutée au fichier vimrc peut se décomposer en :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;au&lt;/code&gt; : indique une commande qui sera automatiquement&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BufNewFile&lt;/code&gt; : l'exécution automatique se fera sur la création d'un nouveau fichier&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*.rb&lt;/code&gt; : ce paramètre indique que le fichier doit avoir l'extension .rb pour que la commande soit éxécutée&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0r ~/.vim/templates/ruby&lt;/code&gt; : cette commande ruby insère le contenu du fichier après la 0ème ligne, c'est-à-dire avant la 1ère ligne.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Voilà, c'est tout pour ce billet. Mais il y aura une suite avec comment avoir des templates un peu plus dynamiques. On verra par exemple comment insérer la date dans les templates.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Premier billet</title>
+   <link href="http://blog.menfin.info/Blog/2006/07/03/premier-billet"/>
+   <updated>2006-07-03T00:00:00+02:00</updated>
+   <id>hhttp://blog.menfin.info/Blog/2006/07/03/premier-billet</id>
+   <content type="html">&lt;p&gt;Pas grand chose pour le moment. Je devrais poster quelques tips dans les jours qui viennent. Et pour la suite, on verra en temps voulu. Et pour ceux qui se demanderaient d'ou vient le titre de ce blog, c'est juste l'onomatopée préférée de Gaston Lagaffe.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
