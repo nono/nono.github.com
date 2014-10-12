@@ -15,11 +15,6 @@ title = "M'enfin ?!?"
     url = "/index.xml"
 
 [[menu.social]]
-    pre = "<i class='fa fa-file-text-o'></i>"
-    url = "http://www.doyoubuzz.com/bruno-michel"
-    identifier = "Résumé"
-
-[[menu.social]]
     pre = "<i class='fa fa-twitter'></i>"
     url = "https://www.twitter.com/brmichel"
     identifier = "twitter"
@@ -33,3 +28,8 @@ title = "M'enfin ?!?"
     pre = "<i class='fa fa-linux'></i>"
     url = "http://linuxfr.org/users/nono"
     identifier = "LinuxFr.org"
+
+[[menu.social]]
+    pre = "<i class='fa fa-file-text-o'></i>"
+    url = "http://www.doyoubuzz.com/bruno-michel"
+    identifier = "Résumé"
