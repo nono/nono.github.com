@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Posts on M&#39;enfin ?!? </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://blog.menfin.info/posts/index.xml/</link>
+    <language>fr-fr</language>
+    <author>Bruno Michel</author>
+    
+    <updated>Wed, 29 Feb 2012 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Changement de moteur pour ce blog</title>
+      <link>http://blog.menfin.info/posts/2012-02-29-changement-de-moteur-pour-ce-blog/</link>
+      <pubDate>Wed, 29 Feb 2012 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2012-02-29-changement-de-moteur-pour-ce-blog/</guid>
+      <description>&lt;p&gt;Ce blog existe depuis quelques années maintenant &amp;ndash; 2006, ça ne me rajeunit
+pas ! Et jusque là, c&amp;rsquo;était un &lt;a href=&#34;http://fr.dotclear.org/&#34;&gt;dotclear&lt;/a&gt; hébergé
+gracieusement chez &lt;a href=&#34;http://gandi.net&#34;&gt;gandi&lt;/a&gt; qui le faisait tourner.
+Techniquement, ça marchait bien, mais j&amp;rsquo;ai quand même eu envie de changer pour
+autre chose, &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; en l&amp;rsquo;occurrence.&lt;/p&gt;
+
+&lt;p&gt;Pourquoi ? J&amp;rsquo;ai déjà du mal à me motiver pour écrire dessus, mais le fait de
+devoir retrouver mes identifiants gandi et redécouvrir la syntaxe wiki de
+dotclear a chaque fois finisse de me décourager. Avec cette nouvelle version,
+je peux écrire et publier des billets avec les outils que j&amp;rsquo;utilise
+quotidiennement : vim, markdown, ruby et git.&lt;/p&gt;
+
+&lt;p&gt;Je vais donc donner une nouvelle chance à ce blog. Pas sûr du tout que je
+publie plus de choses dessus. Mais si je n&amp;rsquo;essaye pas, ça ne risque pas
+d&amp;rsquo;arriver ;-)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rails ou Sinatra ?</title>
+      <link>http://blog.menfin.info/posts/2011-06-27-Rails-ou-sinatra/</link>
+      <pubDate>Mon, 27 Jun 2011 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2011-06-27-Rails-ou-sinatra/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Ruby on Rails&lt;/a&gt; ou
+&lt;a href=&#34;http://www.sinatrarb.com/&#34;&gt;Sinatra&lt;/a&gt;, comment choisir entre les deux ? C&amp;rsquo;est
+une question que j&amp;rsquo;entends régulièrement et pour laquelle, je suis toujours un
+peu embêté d&amp;rsquo;avoir un pointeur tout prêt vers un article qui expliquerait
+cela. Encore aujourd&amp;rsquo;hui, la question &lt;a href=&#34;https://twitter.com/#!/delaBruyne/status/85433554179342336&#34;&gt;m&amp;rsquo;a été
+posée&lt;/a&gt; et j&amp;rsquo;ai eu
+beau chercher, je n&amp;rsquo;ai rien trouvé de bien concluant.&lt;/p&gt;
+
+&lt;p&gt;On est jamais mieux servi que par soi-même, et c&amp;rsquo;est donc l&amp;rsquo;occasion de
+réveiller ce blog qui commençait à prendre la poussière.&lt;/p&gt;
+
+&lt;p&gt;Donc Rails ou Sinatra ? Ça dépend mais la plupart du temps, il est assez
+facile de choisir l&amp;rsquo;un ou l&amp;rsquo;autre. Ils ont des philosophies assez différentes
+et couvrent ainsi des problématiques différentes.&lt;/p&gt;
+
+&lt;p&gt;Commençons par Ruby on Rails. Il a été développé par &lt;a href=&#34;http://en.wikipedia.org/wiki/David_Heinemeier_Hansson&#34;&gt;David Heinemeier
+Hansson&lt;/a&gt; pour
+développer des applications web rapidement mais en gardant du code
+maintenable. Rails est donc fait pour permettre aux personnes dont le métier
+est de construire des applications web (développeurs, intégrateurs, etc.) de
+pouvoir faire ça le plus efficacement possible. On retrouve ainsi le
+&lt;em&gt;scaffold&lt;/em&gt; qui permet de gagner du temps en début de projet et de nombreuses
+conventions pour aller plus vite dans les cas courants. Mais cela a aussi des
+inconvénients : Rails est un gros framework et apprendre à s&amp;rsquo;en servir
+correctement demande un investissement initial en temps qui est loin d&amp;rsquo;être
+négligeable. Si on veut vraiment être efficace, il faut respecter l&amp;rsquo;&lt;em&gt;esprit&lt;/em&gt;
+de Ruby on Rails et ses manières de faire, mais aussi connaître les
+bibliothèques qui vont bien, les fameuses &lt;em&gt;gems&lt;/em&gt; comme
+&lt;a href=&#34;https://github.com/plataformatec/devise&#34;&gt;Devise&lt;/a&gt; ou
+&lt;a href=&#34;http://sass-lang.com/&#34;&gt;Sass&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;De l&amp;rsquo;autre coté, Sinatra a des ambitions toutes autres : il veut juste
+permettre à des développeurs Ruby de faire des applications web simples avec
+le minimum d&amp;rsquo;efforts. Cela commence avec une API extrêmement simple qui permet
+de démarrer tout de suite sans avoir à apprendre grand chose. Pour cela,
+Sinatra se contente du minimum et n&amp;rsquo;essaye pas d&amp;rsquo;offrir plein de choses dès le
+départ. C&amp;rsquo;est ainsi un projet avec une taille beaucoup plus réduite mais qui
+offre plus de libertés. Là où les projets Rails sont toujours organisés d&amp;rsquo;une
+façon semblables pour permettre aux développeurs et intégrateurs de passer
+facilement d&amp;rsquo;un projet à l&amp;rsquo;autre, Sinatra est bien plus souple et peut, par
+exemple, venir ajouter une interface web à un projet déjà existant. Sa
+simplicité est également intéressante pour les débutants qui peuvent ainsi
+&lt;a href=&#34;http://www.sinatrarb.com/intro-fr.html&#34;&gt;faire très rapidement des choses&lt;/a&gt;
+sans avoir, au préalable, à lire un bouquin complet. Et rien n&amp;rsquo;interdit de
+passer à Rails plus tard.&lt;/p&gt;
+
+&lt;p&gt;Pour résumer, Ruby on Rails est un rouleur compresseur qui permet de
+construire très rapidement des applications web de qualité pour les personnes
+dont c&amp;rsquo;est le métier, alors que Sinatra couvre d&amp;rsquo;autres besoins : il permet de
+découvrir Ruby ou le développement web en douceur pour les débutants et offre
+une souplesse incroyable pour les hackers confirmés.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nouveau joujou : Giada Slim n10</title>
+      <link>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</link>
+      <pubDate>Sun, 21 Nov 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai acheté un &lt;a href=&#34;http://www.giadatech.com/index.php?app=product&amp;amp;act=show&amp;amp;id=37&#34;&gt;Giada Slim n10&lt;/a&gt;. Ça ressemble à ça :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/public/giada.jpg&#34; alt=&#34;Giada Slim n10&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai commencé à jouer avec en installant dessus :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;une debian (pas de problème particulier)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.openssh.com/&#34;&gt;OpenSSH&lt;/a&gt;, évidemment&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bip.milkypond.org/&#34;&gt;Bip&lt;/a&gt;, un proxy IRC&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.nginx.org/Main&#34;&gt;Nginx&lt;/a&gt;, un serveur web&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.rutschle.net/tech/sslh.shtml&#34;&gt;Sllh&lt;/a&gt; pour avoir ssh ET https sur le port 443.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L&amp;rsquo;achat est tout neuf, donc je n&amp;rsquo;ai pas encore beaucoup de recul, mais dans l&amp;rsquo;ensemble, j&amp;rsquo;en suis très satisfait. Un seul regret, le ventilo n&amp;rsquo;est pas aussi silencieux que je le voudrais. J&amp;rsquo;ai trouvé sur &lt;a href=&#34;http://www.blogeee.net/forum/viewtopic.php?p=209248#p209248&#34;&gt;un forum&lt;/a&gt; comment régler ça dans le bios, mais ce n&amp;rsquo;est pas encore parfait. Pour mémoire, ça se règle dans le menu chipset &amp;gt; MCP fan control, et les valeurs à renseigner sont :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SMART Fan0 Min temperature : 40 (la valeur se modifie avec les touches + et -)&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Max temperature : 90&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Min duty cycle : 30&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Max duty cycle : 255&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Présentation rapide de Ruby 1.9 aux RMLL</title>
+      <link>http://blog.menfin.info/posts/2010-07-11-presentation-rapide-de-ruby-19-aux-RMLL/</link>
+      <pubDate>Sun, 11 Jul 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-07-11-presentation-rapide-de-ruby-19-aux-RMLL/</guid>
+      <description>&lt;p&gt;Cette semaine, s&amp;rsquo;est tenue la 11ème édition des
+&lt;a href=&#34;http://2010.rmll.info/&#34;&gt;Rencontres Mondiales du Logiciel Libre&lt;/a&gt;
+à Bordeaux. J&amp;rsquo;en ai profité pour faire une
+&lt;a href=&#34;http://2010.rmll.info/Presentation-rapide-de-Ruby-1-9.html&#34;&gt;présentation rapide de Ruby 1.9&lt;/a&gt;.
+Les slides sont en ligne sur &lt;a href=&#34;http://rmll2010-ruby19.heroku.com/&#34;&gt;http://rmll2010-ruby19.heroku.com/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un ami, &lt;a href=&#34;http://wtf.cyprio.net/&#34;&gt;oz&lt;/a&gt;, m&amp;rsquo;a prêté le livre &lt;strong&gt;Confessions of a
+public speaker&lt;/strong&gt; de &lt;a href=&#34;http://www.scottberkun.com/&#34;&gt;Scott Berkun&lt;/a&gt;. C&amp;rsquo;est u
+livre très intéressant qui vous donne des conseils pratiques sur comment
+donner de meilleurs présentations. Je n&amp;rsquo;ai malheureusement pas eu le temps de
+le lire entièrement avant ma présentation aux RMLL, et encore moins
+d&amp;rsquo;appliquer les conseils, mais j&amp;rsquo;ai vraiment le sentiment que les conseils
+sont pertinents et m&amp;rsquo;auraient permis de faire une bien meilleure présentation.
+En tout cas, je suis bien décidé à essayer d&amp;rsquo;en appliquer quelques uns à la
+prochaine présentation que je ferais, puis de plus en plus si cela marche
+comme prévu.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>French_Rails compatible avec Rails3.0.0.beta4</title>
+      <link>http://blog.menfin.info/posts/2010-06-09-frenchrails-compatible-avec-rails3/</link>
+      <pubDate>Wed, 09 Jun 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-06-09-frenchrails-compatible-avec-rails3/</guid>
+      <description>&lt;p&gt;Une &lt;a href=&#34;http://weblog.rubyonrails.org/2010/6/8/rails-3-0-beta-4-now-rc-in-days&#34;&gt;nouvelle version beta de
+Rails3&lt;/a&gt;
+vient de sortir. Elle utilise une version plus récente
+d&amp;rsquo;&lt;a href=&#34;http://github.com/svenfuchs/i18n&#34;&gt;i18n&lt;/a&gt;, ce qui faisait que mon plugin
+&lt;a href=&#34;http://github.com/nono/french-rails&#34;&gt;French Rails&lt;/a&gt; ne fonctionnait plus. J&amp;rsquo;ai
+corrigé ça et sorti une nouvelle version :
+&lt;a href=&#34;http://rubygems.org/gems/french_rails/versions/0.2.2&#34;&gt;la 0.2.2&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Se fixer des objectifs SMART</title>
+      <link>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</link>
+      <pubDate>Sun, 23 May 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</guid>
+      <description>&lt;p&gt;Se fixer des objectifs est très souvent une bonne chose. Pour tirer pleinement profit de ces objectifs, il est important de bien les formuler. Pourtant, nous avons souvent tendance à nous contenter d&amp;rsquo;objectifs flous : je veux perdre du poids, je veux faire plus de sport, je veux manger plus sainement, etc. Il existe un truc qui pourra vous aider pour ça : les objectifs &lt;strong&gt;SMART&lt;/strong&gt;. Ce sont 5 critères qui vous forcent à vous poser les bonnes questions quand vous choisissez un objectif :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spécifique : soyez précis sur ce que vous voulez atteindre. Ne vous contentez pas de dire que vous voulez faire du sport, mais demandez-vous quel(s) sport(s) et à quelle fréquence.&lt;/li&gt;
+&lt;li&gt;Mesurable : à tout moment, vous devriez être capable de savoir si vous avez accompli votre objectif sans savoir à réfléchir. Idéalement, vous devriez juste avoir à comparer une mesure avec votre objectif pour savoir si vous l&amp;rsquo;avez atteint. Si vous souhaitez perdre du poids et que vous fixez comme objectif de perdre 3 kilos, il est alors facile de vous peser pour voir si vous avez perdu ces 3 kilos ou non.&lt;/li&gt;
+&lt;li&gt;Atteignable : votre objectif doit être ambitieux, mais vous devez pouvoir l&amp;rsquo;atteindre. Si vous n&amp;rsquo;êtes pas sûr de pouvoir le faire, peut-être feriez-vous mieux de le découper en plusieurs étapes et vous fixer des objectifs intermédiaires. Plutôt que de vouloir courir directement un marathon, commencez par courir 10 Km, puis passez au semi-marathon avant de viser le marathon.&lt;/li&gt;
+&lt;li&gt;Réaliste : votre objectif ne doit pas dépendre de ressources matérielles (argent, matière, temps) que vous n&amp;rsquo;avez pas. De même, il ne doit pas dépendre du comportement d&amp;rsquo;autres personnes. Si votre objectif est d&amp;rsquo;obtenir une promotion, demandez-vous si vous êtes vraiment en position de faire la différence. Une astuce consiste à transformer un objectif qui porte sur des résultats qui ne dépendent pas de nous en un ou plusieurs objectifs sur des moyens pour obtenir ce résultat. Par exemple, un meilleur objectif pourrait être de finir tel projet en avance, ce qui augmenterait grandement vos chances d&amp;rsquo;obtenir la promotion visée.&lt;/li&gt;
+&lt;li&gt;Limité dans le Temps : fixez-vous une date limite à laquelle l&amp;rsquo;objectif devra être accompli. Sans ça, vous risquez très fortement de laisser glisser vos objectifs, privilégiant toujours les tâches urgentes et remettant vos objectifs à plus tard.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Voilà, j&amp;rsquo;espère que ces 5 critères vous permettront de mieux cerner vos objectifs, et d&amp;rsquo;augmenter ainsi les chances de les réussir.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Discipline contre motivation</title>
+      <link>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</link>
+      <pubDate>Sun, 28 Feb 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</guid>
+      <description>
+
+&lt;p&gt;Comme beaucoup de personnes, il vous est arrivé d&amp;rsquo;essayer de prendre de nouvelles habitudes.
+Ces résolutions vous semblaient être les bonnes choses, et avec un peu de discipline, ça n&amp;rsquo;aurait pas dû être difficile de les tenir.
+Pourtant, au bout d&amp;rsquo;une semaine ou deux, vous constatez que c&amp;rsquo;est un échec.&lt;/p&gt;
+
+&lt;p&gt;Que s&amp;rsquo;est-il passé et comment faire en sorte de réussir la prochaine fois sont sûrement deux questions qui vous trottent dans la tête.
+Je ne prétends pas avoir toutes les réponses, mais je souhaite vous proposer une piste qui, je l&amp;rsquo;espère, pourra vous aider dans vos réflexions.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;La discipline&lt;/h3&gt;
+
+&lt;p&gt;Comme moi par le passé, vous vous êtes sûrement dit que prendre une nouvelle habitude ne devait pas être difficile.
+C&amp;rsquo;est juste une question de volonté et de discipline après tout.
+Et c&amp;rsquo;est justement là que le bât blesse.&lt;/p&gt;
+
+&lt;p&gt;Nous n&amp;rsquo;avons qu&amp;rsquo;une quantité très limitée de volonté que nous pouvons utiliser chaque jour.
+La majeure partie du temps, nous nous reposons sur des habitudes ou nous faisons des choses plaisantes qui ne demande aucune volonté.
+Demandez-vous combien de fois avez-vous réellement fait preuve de volonté aujourd&amp;rsquo;hui ou hier ?
+Pour ma part, la réponse est invariablement bien peu (trop peu).&lt;/p&gt;
+
+&lt;p&gt;Alors, est-on condamné à ne pouvoir faire que très peu de nouvelles choses, et à faire ça dans la douleur ?
+Non, non et NON ! Il existe d&amp;rsquo;autres leviers qui vous permettront d&amp;rsquo;avancer.
+La motivation est l&amp;rsquo;un d&amp;rsquo;eux.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;La motivation&lt;/h3&gt;
+
+&lt;p&gt;La motivation, c&amp;rsquo;est un ensemble de moyens pour vous encourager à faire une action, quand se dire que « c&amp;rsquo;est la bonne chose à faire » ne suffit plus.
+Ce sont &lt;em&gt;les carottes&lt;/em&gt; pour vous faire avancer.
+Il existe de nombreux moyens pour se motiver, mais généralement ceux-ci rentrent dans l&amp;rsquo;un des deux thèmes suivants :
+apprécier l&amp;rsquo;activité en question et s&amp;rsquo;engager publiquement.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_2&#34;&gt;Apprécier l&amp;rsquo;activité&lt;/h4&gt;
+
+&lt;p&gt;Il est évident que l&amp;rsquo;on aura beaucoup plus de facilités à faire une action à laquelle on prend du plaisir que si c&amp;rsquo;est une corvée.
+On peut ainsi chercher des éléments qui vont plaisir.
+Par exemple, se mettre au footing peut ne être très plaisant au début, mais si vous accompagnez votre séance de footing par votre album musical préféré sur un lecteur mp3, cela la rendra plus appréciable.&lt;/p&gt;
+
+&lt;p&gt;Si malgré ça, vous avez du mal à rendre l&amp;rsquo;activité elle-même agréable, vous pouvez compenser en vous offrant une récompense.
+Pour ma part, je suis un grand gourmand, et manger une barre céréales avant de faire du sport fait partie des choses que j&amp;rsquo;apprécie.
+Mettre une croix sur un &lt;a href=&#34;http://blog.menfin.info/post/2010/02/15/Se-motiver-avec-un-Seinfeld-Calendar&#34;&gt;Seinfeld Calendar&lt;/a&gt; a également un coté très gratifiant.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_3&#34;&gt;S&amp;rsquo;engager publiquement&lt;/h4&gt;
+
+&lt;p&gt;L&amp;rsquo;engagement public est également un moyen très efficace pour nous aider à tenir une résolution.
+L&amp;rsquo;idée est que nous détestons profondément ne pas tenir nos engagements, et nous pouvons nous servir de ça pour nous mettre un peu de pression (pas trop quand même), ce qui nous forcera à agir.&lt;/p&gt;
+
+&lt;p&gt;Par exemple, parler à tous vos collègues de votre nouvelle résolution vous obligera à vous y tenir, car ils reviendront vers vous pour en parler.
+Et la crainte de la honte de ne pas avoir tenu ses engagements est une source de motivation très puissante.&lt;/p&gt;
+
+&lt;p&gt;Parler de sa résolution sur son blog ou sur un forum spécialisé peut également une approche très efficace.
+Vous vous sentirez engagé à donner régulièrement des nouvelles, et vous aurez peut-être la chance d&amp;rsquo;avoir des conseils dans les périodes difficiles.&lt;/p&gt;
+
+&lt;p&gt;Pour conclure, je vous encourage à essayer de trouver des éléments de motivation avant d&amp;rsquo;entreprendre une nouvelle habitude.
+Une méthode pour cela est le &lt;a href=&#34;http://www.couchet.org/blog/index.php5?post/2009/12/30/408-le-guide-pour-tenir-nos-resolutions-de-nouvel-an&#34;&gt;le guide pour tenir nos résolutions de nouvel an&lt;/a&gt;.
+Et si vous souhaitez creuser la question de la motivation, il existe un ebook, &lt;a href=&#34;http://themotivationhandbook.com/&#34;&gt;The essential motivation handbook&lt;/a&gt;, très complet sur le sujet, au prix de 15$ (soit environ 11€).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Changement de direction pour ce blog</title>
+      <link>http://blog.menfin.info/posts/2010-02-15-changement-de-direction-pour-ce-blog/</link>
+      <pubDate>Mon, 15 Feb 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-02-15-changement-de-direction-pour-ce-blog/</guid>
+      <description>&lt;p&gt;Comme vous avez pu le constater, ce blog est encore moins actif ces derniers
+temps qu&amp;rsquo;il n&amp;rsquo;a pu l&amp;rsquo;être auparavant. La raison est simple : j&amp;rsquo;écris
+principalement des billets techniques autour du web et du développement, or
+ces sujets sont également ceux que j&amp;rsquo;utilise pour publier sur le &lt;a href=&#34;http://dev.af83.com&#34;&gt;devblog
+d&amp;rsquo;af83&lt;/a&gt;, la société qui m&amp;rsquo;emploie.&lt;/p&gt;
+
+&lt;p&gt;Pour autant, je ne vais pas fermer ce blog. J&amp;rsquo;ai toujours des choses à dire
+dont je ne souhaite pas qu&amp;rsquo;elle soit associées à mon employeur. Je vais
+également en profiter pour diversifier ce blog. Cela s&amp;rsquo;applique dès
+aujourd&amp;rsquo;hui avec la création d&amp;rsquo;une nouvelle catégorie : « Lifehacks ».&lt;/p&gt;
+
+&lt;p&gt;Ce terme, &lt;em&gt;lifehacks&lt;/em&gt;, est un anglicisme décrivant les astuces, techniques,
+outils, méthodes et habitudes qui permettent d&amp;rsquo;optimiser sa vie quotidienne
+(personnelle et professionnelle). Certains se sont risqués à traduire cela par
+« astuces de vie », mais je préfère nettement la version originale.&lt;/p&gt;
+
+&lt;p&gt;Les &lt;em&gt;lifehacks&lt;/em&gt; peuvent concerner la gestion du temps, de la productivité,
+de la motivation, des connaissances, etc. Bref, beaucoup de choses que l&amp;rsquo;on
+aurait tendance à classer dans la catégorie « Développement personnel ». Je
+vois pourtant une différence importante entre les méthodes de développement
+personnel et les &lt;em&gt;lifehacks&lt;/em&gt;. Les premières cherchent à partir de grands
+principes généraux, et de ces principes découlent des règles qui peuvent nous
+aider dans notre vie de tous les jours. C&amp;rsquo;est un tout que l&amp;rsquo;on accepte ou
+refuse en bloc. A l&amp;rsquo;inverse, les &lt;em&gt;lifehacks&lt;/em&gt; sont un ensemble hétéroclites
+de trucs et astuces faciles à mettre en place dans lequel on peut piocher pour
+choisir ce qui nous conviennent le mieux.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;espère que cette courte introduction vous donnera envie d&amp;rsquo;en savoir plus. Et
+comme j&amp;rsquo;ai conscience que ça doit être encore assez abstrait pour vous, je
+vais rapidement écrire un billet montrant un de ces &lt;em&gt;lifehacks&lt;/em&gt; : le
+&lt;em&gt;Seinfeld Calendar&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Se motiver avec un Seinfeld Calendar</title>
+      <link>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</link>
+      <pubDate>Mon, 15 Feb 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</guid>
+      <description>&lt;p&gt;Comme promis, pour vous éclairer sur les
+&lt;a href=&#34;/post/2010/02/15/Changement-de-direction-pour-ce-blog&#34;&gt;&lt;strong&gt;lifehacks&lt;/strong&gt;&lt;/a&gt;, je
+vais donner un premier exemple : le &lt;a href=&#34;http://lifehacker.com/281626/jerry-seinfelds-productivity-secret&#34;&gt;Seinfeld
+Calendar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;La légende veut que ce soit Jerry Seinfeld l&amp;rsquo;inventeur de ce hack. Quand on a
+lui a demandé quel était son secret, il a commencé à répondre de manière
+plutôt banale : « Pour devenir un bon comique, il faut faire de bonnes
+blagues, et pour faire de bonnes blagues, il faut travailler chaque jour ». Le
+secret est donc de s&amp;rsquo;entrainer tous les jours.&lt;/p&gt;
+
+&lt;p&gt;Mais là où ça devient intéressant, c&amp;rsquo;est qu&amp;rsquo;il ne s&amp;rsquo;est pas arrêté là. Il a
+monté un système ingénieux pour se forcer à travailler chaque jour. Pour ça,
+le matériel nécessaire est réduit à un calendrier (si possible, assez grand et
+surtout bien visible) et à un feutre (rouge de préférence). Il explique alors
+que chaque jour où le travail est fait, il coche le jour sur le calendrier
+avec le feutre rouge. Au bout de quelques jours, les croix au feutre
+commencent à former une chaîne, et le but est alors de ne pas casser la chaîne
+: « &lt;em&gt;Don&amp;rsquo;t break the chain&lt;/em&gt; ».&lt;/p&gt;
+
+&lt;p&gt;Cette technique est très efficace pour se motiver, car elle nous oblige à
+dépasser nos excuses. Même si la journée a été difficile, on a envie de cocher
+sa case pour ne pas avoir à recommencer à zéro une chaîne de 10, 20 ou 30
+cases. Par contre, le revers de la médaille est que si l&amp;rsquo;on rate un jour, même
+pour une raison valable, le risque est grand de ne pas recommencer tout de
+suite, voir de ne pas recommencer du tout.&lt;/p&gt;
+
+&lt;p&gt;Pour mettre en place cette technique, vous pouvez bien entendu utiliser le
+calendrier et le feutre, mais si vous pouvez également vous tourner vers une
+version électronique. Les sites suivants permettent de faire son &lt;strong&gt;Seinfeld
+Calendar&lt;/strong&gt; en ligne :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://dailystamp.com/home&#34;&gt;Daily Stamp&lt;/a&gt; (mon préféré)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dontbreakthechain.com/&#34;&gt;Don&amp;rsquo;t break the chain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://smarterfitter.com/chain&#34;&gt;Seinfeldian Chain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://calendaraboutnothing.com/&#34;&gt;Calendar about nothing&lt;/a&gt; (les cases
+sont cochés automatiquement en fonction des commits sur github -&amp;gt; &lt;a href=&#34;http://calendaraboutnothing.com/~nono&#34;&gt;exemple
+avec mon compte&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bon, ce n&amp;rsquo;est pas tout ça, mais je dois vous laisser : j&amp;rsquo;ai du travail à faire
+sur &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; pour cocher &lt;a href=&#34;http://dailystamp.com/stamps/2082&#34;&gt;ma case
+d&amp;rsquo;aujourd&amp;rsquo;hui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mise à jour de FrenchRails</title>
+      <link>http://blog.menfin.info/posts/2009-12-23-mise-a-jour-de-french-rails/</link>
+      <pubDate>Wed, 23 Dec 2009 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2009-12-23-mise-a-jour-de-french-rails/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai un petit plugin pour Rails qui permet de localiser facilement une application Rails : &lt;a href=&#34;http://github.com/nono/french-rails/tree/master&#34;&gt;FrenchRails&lt;/a&gt;.
+Pour ceux qui auraient raté &lt;a href=&#34;http://blog.menfin.info/post/2009/03/18/Un-plugin-RoR-nomme-FrenchRails&#34;&gt;l&amp;rsquo;épisode précédent&lt;/a&gt;, en gros, ça permet de prendre en compte le fait que 0 est un singulier en français (alors que c&amp;rsquo;est pluriel en anglais).&lt;/p&gt;
+
+&lt;p&gt;Je viens de mettre à jour ce plugin pour qu&amp;rsquo;il traduise également les &amp;lsquo;new&amp;rsquo; et &amp;lsquo;edit&amp;rsquo; qui se balladent dans les URL générées par Rails.
+Maintenant, ce sera &amp;lsquo;nouveau&amp;rsquo; et &amp;lsquo;modifier&amp;rsquo;, ai-je décidé.&lt;/p&gt;
+
+&lt;p&gt;Enfin, tant qu&amp;rsquo;à resortir ce plugin du grenier, j&amp;rsquo;en ai également profité pour faire quelque chose que j&amp;rsquo;aurais dû faire depuis un certain temps : le passer en gem.
+Il est disponible sur &lt;a href=&#34;http://rubygems.org/gems/french_rails&#34;&gt;Rubygems&lt;/a&gt; et peut donc s&amp;rsquo;installer d&amp;rsquo;un simple &lt;code&gt;gem install french_rails&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Je m&#39;interroge sur twitter</title>
+      <link>http://blog.menfin.info/posts/2009-12-13-je-m-interroge-sur-twitter/</link>
+      <pubDate>Sun, 13 Dec 2009 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2009-12-13-je-m-interroge-sur-twitter/</guid>
+      <description>
+
+&lt;p&gt;Je connais &lt;a href=&#34;http://twitter.com&#34;&gt;Twitter&lt;/a&gt; depuis longtemps, mais je n&amp;rsquo;ai jamais senti le besoin de m&amp;rsquo;y inscrire.
+Et pourtant, récemment, j&amp;rsquo;ai créé &lt;a href=&#34;http://twitter.com/brmichel&#34;&gt;un compte twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Pourquoi ?&lt;/h2&gt;
+
+&lt;p&gt;Je n&amp;rsquo;ai pas eu une soudaine révélation sur twitter.
+Je ne vois pas d&amp;rsquo;intérêt particulier à twitter, comparé aux autres moyens de communications à ma disposition.
+Autant pour Facebook, je peux voir un intérêt (mais je ne suis pas prêt à accepter les atteintes à ma vie privée qui en découlerait), autant pour twitter, je reste perplexe.&lt;/p&gt;
+
+&lt;p&gt;Alors pourquoi me suis-je inscrit ?
+Principalement par curiosité.
+Je travaille sur ce que pourrait-être le web de demain (&lt;a href=&#34;http://twitter.com/nodzle&#34;&gt;Nodzle&lt;/a&gt;), et twitter est sensé être le meilleur représentant du web temps-réel.
+On m&amp;rsquo;a fait remarquer que le meilleur moyen de découvrir twitter est encore de l&amp;rsquo;essayer, principe qui peut être illustré par cette citation :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Twitter is like sex. You can read all the stuff (or look at it) about sex all you want, but if you’ve never had it, you simply have no idea what it’s like.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Et alors ?&lt;/h2&gt;
+
+&lt;p&gt;OK, j&amp;rsquo;ai donc créé un compte twitter et j&amp;rsquo;ai commencé à twitter.
+Mais ai-je été touché par la grâce divine et suis-je devenu un fervent défenseur du twit ?&lt;/p&gt;
+
+&lt;p&gt;Non, loin de là.
+Pour le moment, l&amp;rsquo;usage que j&amp;rsquo;en fais est très proche de l&amp;rsquo;IRC, mais avec de gros défauts :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;je n&amp;rsquo;ai pas trouvé comment faire l&amp;rsquo;auto-complétion des nicks ou des hashtags ;&lt;/li&gt;
+&lt;li&gt;je ne sais pas non plus comment voir les réponses à une question intéressante posée par une personne que je suis ;&lt;/li&gt;
+&lt;li&gt;déjà confronté aux spams :/&lt;/li&gt;
+&lt;li&gt;c&amp;rsquo;est dur de relire les anciens messages&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bref, je ne me suis pas converti à la religion twitter, mais je vais continuer à l&amp;rsquo;utiliser pour voir si mon opinion évolue.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Annotez vos modèles</title>
+      <link>http://blog.menfin.info/posts/2009-05-21-annotez-vos-modeles/</link>
+      <pubDate>Thu, 21 May 2009 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2009-05-21-annotez-vos-modeles/</guid>
+      <description>&lt;p&gt;Quand je travaille sur des modèles dans Rails, j&amp;rsquo;ai souvent besoin de regarder la liste des champs de ce modèle.
+Vous savez, ces petites questions toutes bêtes que l&amp;rsquo;on se pose tous : c&amp;rsquo;est &lt;code&gt;firstname&lt;/code&gt; ou &lt;code&gt;first_name&lt;/code&gt; ? &lt;code&gt;phone&lt;/code&gt; ou &lt;code&gt;mobile&lt;/code&gt; ? &lt;code&gt;name&lt;/code&gt; ou &lt;code&gt;title&lt;/code&gt; ? &lt;code&gt;description&lt;/code&gt; ou &lt;code&gt;body&lt;/code&gt; ?&lt;/p&gt;
+
+&lt;p&gt;Pour répondre à ces questions, il faut aller chercher dans &lt;code&gt;db/schema.rb&lt;/code&gt;, fichier que l&amp;rsquo;on a rarement sous les yeux.
+Mais j&amp;rsquo;ai mieux à vous proposer : &lt;a href=&#34;http://github.com/ctran/annotate_models/tree/master&#34;&gt;Annotate&lt;/a&gt;.
+C&amp;rsquo;est un gem qui ajoute un commentaire en haut de chacun de vos modèles (et tests unitaires) avec la déclaration du modèle en question.&lt;/p&gt;
+
+&lt;p&gt;Voici un exemple tiré de ma réécriture de &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; en Rails :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# == Schema Information
+# Schema version: 20090120005239
+#
+# Table name: news
+#
+#  id          :integer(4)      not null, primary key
+#  state       :string(255)     default(&amp;quot;draft&amp;quot;), not null
+#  title       :string(255)
+#  body        :text
+#  second_part :text
+#  section_id  :integer(4)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Pour l&amp;rsquo;utiliser, c&amp;rsquo;est on ne peut plus simple.
+On fait un &lt;code&gt;gem install annotate&lt;/code&gt; pour l&amp;rsquo;installer, puis on lance &lt;code&gt;annotate&lt;/code&gt; quand on veut mettre à jour les commentaires.
+Pour ma part, je fais ça après chaque &lt;code&gt;rake db:migrate&lt;/code&gt;, mais libre à chacun de le lancer quand il le souhaite.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Request-log-analyzer</title>
+      <link>http://blog.menfin.info/posts/2009-05-17-request-log-analyzer/</link>
+      <pubDate>Sun, 17 May 2009 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2009-05-17-request-log-analyzer/</guid>
+      <description>&lt;p&gt;Dans la série des outils pour Rails que j&amp;rsquo;apprécie, je vais vous parler de &lt;a href=&#34;http://github.com/wvanbergen/request-log-analyzer/tree/master&#34;&gt;request-log-analyzer&lt;/a&gt;.
+Pourquoi lui ? Parce qu&amp;rsquo;il m&amp;rsquo;a rendu bien service cette semaine.&lt;/p&gt;
+
+&lt;p&gt;Request-log-analyser est un outil très simple qui permet d&amp;rsquo;analyser les logs de Rails pour découvrir les requêtes HTTP qui consomment du temps CPU.
+En pratique, ça s&amp;rsquo;installe simplement avec gem, puis on le lance pour générer un rapport (j&amp;rsquo;aime bien la version HTML) :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gem install request-log-analyzer
+request-log-analyzer --output HTML --file report.html log/production.log
+firefox report.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Le rapport nous fournit un certain nombres d&amp;rsquo;informations que les hits sur chaque page, les codes HTTP renvoyés, les requêtes les plus lourdes.
+Pour ma part, je me sers surtout du tableau des 20 requêtes HTTP les plus longues en temps cumulé (&lt;em&gt;Request duration - top 20 by cumulative time&lt;/em&gt;).
+Cela me donne une liste d&amp;rsquo;actions à bencher pour lesquelles une optimisation est toujours bonne à prendre.
+Je passe également un peu de temps à regarder si ces requêtes apparaissent dans les 20 requêtes les plus lourdes pour la base et les 20 requêtes avec le temps de rendering le plus long (toujours en temps cumulé).
+Je peux ainsi avoir une idée de ce qui prend du temps, et de valider ainsi que les résultats du bench collent avec ça.
+Si je vois qu&amp;rsquo;une requête HTTP passe beaucoup de temps sur la base de données, mais que les résultats du bench ne montrent pas ça, je vais probablement importer la base de données du serveur de production et l&amp;rsquo;utiliser pour refaire les benchs.&lt;/p&gt;
+
+&lt;p&gt;Un autre tableau intéressant est la liste des requêtes bloquantes (&lt;em&gt;Process blockers (&amp;gt; 1 sec duration)&lt;/em&gt;).
+Si je vois des requêtes faire pas mal de hits dans cette liste, je sais qu&amp;rsquo;il va falloir les surveiller de près.&lt;/p&gt;
+
+&lt;p&gt;Voilà, request-log-analyzer n&amp;rsquo;est pas un outil magique. Il ne fait qu&amp;rsquo;une chose, mais il le fait bien. Et c&amp;rsquo;est très utile pour savoir par où commencer à optimiser un site.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Railroad</title>
+      <link>http://blog.menfin.info/posts/2009-05-03-Railroad/</link>
+      <pubDate>Sun, 03 May 2009 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2009-05-03-Railroad/</guid>
+      <description>&lt;p&gt;Je commence une série d&amp;rsquo;articles sur des outils qu&amp;rsquo;il m&amp;rsquo;arrive d&amp;rsquo;utiliser quand je fais du développement Rails et qui mériterait, à mon avis, d&amp;rsquo;être plus connu.
+Le premier article de la série est &lt;a href=&#34;http://railroad.rubyforge.org/&#34;&gt;Railroad&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Railroad est un script Ruby qui permet de générer des graphes à partir d&amp;rsquo;une application d&amp;rsquo;une Rails, ce qui peut être très pratique pour accompagner une documentation quand on a la flemme de faire ces diagrammes soi-même.
+Railroad permet de générer 3 types de graphes : un pour les modèles, un pour les controlleurs et un pour les machines à états d&lt;em&gt;&amp;lsquo;acts_as_state_machine&lt;/em&gt;.
+Les diagrammes sont générés au format .dot, ce qui permet d&amp;rsquo;en faire facilement des .png ou des .svg avec la suite &lt;a href=&#34;http://www.graphviz.org/&#34;&gt;graphviz&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;auteur du script original ne maintient plus ce script mais on peut en trouver des forks sur &lt;a href=&#34;http://github.com/&#34;&gt;Github&lt;/a&gt;.
+Je conseille &lt;a href=&#34;http://github.com/ddollar/railroad/tree/master&#34;&gt;la branche de David Dollar&lt;/a&gt; :
+elle fonctionne avec les dernières versions de Rails et comporte mes patchs (&lt;a href=&#34;http://github.com/ddollar/railroad/commit/70b77a233d298356178a10f253f8d201cf5cad40&#34;&gt;1&lt;/a&gt; &lt;a href=&#34;http://github.com/ddollar/railroad/commit/a8815fc3ba8df8db44d078dbf2046ddf99538120&#34;&gt;2&lt;/a&gt; et &lt;a href=&#34;http://github.com/ddollar/railroad/commit/96fb1c540dfc8e2300969e4778a7c7bff9563c59&#34;&gt;3&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;En pratique, on installe le gem &lt;code&gt;ddollar-railroad&lt;/code&gt;, on ajoute une ligne à son fichier &lt;code&gt;Rakefile&lt;/code&gt; et roulez jeunesse :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gem install ddollar-railroad
+echo &amp;quot;require &#39;railroad/tasks/diagrams&#39; if RAILS_ENV == &#39;development&#39;&amp;quot; &amp;gt;&amp;gt; Rakefile
+rake doc:diagrams
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On obtient 3 diagrammes dans doc/diagrams (à condition que graphviz soit installé).
+Voici, par exemple, ceux que j&amp;rsquo;obtiens pour &lt;a href=&#34;http://github.com/nono/linuxfr.org/tree/master&#34;&gt;la version Rails&lt;/a&gt; de &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFr.org&lt;/a&gt; :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/public/railroad_controllers.png&#34; alt=&#34;Railroad - controllers&#34; /&gt;
+
+&lt;img src=&#34;/public/railroad_models.png&#34; alt=&#34;Railroad - models&#34; /&gt;
+
+&lt;img src=&#34;/public/railroad_states.png&#34; alt=&#34;Railroad - states&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Un plugin RoR nommé FrenchRails</title>
+      <link>http://blog.menfin.info/posts/2009-03-17-un-plugin-Rails-nomme-French-Rails/</link>
+      <pubDate>Tue, 17 Mar 2009 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2009-03-17-un-plugin-Rails-nomme-French-Rails/</guid>
+      <description>&lt;p&gt;Comme vous le savez déjà sûrement, je suis en train de re-écrire &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFr.org&lt;/a&gt; en &lt;a href=&#34;http://rubyonrails.org&#34;&gt;Rails&lt;/a&gt;.
+Et quand j&amp;rsquo;ai montré où j&amp;rsquo;en étais, on m&amp;rsquo;a remonté un bug étrange : j&amp;rsquo;affiche &amp;ldquo;0 commentaires&amp;rdquo; avec un s à la fin, ce qui est grammaticalement incorrect.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;interruption culturelle&amp;gt;&lt;/code&gt;
+Pour ceux qui ne sont pas très calés en internationalisation, sachez que les règles qui définissent singulier et pluriel ne sont pas les mêmes selon les langues (en fait, certaines langues ont mêmes plusieurs sortes de pluriels).
+En particulier, il y a une différence importante entre le français et l&amp;rsquo;anglais : en français, 0 est singulier, alors qu&amp;rsquo;il est pluriel en anglais.
+Ruby on Rails utilisant par défaut l&amp;rsquo;anglais, on comprend mieux d&amp;rsquo;où vient le &amp;rsquo;s&amp;rsquo; à la fin de &amp;ldquo;0 commentaires&amp;rdquo;.
+&lt;code&gt;&amp;lt;/interruption culturelle&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;utilise l&amp;rsquo;helper &lt;code&gt;pluralize&lt;/code&gt;, et comme Rails a intégré une gestion de l&amp;rsquo;internationalisation à la version 2.2, je pensais qu&amp;rsquo;il suffirait de déclarer la locale pour que cela marche.
+Hé bien, non.
+Première surprise : l&amp;rsquo;helper &lt;code&gt;pluralize&lt;/code&gt; ne passe pas par la partie I18n, mais utilise une règle en dure pour savoir si un nombre est singulier ou pluriel.
+Bon, ce n&amp;rsquo;est pas grave, ce n&amp;rsquo;est pas ça qui va m&amp;rsquo;arrêter : un petit monkey-patching et c&amp;rsquo;est réglé.&lt;/p&gt;
+
+&lt;p&gt;Sauf que, deuxième surprise, cela ne marche toujours pas !
+Le backend d&amp;rsquo;I18n fourni avec Rails (I18n::Backend::Simple) ne connaît que la règle pour l&amp;rsquo;anglais, et ne tient donc pas compte de la locale.
+Après quelques errements et expérimentations, j&amp;rsquo;ai réussi à trouver un moyen relativement simple de corriger cela (créer un backend qui hérite de I18n::Backend::Simple, avec juste la méthode pluralize redéfinie).
+Et là, joie, ça marche :-)&lt;/p&gt;
+
+&lt;p&gt;Comme tout cela m&amp;rsquo;a pris quelques heures, j&amp;rsquo;en ai fait un plugin : &lt;a href=&#34;http://github.com/nono/french-rails/tree/master&#34;&gt;FrenchRails&lt;/a&gt;.
+J&amp;rsquo;espère que cela pourra servir à d&amp;rsquo;autres personnes.
+En tout cas, moi, je compte l&amp;rsquo;utiliser sur plusieurs projets.&lt;/p&gt;
+
+&lt;p&gt;Dernière chose : si vous avez des besoins plus compliqués que les miens (au hasard, gérer plusieurs langues), ne cherchez pas à utiliser ce plugin, parter plutôt sur une solution plus costaud comme &lt;a href=&#34;http://github.com/joshmh/globalize2/tree/master&#34;&gt;Globalize2&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

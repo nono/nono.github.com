@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Vim on M&#39;enfin ?!? </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://blog.menfin.info/categories/vim/index.xml/</link>
+    <language>fr-fr</language>
+    <author>Bruno Michel</author>
+    
+    <updated>Fri, 31 Oct 2008 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Encore plus de tips pour Vim</title>
+      <link>http://blog.menfin.info/posts/2008-10-31-Nouveaux-tips-Vim/</link>
+      <pubDate>Fri, 31 Oct 2008 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2008-10-31-Nouveaux-tips-Vim/</guid>
+      <description>&lt;p&gt;Dans la série des astuces pour Vim, voici le troisième épisode (&lt;a href=&#34;http://blog.menfin.info/post/2007/11/18/Tips-pour-Vim&#34;&gt;le premier se trouve par ici&lt;/a&gt; et &lt;a href=&#34;http://blog.menfin.info/post/2008/01/22/Nouveaux-tips-pour-vim&#34;&gt;le second par là&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Jamis Buck, l&amp;rsquo;auteur de &lt;a href=&#34;http://www.capify.org/&#34;&gt;Capistrano&lt;/a&gt;, revient sous Vim après plusieurs années de textmate.
+La bonne nouvelle, c&amp;rsquo;est qu&amp;rsquo;il ne peut pas se passer de Cmd-T pour trouver des fichiers, et qu&amp;rsquo;&lt;a href=&#34;http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim&#34;&gt;il a donc développé un plugin Vim pour faire cela&lt;/a&gt; : &lt;a href=&#34;http://github.com/jamis/fuzzy_file_finder/tree/master&#34;&gt;Fuzzy File Finder&lt;/a&gt;.
+Je vous conseille fortement de l&amp;rsquo;essayer, ca simplifie vraiment la vie pour ouvrir des fichiers bien planqués dans des sous-répertoires.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;La recherche sous Vim se fait en tapant &lt;code&gt;/&lt;/code&gt; puis l&amp;rsquo;expression recherchée.
+Je suppose que vous connaissiez cette commande, mais saviez-vous que l&amp;rsquo;on peut spécifier un déplacement en tapant un deuxième &lt;code&gt;/&lt;/code&gt; puis le déplacement voulu ?
+Par exemple, &lt;code&gt;/foo/e+1&lt;/code&gt; placera le curseur sur le premier caractère après foo.
+Ceci est très pratique quand on répète plusieurs fois la même recherche.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si vous débuggez souvent des feuilles de style CSS, vous êtes amené à faire beaucoup d&amp;rsquo;allers-retours entre votre navigateur web et Vim.
+Et à chaque fois que vous faîtes une modification, vous êtes obligés de taper &lt;ESC&gt;:w&lt;CR&gt; pour la tester.
+Pour gagner quelques touches à chaque itération, je vous propose de rajouter la ligne suivante à votre fichier &lt;code&gt;.vimrc&lt;/code&gt; :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;autocmd FocusLost *.css :up
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Elle enregistre automatiquement chaque fichier .css quand Vim perd le focus (et uniquement s&amp;rsquo;il y a des changements à enregistrer).&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Le dernier truc n&amp;rsquo;en est pas vraiment un, je voulais juste vous faire part du dernier plugin que j&amp;rsquo;ai développé pour Vim.
+Celui-ci permet d&amp;rsquo;avoir la coloration syntaxique pour &lt;a href=&#34;http://www.vim.org/scripts/script.php?script_id=2417&#34;&gt;le framework Merb, la bibliothèque Datamapper&lt;/a&gt; et &lt;a href=&#34;http://www.vim.org/scripts/script.php?script_id=2416&#34;&gt;le framework javascript jQuery&lt;/a&gt;.
+Voici un petit screenshot de ce que cela donne chez moi :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/Gvim_merb_datamapper_jquery.png&#34; alt=&#34;Screenshot&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Github theme for Vim</title>
+      <link>http://blog.menfin.info/posts/2008-05-30-github-theme-for-vim/</link>
+      <pubDate>Fri, 30 May 2008 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2008-05-30-github-theme-for-vim/</guid>
+      <description>&lt;p&gt;Scott Becker has made a &lt;a href=&#34;http://synthesis.sbecker.net/articles/2008/05/28/github-theme-for-textmate&#34;&gt;Github theme for Textmate&lt;/a&gt;,
+so I&amp;rsquo;ve decided to made a Github theme for ViM.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s available on github: &lt;a href=&#34;http://github.com/nono/github_vim_theme/tree/master&#34;&gt;Github Vim Theme&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nouveaux tips pour vim</title>
+      <link>http://blog.menfin.info/posts/2008-01-22-De-nouveaux-tips-pour-vim/</link>
+      <pubDate>Tue, 22 Jan 2008 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2008-01-22-De-nouveaux-tips-pour-vim/</guid>
+      <description>&lt;p&gt;Voici une nouvelle fournée de tips pour Vim. Pour les retardataires, la première série est toujours disponible &lt;a href=&#34;http://blog.menfin.info/post/2007/11/18/Tips-pour-Vim&#34;&gt;par là&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CTRL+v&lt;/code&gt; reste une valeur sûre : ca active la sélection rectangulaire. Suivie de &lt;code&gt;I&lt;/code&gt;, ca permet d&amp;rsquo;insérer un même texte sur plusieurs lignes. Au contraire, avec &lt;code&gt;x&lt;/code&gt;, on peut supprimer une colonne.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:Man&lt;/code&gt; permet d&amp;rsquo;afficher une page de man directement dans Vim (avec la coloration syntaxique) ;&lt;/li&gt;
+&lt;li&gt;j&amp;rsquo;ai rajouté la ligne suivante dans mon &lt;code&gt;vimrc&lt;/code&gt; pour pouvoir insérer facilement des Lorem ipsum :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;iab lorem Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.&amp;lt;cr&amp;gt;Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.&amp;lt;cr&amp;gt;Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Voilà, c&amp;rsquo;est tout pour aujourd&amp;rsquo;hui.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tips pour Vim</title>
+      <link>http://blog.menfin.info/posts/2007-11-17-Tips-ViM/</link>
+      <pubDate>Sat, 17 Nov 2007 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2007-11-17-Tips-ViM/</guid>
+      <description>&lt;p&gt;Voici quelques trucs pour ViM que j&amp;rsquo;ai utilisé aujourd&amp;rsquo;hui :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;mettre &lt;code&gt;au BufRead,BufNewFile /etc/apache/** setf apache2&lt;/code&gt; dans le fichier &lt;code&gt;$HOME/.vim/ftdetect/apache.vim&lt;/code&gt; pour que les fichiers &lt;code&gt;/etc/apache2&lt;/code&gt; soient bien reconnus comme des fichiers de conf d&amp;rsquo;apache (pour la coloration syntaxique) ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%&lt;/code&gt; pour sauter d&amp;rsquo;une parenthèse ouvrante à la parenthèse fermante qui lui correspond (et vice-versa) : c&amp;rsquo;est un déplacement classique dans ViM, mais ca fait toujours plaisir quand on a des dizaines de parenthèses qui s&amp;rsquo;ouvrent et se ferment dans tous les sens ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;248|&lt;/code&gt; permet de se déplacer au 248ème caractère de la ligne courante ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gg247&amp;lt;barre d&#39;espacement&amp;gt;&lt;/code&gt; permet de se déplacer au 248ème caractère du fichier (en fait, ca permet de se placer sur le premier caractère, puis d&amp;rsquo;avancer 247 fois d&amp;rsquo;un caractère).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bref, rien d&amp;rsquo;extraordinaire, mais je suis bien malheureux quand je me retrouve sous un autre éditeur et que je ne peux plus utiliser ces petits trucs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Copier-Coller depuis ViM</title>
+      <link>http://blog.menfin.info/posts/2006-07-11-copier-coller-depuis-vim/</link>
+      <pubDate>Tue, 11 Jul 2006 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2006-07-11-copier-coller-depuis-vim/</guid>
+      <description>&lt;p&gt;Dans mon dernier billet, j&amp;rsquo;écrivais que je rédige mes billets avec ViM, puis que je fais un copier-coller vers l&amp;rsquo;interface web de Dotclear.
+Pour cela, je fais la combinaison de touches suivantes :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gg      Aller au début du fichier et
+&amp;quot;*      utiliser le registre &amp;quot;* pour ...
+yG      ... copier le texte jusqu&#39;à la fin du fichier.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Et comme le registe &lt;code&gt;&amp;quot;*&lt;/code&gt; correspond au &lt;em&gt;clipboard&lt;/em&gt;, je peux ensuite coller mon texte dans mon navigateur web (firefox).&lt;/p&gt;
+
+&lt;p&gt;Mais pour ce post, j&amp;rsquo;ai décidé de suivre
+&lt;a href=&#34;http://blog.menfin.info/post/2006/07/09/Coloration-syntaxique-dans-Vim-pour-les-billets-Dotclear#c45302&#34;&gt;le conseil de Romuald&lt;/a&gt;
+et d&amp;rsquo;utiliser l&amp;rsquo;extension &lt;a href=&#34;http://mozex.mozdev.org/&#34;&gt;Mozex&lt;/a&gt;, et à première vue, ca paraît pas mal.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Coloration syntaxique dans Vim pour les billets Dotclear</title>
+      <link>http://blog.menfin.info/posts/2006-07-10-fichier-de-syntaxe-vim-pour-dotclear/</link>
+      <pubDate>Mon, 10 Jul 2006 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2006-07-10-fichier-de-syntaxe-vim-pour-dotclear/</guid>
+      <description>&lt;p&gt;Je ne sais pas pour vous, mais moi, j&amp;rsquo;ai horreur de devoir taper du texte dans mon navigateur web.
+Aussi, dès que je tape plus de quelques lignes, j&amp;rsquo;utilise ViM, puis je fais un copier-coller vers firefox.
+Cela me permet par exemple de profiter de la coloration syntaxique.&lt;/p&gt;
+
+&lt;p&gt;En particulier, je tape mes billets sous ViM, et je me suis donc créé le fichier de syntaxe pour là aussi avoir la coloration syntaxique.
+Ce fichier est téléchargeable ici : &lt;a href=&#34;http://blog.menfin.info/public/dotclear.vim&#34;&gt;dotclear.vim&lt;/a&gt;
+Il faut le placer dans le répertoire &lt;code&gt;~/.vim/syntax/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Et pour que ViM sache automatiquement que les fichiers avec l&amp;rsquo;extension &lt;code&gt;.dc&lt;/code&gt; sont au format &lt;code&gt;dotclear&lt;/code&gt;, il suffit de créer un fichier &lt;code&gt;~/.vim/ftdetect/dotclear.vim&lt;/code&gt; avec le contenu suivant :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;au BufRead,BufNewFile *.dc  set ft=dotclear
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Templates dans vim 2 / 2</title>
+      <link>http://blog.menfin.info/posts/2006-07-09-templates-dans-vim-2-sur2/</link>
+      <pubDate>Sun, 09 Jul 2006 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2006-07-09-templates-dans-vim-2-sur2/</guid>
+      <description>&lt;p&gt;Comme promis, nous allons donc voir comment avoir des templates un peu plus dynamiques. Le langage de script de vim n&amp;rsquo;étant pas des plus sympathiques, je préfère appeler un programme externe.
+Pour cela, nous allons remplacer la ligne que nous avions insérée dans le fichier vimrc par celle-là :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;au BufNewFile * 0r! ~/.vim/skeleton.rb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ici, c&amp;rsquo;est un script en ruby (&lt;code&gt;skeleton.rb&lt;/code&gt;) qui est appelé.
+Pour le moment, ce script ne reçoit aucun paramètre.
+Pas terrible pour savoir quel template utiliser !
+Pour régler ce problème, nous pouvons passer par exemple le nom du fichier, avec son chemin complet.
+Il suffit de rajouter &lt;code&gt;%:p&lt;/code&gt; toujours à la me ligne du fichier vimrc.
+&lt;code&gt;%&lt;/code&gt; indique le fichier courant, et &lt;code&gt;:p&lt;/code&gt; est un modificateur pour avoir le chemin complet.&lt;/p&gt;
+
+&lt;p&gt;Mais, &lt;strong&gt;ViM&lt;/strong&gt; fait déjà de la détection de &lt;em&gt;filetype&lt;/em&gt;, aussi il peut être intéressant de passer ce &lt;em&gt;filetype&lt;/em&gt; à notre script.
+Pour cela, nous allons encore modifier notre ligne :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;au BufNewFile * :exe(&amp;quot;0r! ~/.vim/skeleton.rb %:p &amp;quot; . &amp;amp;filetype)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : comme il n&amp;rsquo;est pas possible à ma connaissance de passer directement le filtype à la commande r!, je construit d&amp;rsquo;abord la chaîne de cractère avec toute la commande et le filetype, puis je l&amp;rsquo;éxécute.&lt;/p&gt;
+
+&lt;p&gt;Maintenant que nous pouvons appeller un script avec le chemin du fichier et son &lt;em&gt;filetype&lt;/em&gt;, je pense qu&amp;rsquo;on peut dire que c&amp;rsquo;est gagné.
+Voici à titre d&amp;rsquo;exemple le script que j&amp;rsquo;utilise :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;#!/usr/bin/env ruby
+# Author: Bruno Michel &amp;lt;bmichel@menfin.info&amp;gt;
+# Licence: MIT &amp;lt;http://www.opensource.org/licenses/mit-license.html&amp;gt;
+
+require &#39;erb&#39;
+
+
+SKELETON_DIR = File.expand_path(&amp;quot;~/.vim/skeleton&amp;quot;);
+EXTENSION  = &amp;quot;erb&amp;quot;
+
+file, filetype = ARGV
+filename  = File.basename(file)
+skeletons = [filename, filetype]
+skeleton  = skeletons.map { |s|
+	File.join(SKELETON_DIR, &amp;quot;#{s}.#{EXTENSION}&amp;quot;)
+}.find { |s|
+	File.exist?(s) &amp;amp;&amp;amp; File.readable?(s)
+}
+
+exit if skeleton.nil?
+
+File.open(skeleton) do |f|
+	puts ERB.new(f.read, nil, &#39;&amp;lt;&amp;gt;&#39;).result(binding)
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : si vous voulez utiliser ce script, n&amp;rsquo;oubliez pas de le rendre exécutable (&lt;code&gt;chmod a+x ~/.vim/skeleton.rb&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;Ce script va chercher un fichier &lt;code&gt;.erb&lt;/code&gt; dans le répertoire &lt;code&gt;~/.vim/skeleton&lt;/code&gt; dont le nom correspond soit au nom du nouveau fichier, soit à son filetype.
+Et dans ce répertoire, on trouve, par exemple, &lt;code&gt;ruby.erb&lt;/code&gt; :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;#!/usr/bin/env ruby
+# Author: Bruno Michel &amp;lt;bmichel@menfin.info&amp;gt;
+# Licence: MIT &amp;lt;http://www.opensource.org/licenses/mit-license.html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ou &lt;code&gt;README.erb&lt;/code&gt; :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;%= `figlet -c README` %&amp;gt;
+&amp;lt;%# figlet: http://www.figlet.org %&amp;gt;
+
+Author: Bruno Michel &amp;lt;bmichel@menfin.info&amp;gt;
+Date: &amp;lt;%= Date.today.strftime(&amp;quot;%d/%m/%y&amp;quot;) %&amp;gt;
+Time: &amp;lt;%= Time.now.strftime(&amp;quot;%H:%M:%S&amp;quot;) %&amp;gt;
+&amp;lt;% directory = File.dirname(file) %&amp;gt;
+Project: &amp;lt;%= File.split(directory).last %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Et voilà, mission accomplie, nous avons des templates dynamiques, avec notamment la possibilité d&amp;rsquo;insérer la date ou l&amp;rsquo;heure courante.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Templates dans vim 1 / 2</title>
+      <link>http://blog.menfin.info/posts/2006-07-05-templates-dans-vim-1-sur2/</link>
+      <pubDate>Wed, 05 Jul 2006 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2006-07-05-templates-dans-vim-1-sur2/</guid>
+      <description>
+
+&lt;p&gt;Hop, pour ce premier tips, je vais vous montrer comment utiliser des templates dans Vim. Par exemple, supposons que je veuille avoir ces quelques lignes :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;#!/usr/bin/env ruby
+# Author: Bruno Michel &amp;lt;bmichel@menfin.info&amp;gt;
+# Licence: MIT &amp;lt;http://www.opensource.org/licenses/mit-license.html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;au début de chaque nouveau script ruby.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Mode d&amp;rsquo;emploi&lt;/h2&gt;
+
+&lt;p&gt;Pour cela, nous allons faire simple :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;créer un fichier avec ce template, et le placer dans le répertoire &lt;code&gt;~/vim/templates&lt;/code&gt; :&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mkdir -p ~/.vim/templates
+$ echo &amp;quot;#!/usr/bin/env ruby&amp;quot; &amp;gt; ~/.vim/templates/ruby
+$ ...
+$ echo  &amp;quot;#-------------------------------------------------------------------&amp;quot; &amp;gt;&amp;gt; ~/.vim/templates/ruby
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;modifier son fichier de configuration de vim :&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;$ vim ~/.vimrc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;et rajouter la ligne suivante :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;au BufNewFile *.rb 0r ~/.vim/templates/ruby
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;quitter et vérifier que cela fonctionne :&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;:wq
+$ vim foo.rb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Explications&lt;/h2&gt;
+
+&lt;p&gt;La ligne ajoutée au fichier vimrc peut se décomposer en :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;au&lt;/code&gt; : indique une commande qui sera automatiquement&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BufNewFile&lt;/code&gt; : l&amp;rsquo;exécution automatique se fera sur la création d&amp;rsquo;un nouveau fichier&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*.rb&lt;/code&gt; : ce paramètre indique que le fichier doit avoir l&amp;rsquo;extension .rb pour que la commande soit éxécutée&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0r ~/.vim/templates/ruby&lt;/code&gt; : cette commande ruby insère le contenu du fichier après la 0ème ligne, c&amp;rsquo;est-à-dire avant la 1ère ligne.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Voilà, c&amp;rsquo;est tout pour ce billet. Mais il y aura une suite avec comment avoir des templates un peu plus dynamiques. On verra par exemple comment insérer la date dans les templates.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

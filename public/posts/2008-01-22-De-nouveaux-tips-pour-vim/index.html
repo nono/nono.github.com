@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title> Nouveaux tips pour vim // M&#39;enfin ?!? </title>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+  <meta property="og:title" content="Nouveaux tips pour vim" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://blog.menfin.info/posts/2008-01-22-De-nouveaux-tips-pour-vim/" />
+
+
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://blog.menfin.info/css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="M&#39;enfin ?!?" />
+
+  
+  <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/tomorrow-night-bright.min.css">
+  <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">M&#39;enfin ?!?</h1>
+    <h2 class="brand-tagline">Some blah blah by Bruno Michel</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://blog.menfin.info">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/index.xml">Feed</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="https://www.twitter.com/brmichel" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="https://github.com/nono" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://linuxfr.org/users/nono" target="_blank"><i class='fa fa-linux'></i></a>
+        
+      
+        
+        <a href="http://www.doyoubuzz.com/bruno-michel" target="_blank"><i class='fa fa-file-text-o'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/2008-01-22-De-nouveaux-tips-pour-vim/">Nouveaux tips pour vim</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>22</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Jan</span> <span class="post-date-year">2008</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-vim" href="/categories/vim">Vim</a> 
+				
+				</div>
+			
+
+			
+
+			
+
+            <p>Voici une nouvelle fournée de tips pour Vim. Pour les retardataires, la première série est toujours disponible <a href="http://blog.menfin.info/post/2007/11/18/Tips-pour-Vim">par là</a>.</p>
+
+<ul>
+<li><code>CTRL+v</code> reste une valeur sûre : ca active la sélection rectangulaire. Suivie de <code>I</code>, ca permet d&rsquo;insérer un même texte sur plusieurs lignes. Au contraire, avec <code>x</code>, on peut supprimer une colonne.</li>
+<li><code>:Man</code> permet d&rsquo;afficher une page de man directement dans Vim (avec la coloration syntaxique) ;</li>
+<li>j&rsquo;ai rajouté la ligne suivante dans mon <code>vimrc</code> pour pouvoir insérer facilement des Lorem ipsum :</li>
+</ul>
+
+<pre><code>iab lorem Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.&lt;cr&gt;Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.&lt;cr&gt;Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+</code></pre>
+
+<p>Voilà, c&rsquo;est tout pour aujourd&rsquo;hui.</p>
+
+	
+			
+
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/2008-02-12-Portrait-of-a-noob/">Portrait of a N00b</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/2007-12-01-mercurial-sur-mon-MyBook/">Mercurial sur mon MyBook</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>♡2006 by Bruno Michel. Copying is an act of love. Please copy and share.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

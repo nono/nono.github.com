@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Lifehacks on M&#39;enfin ?!? </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://blog.menfin.info/categories/lifehacks/index.xml/</link>
+    <language>fr-fr</language>
+    <author>Bruno Michel</author>
+    
+    <updated>Sun, 21 Nov 2010 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Nouveau joujou : Giada Slim n10</title>
+      <link>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</link>
+      <pubDate>Sun, 21 Nov 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai acheté un &lt;a href=&#34;http://www.giadatech.com/index.php?app=product&amp;amp;act=show&amp;amp;id=37&#34;&gt;Giada Slim n10&lt;/a&gt;. Ça ressemble à ça :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/public/giada.jpg&#34; alt=&#34;Giada Slim n10&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai commencé à jouer avec en installant dessus :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;une debian (pas de problème particulier)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.openssh.com/&#34;&gt;OpenSSH&lt;/a&gt;, évidemment&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bip.milkypond.org/&#34;&gt;Bip&lt;/a&gt;, un proxy IRC&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.nginx.org/Main&#34;&gt;Nginx&lt;/a&gt;, un serveur web&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.rutschle.net/tech/sslh.shtml&#34;&gt;Sllh&lt;/a&gt; pour avoir ssh ET https sur le port 443.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L&amp;rsquo;achat est tout neuf, donc je n&amp;rsquo;ai pas encore beaucoup de recul, mais dans l&amp;rsquo;ensemble, j&amp;rsquo;en suis très satisfait. Un seul regret, le ventilo n&amp;rsquo;est pas aussi silencieux que je le voudrais. J&amp;rsquo;ai trouvé sur &lt;a href=&#34;http://www.blogeee.net/forum/viewtopic.php?p=209248#p209248&#34;&gt;un forum&lt;/a&gt; comment régler ça dans le bios, mais ce n&amp;rsquo;est pas encore parfait. Pour mémoire, ça se règle dans le menu chipset &amp;gt; MCP fan control, et les valeurs à renseigner sont :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SMART Fan0 Min temperature : 40 (la valeur se modifie avec les touches + et -)&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Max temperature : 90&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Min duty cycle : 30&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Max duty cycle : 255&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Se fixer des objectifs SMART</title>
+      <link>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</link>
+      <pubDate>Sun, 23 May 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</guid>
+      <description>&lt;p&gt;Se fixer des objectifs est très souvent une bonne chose. Pour tirer pleinement profit de ces objectifs, il est important de bien les formuler. Pourtant, nous avons souvent tendance à nous contenter d&amp;rsquo;objectifs flous : je veux perdre du poids, je veux faire plus de sport, je veux manger plus sainement, etc. Il existe un truc qui pourra vous aider pour ça : les objectifs &lt;strong&gt;SMART&lt;/strong&gt;. Ce sont 5 critères qui vous forcent à vous poser les bonnes questions quand vous choisissez un objectif :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spécifique : soyez précis sur ce que vous voulez atteindre. Ne vous contentez pas de dire que vous voulez faire du sport, mais demandez-vous quel(s) sport(s) et à quelle fréquence.&lt;/li&gt;
+&lt;li&gt;Mesurable : à tout moment, vous devriez être capable de savoir si vous avez accompli votre objectif sans savoir à réfléchir. Idéalement, vous devriez juste avoir à comparer une mesure avec votre objectif pour savoir si vous l&amp;rsquo;avez atteint. Si vous souhaitez perdre du poids et que vous fixez comme objectif de perdre 3 kilos, il est alors facile de vous peser pour voir si vous avez perdu ces 3 kilos ou non.&lt;/li&gt;
+&lt;li&gt;Atteignable : votre objectif doit être ambitieux, mais vous devez pouvoir l&amp;rsquo;atteindre. Si vous n&amp;rsquo;êtes pas sûr de pouvoir le faire, peut-être feriez-vous mieux de le découper en plusieurs étapes et vous fixer des objectifs intermédiaires. Plutôt que de vouloir courir directement un marathon, commencez par courir 10 Km, puis passez au semi-marathon avant de viser le marathon.&lt;/li&gt;
+&lt;li&gt;Réaliste : votre objectif ne doit pas dépendre de ressources matérielles (argent, matière, temps) que vous n&amp;rsquo;avez pas. De même, il ne doit pas dépendre du comportement d&amp;rsquo;autres personnes. Si votre objectif est d&amp;rsquo;obtenir une promotion, demandez-vous si vous êtes vraiment en position de faire la différence. Une astuce consiste à transformer un objectif qui porte sur des résultats qui ne dépendent pas de nous en un ou plusieurs objectifs sur des moyens pour obtenir ce résultat. Par exemple, un meilleur objectif pourrait être de finir tel projet en avance, ce qui augmenterait grandement vos chances d&amp;rsquo;obtenir la promotion visée.&lt;/li&gt;
+&lt;li&gt;Limité dans le Temps : fixez-vous une date limite à laquelle l&amp;rsquo;objectif devra être accompli. Sans ça, vous risquez très fortement de laisser glisser vos objectifs, privilégiant toujours les tâches urgentes et remettant vos objectifs à plus tard.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Voilà, j&amp;rsquo;espère que ces 5 critères vous permettront de mieux cerner vos objectifs, et d&amp;rsquo;augmenter ainsi les chances de les réussir.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Discipline contre motivation</title>
+      <link>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</link>
+      <pubDate>Sun, 28 Feb 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</guid>
+      <description>
+
+&lt;p&gt;Comme beaucoup de personnes, il vous est arrivé d&amp;rsquo;essayer de prendre de nouvelles habitudes.
+Ces résolutions vous semblaient être les bonnes choses, et avec un peu de discipline, ça n&amp;rsquo;aurait pas dû être difficile de les tenir.
+Pourtant, au bout d&amp;rsquo;une semaine ou deux, vous constatez que c&amp;rsquo;est un échec.&lt;/p&gt;
+
+&lt;p&gt;Que s&amp;rsquo;est-il passé et comment faire en sorte de réussir la prochaine fois sont sûrement deux questions qui vous trottent dans la tête.
+Je ne prétends pas avoir toutes les réponses, mais je souhaite vous proposer une piste qui, je l&amp;rsquo;espère, pourra vous aider dans vos réflexions.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;La discipline&lt;/h3&gt;
+
+&lt;p&gt;Comme moi par le passé, vous vous êtes sûrement dit que prendre une nouvelle habitude ne devait pas être difficile.
+C&amp;rsquo;est juste une question de volonté et de discipline après tout.
+Et c&amp;rsquo;est justement là que le bât blesse.&lt;/p&gt;
+
+&lt;p&gt;Nous n&amp;rsquo;avons qu&amp;rsquo;une quantité très limitée de volonté que nous pouvons utiliser chaque jour.
+La majeure partie du temps, nous nous reposons sur des habitudes ou nous faisons des choses plaisantes qui ne demande aucune volonté.
+Demandez-vous combien de fois avez-vous réellement fait preuve de volonté aujourd&amp;rsquo;hui ou hier ?
+Pour ma part, la réponse est invariablement bien peu (trop peu).&lt;/p&gt;
+
+&lt;p&gt;Alors, est-on condamné à ne pouvoir faire que très peu de nouvelles choses, et à faire ça dans la douleur ?
+Non, non et NON ! Il existe d&amp;rsquo;autres leviers qui vous permettront d&amp;rsquo;avancer.
+La motivation est l&amp;rsquo;un d&amp;rsquo;eux.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;La motivation&lt;/h3&gt;
+
+&lt;p&gt;La motivation, c&amp;rsquo;est un ensemble de moyens pour vous encourager à faire une action, quand se dire que « c&amp;rsquo;est la bonne chose à faire » ne suffit plus.
+Ce sont &lt;em&gt;les carottes&lt;/em&gt; pour vous faire avancer.
+Il existe de nombreux moyens pour se motiver, mais généralement ceux-ci rentrent dans l&amp;rsquo;un des deux thèmes suivants :
+apprécier l&amp;rsquo;activité en question et s&amp;rsquo;engager publiquement.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_2&#34;&gt;Apprécier l&amp;rsquo;activité&lt;/h4&gt;
+
+&lt;p&gt;Il est évident que l&amp;rsquo;on aura beaucoup plus de facilités à faire une action à laquelle on prend du plaisir que si c&amp;rsquo;est une corvée.
+On peut ainsi chercher des éléments qui vont plaisir.
+Par exemple, se mettre au footing peut ne être très plaisant au début, mais si vous accompagnez votre séance de footing par votre album musical préféré sur un lecteur mp3, cela la rendra plus appréciable.&lt;/p&gt;
+
+&lt;p&gt;Si malgré ça, vous avez du mal à rendre l&amp;rsquo;activité elle-même agréable, vous pouvez compenser en vous offrant une récompense.
+Pour ma part, je suis un grand gourmand, et manger une barre céréales avant de faire du sport fait partie des choses que j&amp;rsquo;apprécie.
+Mettre une croix sur un &lt;a href=&#34;http://blog.menfin.info/post/2010/02/15/Se-motiver-avec-un-Seinfeld-Calendar&#34;&gt;Seinfeld Calendar&lt;/a&gt; a également un coté très gratifiant.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_3&#34;&gt;S&amp;rsquo;engager publiquement&lt;/h4&gt;
+
+&lt;p&gt;L&amp;rsquo;engagement public est également un moyen très efficace pour nous aider à tenir une résolution.
+L&amp;rsquo;idée est que nous détestons profondément ne pas tenir nos engagements, et nous pouvons nous servir de ça pour nous mettre un peu de pression (pas trop quand même), ce qui nous forcera à agir.&lt;/p&gt;
+
+&lt;p&gt;Par exemple, parler à tous vos collègues de votre nouvelle résolution vous obligera à vous y tenir, car ils reviendront vers vous pour en parler.
+Et la crainte de la honte de ne pas avoir tenu ses engagements est une source de motivation très puissante.&lt;/p&gt;
+
+&lt;p&gt;Parler de sa résolution sur son blog ou sur un forum spécialisé peut également une approche très efficace.
+Vous vous sentirez engagé à donner régulièrement des nouvelles, et vous aurez peut-être la chance d&amp;rsquo;avoir des conseils dans les périodes difficiles.&lt;/p&gt;
+
+&lt;p&gt;Pour conclure, je vous encourage à essayer de trouver des éléments de motivation avant d&amp;rsquo;entreprendre une nouvelle habitude.
+Une méthode pour cela est le &lt;a href=&#34;http://www.couchet.org/blog/index.php5?post/2009/12/30/408-le-guide-pour-tenir-nos-resolutions-de-nouvel-an&#34;&gt;le guide pour tenir nos résolutions de nouvel an&lt;/a&gt;.
+Et si vous souhaitez creuser la question de la motivation, il existe un ebook, &lt;a href=&#34;http://themotivationhandbook.com/&#34;&gt;The essential motivation handbook&lt;/a&gt;, très complet sur le sujet, au prix de 15$ (soit environ 11€).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Se motiver avec un Seinfeld Calendar</title>
+      <link>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</link>
+      <pubDate>Mon, 15 Feb 2010 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</guid>
+      <description>&lt;p&gt;Comme promis, pour vous éclairer sur les
+&lt;a href=&#34;/post/2010/02/15/Changement-de-direction-pour-ce-blog&#34;&gt;&lt;strong&gt;lifehacks&lt;/strong&gt;&lt;/a&gt;, je
+vais donner un premier exemple : le &lt;a href=&#34;http://lifehacker.com/281626/jerry-seinfelds-productivity-secret&#34;&gt;Seinfeld
+Calendar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;La légende veut que ce soit Jerry Seinfeld l&amp;rsquo;inventeur de ce hack. Quand on a
+lui a demandé quel était son secret, il a commencé à répondre de manière
+plutôt banale : « Pour devenir un bon comique, il faut faire de bonnes
+blagues, et pour faire de bonnes blagues, il faut travailler chaque jour ». Le
+secret est donc de s&amp;rsquo;entrainer tous les jours.&lt;/p&gt;
+
+&lt;p&gt;Mais là où ça devient intéressant, c&amp;rsquo;est qu&amp;rsquo;il ne s&amp;rsquo;est pas arrêté là. Il a
+monté un système ingénieux pour se forcer à travailler chaque jour. Pour ça,
+le matériel nécessaire est réduit à un calendrier (si possible, assez grand et
+surtout bien visible) et à un feutre (rouge de préférence). Il explique alors
+que chaque jour où le travail est fait, il coche le jour sur le calendrier
+avec le feutre rouge. Au bout de quelques jours, les croix au feutre
+commencent à former une chaîne, et le but est alors de ne pas casser la chaîne
+: « &lt;em&gt;Don&amp;rsquo;t break the chain&lt;/em&gt; ».&lt;/p&gt;
+
+&lt;p&gt;Cette technique est très efficace pour se motiver, car elle nous oblige à
+dépasser nos excuses. Même si la journée a été difficile, on a envie de cocher
+sa case pour ne pas avoir à recommencer à zéro une chaîne de 10, 20 ou 30
+cases. Par contre, le revers de la médaille est que si l&amp;rsquo;on rate un jour, même
+pour une raison valable, le risque est grand de ne pas recommencer tout de
+suite, voir de ne pas recommencer du tout.&lt;/p&gt;
+
+&lt;p&gt;Pour mettre en place cette technique, vous pouvez bien entendu utiliser le
+calendrier et le feutre, mais si vous pouvez également vous tourner vers une
+version électronique. Les sites suivants permettent de faire son &lt;strong&gt;Seinfeld
+Calendar&lt;/strong&gt; en ligne :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://dailystamp.com/home&#34;&gt;Daily Stamp&lt;/a&gt; (mon préféré)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dontbreakthechain.com/&#34;&gt;Don&amp;rsquo;t break the chain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://smarterfitter.com/chain&#34;&gt;Seinfeldian Chain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://calendaraboutnothing.com/&#34;&gt;Calendar about nothing&lt;/a&gt; (les cases
+sont cochés automatiquement en fonction des commits sur github -&amp;gt; &lt;a href=&#34;http://calendaraboutnothing.com/~nono&#34;&gt;exemple
+avec mon compte&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bon, ce n&amp;rsquo;est pas tout ça, mais je dois vous laisser : j&amp;rsquo;ai du travail à faire
+sur &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; pour cocher &lt;a href=&#34;http://dailystamp.com/stamps/2082&#34;&gt;ma case
+d&amp;rsquo;aujourd&amp;rsquo;hui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
