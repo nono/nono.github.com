@@ -10,6 +10,10 @@ title = "M'enfin ?!?"
     sidebartitle = "M'enfin ?!?"
     sidebartagline = "Some blah blah by Bruno Michel"
 
+[[menu.main]]
+    name = "Feed"
+    url = "/index.xml"
+
 [[menu.social]]
     pre = "<i class='fa fa-file-text-o'></i>"
     url = "http://www.doyoubuzz.com/bruno-michel"
