@@ -74,6 +74,10 @@
     <div class="social-buttons">
       
         
+        <a href="http://linuxfr.org/users/nono" target="_blank"><i class='fa fa-linux'></i></a>
+        
+      
+        
         <a href="http://www.doyoubuzz.com/bruno-michel" target="_blank"><i class='fa fa-file-text-o'></i></a>
         
       
@@ -83,10 +87,6 @@
       
         
         <a href="https://github.com/nono" target="_blank"><i class='fa fa-github'></i></a>
-        
-      
-        
-        <a href="http://linuxfr.org/users/nono" target="_blank"><i class='fa fa-linux'></i></a>
         
       
       
@@ -102,6 +102,41 @@
       
 
       <div class="posts">
+        
+          <section  class="post">
+            <header class="post-header">
+            
+            <h1 class="post-title">
+              <a href="/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/">When one sidekiq instance is not enough</a>
+            </h1>
+            </header>
+            <p class="post-meta">
+            	
+		          <span class="post-date">
+		            <span class="post-date-day"><sup>14</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Oct</span> <span class="post-date-year">2014</span>
+		          </span>
+      				
+      				
+      					
+      				
+              
+                <span class="post-reading-time"><i class="fa fa-clock-o"></i> <em>2 min. read</em></span>
+              
+      				
+      					<div class="post-categories">
+      					
+      						<a class="post-category post-category-ruby" href="/categories/ruby">Ruby</a> 
+      					
+      					</div>
+      				
+            </p>
+            <article class="post-summary">
+            	In the Ruby world, there was a popular gem for queueing jobs: resque. With one call to a ruby method, you can put a job in redis. And a daemon, called a worker, can take a job from redis, process it, and then go to the next job. It works well, but when you want to scale and process more than one job in parallel, you have to launch several worker processes, and it can take a lot of memory.
+            </article>
+			<div class="read-more-link">
+				<a href="/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/"><span class="read-more-slashes">//</span>Read More...</a>
+			</div>
+          </section>
         
           <section  class="post">
             <header class="post-header">

@@ -7,7 +7,58 @@
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
-    <updated>Sun, 11 Jul 2010 00:00:00 UTC</updated>
+    <updated>Tue, 14 Oct 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>When one sidekiq instance is not enough</title>
+      <link>http://blog.menfin.info/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/</guid>
+      <description>&lt;p&gt;In the Ruby world, there was a popular gem for queueing jobs: resque. With one
+call to a ruby method, you can put a job in redis. And a daemon, called a
+worker, can take a job from redis, process it, and then go to the next job.&lt;/p&gt;
+
+&lt;p&gt;It works well, but when you want to scale and process more than one job in
+parallel, you have to launch several worker processes, and it can take a lot
+of memory. So, Mike Perham wrote a new gem: Sidekiq. It does the same thing
+than resque, but it enables to perform multiple jobs inside a process by using
+threads. And threads take a lot less memory than processes.&lt;/p&gt;
+
+&lt;p&gt;Sidekiq became more popular than resque, and it is well summed up by its
+headline:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;What if 1 Sidekiq process could do the work of 20 Resque processes?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But, is it true? Well, it depends. For most tasks, like sending mails or
+fetching things from internet, it works really nice.&lt;/p&gt;
+
+&lt;p&gt;In some cases, like CPU-intensive tasks, it&amp;rsquo;s more complicated. The official
+Ruby interpreter (MRI) has something called the Global Interpreter Lock (GIL).
+Its role is to avoid that code from one thread can mess another thread. For
+that, when a thread wants to execute Ruby code, it has to first take the GIL.
+And after some time, it will release the GIL, so that another thread can take
+it and execute other Ruby code: it&amp;rsquo;s cooperative scheduling. There are a few
+exceptions to this rule: waiting the response from a database or an HTTP
+connection can be made by a threading that doesn&amp;rsquo;t have the GIL.&lt;/p&gt;
+
+&lt;p&gt;So, what to do when you are in one those cases?&lt;/p&gt;
+
+&lt;p&gt;First, you can try another interpreter: JRuby, for example, has no GIL and can
+run several threads over all your cores. JRuby is also said to be a bit faster
+than MRI, but it varies a lot from one use case to another. YMMV.&lt;/p&gt;
+
+&lt;p&gt;Last week, I had a sidekiq instance running with MRI that take 100% of CPU, ie
+it used only one core from the 8 there. So, i tried JRuby (and it wasn&amp;rsquo;t
+painless because of some incompatible gems). Yeah, my sidekiq instance running
+with JRuby can use all the 8 cores. But it was still processing jobs 30%
+slower than MRI&amp;hellip; So, I&amp;rsquo;m keeping MRI and I will use the same strategy that
+resque: running several processes. With multiple sidekiq instance, it&amp;rsquo;s
+possible to use more than one core, even on MRI.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Présentation rapide de Ruby 1.9 aux RMLL</title>
