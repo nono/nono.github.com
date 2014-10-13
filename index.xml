@@ -7,7 +7,58 @@
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
-    <updated>Sun, 12 Oct 2014 00:00:00 UTC</updated>
+    <updated>Tue, 14 Oct 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>When one sidekiq instance is not enough</title>
+      <link>http://blog.menfin.info/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/</guid>
+      <description>&lt;p&gt;In the Ruby world, there was a popular gem for queueing jobs: resque. With one
+call to a ruby method, you can put a job in redis. And a daemon, called a
+worker, can take a job from redis, process it, and then go to the next job.&lt;/p&gt;
+
+&lt;p&gt;It works well, but when you want to scale and process more than one job in
+parallel, you have to launch several worker processes, and it can take a lot
+of memory. So, Mike Perham wrote a new gem: Sidekiq. It does the same thing
+than resque, but it enables to perform multiple jobs inside a process by using
+threads. And threads take a lot less memory than processes.&lt;/p&gt;
+
+&lt;p&gt;Sidekiq became more popular than resque, and it is well summed up by its
+headline:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;What if 1 Sidekiq process could do the work of 20 Resque processes?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But, is it true? Well, it depends. For most tasks, like sending mails or
+fetching things from internet, it works really nice.&lt;/p&gt;
+
+&lt;p&gt;In some cases, like CPU-intensive tasks, it&amp;rsquo;s more complicated. The official
+Ruby interpreter (MRI) has something called the Global Interpreter Lock (GIL).
+Its role is to avoid that code from one thread can mess another thread. For
+that, when a thread wants to execute Ruby code, it has to first take the GIL.
+And after some time, it will release the GIL, so that another thread can take
+it and execute other Ruby code: it&amp;rsquo;s cooperative scheduling. There are a few
+exceptions to this rule: waiting the response from a database or an HTTP
+connection can be made by a threading that doesn&amp;rsquo;t have the GIL.&lt;/p&gt;
+
+&lt;p&gt;So, what to do when you are in one those cases?&lt;/p&gt;
+
+&lt;p&gt;First, you can try another interpreter: JRuby, for example, has no GIL and can
+run several threads over all your cores. JRuby is also said to be a bit faster
+than MRI, but it varies a lot from one use case to another. YMMV.&lt;/p&gt;
+
+&lt;p&gt;Last week, I had a sidekiq instance running with MRI that take 100% of CPU, ie
+it used only one core from the 8 there. So, i tried JRuby (and it wasn&amp;rsquo;t
+painless because of some incompatible gems). Yeah, my sidekiq instance running
+with JRuby can use all the 8 cores. But it was still processing jobs 30%
+slower than MRI&amp;hellip; So, I&amp;rsquo;m keeping MRI and I will use the same strategy that
+resque: running several processes. With multiple sidekiq instance, it&amp;rsquo;s
+possible to use more than one core, even on MRI.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>5 links for a rainy day</title>
@@ -524,42 +575,6 @@ Si je vois qu&amp;rsquo;une requête HTTP passe beaucoup de temps sur la base de
 Si je vois des requêtes faire pas mal de hits dans cette liste, je sais qu&amp;rsquo;il va falloir les surveiller de près.&lt;/p&gt;
 
 &lt;p&gt;Voilà, request-log-analyzer n&amp;rsquo;est pas un outil magique. Il ne fait qu&amp;rsquo;une chose, mais il le fait bien. Et c&amp;rsquo;est très utile pour savoir par où commencer à optimiser un site.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Railroad</title>
-      <link>http://blog.menfin.info/posts/2009-05-03-Railroad/</link>
-      <pubDate>Sun, 03 May 2009 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2009-05-03-Railroad/</guid>
-      <description>&lt;p&gt;Je commence une série d&amp;rsquo;articles sur des outils qu&amp;rsquo;il m&amp;rsquo;arrive d&amp;rsquo;utiliser quand je fais du développement Rails et qui mériterait, à mon avis, d&amp;rsquo;être plus connu.
-Le premier article de la série est &lt;a href=&#34;http://railroad.rubyforge.org/&#34;&gt;Railroad&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Railroad est un script Ruby qui permet de générer des graphes à partir d&amp;rsquo;une application d&amp;rsquo;une Rails, ce qui peut être très pratique pour accompagner une documentation quand on a la flemme de faire ces diagrammes soi-même.
-Railroad permet de générer 3 types de graphes : un pour les modèles, un pour les controlleurs et un pour les machines à états d&lt;em&gt;&amp;lsquo;acts_as_state_machine&lt;/em&gt;.
-Les diagrammes sont générés au format .dot, ce qui permet d&amp;rsquo;en faire facilement des .png ou des .svg avec la suite &lt;a href=&#34;http://www.graphviz.org/&#34;&gt;graphviz&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;auteur du script original ne maintient plus ce script mais on peut en trouver des forks sur &lt;a href=&#34;http://github.com/&#34;&gt;Github&lt;/a&gt;.
-Je conseille &lt;a href=&#34;http://github.com/ddollar/railroad/tree/master&#34;&gt;la branche de David Dollar&lt;/a&gt; :
-elle fonctionne avec les dernières versions de Rails et comporte mes patchs (&lt;a href=&#34;http://github.com/ddollar/railroad/commit/70b77a233d298356178a10f253f8d201cf5cad40&#34;&gt;1&lt;/a&gt; &lt;a href=&#34;http://github.com/ddollar/railroad/commit/a8815fc3ba8df8db44d078dbf2046ddf99538120&#34;&gt;2&lt;/a&gt; et &lt;a href=&#34;http://github.com/ddollar/railroad/commit/96fb1c540dfc8e2300969e4778a7c7bff9563c59&#34;&gt;3&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;En pratique, on installe le gem &lt;code&gt;ddollar-railroad&lt;/code&gt;, on ajoute une ligne à son fichier &lt;code&gt;Rakefile&lt;/code&gt; et roulez jeunesse :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gem install ddollar-railroad
-echo &amp;quot;require &#39;railroad/tasks/diagrams&#39; if RAILS_ENV == &#39;development&#39;&amp;quot; &amp;gt;&amp;gt; Rakefile
-rake doc:diagrams
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;On obtient 3 diagrammes dans doc/diagrams (à condition que graphviz soit installé).
-Voici, par exemple, ceux que j&amp;rsquo;obtiens pour &lt;a href=&#34;http://github.com/nono/linuxfr.org/tree/master&#34;&gt;la version Rails&lt;/a&gt; de &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFr.org&lt;/a&gt; :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/public/railroad_controllers.png&#34; alt=&#34;Railroad - controllers&#34; /&gt;
-
-&lt;img src=&#34;/public/railroad_models.png&#34; alt=&#34;Railroad - models&#34; /&gt;
-
-&lt;img src=&#34;/public/railroad_states.png&#34; alt=&#34;Railroad - states&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     
