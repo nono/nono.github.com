@@ -3,7 +3,7 @@
   <channel>
       <title>Vim on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://localhost:1313/categories/vim/index.xml</link>
+    <link>http://blog.menfin.info/categories/vim/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Encore plus de tips pour Vim</title>
-      <link>http://localhost:1313/posts/2008-10-31-Nouveaux-tips-Vim/</link>
+      <link>http://blog.menfin.info/posts/2008-10-31-Nouveaux-tips-Vim/</link>
       <pubDate>Fri, 31 Oct 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2008-10-31-Nouveaux-tips-Vim/</guid>
+      <guid>http://blog.menfin.info/posts/2008-10-31-Nouveaux-tips-Vim/</guid>
       <description>&lt;p&gt;Dans la série des astuces pour Vim, voici le troisième épisode (&lt;a href=&#34;http://blog.menfin.info/post/2007/11/18/Tips-pour-Vim&#34;&gt;le premier se trouve par ici&lt;/a&gt; et &lt;a href=&#34;http://blog.menfin.info/post/2008/01/22/Nouveaux-tips-pour-vim&#34;&gt;le second par là&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;Jamis Buck, l&amp;rsquo;auteur de &lt;a href=&#34;http://www.capify.org/&#34;&gt;Capistrano&lt;/a&gt;, revient sous Vim après plusieurs années de textmate.
@@ -52,10 +52,10 @@ Voici un petit screenshot de ce que cela donne chez moi :&lt;/p&gt;
     
     <item>
       <title>Github theme for Vim</title>
-      <link>http://localhost:1313/posts/2008-05-30-github-theme-for-vim/</link>
+      <link>http://blog.menfin.info/posts/2008-05-30-github-theme-for-vim/</link>
       <pubDate>Fri, 30 May 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2008-05-30-github-theme-for-vim/</guid>
+      <guid>http://blog.menfin.info/posts/2008-05-30-github-theme-for-vim/</guid>
       <description>&lt;p&gt;Scott Becker has made a &lt;a href=&#34;http://synthesis.sbecker.net/articles/2008/05/28/github-theme-for-textmate&#34;&gt;Github theme for Textmate&lt;/a&gt;,
 so I&amp;rsquo;ve decided to made a Github theme for ViM.&lt;/p&gt;
 
@@ -65,10 +65,10 @@ so I&amp;rsquo;ve decided to made a Github theme for ViM.&lt;/p&gt;
     
     <item>
       <title>Nouveaux tips pour vim</title>
-      <link>http://localhost:1313/posts/2008-01-22-De-nouveaux-tips-pour-vim/</link>
+      <link>http://blog.menfin.info/posts/2008-01-22-De-nouveaux-tips-pour-vim/</link>
       <pubDate>Tue, 22 Jan 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2008-01-22-De-nouveaux-tips-pour-vim/</guid>
+      <guid>http://blog.menfin.info/posts/2008-01-22-De-nouveaux-tips-pour-vim/</guid>
       <description>&lt;p&gt;Voici une nouvelle fournée de tips pour Vim. Pour les retardataires, la première série est toujours disponible &lt;a href=&#34;http://blog.menfin.info/post/2007/11/18/Tips-pour-Vim&#34;&gt;par là&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -86,10 +86,10 @@ so I&amp;rsquo;ve decided to made a Github theme for ViM.&lt;/p&gt;
     
     <item>
       <title>Tips pour Vim</title>
-      <link>http://localhost:1313/posts/2007-11-17-Tips-ViM/</link>
+      <link>http://blog.menfin.info/posts/2007-11-17-Tips-ViM/</link>
       <pubDate>Sat, 17 Nov 2007 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2007-11-17-Tips-ViM/</guid>
+      <guid>http://blog.menfin.info/posts/2007-11-17-Tips-ViM/</guid>
       <description>&lt;p&gt;Voici quelques trucs pour ViM que j&amp;rsquo;ai utilisé aujourd&amp;rsquo;hui :&lt;/p&gt;
 
 &lt;ul&gt;
@@ -105,10 +105,10 @@ so I&amp;rsquo;ve decided to made a Github theme for ViM.&lt;/p&gt;
     
     <item>
       <title>Copier-Coller depuis ViM</title>
-      <link>http://localhost:1313/posts/2006-07-11-copier-coller-depuis-vim/</link>
+      <link>http://blog.menfin.info/posts/2006-07-11-copier-coller-depuis-vim/</link>
       <pubDate>Tue, 11 Jul 2006 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2006-07-11-copier-coller-depuis-vim/</guid>
+      <guid>http://blog.menfin.info/posts/2006-07-11-copier-coller-depuis-vim/</guid>
       <description>&lt;p&gt;Dans mon dernier billet, j&amp;rsquo;écrivais que je rédige mes billets avec ViM, puis que je fais un copier-coller vers l&amp;rsquo;interface web de Dotclear.
 Pour cela, je fais la combinaison de touches suivantes :&lt;/p&gt;
 
@@ -127,10 +127,10 @@ et d&amp;rsquo;utiliser l&amp;rsquo;extension &lt;a href=&#34;http://mozex.mozde
     
     <item>
       <title>Coloration syntaxique dans Vim pour les billets Dotclear</title>
-      <link>http://localhost:1313/posts/2006-07-10-fichier-de-syntaxe-vim-pour-dotclear/</link>
+      <link>http://blog.menfin.info/posts/2006-07-10-fichier-de-syntaxe-vim-pour-dotclear/</link>
       <pubDate>Mon, 10 Jul 2006 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2006-07-10-fichier-de-syntaxe-vim-pour-dotclear/</guid>
+      <guid>http://blog.menfin.info/posts/2006-07-10-fichier-de-syntaxe-vim-pour-dotclear/</guid>
       <description>&lt;p&gt;Je ne sais pas pour vous, mais moi, j&amp;rsquo;ai horreur de devoir taper du texte dans mon navigateur web.
 Aussi, dès que je tape plus de quelques lignes, j&amp;rsquo;utilise ViM, puis je fais un copier-coller vers firefox.
 Cela me permet par exemple de profiter de la coloration syntaxique.&lt;/p&gt;
@@ -148,10 +148,10 @@ Il faut le placer dans le répertoire &lt;code&gt;~/.vim/syntax/&lt;/code&gt;.&l
     
     <item>
       <title>Templates dans vim 2 / 2</title>
-      <link>http://localhost:1313/posts/2006-07-09-templates-dans-vim-2-sur2/</link>
+      <link>http://blog.menfin.info/posts/2006-07-09-templates-dans-vim-2-sur2/</link>
       <pubDate>Sun, 09 Jul 2006 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2006-07-09-templates-dans-vim-2-sur2/</guid>
+      <guid>http://blog.menfin.info/posts/2006-07-09-templates-dans-vim-2-sur2/</guid>
       <description>&lt;p&gt;Comme promis, nous allons donc voir comment avoir des templates un peu plus dynamiques. Le langage de script de vim n&amp;rsquo;étant pas des plus sympathiques, je préfère appeler un programme externe.
 Pour cela, nous allons remplacer la ligne que nous avions insérée dans le fichier vimrc par celle-là :&lt;/p&gt;
 
@@ -230,10 +230,10 @@ Project: &amp;lt;%= File.split(directory).last %&amp;gt;
     
     <item>
       <title>Templates dans vim 1 / 2</title>
-      <link>http://localhost:1313/posts/2006-07-05-templates-dans-vim-1-sur2/</link>
+      <link>http://blog.menfin.info/posts/2006-07-05-templates-dans-vim-1-sur2/</link>
       <pubDate>Wed, 05 Jul 2006 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2006-07-05-templates-dans-vim-1-sur2/</guid>
+      <guid>http://blog.menfin.info/posts/2006-07-05-templates-dans-vim-1-sur2/</guid>
       <description>
 
 &lt;p&gt;Hop, pour ce premier tips, je vais vous montrer comment utiliser des templates dans Vim. Par exemple, supposons que je veuille avoir ces quelques lignes :&lt;/p&gt;

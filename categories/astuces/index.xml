@@ -3,7 +3,7 @@
   <channel>
       <title>Astuces on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://localhost:1313/categories/astuces/index.xml</link>
+    <link>http://blog.menfin.info/categories/astuces/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Firefox et about:config</title>
-      <link>http://localhost:1313/posts/2008-08-18-firefox-et-about-config/</link>
+      <link>http://blog.menfin.info/posts/2008-08-18-firefox-et-about-config/</link>
       <pubDate>Mon, 18 Aug 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2008-08-18-firefox-et-about-config/</guid>
+      <guid>http://blog.menfin.info/posts/2008-08-18-firefox-et-about-config/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.mozilla-europe.org/fr/&#34;&gt;Firefox&lt;/a&gt; est le navigateur que j&amp;rsquo;utilise tous les jours, et ce depuis un certain nombre d&amp;rsquo;années.
 Au fil du temps, je me suis habitué à un certain nombre de préférences, dont certaines doivent être configurées depuis la page &lt;code&gt;about:config&lt;/code&gt;.
 Pour ceux qui ne connaissent pas cette page, je dirais juste qu&amp;rsquo;il suffit de taper about:config dans la barre d&amp;rsquo;adresse de firefox pour accéder à un écran qui permet de modifier de nombreuses fonctionnalités avancées.

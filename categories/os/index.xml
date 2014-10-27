@@ -3,7 +3,7 @@
   <channel>
       <title>Os on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://localhost:1313/categories/os/index.xml</link>
+    <link>http://blog.menfin.info/categories/os/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Ce qui me manque sous Mac OSX</title>
-      <link>http://localhost:1313/posts/2007-10-22-Mac-OSX/</link>
+      <link>http://blog.menfin.info/posts/2007-10-22-Mac-OSX/</link>
       <pubDate>Mon, 22 Oct 2007 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2007-10-22-Mac-OSX/</guid>
+      <guid>http://blog.menfin.info/posts/2007-10-22-Mac-OSX/</guid>
       <description>
 
 &lt;p&gt;J&amp;rsquo;utilise GNU/Linux depuis plusieurs années, mais depuis quelques mois, je suis
