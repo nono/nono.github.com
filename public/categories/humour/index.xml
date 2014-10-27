@@ -3,7 +3,7 @@
   <channel>
       <title>Humour on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://localhost:1313/categories/humour/index.xml</link>
+    <link>http://blog.menfin.info/categories/humour/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Recherches Google</title>
-      <link>http://localhost:1313/posts/2008-10-25-recherches-google/</link>
+      <link>http://blog.menfin.info/posts/2008-10-25-recherches-google/</link>
       <pubDate>Sat, 25 Oct 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2008-10-25-recherches-google/</guid>
+      <guid>http://blog.menfin.info/posts/2008-10-25-recherches-google/</guid>
       <description>&lt;p&gt;Voici quelques recherches google qui ont amenées des personnes sur ce blog :&lt;/p&gt;
 
 &lt;ul&gt;
@@ -31,10 +31,10 @@
     
     <item>
       <title>SEPT RAISONS POUR LESQUELLES JE CONTINUE A UTILISER TEMPLEET ALORS QUE JE POURRAIS UTILISER RUBY ON RAILS</title>
-      <link>http://localhost:1313/posts/2007-09-23-7-raisons-pour-continuer-avec-templeet/</link>
+      <link>http://blog.menfin.info/posts/2007-09-23-7-raisons-pour-continuer-avec-templeet/</link>
       <pubDate>Sun, 23 Sep 2007 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2007-09-23-7-raisons-pour-continuer-avec-templeet/</guid>
+      <guid>http://blog.menfin.info/posts/2007-09-23-7-raisons-pour-continuer-avec-templeet/</guid>
       <description>
 
 &lt;p&gt;Ce texte est une parodie de &lt;a href=&#34;http://www.oreillynet.com/ruby/blog/2007/09/7_reasons_i_switched_back_to_p_1.html&#34;&gt;http://www.oreillynet.com/ruby/blog/2007/09/7_reasons_i_switched_back_to_p_1.html&lt;/a&gt;&lt;/p&gt;

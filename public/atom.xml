@@ -3,7 +3,7 @@
   <channel>
       <title>Recent Content on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/index.xml/</link>
+    <link>http://blog.menfin.info/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -525,7 +525,7 @@ C&amp;rsquo;est un gem qui ajoute un commentaire en haut de chacun de vos modèl
 
 &lt;p&gt;Voici un exemple tiré de ma réécriture de &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; en Rails :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# == Schema Information
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;# == Schema Information
 # Schema version: 20090120005239
 #
 # Table name: news

@@ -3,7 +3,7 @@
   <channel>
       <title>Blog on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://localhost:1313/categories/blog/index.xml</link>
+    <link>http://blog.menfin.info/categories/blog/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Changement de moteur pour ce blog</title>
-      <link>http://localhost:1313/posts/2012-02-29-changement-de-moteur-pour-ce-blog/</link>
+      <link>http://blog.menfin.info/posts/2012-02-29-changement-de-moteur-pour-ce-blog/</link>
       <pubDate>Wed, 29 Feb 2012 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2012-02-29-changement-de-moteur-pour-ce-blog/</guid>
+      <guid>http://blog.menfin.info/posts/2012-02-29-changement-de-moteur-pour-ce-blog/</guid>
       <description>&lt;p&gt;Ce blog existe depuis quelques années maintenant &amp;ndash; 2006, ça ne me rajeunit
 pas ! Et jusque là, c&amp;rsquo;était un &lt;a href=&#34;http://fr.dotclear.org/&#34;&gt;dotclear&lt;/a&gt; hébergé
 gracieusement chez &lt;a href=&#34;http://gandi.net&#34;&gt;gandi&lt;/a&gt; qui le faisait tourner.
@@ -35,10 +35,10 @@ d&amp;rsquo;arriver ;-)&lt;/p&gt;
     
     <item>
       <title>Changement de direction pour ce blog</title>
-      <link>http://localhost:1313/posts/2010-02-15-changement-de-direction-pour-ce-blog/</link>
+      <link>http://blog.menfin.info/posts/2010-02-15-changement-de-direction-pour-ce-blog/</link>
       <pubDate>Mon, 15 Feb 2010 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2010-02-15-changement-de-direction-pour-ce-blog/</guid>
+      <guid>http://blog.menfin.info/posts/2010-02-15-changement-de-direction-pour-ce-blog/</guid>
       <description>&lt;p&gt;Comme vous avez pu le constater, ce blog est encore moins actif ces derniers
 temps qu&amp;rsquo;il n&amp;rsquo;a pu l&amp;rsquo;être auparavant. La raison est simple : j&amp;rsquo;écris
 principalement des billets techniques autour du web et du développement, or
@@ -75,10 +75,10 @@ vais rapidement écrire un billet montrant un de ces &lt;em&gt;lifehacks&lt;/em&
     
     <item>
       <title>Premier billet</title>
-      <link>http://localhost:1313/posts/2006-07-03-premier-billet/</link>
+      <link>http://blog.menfin.info/posts/2006-07-03-premier-billet/</link>
       <pubDate>Mon, 03 Jul 2006 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2006-07-03-premier-billet/</guid>
+      <guid>http://blog.menfin.info/posts/2006-07-03-premier-billet/</guid>
       <description>&lt;p&gt;Pas grand chose pour le moment. Je devrais poster quelques tips dans les jours qui viennent. Et pour la suite, on verra en temps voulu. Et pour ceux qui se demanderaient d&amp;rsquo;ou vient le titre de ce blog, c&amp;rsquo;est juste l&amp;rsquo;onomatopée préférée de Gaston Lagaffe.&lt;/p&gt;
 </description>
     </item>

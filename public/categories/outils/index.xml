@@ -3,7 +3,7 @@
   <channel>
       <title>Outils on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://localhost:1313/categories/outils/index.xml</link>
+    <link>http://blog.menfin.info/categories/outils/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Le navigateur web Arora</title>
-      <link>http://localhost:1313/posts/2008-12-02-la-navigateur-web-Aroha/</link>
+      <link>http://blog.menfin.info/posts/2008-12-02-la-navigateur-web-Aroha/</link>
       <pubDate>Tue, 02 Dec 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2008-12-02-la-navigateur-web-Aroha/</guid>
+      <guid>http://blog.menfin.info/posts/2008-12-02-la-navigateur-web-Aroha/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai récemment eu besoin de résoudre des bugs sur &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; qui était lié au moteur javascript de Safari
 (les &lt;a href=&#34;https://linuxfr.org/tracker/883.html&#34;&gt;#883&lt;/a&gt; et &lt;a href=&#34;https://linuxfr.org/tracker/900.html&#34;&gt;#900&lt;/a&gt; si vous voulez tout savoir).
 Étant sous GNU/Linux, je ne pouvais pas installer Safari, et bien entendu, je n&amp;rsquo;arrivais pas à reproduire les bugs sous Firefox.
@@ -30,10 +30,10 @@ Bref, même si ce navigateur n&amp;rsquo;a rien de révolutionnaire, je suis bie
     
     <item>
       <title>Outils pour tracer des graphes</title>
-      <link>http://localhost:1313/posts/2008-05-09-outils-pour-tracer-des-graphes/</link>
+      <link>http://blog.menfin.info/posts/2008-05-09-outils-pour-tracer-des-graphes/</link>
       <pubDate>Fri, 09 May 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2008-05-09-outils-pour-tracer-des-graphes/</guid>
+      <guid>http://blog.menfin.info/posts/2008-05-09-outils-pour-tracer-des-graphes/</guid>
       <description>&lt;p&gt;Je cherche depuis un certain temps un outil pour tracer des graphes.
 En général, j&amp;rsquo;utilise la suite &lt;a href=&#34;http://www.graphviz.org/&#34;&gt;Graphviz&lt;/a&gt; pour faire cela.
 Le principe est relativement simple : on décrit le graphe dans un fichier au format dot, puis on utilise un des 5 outils (dot, neato, fdp, circo et twopi) pour générer une image.

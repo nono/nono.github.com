@@ -3,7 +3,7 @@
   <channel>
       <title>Linuxfr on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://localhost:1313/categories/linuxfr/index.xml</link>
+    <link>http://blog.menfin.info/categories/linuxfr/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>LinuxFr.org avec des commentaires et des réponses aux commentaires, et des réponses aux réponses, etc.</title>
-      <link>http://localhost:1313/posts/2009-02-08-Commentaires-LinuxFr/</link>
+      <link>http://blog.menfin.info/posts/2009-02-08-Commentaires-LinuxFr/</link>
       <pubDate>Sun, 08 Feb 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2009-02-08-Commentaires-LinuxFr/</guid>
+      <guid>http://blog.menfin.info/posts/2009-02-08-Commentaires-LinuxFr/</guid>
       <description>&lt;p&gt;Les développements continuent d&amp;rsquo;avancer pour la refonte en Rails de &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFr.org&lt;/a&gt;.
 Je me suis attaqué à un refactoring des commentaires.
 Les fils de discussions de LinuxFr.org sous forme d&amp;rsquo;arbres sont une des forces du site : ils permettent de suivre les discussions très intéressantes (et les trolls, bien sûr).
@@ -34,10 +34,10 @@ Je pourrais ensuite me pencher sur une nouvelle partie (la tribune ou le tracker
     
     <item>
       <title>Attention les yeux, ça va piquer !</title>
-      <link>http://localhost:1313/posts/2009-02-04-Attention-les-yeux/</link>
+      <link>http://blog.menfin.info/posts/2009-02-04-Attention-les-yeux/</link>
       <pubDate>Wed, 04 Feb 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2009-02-04-Attention-les-yeux/</guid>
+      <guid>http://blog.menfin.info/posts/2009-02-04-Attention-les-yeux/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai repris mes développements sur LinuxFr.org, avec comme règle, d&amp;rsquo;en faire un peu tous les jours.
 Pour le moment, cela marche pas trop mal.
 Là, ça fait 5 jours de suite que je commite, et j&amp;rsquo;ai pu avancer sur les dépêches (aussi bien, création que toute la partie backend de modération).
@@ -54,10 +54,10 @@ En fait, j&amp;rsquo;espère bien ne pas avoir à faire la feuille de style fina
     
     <item>
       <title>LinuxFr.org sur des Rails</title>
-      <link>http://localhost:1313/posts/2009-01-19-LinuxFr.org-sur-des-rails/</link>
+      <link>http://blog.menfin.info/posts/2009-01-19-LinuxFr.org-sur-des-rails/</link>
       <pubDate>Mon, 19 Jan 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2009-01-19-LinuxFr.org-sur-des-rails/</guid>
+      <guid>http://blog.menfin.info/posts/2009-01-19-LinuxFr.org-sur-des-rails/</guid>
       <description>&lt;p&gt;Pour 2009, je n&amp;rsquo;ai pris qu&amp;rsquo;une bonne résolution, mais elle est de taille.
 Ceux qui ont lu &lt;a href=&#34;http://linuxfr.org/~etix/27721.html&#34;&gt;ce journal sur LinuxFr.org&lt;/a&gt; savent déjà en quoi elle consiste.
 Pour les autres, la voici : je compte refaire le site &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFr.org&lt;/a&gt; en &lt;a href=&#34;http://www.rubyonrails.org&#34;&gt;Ruby on Rails&lt;/a&gt;.&lt;/p&gt;
@@ -79,10 +79,10 @@ Je vais tout faire pour éviter ces périodes creuses, car le seul moyen de sort
     
     <item>
       <title>LinuxFR.org a dix ans, soirée Firefox 3 et autres joyeusetés</title>
-      <link>http://localhost:1313/posts/2008-06-28-linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes/</link>
+      <link>http://blog.menfin.info/posts/2008-06-28-linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes/</link>
       <pubDate>Sat, 28 Jun 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2008-06-28-linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes/</guid>
+      <guid>http://blog.menfin.info/posts/2008-06-28-linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes/</guid>
       <description>
 
 &lt;p&gt;Je n&amp;rsquo;ai pas pour habitude de faire des billets en vrac, mais ce sera exceptionnellement le cas.

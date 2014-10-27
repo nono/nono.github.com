@@ -3,7 +3,7 @@
   <channel>
       <title>Rails on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://localhost:1313/categories/rails/index.xml</link>
+    <link>http://blog.menfin.info/categories/rails/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Rails ou Sinatra ?</title>
-      <link>http://localhost:1313/posts/2011-06-27-Rails-ou-sinatra/</link>
+      <link>http://blog.menfin.info/posts/2011-06-27-Rails-ou-sinatra/</link>
       <pubDate>Mon, 27 Jun 2011 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2011-06-27-Rails-ou-sinatra/</guid>
+      <guid>http://blog.menfin.info/posts/2011-06-27-Rails-ou-sinatra/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Ruby on Rails&lt;/a&gt; ou
 &lt;a href=&#34;http://www.sinatrarb.com/&#34;&gt;Sinatra&lt;/a&gt;, comment choisir entre les deux ? C&amp;rsquo;est
 une question que j&amp;rsquo;entends régulièrement et pour laquelle, je suis toujours un
@@ -71,10 +71,10 @@ une souplesse incroyable pour les hackers confirmés.&lt;/p&gt;
     
     <item>
       <title>French_Rails compatible avec Rails3.0.0.beta4</title>
-      <link>http://localhost:1313/posts/2010-06-09-frenchrails-compatible-avec-rails3/</link>
+      <link>http://blog.menfin.info/posts/2010-06-09-frenchrails-compatible-avec-rails3/</link>
       <pubDate>Wed, 09 Jun 2010 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2010-06-09-frenchrails-compatible-avec-rails3/</guid>
+      <guid>http://blog.menfin.info/posts/2010-06-09-frenchrails-compatible-avec-rails3/</guid>
       <description>&lt;p&gt;Une &lt;a href=&#34;http://weblog.rubyonrails.org/2010/6/8/rails-3-0-beta-4-now-rc-in-days&#34;&gt;nouvelle version beta de
 Rails3&lt;/a&gt;
 vient de sortir. Elle utilise une version plus récente
@@ -87,10 +87,10 @@ corrigé ça et sorti une nouvelle version :
     
     <item>
       <title>Mise à jour de FrenchRails</title>
-      <link>http://localhost:1313/posts/2009-12-23-mise-a-jour-de-french-rails/</link>
+      <link>http://blog.menfin.info/posts/2009-12-23-mise-a-jour-de-french-rails/</link>
       <pubDate>Wed, 23 Dec 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2009-12-23-mise-a-jour-de-french-rails/</guid>
+      <guid>http://blog.menfin.info/posts/2009-12-23-mise-a-jour-de-french-rails/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai un petit plugin pour Rails qui permet de localiser facilement une application Rails : &lt;a href=&#34;http://github.com/nono/french-rails/tree/master&#34;&gt;FrenchRails&lt;/a&gt;.
 Pour ceux qui auraient raté &lt;a href=&#34;http://blog.menfin.info/post/2009/03/18/Un-plugin-RoR-nomme-FrenchRails&#34;&gt;l&amp;rsquo;épisode précédent&lt;/a&gt;, en gros, ça permet de prendre en compte le fait que 0 est un singulier en français (alors que c&amp;rsquo;est pluriel en anglais).&lt;/p&gt;
 
@@ -104,10 +104,10 @@ Il est disponible sur &lt;a href=&#34;http://rubygems.org/gems/french_rails&#34;
     
     <item>
       <title>Annotez vos modèles</title>
-      <link>http://localhost:1313/posts/2009-05-21-annotez-vos-modeles/</link>
+      <link>http://blog.menfin.info/posts/2009-05-21-annotez-vos-modeles/</link>
       <pubDate>Thu, 21 May 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2009-05-21-annotez-vos-modeles/</guid>
+      <guid>http://blog.menfin.info/posts/2009-05-21-annotez-vos-modeles/</guid>
       <description>&lt;p&gt;Quand je travaille sur des modèles dans Rails, j&amp;rsquo;ai souvent besoin de regarder la liste des champs de ce modèle.
 Vous savez, ces petites questions toutes bêtes que l&amp;rsquo;on se pose tous : c&amp;rsquo;est &lt;code&gt;firstname&lt;/code&gt; ou &lt;code&gt;first_name&lt;/code&gt; ? &lt;code&gt;phone&lt;/code&gt; ou &lt;code&gt;mobile&lt;/code&gt; ? &lt;code&gt;name&lt;/code&gt; ou &lt;code&gt;title&lt;/code&gt; ? &lt;code&gt;description&lt;/code&gt; ou &lt;code&gt;body&lt;/code&gt; ?&lt;/p&gt;
 
@@ -141,10 +141,10 @@ Pour ma part, je fais ça après chaque &lt;code&gt;rake db:migrate&lt;/code&gt;
     
     <item>
       <title>Request-log-analyzer</title>
-      <link>http://localhost:1313/posts/2009-05-17-request-log-analyzer/</link>
+      <link>http://blog.menfin.info/posts/2009-05-17-request-log-analyzer/</link>
       <pubDate>Sun, 17 May 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2009-05-17-request-log-analyzer/</guid>
+      <guid>http://blog.menfin.info/posts/2009-05-17-request-log-analyzer/</guid>
       <description>&lt;p&gt;Dans la série des outils pour Rails que j&amp;rsquo;apprécie, je vais vous parler de &lt;a href=&#34;http://github.com/wvanbergen/request-log-analyzer/tree/master&#34;&gt;request-log-analyzer&lt;/a&gt;.
 Pourquoi lui ? Parce qu&amp;rsquo;il m&amp;rsquo;a rendu bien service cette semaine.&lt;/p&gt;
 
@@ -172,10 +172,10 @@ Si je vois des requêtes faire pas mal de hits dans cette liste, je sais qu&amp;
     
     <item>
       <title>Railroad</title>
-      <link>http://localhost:1313/posts/2009-05-03-Railroad/</link>
+      <link>http://blog.menfin.info/posts/2009-05-03-Railroad/</link>
       <pubDate>Sun, 03 May 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2009-05-03-Railroad/</guid>
+      <guid>http://blog.menfin.info/posts/2009-05-03-Railroad/</guid>
       <description>&lt;p&gt;Je commence une série d&amp;rsquo;articles sur des outils qu&amp;rsquo;il m&amp;rsquo;arrive d&amp;rsquo;utiliser quand je fais du développement Rails et qui mériterait, à mon avis, d&amp;rsquo;être plus connu.
 Le premier article de la série est &lt;a href=&#34;http://railroad.rubyforge.org/&#34;&gt;Railroad&lt;/a&gt;.&lt;/p&gt;
 
@@ -208,10 +208,10 @@ Voici, par exemple, ceux que j&amp;rsquo;obtiens pour &lt;a href=&#34;http://git
     
     <item>
       <title>Un plugin RoR nommé FrenchRails</title>
-      <link>http://localhost:1313/posts/2009-03-17-un-plugin-Rails-nomme-French-Rails/</link>
+      <link>http://blog.menfin.info/posts/2009-03-17-un-plugin-Rails-nomme-French-Rails/</link>
       <pubDate>Tue, 17 Mar 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2009-03-17-un-plugin-Rails-nomme-French-Rails/</guid>
+      <guid>http://blog.menfin.info/posts/2009-03-17-un-plugin-Rails-nomme-French-Rails/</guid>
       <description>&lt;p&gt;Comme vous le savez déjà sûrement, je suis en train de re-écrire &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFr.org&lt;/a&gt; en &lt;a href=&#34;http://rubyonrails.org&#34;&gt;Rails&lt;/a&gt;.
 Et quand j&amp;rsquo;ai montré où j&amp;rsquo;en étais, on m&amp;rsquo;a remonté un bug étrange : j&amp;rsquo;affiche &amp;ldquo;0 commentaires&amp;rdquo; avec un s à la fin, ce qui est grammaticalement incorrect.&lt;/p&gt;
 
@@ -241,10 +241,10 @@ En tout cas, moi, je compte l&amp;rsquo;utiliser sur plusieurs projets.&lt;/p&gt
     
     <item>
       <title>Rails et la sécurité</title>
-      <link>http://localhost:1313/posts/2008-07-18-programmez-rails-et-la-securite/</link>
+      <link>http://blog.menfin.info/posts/2008-07-18-programmez-rails-et-la-securite/</link>
       <pubDate>Fri, 18 Jul 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2008-07-18-programmez-rails-et-la-securite/</guid>
+      <guid>http://blog.menfin.info/posts/2008-07-18-programmez-rails-et-la-securite/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Introduction&lt;/h2&gt;
@@ -436,10 +436,10 @@ Il est également important de se tenir au courant des mises à jour de sécurit
     
     <item>
       <title>Annonces RailsConf 2008</title>
-      <link>http://localhost:1313/posts/2008-05-08-annonces-railsconf/</link>
+      <link>http://blog.menfin.info/posts/2008-05-08-annonces-railsconf/</link>
       <pubDate>Thu, 08 May 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://localhost:1313/posts/2008-05-08-annonces-railsconf/</guid>
+      <guid>http://blog.menfin.info/posts/2008-05-08-annonces-railsconf/</guid>
       <description>&lt;p&gt;La &lt;a href=&#34;http://en.oreilly.com/rails2008/&#34;&gt;RailsConf 2008&lt;/a&gt;, la grande messe annuelle des railers, aura lieu du 29 mai au 6 juin.
 A cette occasion, un certain nombre d&amp;rsquo;annonces devrait être faites.
 Bien entendu, la plus attendue sera celle de &lt;a href=&#34;|http://rubyonrails.com&#34;&gt;Ruby on Rails&lt;/a&gt; 2.1.
