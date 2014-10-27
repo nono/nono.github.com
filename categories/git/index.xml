@@ -3,7 +3,7 @@
   <channel>
       <title>Git on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/git/index.xml/</link>
+    <link>http://localhost:1313/categories/git/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Afficher la branche Git courante dans le prompt de ZSH</title>
-      <link>http://blog.menfin.info/posts/2008-03-15-git-branch-dans-le-prompt-zsh/</link>
+      <link>http://localhost:1313/posts/2008-03-15-git-branch-dans-le-prompt-zsh/</link>
       <pubDate>Sat, 15 Mar 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2008-03-15-git-branch-dans-le-prompt-zsh/</guid>
+      <guid>http://localhost:1313/posts/2008-03-15-git-branch-dans-le-prompt-zsh/</guid>
       <description>&lt;p&gt;Je suis tombé sur un tips bien sympa :
 &lt;a href=&#34;http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/&#34;&gt;Show Your GIT Branch Name In Your Prompt&lt;/a&gt;.
 Il y est expliqué comment avoir la branche &lt;a href=&#34;http://git.or.cz/&#34;&gt;Git&lt;/a&gt; en cours dans son prompt avec &lt;a href=&#34;http://www.gnu.org/software/bash/&#34;&gt;Bash&lt;/a&gt;.&lt;/p&gt;
