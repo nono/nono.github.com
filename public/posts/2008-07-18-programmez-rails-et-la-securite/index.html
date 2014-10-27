@@ -16,7 +16,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://blog.menfin.info/posts/2008-07-18-programmez-rails-et-la-securite/" />
+<meta property="og:url" content="http://localhost:1313/posts/2008-07-18-programmez-rails-et-la-securite/" />
 
 
   
@@ -28,7 +28,7 @@
   
   
 
-  <link rel="stylesheet" href="http://blog.menfin.info/css/redlounge.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/redlounge.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -65,7 +65,7 @@
 
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://blog.menfin.info">Home</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://localhost:1313">Home</a></li>
         
           <li class="nav-item"><span class="nav-item-separator">//</span><a href="/index.xml">Feed</a></li>
         
@@ -74,6 +74,10 @@
 
     
     <div class="social-buttons">
+      
+        
+        <a href="https://github.com/nono" target="_blank"><i class='fa fa-github'></i></a>
+        
       
         
         <a href="http://linuxfr.org/users/nono" target="_blank"><i class='fa fa-linux'></i></a>
@@ -85,10 +89,6 @@
       
         
         <a href="https://www.twitter.com/brmichel" target="_blank"><i class='fa fa-twitter'></i></a>
-        
-      
-        
-        <a href="https://github.com/nono" target="_blank"><i class='fa fa-github'></i></a>
         
       
       
@@ -170,18 +170,18 @@ Nous allons voir les principaux types d&rsquo;attaques et comment les éviter.</
 Une injection SQL consiste simplement à envoyer des données non prévues dans une requête SQL.
 Prenons comme exemple une application web où les utilisateurs sont authentifiés de la manière suivante :</p>
 
-<pre><code class="language-ruby">@current_user = User.find(:first, :conditions =&gt; &quot;login='#{params[:login)}' AND password='#{params[:password)}'&quot;)
+<pre><code class="ruby">@current_user = User.find(:first, :conditions =&gt; &quot;login='#{params[:login)}' AND password='#{params[:password)}'&quot;)
 </code></pre>
 
 <p>En temps normal, quand Joe s&rsquo;authentifie, la requête SQL suivante est exécutée :</p>
 
-<pre><code class="language-sql">SELECT * FROM users WHERE login='Joe' AND password='0521bc575b0ff61daa62494c7ae9c5b6' LIMIT 1;
+<pre><code class="sql">SELECT * FROM users WHERE login='Joe' AND password='0521bc575b0ff61daa62494c7ae9c5b6' LIMIT 1;
 </code></pre>
 
 <p>Mais supposons maintenant que Kevin, un Script Kiddie, passe dans le coin et décide de mettre <code>&quot;Joe'; --&quot;</code> dans le champ login.
 La requête SQL va alors ressembler à :</p>
 
-<pre><code class="language-sql">SELECT * FROM users WHERE login='Joe'; --' AND password='00000000000000000000000000000000' LIMIT 1;
+<pre><code class="sql">SELECT * FROM users WHERE login='Joe'; --' AND password='00000000000000000000000000000000' LIMIT 1;
 </code></pre>
 
 <p>Kevin a réussi à se faire passer pour Joe sans connaître son mot de passe !</p>
@@ -189,12 +189,12 @@ La requête SQL va alors ressembler à :</p>
 <p>Heureusement, Active Record permet de <a href="http://manuals.rubyonrails.com/read/chapter/43">nous en protéger assez facilement</a>.
 Pour cela, il suffit d&rsquo;utiliser les formes échappées comme cela :</p>
 
-<pre><code class="language-ruby">@current_user = User.find(:first, :conditions =&gt; [&quot;login=? AND password=?&quot;, params[:login), params[:password)))
+<pre><code class="ruby">@current_user = User.find(:first, :conditions =&gt; [&quot;login=? AND password=?&quot;, params[:login), params[:password)))
 </code></pre>
 
 <p>ou de façon équivalente :</p>
 
-<pre><code class="language-ruby">@current_user = User.find(:first, :conditions =&gt; {:login =&gt; params[:login), :password =&gt; params[:password)})
+<pre><code class="ruby">@current_user = User.find(:first, :conditions =&gt; {:login =&gt; params[:login), :password =&gt; params[:password)})
 </code></pre>
 
 <p>Dans les 2 cas, Active Record rajoutera un caractère <code>'\'</code> devant chaque apostrophe de façon à éviter les injections SQL.</p>
@@ -216,14 +216,14 @@ En effet, Rails possède quelques raccourcis très pratiques, mais qui peuvent p
 Le plus courant est <a href="http://manuals.rubyonrails.com/read/chapter/47">l&rsquo;affectation de masse</a>, technique qui consiste à créer un objet Active Record directement depuis les paramètres de la requête HTTP.
 Par exemple, la création d&rsquo;un compte utilisateur pourra s&rsquo;effectuer de la façon suivante :</p>
 
-<pre><code class="language-ruby">@user = User.create(params[:user))
+<pre><code class="ruby">@user = User.create(params[:user))
 </code></pre>
 
 <p>Supposons maintenant que la table <code>'users'</code> comporte un champ <code>'admin'</code> qui vaut <code>0</code> par défaut ou <code>1</code> pour les super-utilisateurs.
 Un utilisateur malveillant pourrait forger la requête HTTP pour ajouter un paramètre <code>user[admin)=1</code> afin de gagner les pouvoirs réservés aux admins.
 La première solution pour se protéger de cette attaque consiste à écrire explicitement quels sont les paramètres autorisés :</p>
 
-<pre><code class="language-ruby">@user = User.create(
+<pre><code class="ruby">@user = User.create(
 	:login =&gt; params[:user)[:login),
 	:email =&gt; params[:user)[:email),
 	:password =&gt; params[:user)[:password),
@@ -234,7 +234,7 @@ La première solution pour se protéger de cette attaque consiste à écrire exp
 C&rsquo;est pourquoi on lui préfère généralement la deuxième solution : la déclaration dans le modèle de la liste des attributs qui ne peuvent pas être modifiés.
 Cette déclaration se fait à l&rsquo;aide de la méthode <strong><code>attr_protected</code></strong> comme suit :</p>
 
-<pre><code class="language-ruby">class User &lt; ActiveRecord::Base
+<pre><code class="ruby">class User &lt; ActiveRecord::Base
 	attr_protected :admin
 	...
 end
@@ -247,7 +247,7 @@ Si, par exemple, l&rsquo;utilisateur authentifié peut supprimer l&rsquo;item n�
 La réponse dépend du code de la méthode <code>delete</code>.
 Une implémentation de base pourrait ressembler à :</p>
 
-<pre><code class="language-ruby">class ItemsController &lt; ApplicationController
+<pre><code class="ruby">class ItemsController &lt; ApplicationController
 	def delete
 		Item.delete(params[:id))
 	end
@@ -256,7 +256,7 @@ end
 
 <p>Pour se protéger des URL forgées, on pourrait la transformer en :</p>
 
-<pre><code class="language-ruby">class ItemsController &lt; ApplicationController
+<pre><code class="ruby">class ItemsController &lt; ApplicationController
 	def delete
 		@item = @current_user.items.find(params[:id))
 		@item.delete if @item
@@ -269,7 +269,7 @@ end
 <p>Un dernier petit truc pour la route avant de passer à autre chose.
 Si vous avez une API pour laquelle vous utilisez la sérialisation XML, il peut être intéressant de surcharger <code>ActiveRecord#to_xml</code> pour que le champ <code>secret_field</code> n&rsquo;y apparaisse pas :</p>
 
-<pre><code class="language-ruby">class Item &lt; ActiveRecord::Base
+<pre><code class="ruby">class Item &lt; ActiveRecord::Base
 	def to_xml(args={})
 		super({:except =&gt; [:secret_field)}.merge(args))
 	end
@@ -285,7 +285,7 @@ Ceci peut aller du spammeur qui mettra une balise <code>&lt;iframe&gt;</code> ve
 
 <p>Par exemple, quelqu&rsquo;un crée un item dont la description est la suivante :</p>
 
-<pre><code class="language-html">&lt;script&gt;document.location='http://www.programmez.com/';&lt;/script&gt;
+<pre><code class="html">&lt;script&gt;document.location='http://www.programmez.com/';&lt;/script&gt;
 </code></pre>
 
 <p>Si maintenant un visiteur affiche la description de cet item, il sera redirigé vers le site www.programmez.com.
@@ -386,6 +386,21 @@ Il est également important de se tenir au courant des mises à jour de sécurit
 
 	
 
-  
-</body>
+  <script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100784575);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100784575ns.gif" /></p></noscript>
+
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>

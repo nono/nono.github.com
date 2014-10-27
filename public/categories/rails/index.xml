@@ -3,7 +3,7 @@
   <channel>
       <title>Rails on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/rails/index.xml/</link>
+    <link>http://localhost:1313/categories/rails/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Rails ou Sinatra ?</title>
-      <link>http://blog.menfin.info/posts/2011-06-27-Rails-ou-sinatra/</link>
+      <link>http://localhost:1313/posts/2011-06-27-Rails-ou-sinatra/</link>
       <pubDate>Mon, 27 Jun 2011 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2011-06-27-Rails-ou-sinatra/</guid>
+      <guid>http://localhost:1313/posts/2011-06-27-Rails-ou-sinatra/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Ruby on Rails&lt;/a&gt; ou
 &lt;a href=&#34;http://www.sinatrarb.com/&#34;&gt;Sinatra&lt;/a&gt;, comment choisir entre les deux ? C&amp;rsquo;est
 une question que j&amp;rsquo;entends régulièrement et pour laquelle, je suis toujours un
@@ -71,10 +71,10 @@ une souplesse incroyable pour les hackers confirmés.&lt;/p&gt;
     
     <item>
       <title>French_Rails compatible avec Rails3.0.0.beta4</title>
-      <link>http://blog.menfin.info/posts/2010-06-09-frenchrails-compatible-avec-rails3/</link>
+      <link>http://localhost:1313/posts/2010-06-09-frenchrails-compatible-avec-rails3/</link>
       <pubDate>Wed, 09 Jun 2010 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2010-06-09-frenchrails-compatible-avec-rails3/</guid>
+      <guid>http://localhost:1313/posts/2010-06-09-frenchrails-compatible-avec-rails3/</guid>
       <description>&lt;p&gt;Une &lt;a href=&#34;http://weblog.rubyonrails.org/2010/6/8/rails-3-0-beta-4-now-rc-in-days&#34;&gt;nouvelle version beta de
 Rails3&lt;/a&gt;
 vient de sortir. Elle utilise une version plus récente
@@ -87,10 +87,10 @@ corrigé ça et sorti une nouvelle version :
     
     <item>
       <title>Mise à jour de FrenchRails</title>
-      <link>http://blog.menfin.info/posts/2009-12-23-mise-a-jour-de-french-rails/</link>
+      <link>http://localhost:1313/posts/2009-12-23-mise-a-jour-de-french-rails/</link>
       <pubDate>Wed, 23 Dec 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2009-12-23-mise-a-jour-de-french-rails/</guid>
+      <guid>http://localhost:1313/posts/2009-12-23-mise-a-jour-de-french-rails/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai un petit plugin pour Rails qui permet de localiser facilement une application Rails : &lt;a href=&#34;http://github.com/nono/french-rails/tree/master&#34;&gt;FrenchRails&lt;/a&gt;.
 Pour ceux qui auraient raté &lt;a href=&#34;http://blog.menfin.info/post/2009/03/18/Un-plugin-RoR-nomme-FrenchRails&#34;&gt;l&amp;rsquo;épisode précédent&lt;/a&gt;, en gros, ça permet de prendre en compte le fait que 0 est un singulier en français (alors que c&amp;rsquo;est pluriel en anglais).&lt;/p&gt;
 
@@ -104,10 +104,10 @@ Il est disponible sur &lt;a href=&#34;http://rubygems.org/gems/french_rails&#34;
     
     <item>
       <title>Annotez vos modèles</title>
-      <link>http://blog.menfin.info/posts/2009-05-21-annotez-vos-modeles/</link>
+      <link>http://localhost:1313/posts/2009-05-21-annotez-vos-modeles/</link>
       <pubDate>Thu, 21 May 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2009-05-21-annotez-vos-modeles/</guid>
+      <guid>http://localhost:1313/posts/2009-05-21-annotez-vos-modeles/</guid>
       <description>&lt;p&gt;Quand je travaille sur des modèles dans Rails, j&amp;rsquo;ai souvent besoin de regarder la liste des champs de ce modèle.
 Vous savez, ces petites questions toutes bêtes que l&amp;rsquo;on se pose tous : c&amp;rsquo;est &lt;code&gt;firstname&lt;/code&gt; ou &lt;code&gt;first_name&lt;/code&gt; ? &lt;code&gt;phone&lt;/code&gt; ou &lt;code&gt;mobile&lt;/code&gt; ? &lt;code&gt;name&lt;/code&gt; ou &lt;code&gt;title&lt;/code&gt; ? &lt;code&gt;description&lt;/code&gt; ou &lt;code&gt;body&lt;/code&gt; ?&lt;/p&gt;
 
@@ -117,7 +117,7 @@ C&amp;rsquo;est un gem qui ajoute un commentaire en haut de chacun de vos modèl
 
 &lt;p&gt;Voici un exemple tiré de ma réécriture de &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; en Rails :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# == Schema Information
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;# == Schema Information
 # Schema version: 20090120005239
 #
 # Table name: news
@@ -141,10 +141,10 @@ Pour ma part, je fais ça après chaque &lt;code&gt;rake db:migrate&lt;/code&gt;
     
     <item>
       <title>Request-log-analyzer</title>
-      <link>http://blog.menfin.info/posts/2009-05-17-request-log-analyzer/</link>
+      <link>http://localhost:1313/posts/2009-05-17-request-log-analyzer/</link>
       <pubDate>Sun, 17 May 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2009-05-17-request-log-analyzer/</guid>
+      <guid>http://localhost:1313/posts/2009-05-17-request-log-analyzer/</guid>
       <description>&lt;p&gt;Dans la série des outils pour Rails que j&amp;rsquo;apprécie, je vais vous parler de &lt;a href=&#34;http://github.com/wvanbergen/request-log-analyzer/tree/master&#34;&gt;request-log-analyzer&lt;/a&gt;.
 Pourquoi lui ? Parce qu&amp;rsquo;il m&amp;rsquo;a rendu bien service cette semaine.&lt;/p&gt;
 
@@ -172,10 +172,10 @@ Si je vois des requêtes faire pas mal de hits dans cette liste, je sais qu&amp;
     
     <item>
       <title>Railroad</title>
-      <link>http://blog.menfin.info/posts/2009-05-03-Railroad/</link>
+      <link>http://localhost:1313/posts/2009-05-03-Railroad/</link>
       <pubDate>Sun, 03 May 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2009-05-03-Railroad/</guid>
+      <guid>http://localhost:1313/posts/2009-05-03-Railroad/</guid>
       <description>&lt;p&gt;Je commence une série d&amp;rsquo;articles sur des outils qu&amp;rsquo;il m&amp;rsquo;arrive d&amp;rsquo;utiliser quand je fais du développement Rails et qui mériterait, à mon avis, d&amp;rsquo;être plus connu.
 Le premier article de la série est &lt;a href=&#34;http://railroad.rubyforge.org/&#34;&gt;Railroad&lt;/a&gt;.&lt;/p&gt;
 
@@ -208,10 +208,10 @@ Voici, par exemple, ceux que j&amp;rsquo;obtiens pour &lt;a href=&#34;http://git
     
     <item>
       <title>Un plugin RoR nommé FrenchRails</title>
-      <link>http://blog.menfin.info/posts/2009-03-17-un-plugin-Rails-nomme-French-Rails/</link>
+      <link>http://localhost:1313/posts/2009-03-17-un-plugin-Rails-nomme-French-Rails/</link>
       <pubDate>Tue, 17 Mar 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2009-03-17-un-plugin-Rails-nomme-French-Rails/</guid>
+      <guid>http://localhost:1313/posts/2009-03-17-un-plugin-Rails-nomme-French-Rails/</guid>
       <description>&lt;p&gt;Comme vous le savez déjà sûrement, je suis en train de re-écrire &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFr.org&lt;/a&gt; en &lt;a href=&#34;http://rubyonrails.org&#34;&gt;Rails&lt;/a&gt;.
 Et quand j&amp;rsquo;ai montré où j&amp;rsquo;en étais, on m&amp;rsquo;a remonté un bug étrange : j&amp;rsquo;affiche &amp;ldquo;0 commentaires&amp;rdquo; avec un s à la fin, ce qui est grammaticalement incorrect.&lt;/p&gt;
 
@@ -241,10 +241,10 @@ En tout cas, moi, je compte l&amp;rsquo;utiliser sur plusieurs projets.&lt;/p&gt
     
     <item>
       <title>Rails et la sécurité</title>
-      <link>http://blog.menfin.info/posts/2008-07-18-programmez-rails-et-la-securite/</link>
+      <link>http://localhost:1313/posts/2008-07-18-programmez-rails-et-la-securite/</link>
       <pubDate>Fri, 18 Jul 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2008-07-18-programmez-rails-et-la-securite/</guid>
+      <guid>http://localhost:1313/posts/2008-07-18-programmez-rails-et-la-securite/</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;Introduction&lt;/h2&gt;
@@ -260,18 +260,18 @@ Nous allons voir les principaux types d&amp;rsquo;attaques et comment les évite
 Une injection SQL consiste simplement à envoyer des données non prévues dans une requête SQL.
 Prenons comme exemple une application web où les utilisateurs sont authentifiés de la manière suivante :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; &amp;quot;login=&#39;#{params[:login)}&#39; AND password=&#39;#{params[:password)}&#39;&amp;quot;)
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; &amp;quot;login=&#39;#{params[:login)}&#39; AND password=&#39;#{params[:password)}&#39;&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;En temps normal, quand Joe s&amp;rsquo;authentifie, la requête SQL suivante est exécutée :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT * FROM users WHERE login=&#39;Joe&#39; AND password=&#39;0521bc575b0ff61daa62494c7ae9c5b6&#39; LIMIT 1;
+&lt;pre&gt;&lt;code class=&#34;sql&#34;&gt;SELECT * FROM users WHERE login=&#39;Joe&#39; AND password=&#39;0521bc575b0ff61daa62494c7ae9c5b6&#39; LIMIT 1;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Mais supposons maintenant que Kevin, un Script Kiddie, passe dans le coin et décide de mettre &lt;code&gt;&amp;quot;Joe&#39;; --&amp;quot;&lt;/code&gt; dans le champ login.
 La requête SQL va alors ressembler à :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT * FROM users WHERE login=&#39;Joe&#39;; --&#39; AND password=&#39;00000000000000000000000000000000&#39; LIMIT 1;
+&lt;pre&gt;&lt;code class=&#34;sql&#34;&gt;SELECT * FROM users WHERE login=&#39;Joe&#39;; --&#39; AND password=&#39;00000000000000000000000000000000&#39; LIMIT 1;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Kevin a réussi à se faire passer pour Joe sans connaître son mot de passe !&lt;/p&gt;
@@ -279,12 +279,12 @@ La requête SQL va alors ressembler à :&lt;/p&gt;
 &lt;p&gt;Heureusement, Active Record permet de &lt;a href=&#34;http://manuals.rubyonrails.com/read/chapter/43&#34;&gt;nous en protéger assez facilement&lt;/a&gt;.
 Pour cela, il suffit d&amp;rsquo;utiliser les formes échappées comme cela :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; [&amp;quot;login=? AND password=?&amp;quot;, params[:login), params[:password)))
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; [&amp;quot;login=? AND password=?&amp;quot;, params[:login), params[:password)))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;ou de façon équivalente :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; {:login =&amp;gt; params[:login), :password =&amp;gt; params[:password)})
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; {:login =&amp;gt; params[:login), :password =&amp;gt; params[:password)})
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Dans les 2 cas, Active Record rajoutera un caractère &lt;code&gt;&#39;\&#39;&lt;/code&gt; devant chaque apostrophe de façon à éviter les injections SQL.&lt;/p&gt;
@@ -306,14 +306,14 @@ En effet, Rails possède quelques raccourcis très pratiques, mais qui peuvent p
 Le plus courant est &lt;a href=&#34;http://manuals.rubyonrails.com/read/chapter/47&#34;&gt;l&amp;rsquo;affectation de masse&lt;/a&gt;, technique qui consiste à créer un objet Active Record directement depuis les paramètres de la requête HTTP.
 Par exemple, la création d&amp;rsquo;un compte utilisateur pourra s&amp;rsquo;effectuer de la façon suivante :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;@user = User.create(params[:user))
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;@user = User.create(params[:user))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Supposons maintenant que la table &lt;code&gt;&#39;users&#39;&lt;/code&gt; comporte un champ &lt;code&gt;&#39;admin&#39;&lt;/code&gt; qui vaut &lt;code&gt;0&lt;/code&gt; par défaut ou &lt;code&gt;1&lt;/code&gt; pour les super-utilisateurs.
 Un utilisateur malveillant pourrait forger la requête HTTP pour ajouter un paramètre &lt;code&gt;user[admin)=1&lt;/code&gt; afin de gagner les pouvoirs réservés aux admins.
 La première solution pour se protéger de cette attaque consiste à écrire explicitement quels sont les paramètres autorisés :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;@user = User.create(
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;@user = User.create(
 	:login =&amp;gt; params[:user)[:login),
 	:email =&amp;gt; params[:user)[:email),
 	:password =&amp;gt; params[:user)[:password),
@@ -324,7 +324,7 @@ La première solution pour se protéger de cette attaque consiste à écrire exp
 C&amp;rsquo;est pourquoi on lui préfère généralement la deuxième solution : la déclaration dans le modèle de la liste des attributs qui ne peuvent pas être modifiés.
 Cette déclaration se fait à l&amp;rsquo;aide de la méthode &lt;strong&gt;&lt;code&gt;attr_protected&lt;/code&gt;&lt;/strong&gt; comme suit :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class User &amp;lt; ActiveRecord::Base
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;class User &amp;lt; ActiveRecord::Base
 	attr_protected :admin
 	...
 end
@@ -337,7 +337,7 @@ Si, par exemple, l&amp;rsquo;utilisateur authentifié peut supprimer l&amp;rsquo
 La réponse dépend du code de la méthode &lt;code&gt;delete&lt;/code&gt;.
 Une implémentation de base pourrait ressembler à :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class ItemsController &amp;lt; ApplicationController
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;class ItemsController &amp;lt; ApplicationController
 	def delete
 		Item.delete(params[:id))
 	end
@@ -346,7 +346,7 @@ end
 
 &lt;p&gt;Pour se protéger des URL forgées, on pourrait la transformer en :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class ItemsController &amp;lt; ApplicationController
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;class ItemsController &amp;lt; ApplicationController
 	def delete
 		@item = @current_user.items.find(params[:id))
 		@item.delete if @item
@@ -359,7 +359,7 @@ end
 &lt;p&gt;Un dernier petit truc pour la route avant de passer à autre chose.
 Si vous avez une API pour laquelle vous utilisez la sérialisation XML, il peut être intéressant de surcharger &lt;code&gt;ActiveRecord#to_xml&lt;/code&gt; pour que le champ &lt;code&gt;secret_field&lt;/code&gt; n&amp;rsquo;y apparaisse pas :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Item &amp;lt; ActiveRecord::Base
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;class Item &amp;lt; ActiveRecord::Base
 	def to_xml(args={})
 		super({:except =&amp;gt; [:secret_field)}.merge(args))
 	end
@@ -375,7 +375,7 @@ Ceci peut aller du spammeur qui mettra une balise &lt;code&gt;&amp;lt;iframe&amp
 
 &lt;p&gt;Par exemple, quelqu&amp;rsquo;un crée un item dont la description est la suivante :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script&amp;gt;document.location=&#39;http://www.programmez.com/&#39;;&amp;lt;/script&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;script&amp;gt;document.location=&#39;http://www.programmez.com/&#39;;&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Si maintenant un visiteur affiche la description de cet item, il sera redirigé vers le site www.programmez.com.
@@ -436,10 +436,10 @@ Il est également important de se tenir au courant des mises à jour de sécurit
     
     <item>
       <title>Annonces RailsConf 2008</title>
-      <link>http://blog.menfin.info/posts/2008-05-08-annonces-railsconf/</link>
+      <link>http://localhost:1313/posts/2008-05-08-annonces-railsconf/</link>
       <pubDate>Thu, 08 May 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2008-05-08-annonces-railsconf/</guid>
+      <guid>http://localhost:1313/posts/2008-05-08-annonces-railsconf/</guid>
       <description>&lt;p&gt;La &lt;a href=&#34;http://en.oreilly.com/rails2008/&#34;&gt;RailsConf 2008&lt;/a&gt;, la grande messe annuelle des railers, aura lieu du 29 mai au 6 juin.
 A cette occasion, un certain nombre d&amp;rsquo;annonces devrait être faites.
 Bien entendu, la plus attendue sera celle de &lt;a href=&#34;|http://rubyonrails.com&#34;&gt;Ruby on Rails&lt;/a&gt; 2.1.

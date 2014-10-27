@@ -3,7 +3,7 @@
   <channel>
       <title>Lifehacks on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/lifehacks/index.xml/</link>
+    <link>http://localhost:1313/categories/lifehacks/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Nouveau joujou : Giada Slim n10</title>
-      <link>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</link>
+      <link>http://localhost:1313/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</link>
       <pubDate>Sun, 21 Nov 2010 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</guid>
+      <guid>http://localhost:1313/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai acheté un &lt;a href=&#34;http://www.giadatech.com/index.php?app=product&amp;amp;act=show&amp;amp;id=37&#34;&gt;Giada Slim n10&lt;/a&gt;. Ça ressemble à ça :&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/public/giada.jpg&#34; alt=&#34;Giada Slim n10&#34; /&gt;
@@ -43,10 +43,10 @@
     
     <item>
       <title>Se fixer des objectifs SMART</title>
-      <link>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</link>
+      <link>http://localhost:1313/posts/2010-05-23-objectifs-smart/</link>
       <pubDate>Sun, 23 May 2010 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</guid>
+      <guid>http://localhost:1313/posts/2010-05-23-objectifs-smart/</guid>
       <description>&lt;p&gt;Se fixer des objectifs est très souvent une bonne chose. Pour tirer pleinement profit de ces objectifs, il est important de bien les formuler. Pourtant, nous avons souvent tendance à nous contenter d&amp;rsquo;objectifs flous : je veux perdre du poids, je veux faire plus de sport, je veux manger plus sainement, etc. Il existe un truc qui pourra vous aider pour ça : les objectifs &lt;strong&gt;SMART&lt;/strong&gt;. Ce sont 5 critères qui vous forcent à vous poser les bonnes questions quand vous choisissez un objectif :&lt;/p&gt;
 
 &lt;ul&gt;
@@ -63,10 +63,10 @@
     
     <item>
       <title>Discipline contre motivation</title>
-      <link>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</link>
+      <link>http://localhost:1313/posts/2010-02-28-discipline-contre-motivation/</link>
       <pubDate>Sun, 28 Feb 2010 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</guid>
+      <guid>http://localhost:1313/posts/2010-02-28-discipline-contre-motivation/</guid>
       <description>
 
 &lt;p&gt;Comme beaucoup de personnes, il vous est arrivé d&amp;rsquo;essayer de prendre de nouvelles habitudes.
@@ -127,10 +127,10 @@ Et si vous souhaitez creuser la question de la motivation, il existe un ebook, &
     
     <item>
       <title>Se motiver avec un Seinfeld Calendar</title>
-      <link>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</link>
+      <link>http://localhost:1313/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</link>
       <pubDate>Mon, 15 Feb 2010 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</guid>
+      <guid>http://localhost:1313/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</guid>
       <description>&lt;p&gt;Comme promis, pour vous éclairer sur les
 &lt;a href=&#34;/post/2010/02/15/Changement-de-direction-pour-ce-blog&#34;&gt;&lt;strong&gt;lifehacks&lt;/strong&gt;&lt;/a&gt;, je
 vais donner un premier exemple : le &lt;a href=&#34;http://lifehacker.com/281626/jerry-seinfelds-productivity-secret&#34;&gt;Seinfeld

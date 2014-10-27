@@ -3,7 +3,7 @@
   <channel>
       <title>Divers on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/divers/index.xml/</link>
+    <link>http://localhost:1313/categories/divers/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Je m&#39;interroge sur twitter</title>
-      <link>http://blog.menfin.info/posts/2009-12-13-je-m-interroge-sur-twitter/</link>
+      <link>http://localhost:1313/posts/2009-12-13-je-m-interroge-sur-twitter/</link>
       <pubDate>Sun, 13 Dec 2009 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2009-12-13-je-m-interroge-sur-twitter/</guid>
+      <guid>http://localhost:1313/posts/2009-12-13-je-m-interroge-sur-twitter/</guid>
       <description>
 
 &lt;p&gt;Je connais &lt;a href=&#34;http://twitter.com&#34;&gt;Twitter&lt;/a&gt; depuis longtemps, mais je n&amp;rsquo;ai jamais senti le besoin de m&amp;rsquo;y inscrire.
@@ -56,10 +56,10 @@ Pour le moment, l&amp;rsquo;usage que j&amp;rsquo;en fais est très proche de l&
     
     <item>
       <title>The broken window theory</title>
-      <link>http://blog.menfin.info/posts/2008-12-09-The-broken-window-theory/</link>
+      <link>http://localhost:1313/posts/2008-12-09-The-broken-window-theory/</link>
       <pubDate>Tue, 09 Dec 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2008-12-09-The-broken-window-theory/</guid>
+      <guid>http://localhost:1313/posts/2008-12-09-The-broken-window-theory/</guid>
       <description>&lt;p&gt;La théorie des fenêtres cassées (« The broken window theory ») a inspiré les forces de police de New York et d&amp;rsquo;autres villes importantes pour lutter contre la criminalité.&lt;/p&gt;
 
 &lt;p&gt;Cette théorie postule que la différence entre un immeuble propre et joli, et un autre en très mauvais état peut être la conséquence d&amp;rsquo;une simple fenêtre cassée.
@@ -81,10 +81,10 @@ Le même développeur qui aurait une base de code propre, sans &lt;em&gt;fenêtr
     
     <item>
       <title>Portrait of a N00b</title>
-      <link>http://blog.menfin.info/posts/2008-02-12-Portrait-of-a-noob/</link>
+      <link>http://localhost:1313/posts/2008-02-12-Portrait-of-a-noob/</link>
       <pubDate>Tue, 12 Feb 2008 00:00:00 UTC</pubDate>
       <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2008-02-12-Portrait-of-a-noob/</guid>
+      <guid>http://localhost:1313/posts/2008-02-12-Portrait-of-a-noob/</guid>
       <description>&lt;p&gt;Steve Yegge, un blogger influent qui travaille chez Google, a posté un article
 intitulé « &lt;a href=&#34;http://steve-yegge.blogspot.com/2008/02/portrait-of-n00b.html&#34;&gt;Portrait of a N00b&lt;/a&gt; ».
 Comme à son habitude, c&amp;rsquo;est un très long post où il explique les différences
