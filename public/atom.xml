@@ -7,7 +7,110 @@
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
-    <updated>Tue, 14 Oct 2014 00:00:00 UTC</updated>
+    <updated>Sat, 01 Nov 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Petite visite à l&#39;Open World Forum</title>
+      <link>http://blog.menfin.info/posts/2014-11-01-petite-visite-a-l-open-world-forum/</link>
+      <pubDate>Sat, 01 Nov 2014 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
+      <guid>http://blog.menfin.info/posts/2014-11-01-petite-visite-a-l-open-world-forum/</guid>
+      <description>
+
+&lt;p&gt;L&amp;rsquo;&lt;a href=&#34;http://www.openworldforum.paris/fr/&#34;&gt;Open World Forum&lt;/a&gt; est un événement qui
+se tient une fois par an sur Paris, pour parler des enjeux de l&amp;rsquo;Open Source,
+l&amp;rsquo;Open Data, l&amp;rsquo;Open Hardware, l&amp;rsquo;Open Web, etc. Cette édition était centrée sur
+le thème « Take back control », reprendre le contrôle face à la NSA, aux
+mastodontes américains que sont Google, Apple, Facebook et Amazon et, plus
+généralement, à tous ceux qui veulent à notre vie privée et notre liberté.
+Elle s&amp;rsquo;est tenue les 30 et 31 octobre et, si je n&amp;rsquo;ai pas pu m&amp;rsquo;y rendre jeudi,
+j&amp;rsquo;ai néanmoins assisté aux conférences du vendredi.&lt;/p&gt;
+
+&lt;p&gt;Globalement, j&amp;rsquo;ai beaucoup aimé les présentations que j&amp;rsquo;ai pu regarder. Bien
+sûr, certaines étaient meilleures que d&amp;rsquo;autres mais le niveau général pour les
+&lt;em&gt;tracks&lt;/em&gt; que j&amp;rsquo;ai suivis était très bon. En voici 3 qui m&amp;rsquo;ont particulièrement
+marqué.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Software development analytics for the masses&lt;/h2&gt;
+
+&lt;p&gt;Le matin, j&amp;rsquo;ai été agréablement surpris par &lt;a href=&#34;http://bitergia.com/dashboards/&#34;&gt;les tableaux de bord produits par
+bitergia&lt;/a&gt; pour des projets Open-Source
+majeurs. Ils reprennent des statistiques extraites d&amp;rsquo;informations publiques
+(dépôts git, listes de diffusion, canaux IRC, etc.) pour faire ressortir des
+tendances. On peut voir quelques sont les entreprises qui participent à un
+projet et si le temps pour qu&amp;rsquo;un patch soit accepté est similaire selon qu&amp;rsquo;il
+provient de l&amp;rsquo;une ou l&amp;rsquo;autre de ses sociétés (cela peut s&amp;rsquo;expliquer par le
+niveau d&amp;rsquo;expertise des développeurs de chaque société ou par des raisons
+politiques). On peut également suivre le temps de résolution des bugs au fil
+du temps et voir les effets de la mise en place d&amp;rsquo;une politique de gestion des
+tickets. Bref, c&amp;rsquo;est un très bon moyen de mieux comprendre des communautés
+autour d&amp;rsquo;un projet Open-Source et de se poser les bonnes questions pour
+qu&amp;rsquo;elles puissent travailler plus efficacement.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;State Of the Art in Machine Learning&lt;/h2&gt;
+
+&lt;p&gt;Juste après la pause de midi, j&amp;rsquo;ai pu assister à la géniale présentation
+d&amp;rsquo;Olivier Grisel, &lt;a href=&#34;https://speakerdeck.com/ogrisel/the-state-of-deep-learning-in-2014&#34;&gt;The state of deep learning in
+2014&lt;/a&gt;.
+Après une rapide introductionsur le &lt;em&gt;Machine Learning&lt;/em&gt;, nous avons eu le droit
+à 3 exemples d&amp;rsquo;application de &lt;em&gt;deep learning&lt;/em&gt; (= réseaux de neuronnes avec de
+nombreuses couches) vraiment époustouflants. Il y avait d&amp;rsquo;abord la
+reconnaissance d&amp;rsquo;objets, animaux et formes sur des photos. Le taux d&amp;rsquo;erreur
+diminue très fortement d&amp;rsquo;année en année sur &lt;a href=&#34;http://image-net.org/challenges/LSVRC/2014/index&#34;&gt;le concours
+ImageNet&lt;/a&gt; et le meilleur
+algorithme est maintenant vraiment tout proche de faire aussi bien que les
+humains sur cet exercice. Le deuxième exemple était la construction d&amp;rsquo;une
+représentation du sens d&amp;rsquo;un texte indépendante de la langue. La première
+application est la traduction d&amp;rsquo;une langue à une autre, mais plein d&amp;rsquo;autres
+choses sont rendues possibles via cet outil. Enfin, Olivier nous a montré
+qu&amp;rsquo;il était possible de construire un programme super fort sur les jeux Atari
+à partir d&amp;rsquo;un apprentissage sans supervision avec un signal très faible.&lt;/p&gt;
+
+&lt;p&gt;Le &lt;em&gt;deep learning&lt;/em&gt; est vraiment très puissant, mais il requiert 3 choses :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Des compétences très pointues sur le sujet&lt;/li&gt;
+&lt;li&gt;Beaucoup de puissance de calcul&lt;/li&gt;
+&lt;li&gt;De très gros volumes de données pour entraîner les réseaux de neuronnes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Or Google et Facebook rachètent toutes les startups dans ce domaine, ont les
+plus gros datacenters au monde et on leur donne gentillement toutes nos
+données. Ne devrait-on pas s&amp;rsquo;en inquiéter ?&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;CaliOpen, correspondance sécurisée&lt;/h2&gt;
+
+&lt;p&gt;La troisième conférence qui m&amp;rsquo;a vraiment marquée est la présentation de
+&lt;a href=&#34;https://www.caliopen.org/&#34;&gt;CaliOpen&lt;/a&gt;, par Laurent Chemla. L&amp;rsquo;objectif est de
+redonner du contrôle sur sa vie privée, pour se protéger soi, mai surtout pour
+protéger les autres autour de soi. Cela passe par un logiciel libre de
+messagerie privée (emails, chat, SMS, etc.) qui va agir sur deux niveaux :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Redonner de la valeur à la vie privée&lt;/li&gt;
+&lt;li&gt;Rendre beaucoup plus coûteux l&amp;rsquo;espionnage en masse.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;J&amp;rsquo;espère que ce projet et d&amp;rsquo;autres dans le même style vont réussir à faire
+bouger les choses et réussir à atteindre d&amp;rsquo;autres personnes que le cercle très
+restreint des geeks. D&amp;rsquo;ailleurs, si vous être un développeur front, sachez que
+Caliopen aurait bien besoin de votre aide.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;J&amp;rsquo;ai apprécié cette édition de l&amp;rsquo;Open World Forum. Félicitations à Florent
+Zara, le président de cette édition, et aux différents responsable de
+&lt;em&gt;tracks&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le thème « Take back control » est le bienvenu. On voit qu&amp;rsquo;on est très loin
+d&amp;rsquo;y arriver et qu&amp;rsquo;il reste beaucoup de choses à faire. À commencer par les
+organisateurs de l&amp;rsquo;Open World Forum : le site piste les utilisateurs via
+Google Analytics, propose de se connecter avec Twitter et Facebook et envoie
+des emails via MailChimp (une société américaine utilisant la plateforme
+Amazon). Bref, ce n&amp;rsquo;est pas gagné mais c&amp;rsquo;est un combat important pour notre
+futur.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>When one sidekiq instance is not enough</title>
@@ -544,37 +647,6 @@ C&amp;rsquo;est un gem qui ajoute un commentaire en haut de chacun de vos modèl
 &lt;p&gt;Pour l&amp;rsquo;utiliser, c&amp;rsquo;est on ne peut plus simple.
 On fait un &lt;code&gt;gem install annotate&lt;/code&gt; pour l&amp;rsquo;installer, puis on lance &lt;code&gt;annotate&lt;/code&gt; quand on veut mettre à jour les commentaires.
 Pour ma part, je fais ça après chaque &lt;code&gt;rake db:migrate&lt;/code&gt;, mais libre à chacun de le lancer quand il le souhaite.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Request-log-analyzer</title>
-      <link>http://blog.menfin.info/posts/2009-05-17-request-log-analyzer/</link>
-      <pubDate>Sun, 17 May 2009 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
-      <guid>http://blog.menfin.info/posts/2009-05-17-request-log-analyzer/</guid>
-      <description>&lt;p&gt;Dans la série des outils pour Rails que j&amp;rsquo;apprécie, je vais vous parler de &lt;a href=&#34;http://github.com/wvanbergen/request-log-analyzer/tree/master&#34;&gt;request-log-analyzer&lt;/a&gt;.
-Pourquoi lui ? Parce qu&amp;rsquo;il m&amp;rsquo;a rendu bien service cette semaine.&lt;/p&gt;
-
-&lt;p&gt;Request-log-analyser est un outil très simple qui permet d&amp;rsquo;analyser les logs de Rails pour découvrir les requêtes HTTP qui consomment du temps CPU.
-En pratique, ça s&amp;rsquo;installe simplement avec gem, puis on le lance pour générer un rapport (j&amp;rsquo;aime bien la version HTML) :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gem install request-log-analyzer
-request-log-analyzer --output HTML --file report.html log/production.log
-firefox report.html
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Le rapport nous fournit un certain nombres d&amp;rsquo;informations que les hits sur chaque page, les codes HTTP renvoyés, les requêtes les plus lourdes.
-Pour ma part, je me sers surtout du tableau des 20 requêtes HTTP les plus longues en temps cumulé (&lt;em&gt;Request duration - top 20 by cumulative time&lt;/em&gt;).
-Cela me donne une liste d&amp;rsquo;actions à bencher pour lesquelles une optimisation est toujours bonne à prendre.
-Je passe également un peu de temps à regarder si ces requêtes apparaissent dans les 20 requêtes les plus lourdes pour la base et les 20 requêtes avec le temps de rendering le plus long (toujours en temps cumulé).
-Je peux ainsi avoir une idée de ce qui prend du temps, et de valider ainsi que les résultats du bench collent avec ça.
-Si je vois qu&amp;rsquo;une requête HTTP passe beaucoup de temps sur la base de données, mais que les résultats du bench ne montrent pas ça, je vais probablement importer la base de données du serveur de production et l&amp;rsquo;utiliser pour refaire les benchs.&lt;/p&gt;
-
-&lt;p&gt;Un autre tableau intéressant est la liste des requêtes bloquantes (&lt;em&gt;Process blockers (&amp;gt; 1 sec duration)&lt;/em&gt;).
-Si je vois des requêtes faire pas mal de hits dans cette liste, je sais qu&amp;rsquo;il va falloir les surveiller de près.&lt;/p&gt;
-
-&lt;p&gt;Voilà, request-log-analyzer n&amp;rsquo;est pas un outil magique. Il ne fait qu&amp;rsquo;une chose, mais il le fait bien. Et c&amp;rsquo;est très utile pour savoir par où commencer à optimiser un site.&lt;/p&gt;
 </description>
     </item>
     
