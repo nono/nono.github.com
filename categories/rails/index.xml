@@ -3,7 +3,7 @@
   <channel>
       <title>Rails on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/rails/index.xml</link>
+    <link>http://blog.menfin.info/categories/rails/index.xml/</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -117,7 +117,7 @@ C&amp;rsquo;est un gem qui ajoute un commentaire en haut de chacun de vos modèl
 
 &lt;p&gt;Voici un exemple tiré de ma réécriture de &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; en Rails :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;# == Schema Information
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# == Schema Information
 # Schema version: 20090120005239
 #
 # Table name: news
@@ -260,18 +260,18 @@ Nous allons voir les principaux types d&amp;rsquo;attaques et comment les évite
 Une injection SQL consiste simplement à envoyer des données non prévues dans une requête SQL.
 Prenons comme exemple une application web où les utilisateurs sont authentifiés de la manière suivante :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; &amp;quot;login=&#39;#{params[:login)}&#39; AND password=&#39;#{params[:password)}&#39;&amp;quot;)
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; &amp;quot;login=&#39;#{params[:login)}&#39; AND password=&#39;#{params[:password)}&#39;&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;En temps normal, quand Joe s&amp;rsquo;authentifie, la requête SQL suivante est exécutée :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;sql&#34;&gt;SELECT * FROM users WHERE login=&#39;Joe&#39; AND password=&#39;0521bc575b0ff61daa62494c7ae9c5b6&#39; LIMIT 1;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT * FROM users WHERE login=&#39;Joe&#39; AND password=&#39;0521bc575b0ff61daa62494c7ae9c5b6&#39; LIMIT 1;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Mais supposons maintenant que Kevin, un Script Kiddie, passe dans le coin et décide de mettre &lt;code&gt;&amp;quot;Joe&#39;; --&amp;quot;&lt;/code&gt; dans le champ login.
 La requête SQL va alors ressembler à :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;sql&#34;&gt;SELECT * FROM users WHERE login=&#39;Joe&#39;; --&#39; AND password=&#39;00000000000000000000000000000000&#39; LIMIT 1;
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;SELECT * FROM users WHERE login=&#39;Joe&#39;; --&#39; AND password=&#39;00000000000000000000000000000000&#39; LIMIT 1;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Kevin a réussi à se faire passer pour Joe sans connaître son mot de passe !&lt;/p&gt;
@@ -279,12 +279,12 @@ La requête SQL va alors ressembler à :&lt;/p&gt;
 &lt;p&gt;Heureusement, Active Record permet de &lt;a href=&#34;http://manuals.rubyonrails.com/read/chapter/43&#34;&gt;nous en protéger assez facilement&lt;/a&gt;.
 Pour cela, il suffit d&amp;rsquo;utiliser les formes échappées comme cela :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; [&amp;quot;login=? AND password=?&amp;quot;, params[:login), params[:password)))
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; [&amp;quot;login=? AND password=?&amp;quot;, params[:login), params[:password)))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;ou de façon équivalente :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; {:login =&amp;gt; params[:login), :password =&amp;gt; params[:password)})
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;@current_user = User.find(:first, :conditions =&amp;gt; {:login =&amp;gt; params[:login), :password =&amp;gt; params[:password)})
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Dans les 2 cas, Active Record rajoutera un caractère &lt;code&gt;&#39;\&#39;&lt;/code&gt; devant chaque apostrophe de façon à éviter les injections SQL.&lt;/p&gt;
@@ -306,14 +306,14 @@ En effet, Rails possède quelques raccourcis très pratiques, mais qui peuvent p
 Le plus courant est &lt;a href=&#34;http://manuals.rubyonrails.com/read/chapter/47&#34;&gt;l&amp;rsquo;affectation de masse&lt;/a&gt;, technique qui consiste à créer un objet Active Record directement depuis les paramètres de la requête HTTP.
 Par exemple, la création d&amp;rsquo;un compte utilisateur pourra s&amp;rsquo;effectuer de la façon suivante :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;@user = User.create(params[:user))
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;@user = User.create(params[:user))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Supposons maintenant que la table &lt;code&gt;&#39;users&#39;&lt;/code&gt; comporte un champ &lt;code&gt;&#39;admin&#39;&lt;/code&gt; qui vaut &lt;code&gt;0&lt;/code&gt; par défaut ou &lt;code&gt;1&lt;/code&gt; pour les super-utilisateurs.
 Un utilisateur malveillant pourrait forger la requête HTTP pour ajouter un paramètre &lt;code&gt;user[admin)=1&lt;/code&gt; afin de gagner les pouvoirs réservés aux admins.
 La première solution pour se protéger de cette attaque consiste à écrire explicitement quels sont les paramètres autorisés :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;@user = User.create(
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;@user = User.create(
 	:login =&amp;gt; params[:user)[:login),
 	:email =&amp;gt; params[:user)[:email),
 	:password =&amp;gt; params[:user)[:password),
@@ -324,7 +324,7 @@ La première solution pour se protéger de cette attaque consiste à écrire exp
 C&amp;rsquo;est pourquoi on lui préfère généralement la deuxième solution : la déclaration dans le modèle de la liste des attributs qui ne peuvent pas être modifiés.
 Cette déclaration se fait à l&amp;rsquo;aide de la méthode &lt;strong&gt;&lt;code&gt;attr_protected&lt;/code&gt;&lt;/strong&gt; comme suit :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;class User &amp;lt; ActiveRecord::Base
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class User &amp;lt; ActiveRecord::Base
 	attr_protected :admin
 	...
 end
@@ -337,7 +337,7 @@ Si, par exemple, l&amp;rsquo;utilisateur authentifié peut supprimer l&amp;rsquo
 La réponse dépend du code de la méthode &lt;code&gt;delete&lt;/code&gt;.
 Une implémentation de base pourrait ressembler à :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;class ItemsController &amp;lt; ApplicationController
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class ItemsController &amp;lt; ApplicationController
 	def delete
 		Item.delete(params[:id))
 	end
@@ -346,7 +346,7 @@ end
 
 &lt;p&gt;Pour se protéger des URL forgées, on pourrait la transformer en :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;class ItemsController &amp;lt; ApplicationController
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class ItemsController &amp;lt; ApplicationController
 	def delete
 		@item = @current_user.items.find(params[:id))
 		@item.delete if @item
@@ -359,7 +359,7 @@ end
 &lt;p&gt;Un dernier petit truc pour la route avant de passer à autre chose.
 Si vous avez une API pour laquelle vous utilisez la sérialisation XML, il peut être intéressant de surcharger &lt;code&gt;ActiveRecord#to_xml&lt;/code&gt; pour que le champ &lt;code&gt;secret_field&lt;/code&gt; n&amp;rsquo;y apparaisse pas :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;class Item &amp;lt; ActiveRecord::Base
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Item &amp;lt; ActiveRecord::Base
 	def to_xml(args={})
 		super({:except =&amp;gt; [:secret_field)}.merge(args))
 	end
@@ -375,7 +375,7 @@ Ceci peut aller du spammeur qui mettra une balise &lt;code&gt;&amp;lt;iframe&amp
 
 &lt;p&gt;Par exemple, quelqu&amp;rsquo;un crée un item dont la description est la suivante :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;script&amp;gt;document.location=&#39;http://www.programmez.com/&#39;;&amp;lt;/script&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;script&amp;gt;document.location=&#39;http://www.programmez.com/&#39;;&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Si maintenant un visiteur affiche la description de cet item, il sera redirigé vers le site www.programmez.com.
