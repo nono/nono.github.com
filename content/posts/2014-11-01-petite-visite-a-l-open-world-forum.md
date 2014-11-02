@@ -42,8 +42,8 @@ qu'elles puissent travailler plus efficacement.
 Juste après la pause de midi, j'ai pu assister à la géniale présentation
 d'Olivier Grisel, [The state of deep learning in
 2014](https://speakerdeck.com/ogrisel/the-state-of-deep-learning-in-2014).
-Après une rapide introductionsur le _Machine Learning_, nous avons eu le droit
-à 3 exemples d'application de _deep learning_ (= réseaux de neuronnes avec de
+Après une rapide introduction sur le _Machine Learning_, nous avons eu le droit
+à 3 exemples d'application de _deep learning_ (= réseaux de neurones avec de
 nombreuses couches) vraiment époustouflants. Il y avait d'abord la
 reconnaissance d'objets, animaux et formes sur des photos. Le taux d'erreur
 diminue très fortement d'année en année sur [le concours
@@ -60,10 +60,10 @@ Le _deep learning_ est vraiment très puissant, mais il requiert 3 choses :
 
 1. Des compétences très pointues sur le sujet
 2. Beaucoup de puissance de calcul
-3. De très gros volumes de données pour entraîner les réseaux de neuronnes.
+3. De très gros volumes de données pour entraîner les réseaux de neurones.
 
 Or Google et Facebook rachètent toutes les startups dans ce domaine, ont les
-plus gros datacenters au monde et on leur donne gentillement toutes nos
+plus gros datacenters au monde et on leur donne gentiment toutes nos
 données. Ne devrait-on pas s'en inquiéter ?
 
 
