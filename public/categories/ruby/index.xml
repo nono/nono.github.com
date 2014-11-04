@@ -3,7 +3,7 @@
   <channel>
       <title>Ruby on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/ruby/index.xml/</link>
+    <link>http://blog.menfin.info/categories/ruby/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -147,7 +147,7 @@ C&amp;rsquo;est une sorte d&amp;rsquo;interpréteur Ruby qui fonctionne comme un
 vous tapez une ligne de Ruby, irb l&amp;rsquo;interprête et vous donne le résultat, vous tapez une autre ligne, irb l&amp;rsquo;interprête en tenant compte de la première ligne, et ainsi de suite.
 Voici par exemple ce que cela donne (avec en gras, ce que j&amp;rsquo;ai tapé) :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;&amp;gt; titi = 2 + 3
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;&amp;gt; titi = 2 + 3
 5
 &amp;gt; toto = titi * 4
 20
@@ -168,7 +168,7 @@ Voici par exemple ce que cela donne (avec en gras, ce que j&amp;rsquo;ai tapé) 
 &lt;a href=&#34;http://romeda.org/blog/2006/11/irbrc.html&#34;&gt;moi&lt;/a&gt;,
 je poste mon fichier de conf &lt;code&gt;.irbrc&lt;/code&gt; pour que chacun puisse s&amp;rsquo;en inspirer (et aussi pour le retrouver plus facilement quand je ne suis pas chez moi ;-)&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;require &amp;quot;yaml&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;require &amp;quot;yaml&amp;quot;
 require &amp;quot;irb/completion&amp;quot;
 
 IRB.conf[:USE_REALINE] = true

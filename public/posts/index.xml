@@ -3,7 +3,7 @@
   <channel>
       <title>Posts on M&#39;enfin ?!? </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/posts/index.xml/</link>
+    <link>http://blog.menfin.info/posts/index.xml</link>
     <language>fr-fr</language>
     <author>Bruno Michel</author>
     
@@ -93,7 +93,7 @@ messagerie privée (emails, chat, SMS, etc.) qui va agir sur deux niveaux :&lt;/
 
 &lt;p&gt;J&amp;rsquo;espère que ce projet et d&amp;rsquo;autres dans le même style vont réussir à faire
 bouger les choses et réussir à atteindre d&amp;rsquo;autres personnes que le cercle très
-restreint des geeks. D&amp;rsquo;ailleurs, si vous être un développeur front, sachez que
+restreint des geeks. D&amp;rsquo;ailleurs, si vous êtes un développeur front, sachez que
 Caliopen aurait bien besoin de votre aide.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_3&#34;&gt;Conclusion&lt;/h2&gt;
@@ -628,7 +628,7 @@ C&amp;rsquo;est un gem qui ajoute un commentaire en haut de chacun de vos modèl
 
 &lt;p&gt;Voici un exemple tiré de ma réécriture de &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; en Rails :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;# == Schema Information
+&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;# == Schema Information
 # Schema version: 20090120005239
 #
 # Table name: news

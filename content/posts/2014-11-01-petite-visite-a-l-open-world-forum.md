@@ -80,7 +80,7 @@ messagerie privée (emails, chat, SMS, etc.) qui va agir sur deux niveaux :
 
 J'espère que ce projet et d'autres dans le même style vont réussir à faire
 bouger les choses et réussir à atteindre d'autres personnes que le cercle très
-restreint des geeks. D'ailleurs, si vous être un développeur front, sachez que
+restreint des geeks. D'ailleurs, si vous êtes un développeur front, sachez que
 Caliopen aurait bien besoin de votre aide.
 
 
