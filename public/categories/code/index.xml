@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/code/</link>
+    <description>Recent content in Code on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 13 Mar 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hash Code, fnf-detect et HTML Truncator</title>
+      <link>http://blog.menfin.info/posts/2015-03-13-Hashcode-fnf-detect-et-html_truncator/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2015-03-13-Hashcode-fnf-detect-et-html_truncator/</guid>
+      <description>
+
+&lt;h2 id=&#34;hash-code-2015:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;Hash Code 2015&lt;/h2&gt;
+
+&lt;p&gt;Google France organise un concours nommé &lt;a href=&#34;https://sites.google.com/site/hashcode2015/home&#34;&gt;Hash
+Code&lt;/a&gt;. J&amp;rsquo;ai participé avec 2
+colllègues d&amp;rsquo;af83 à l&amp;rsquo;édition 2015. Les qualifications pour la finale avait
+lieu hier soir. &lt;a href=&#34;https://docs.google.com/a/google.com/file/d/0B8xe9y1rGAQXRXZjSXl6THBDZXc/view?sle=true&#34;&gt;Les
+règles&lt;/a&gt;
+sont assez simples : il faut disposer des serveurs dans un datacenter de la
+meilleure façon possible pour résister aux pannes d&amp;rsquo;électricité.&lt;/p&gt;
+
+&lt;p&gt;Notre code est disponible sur
+&lt;a href=&#34;https://github.com/AF83/hashcode-2015&#34;&gt;github.com/AF83/hashcode-2015&lt;/a&gt;. Il
+fonctionne de la façon suivante :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Lire les données du problème&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Placer les serveurs dans le datacenter&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Trier les serveurs par efficacité décroissante (le rapport entre la
+capacité et la place qu&amp;rsquo;il prend)&lt;/li&gt;
+&lt;li&gt;Pour chaque serveur, parcourir les lignes de la moins remplie à la plus
+remplie, et regarder s&amp;rsquo;il y a un emplacement pour le mettre&lt;/li&gt;
+&lt;li&gt;S&amp;rsquo;il y a un emplacement, mettre le serveur dans cet emplacement&lt;/li&gt;
+&lt;li&gt;Passer au serveur suivant&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Puis, on assigne les serveurs à des groupes&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Trier les serveurs par capacité décroissante&lt;/li&gt;
+&lt;li&gt;Pour chaque serveur, trouver le groupe avec la capacité garantie la plus
+faible et qui ne soit pas déjà très présent sur la ligne du serveur&lt;/li&gt;
+&lt;li&gt;Assigner le serveur à ce groupe&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Écrire notre solution&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Avec ce fonctionnement et quelques ajustements, nous avons obtenu le score
+très honorable de 379. Nous avons ensuite essayé d&amp;rsquo;ajouter une phase
+d&amp;rsquo;optimisation entre les étapes 3 et 4, en échangeant des serveurs entre 2
+groupes. Mais cela a été un échec : nous avons obtenu de moins résultats que
+précédement.&lt;/p&gt;
+
+&lt;p&gt;Bref, ce fût une soirée bien fun et j&amp;rsquo;espère que nous serons qualifiés pour la
+finale.&lt;/p&gt;
+
+&lt;h2 id=&#34;fnf-detect:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;fnf-detect&lt;/h2&gt;
+
+&lt;p&gt;J&amp;rsquo;ai joué un peu avec des bibliothèques de &lt;em&gt;Computer Vision&lt;/em&gt; la semaine
+dernière. Je me suis servi d&amp;rsquo;&lt;a href=&#34;http://opencv.org/&#34;&gt;OpenCV&lt;/a&gt; et de
+&lt;a href=&#34;http://libccv.org/&#34;&gt;ccv&lt;/a&gt; pour détecter des visages sur les photos. Cela
+permet ensuite de retailler les photos en gardant les visages dessus, même
+quand ces visages sont sur les bords.&lt;/p&gt;
+
+&lt;p&gt;Le fruit de ces expérimentations est visible sur &lt;a href=&#34;https://github.com/AF83/fnf-detect&#34;&gt;le dépôt
+fnf-detect&lt;/a&gt;. La version avec OpenCV donne
+des résultats corrects et est rapide. La version avec ccv est un peu plus
+lente, mais améliore grandement les résultats. Au final, nous allons utiliser
+cette seconde version pour un client, car cela donne un aspect mieux fini à
+leur produit.&lt;/p&gt;
+
+&lt;h2 id=&#34;html-truncator:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;HTML Truncator&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/nono/HTML-Truncator&#34;&gt;HTML Truncator&lt;/a&gt;, ma bibliothèque Ruby
+pour tronquer des textes présents sous forme d&amp;rsquo;HTML, semble être de plus en
+plus utilisée. J&amp;rsquo;ai des retours via les issues de github. Certains sont des
+questions, mais j&amp;rsquo;ai également eu un rapport de bug sur les entités HTML
+récemment. J&amp;rsquo;ai donc corrigé le bug et sorti une nouvelle version.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

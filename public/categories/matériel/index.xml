@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Matériel on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/matc3a9riel/index.xml</link>
+    <title>Matériel on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/mat%C3%A9riel/</link>
+    <description>Recent content in Matériel on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Sat, 01 Dec 2007 00:00:00 UTC</updated>
+    <lastBuildDate>Sat, 01 Dec 2007 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/mat%C3%A9riel/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Mercurial sur mon MyBook</title>
       <link>http://blog.menfin.info/posts/2007-12-01-mercurial-sur-mon-MyBook/</link>
-      <pubDate>Sat, 01 Dec 2007 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sat, 01 Dec 2007 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2007-12-01-mercurial-sur-mon-MyBook/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai installé &lt;a href=&#34;http://www.selenic.com/mercurial/&#34;&gt;mercurial&lt;/a&gt; sur mon MyBook.
 Ce n&amp;rsquo;est pas très compliqué, mais voici quand même la méthode que j&amp;rsquo;ai utilisée pour ceux qui n&amp;rsquo;ont pas envie de chercher.
@@ -46,8 +46,8 @@ $ sudo make install-bin
     <item>
       <title>Nouveau disque dur : MyBook World Edition</title>
       <link>http://blog.menfin.info/posts/2007-11-26-disque-dur-MyBook/</link>
-      <pubDate>Mon, 26 Nov 2007 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Mon, 26 Nov 2007 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2007-11-26-disque-dur-MyBook/</guid>
       <description>
 
@@ -61,7 +61,7 @@ avait le bon goût de tourner sous linux (les sources du firmware sous licence
 GPL sont disponibles sur
 &lt;a href=&#34;http://support.wdc.com/download/index.asp?cxml=n&amp;amp;pid=30&amp;amp;swid=64&#34;&gt;http://support.wdc.com/download/index.asp?cxml=n&amp;amp;pid=30&amp;amp;swid=64&lt;/a&gt; ).&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Ce que j&amp;rsquo;ai déjà fait&lt;/h2&gt;
+&lt;h2 id=&#34;ce-que-j-ai-déjà-fait:467ce7606cfe053d99265ea2732869cd&#34;&gt;Ce que j&amp;rsquo;ai déjà fait&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;le brancher&lt;/li&gt;
@@ -74,7 +74,7 @@ GPL sont disponibles sur
 &lt;li&gt;et finalement commencer mes sauvegardes à la main (à coups de scp)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Ce qu&amp;rsquo;il reste à faire&lt;/h2&gt;
+&lt;h2 id=&#34;ce-qu-il-reste-à-faire:467ce7606cfe053d99265ea2732869cd&#34;&gt;Ce qu&amp;rsquo;il reste à faire&lt;/h2&gt;
 
 &lt;p&gt;Visiblement, il est possible de faire des choses bien sympathiques comme
 installer &lt;a href=&#34;http://vsftpd.beasts.org/|vsftpd&#34;&gt;vsftpd&lt;/a&gt; (un serveur FTP bien secure),

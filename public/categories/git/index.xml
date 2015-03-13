@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Git on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/git/index.xml</link>
+    <title>Git on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/git/</link>
+    <description>Recent content in Git on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Sat, 15 Mar 2008 00:00:00 UTC</updated>
+    <lastBuildDate>Sat, 15 Mar 2008 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/git/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Afficher la branche Git courante dans le prompt de ZSH</title>
       <link>http://blog.menfin.info/posts/2008-03-15-git-branch-dans-le-prompt-zsh/</link>
-      <pubDate>Sat, 15 Mar 2008 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sat, 15 Mar 2008 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2008-03-15-git-branch-dans-le-prompt-zsh/</guid>
       <description>&lt;p&gt;Je suis tombé sur un tips bien sympa :
 &lt;a href=&#34;http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/&#34;&gt;Show Your GIT Branch Name In Your Prompt&lt;/a&gt;.
