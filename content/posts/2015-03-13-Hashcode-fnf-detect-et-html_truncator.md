@@ -40,8 +40,8 @@ fonctionne de la façon suivante :
 Avec ce fonctionnement et quelques ajustements, nous avons obtenu le score
 très honorable de 379. Nous avons ensuite essayé d'ajouter une phase
 d'optimisation entre les étapes 3 et 4, en échangeant des serveurs entre 2
-groupes. Mais cela a été un échec : nous avons obtenu de moins résultats que
-précédement.
+groupes. Mais cela a été un échec : nous avons obtenu de moins bons résultats
+que précédement.
 
 Bref, ce fût une soirée bien fun et j'espère que nous serons qualifiés pour la
 finale.
