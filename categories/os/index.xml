@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Os on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/os/index.xml</link>
+    <title>Os on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/os/</link>
+    <description>Recent content in Os on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Mon, 22 Oct 2007 00:00:00 UTC</updated>
+    <lastBuildDate>Mon, 22 Oct 2007 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/os/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ce qui me manque sous Mac OSX</title>
       <link>http://blog.menfin.info/posts/2007-10-22-Mac-OSX/</link>
-      <pubDate>Mon, 22 Oct 2007 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Mon, 22 Oct 2007 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2007-10-22-Mac-OSX/</guid>
       <description>
 
@@ -23,7 +23,7 @@ facile à utiliser. Mais sur certains points, j&amp;rsquo;ai trouvé Mac OSX tr�
 par rapport à ce que l&amp;rsquo;on peut trouver sous GNU/Linux. Voici une petite liste
 des trucs qui m&amp;rsquo;ont le plus géné (et qui me gênent encore) :&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;#1 - Le clavier&lt;/h2&gt;
+&lt;h2 id=&#34;1-le-clavier:654fa52668891b1efcc88daca68a5af6&#34;&gt;#1 - Le clavier&lt;/h2&gt;
 
 &lt;p&gt;Le clavier de mon mac m&amp;rsquo;a longtemps dérouté, et encore maintenant, je ne sais
 pas comment se nomme toutes les touches. Et faire certains caractères est
@@ -31,14 +31,14 @@ mission impossible si personne ne vous aide la première fois : faut savoir que
 pour faire un pipe |, il faut une combinaison de 3 touches dont la lettre l.
 C&amp;rsquo;est pas marqué sur le clavier, et c&amp;rsquo;est vraiment pas intuitif.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;#2 - L&amp;rsquo;absence de bureaux virtuels&lt;/h2&gt;
+&lt;h2 id=&#34;2-l-absence-de-bureaux-virtuels:654fa52668891b1efcc88daca68a5af6&#34;&gt;#2 - L&amp;rsquo;absence de bureaux virtuels&lt;/h2&gt;
 
 &lt;p&gt;Par défaut, il n&amp;rsquo;y a pas de bureaux virtuels sous Mac OSX. Il parait qu&amp;rsquo;on peut
 installer des softwares pour faire ca, mais je n&amp;rsquo;ai pas essayé. Est-ce qu&amp;rsquo;Apple
 aurait peur d&amp;rsquo;être poursuivi à cause du brevet sur les bureaux virtuels
 $$&lt;a href=&#34;http://yro.slashdot.org/yro/04/02/25/1346201.shtml$$&#34;&gt;http://yro.slashdot.org/yro/04/02/25/1346201.shtml$$&lt;/a&gt; ?&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;#3 - Le Window Manager sous évolué&lt;/h2&gt;
+&lt;h2 id=&#34;3-le-window-manager-sous-évolué:654fa52668891b1efcc88daca68a5af6&#34;&gt;#3 - Le Window Manager sous évolué&lt;/h2&gt;
 
 &lt;p&gt;Je ne comprends pas que le Window Manager soit aussi peu évolué. J&amp;rsquo;ai peut-être
 été habitué à des Window Manager très perfectionnés sous GNU/Linux, mais le
@@ -46,14 +46,14 @@ choc a été dur : je n&amp;rsquo;ai pas trouvé comment garder une fenêtre au 
 comment avoir l&amp;rsquo;auto-focus, etc. Je ne sais pas pour vous, mais pour moi, ce
 sont vraiment des fonctions de base.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;#4 - La barre de menu&lt;/h2&gt;
+&lt;h2 id=&#34;4-la-barre-de-menu:654fa52668891b1efcc88daca68a5af6&#34;&gt;#4 - La barre de menu&lt;/h2&gt;
 
 &lt;p&gt;Mais quelle idée d&amp;rsquo;aller mettre la barre de menu à cet endroit ? Je travaille
 sur un portable avec un deuxième écran. Pas de chance, la barre de menu ne
 s&amp;rsquo;affiche que en haut de l&amp;rsquo;écran du portable, et pas du tout sur mon écran LCD
 20&amp;rdquo;. Mon curseur de souris fait des kilomètres à cause de ce menu mal placé.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;#5 - Le copier-coller&lt;/h2&gt;
+&lt;h2 id=&#34;5-le-copier-coller:654fa52668891b1efcc88daca68a5af6&#34;&gt;#5 - Le copier-coller&lt;/h2&gt;
 
 &lt;p&gt;Tout le reste, je pense que je peux survivre avec, mais le copier-coller, c&amp;rsquo;est
 vraiment le truc qui me mine la vie. Explications : sous GNU/Linux, il suffit

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Lifehacks on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/lifehacks/index.xml</link>
+    <title>Lifehacks on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/lifehacks/</link>
+    <description>Recent content in Lifehacks on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Sun, 21 Nov 2010 00:00:00 UTC</updated>
+    <lastBuildDate>Sun, 21 Nov 2010 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/lifehacks/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Nouveau joujou : Giada Slim n10</title>
       <link>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</link>
-      <pubDate>Sun, 21 Nov 2010 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sun, 21 Nov 2010 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai acheté un &lt;a href=&#34;http://www.giadatech.com/index.php?app=product&amp;amp;act=show&amp;amp;id=37&#34;&gt;Giada Slim n10&lt;/a&gt;. Ça ressemble à ça :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/public/giada.jpg&#34; alt=&#34;Giada Slim n10&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/giada.jpg&#34; alt=&#34;Giada Slim n10&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;J&amp;rsquo;ai commencé à jouer avec en installant dessus :&lt;/p&gt;
@@ -44,8 +44,8 @@
     <item>
       <title>Se fixer des objectifs SMART</title>
       <link>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</link>
-      <pubDate>Sun, 23 May 2010 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sun, 23 May 2010 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</guid>
       <description>&lt;p&gt;Se fixer des objectifs est très souvent une bonne chose. Pour tirer pleinement profit de ces objectifs, il est important de bien les formuler. Pourtant, nous avons souvent tendance à nous contenter d&amp;rsquo;objectifs flous : je veux perdre du poids, je veux faire plus de sport, je veux manger plus sainement, etc. Il existe un truc qui pourra vous aider pour ça : les objectifs &lt;strong&gt;SMART&lt;/strong&gt;. Ce sont 5 critères qui vous forcent à vous poser les bonnes questions quand vous choisissez un objectif :&lt;/p&gt;
 
@@ -64,8 +64,8 @@
     <item>
       <title>Discipline contre motivation</title>
       <link>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</link>
-      <pubDate>Sun, 28 Feb 2010 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sun, 28 Feb 2010 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</guid>
       <description>
 
@@ -76,7 +76,7 @@ Pourtant, au bout d&amp;rsquo;une semaine ou deux, vous constatez que c&amp;rsqu
 &lt;p&gt;Que s&amp;rsquo;est-il passé et comment faire en sorte de réussir la prochaine fois sont sûrement deux questions qui vous trottent dans la tête.
 Je ne prétends pas avoir toutes les réponses, mais je souhaite vous proposer une piste qui, je l&amp;rsquo;espère, pourra vous aider dans vos réflexions.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;La discipline&lt;/h3&gt;
+&lt;h3 id=&#34;la-discipline:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;La discipline&lt;/h3&gt;
 
 &lt;p&gt;Comme moi par le passé, vous vous êtes sûrement dit que prendre une nouvelle habitude ne devait pas être difficile.
 C&amp;rsquo;est juste une question de volonté et de discipline après tout.
@@ -91,14 +91,14 @@ Pour ma part, la réponse est invariablement bien peu (trop peu).&lt;/p&gt;
 Non, non et NON ! Il existe d&amp;rsquo;autres leviers qui vous permettront d&amp;rsquo;avancer.
 La motivation est l&amp;rsquo;un d&amp;rsquo;eux.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;La motivation&lt;/h3&gt;
+&lt;h3 id=&#34;la-motivation:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;La motivation&lt;/h3&gt;
 
 &lt;p&gt;La motivation, c&amp;rsquo;est un ensemble de moyens pour vous encourager à faire une action, quand se dire que « c&amp;rsquo;est la bonne chose à faire » ne suffit plus.
 Ce sont &lt;em&gt;les carottes&lt;/em&gt; pour vous faire avancer.
 Il existe de nombreux moyens pour se motiver, mais généralement ceux-ci rentrent dans l&amp;rsquo;un des deux thèmes suivants :
 apprécier l&amp;rsquo;activité en question et s&amp;rsquo;engager publiquement.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_2&#34;&gt;Apprécier l&amp;rsquo;activité&lt;/h4&gt;
+&lt;h4 id=&#34;apprécier-l-activité:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;Apprécier l&amp;rsquo;activité&lt;/h4&gt;
 
 &lt;p&gt;Il est évident que l&amp;rsquo;on aura beaucoup plus de facilités à faire une action à laquelle on prend du plaisir que si c&amp;rsquo;est une corvée.
 On peut ainsi chercher des éléments qui vont plaisir.
@@ -108,7 +108,7 @@ Par exemple, se mettre au footing peut ne être très plaisant au début, mais s
 Pour ma part, je suis un grand gourmand, et manger une barre céréales avant de faire du sport fait partie des choses que j&amp;rsquo;apprécie.
 Mettre une croix sur un &lt;a href=&#34;http://blog.menfin.info/post/2010/02/15/Se-motiver-avec-un-Seinfeld-Calendar&#34;&gt;Seinfeld Calendar&lt;/a&gt; a également un coté très gratifiant.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_3&#34;&gt;S&amp;rsquo;engager publiquement&lt;/h4&gt;
+&lt;h4 id=&#34;s-engager-publiquement:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;S&amp;rsquo;engager publiquement&lt;/h4&gt;
 
 &lt;p&gt;L&amp;rsquo;engagement public est également un moyen très efficace pour nous aider à tenir une résolution.
 L&amp;rsquo;idée est que nous détestons profondément ne pas tenir nos engagements, et nous pouvons nous servir de ça pour nous mettre un peu de pression (pas trop quand même), ce qui nous forcera à agir.&lt;/p&gt;
@@ -128,11 +128,11 @@ Et si vous souhaitez creuser la question de la motivation, il existe un ebook, &
     <item>
       <title>Se motiver avec un Seinfeld Calendar</title>
       <link>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</link>
-      <pubDate>Mon, 15 Feb 2010 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Mon, 15 Feb 2010 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</guid>
       <description>&lt;p&gt;Comme promis, pour vous éclairer sur les
-&lt;a href=&#34;/post/2010/02/15/Changement-de-direction-pour-ce-blog&#34;&gt;&lt;strong&gt;lifehacks&lt;/strong&gt;&lt;/a&gt;, je
+&lt;a href=&#34;http://blog.menfin.info/post/2010/02/15/Changement-de-direction-pour-ce-blog&#34;&gt;&lt;strong&gt;lifehacks&lt;/strong&gt;&lt;/a&gt;, je
 vais donner un premier exemple : le &lt;a href=&#34;http://lifehacker.com/281626/jerry-seinfelds-productivity-secret&#34;&gt;Seinfeld
 Calendar&lt;/a&gt;.&lt;/p&gt;
 

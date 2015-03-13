@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <title>
-    Templates dans vim 1 / 2 // M&#39;enfin ?!?
+    Hash Code, fnf-detect et HTML Truncator // M&#39;enfin ?!?
   </title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -15,11 +15,11 @@
 <meta name="keywords" content="">
 <meta name="author" content="">
 
-  <meta property="og:title" content="Templates dans vim 1 / 2" />
+  <meta property="og:title" content="Hash Code, fnf-detect et HTML Truncator" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://blog.menfin.info/posts/2006-07-05-templates-dans-vim-1-sur2/" />
+<meta property="og:url" content="http://blog.menfin.info/posts/2015-03-13-Hashcode-fnf-detect-et-html_truncator/" />
 
 
   
@@ -116,8 +116,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#mode-d-emploi:dd2ec86c8ba2d401d09af5573046da61">Mode d&rsquo;emploi</a></li>
-<li><a href="#explications:dd2ec86c8ba2d401d09af5573046da61">Explications</a></li>
+<li><a href="#hash-code-2015:3afc5d781eca6ba0109a465cf0c28b11">Hash Code 2015</a></li>
+<li><a href="#fnf-detect:3afc5d781eca6ba0109a465cf0c28b11">fnf-detect</a></li>
+<li><a href="#html-truncator:3afc5d781eca6ba0109a465cf0c28b11">HTML Truncator</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -126,14 +127,14 @@
 	    
   		<section class="post">
             <h1 class="post-title">
-              <a href="/posts/2006-07-05-templates-dans-vim-1-sur2/">Templates dans vim 1 / 2</a>
+              <a href="/posts/2015-03-13-Hashcode-fnf-detect-et-html_truncator/">Hash Code, fnf-detect et HTML Truncator</a>
             </h1>
             <h3 class="post-subtitle">
             	
             </h3>
             
             	<span class="post-date">
-                	<span class="post-date-day"><sup>5</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Jul</span> <span class="post-date-year">2006</span>
+                	<span class="post-date-day"><sup>13</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Mar</span> <span class="post-date-year">2015</span>
             	</span>
             	
             
@@ -143,7 +144,7 @@
 			
 				<div class="post-categories">
 				
-					<a class="post-category post-category-vim" href="/categories/vim">Vim</a> 
+					<a class="post-category post-category-code" href="/categories/code">code</a> 
 				
 				</div>
 			
@@ -154,61 +155,77 @@
 
             
 
-<p>Hop, pour ce premier tips, je vais vous montrer comment utiliser des templates dans Vim. Par exemple, supposons que je veuille avoir ces quelques lignes :</p>
+<h2 id="hash-code-2015:3afc5d781eca6ba0109a465cf0c28b11">Hash Code 2015</h2>
 
-<pre><code class="language-ruby">#!/usr/bin/env ruby
-# Author: Bruno Michel &lt;bmichel@menfin.info&gt;
-# Licence: MIT &lt;http://www.opensource.org/licenses/mit-license.html&gt;
-</code></pre>
+<p>Google France organise un concours nommé <a href="https://sites.google.com/site/hashcode2015/home">Hash
+Code</a>. J&rsquo;ai participé avec 2
+colllègues d&rsquo;af83 à l&rsquo;édition 2015. Les qualifications pour la finale avait
+lieu hier soir. <a href="https://docs.google.com/a/google.com/file/d/0B8xe9y1rGAQXRXZjSXl6THBDZXc/view?sle=true">Les
+règles</a>
+sont assez simples : il faut disposer des serveurs dans un datacenter de la
+meilleure façon possible pour résister aux pannes d&rsquo;électricité.</p>
 
-<p>au début de chaque nouveau script ruby.</p>
-
-<h2 id="mode-d-emploi:dd2ec86c8ba2d401d09af5573046da61">Mode d&rsquo;emploi</h2>
-
-<p>Pour cela, nous allons faire simple :</p>
-
-<ol>
-<li>créer un fichier avec ce template, et le placer dans le répertoire <code>~/vim/templates</code> :</li>
-</ol>
-
-<pre><code>$ mkdir -p ~/.vim/templates
-$ echo &quot;#!/usr/bin/env ruby&quot; &gt; ~/.vim/templates/ruby
-$ ...
-$ echo  &quot;#-------------------------------------------------------------------&quot; &gt;&gt; ~/.vim/templates/ruby
-</code></pre>
+<p>Notre code est disponible sur
+<a href="https://github.com/AF83/hashcode-2015">github.com/AF83/hashcode-2015</a>. Il
+fonctionne de la façon suivante :</p>
 
 <ol>
-<li>modifier son fichier de configuration de vim :</li>
-</ol>
+<li><p>Lire les données du problème</p></li>
 
-<pre><code>$ vim ~/.vimrc
-</code></pre>
-
-<p>et rajouter la ligne suivante :</p>
-
-<pre><code class="language-vim">au BufNewFile *.rb 0r ~/.vim/templates/ruby
-</code></pre>
+<li><p>Placer les serveurs dans le datacenter</p>
 
 <ol>
-<li>quitter et vérifier que cela fonctionne :</li>
+<li>Trier les serveurs par efficacité décroissante (le rapport entre la
+capacité et la place qu&rsquo;il prend)</li>
+<li>Pour chaque serveur, parcourir les lignes de la moins remplie à la plus
+remplie, et regarder s&rsquo;il y a un emplacement pour le mettre</li>
+<li>S&rsquo;il y a un emplacement, mettre le serveur dans cet emplacement</li>
+<li>Passer au serveur suivant</li>
+</ol></li>
+
+<li><p>Puis, on assigne les serveurs à des groupes</p>
+
+<ol>
+<li>Trier les serveurs par capacité décroissante</li>
+<li>Pour chaque serveur, trouver le groupe avec la capacité garantie la plus
+faible et qui ne soit pas déjà très présent sur la ligne du serveur</li>
+<li>Assigner le serveur à ce groupe</li>
+</ol></li>
+
+<li><p>Écrire notre solution</p></li>
 </ol>
 
-<pre><code>:wq
-$ vim foo.rb
-</code></pre>
+<p>Avec ce fonctionnement et quelques ajustements, nous avons obtenu le score
+très honorable de 379. Nous avons ensuite essayé d&rsquo;ajouter une phase
+d&rsquo;optimisation entre les étapes 3 et 4, en échangeant des serveurs entre 2
+groupes. Mais cela a été un échec : nous avons obtenu de moins résultats que
+précédement.</p>
 
-<h2 id="explications:dd2ec86c8ba2d401d09af5573046da61">Explications</h2>
+<p>Bref, ce fût une soirée bien fun et j&rsquo;espère que nous serons qualifiés pour la
+finale.</p>
 
-<p>La ligne ajoutée au fichier vimrc peut se décomposer en :</p>
+<h2 id="fnf-detect:3afc5d781eca6ba0109a465cf0c28b11">fnf-detect</h2>
 
-<ul>
-<li><code>au</code> : indique une commande qui sera automatiquement</li>
-<li><code>BufNewFile</code> : l&rsquo;exécution automatique se fera sur la création d&rsquo;un nouveau fichier</li>
-<li><code>*.rb</code> : ce paramètre indique que le fichier doit avoir l&rsquo;extension .rb pour que la commande soit éxécutée</li>
-<li><code>0r ~/.vim/templates/ruby</code> : cette commande ruby insère le contenu du fichier après la 0ème ligne, c&rsquo;est-à-dire avant la 1ère ligne.</li>
-</ul>
+<p>J&rsquo;ai joué un peu avec des bibliothèques de <em>Computer Vision</em> la semaine
+dernière. Je me suis servi d&rsquo;<a href="http://opencv.org/">OpenCV</a> et de
+<a href="http://libccv.org/">ccv</a> pour détecter des visages sur les photos. Cela
+permet ensuite de retailler les photos en gardant les visages dessus, même
+quand ces visages sont sur les bords.</p>
 
-<p>Voilà, c&rsquo;est tout pour ce billet. Mais il y aura une suite avec comment avoir des templates un peu plus dynamiques. On verra par exemple comment insérer la date dans les templates.</p>
+<p>Le fruit de ces expérimentations est visible sur <a href="https://github.com/AF83/fnf-detect">le dépôt
+fnf-detect</a>. La version avec OpenCV donne
+des résultats corrects et est rapide. La version avec ccv est un peu plus
+lente, mais améliore grandement les résultats. Au final, nous allons utiliser
+cette seconde version pour un client, car cela donne un aspect mieux fini à
+leur produit.</p>
+
+<h2 id="html-truncator:3afc5d781eca6ba0109a465cf0c28b11">HTML Truncator</h2>
+
+<p><a href="https://github.com/nono/HTML-Truncator">HTML Truncator</a>, ma bibliothèque Ruby
+pour tronquer des textes présents sous forme d&rsquo;HTML, semble être de plus en
+plus utilisée. J&rsquo;ai des retours via les issues de github. Certains sont des
+questions, mais j&rsquo;ai également eu un rapport de bug sur les entités HTML
+récemment. J&rsquo;ai donc corrigé le bug et sorti une nouvelle version.</p>
 
 	
 			
@@ -219,16 +236,11 @@ $ vim foo.rb
 				<div class="paging">
 					<span class="paging-label">More Reading</span>
 					
-					<div class="paging-newer">
-						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/posts/2006-07-09-templates-dans-vim-2-sur2/">Templates dans vim 2 / 2</a>
-		            </div>
-		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/posts/2006-07-03-premier-billet/">Premier billet</a>
+			            <a class="paging-link" href="/posts/2014-11-01-petite-visite-a-l-open-world-forum/">Petite visite à l&#39;Open World Forum</a>
 		            </div>
 		            
 	            </div>
