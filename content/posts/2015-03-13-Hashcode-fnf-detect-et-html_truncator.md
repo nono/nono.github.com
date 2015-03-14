@@ -46,6 +46,8 @@ que précédement.
 Bref, ce fût une soirée bien fun et j'espère que nous serons qualifiés pour la
 finale.
 
+**Mise à jour** : oui, nous sommes bien qualifiés pour la finale !
+
 
 ## fnf-detect
 
