@@ -6,8 +6,92 @@
     <description>Recent content on M&#39;enfin ?!?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Fri, 13 Mar 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.menfin.info/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ma config</title>
+      <link>http://blog.menfin.info/posts/2015-03-20-ma-config/</link>
+      <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2015-03-20-ma-config/</guid>
+      <description>&lt;p&gt;Je suis un utilisateur de longue date de la ligne de commande, et de vim en
+particulier. J&amp;rsquo;essaye d&amp;rsquo;apprendre régulièrement de nouvelles choses (méthodes,
+outils, astuces) pour m&amp;rsquo;améliorer et être plus efficace. Par exemple, j&amp;rsquo;ai
+écrit par le passé un billet sur &lt;a href=&#34;http://blog.menfin.info/posts/2008-03-15-git-branch-dans-le-prompt-zsh/&#34;&gt;l&amp;rsquo;ajout de la branche git dans le prompt de
+zsh&lt;/a&gt;.
+Je souhaite partager avec vous quelques découvertes récentes.&lt;/p&gt;
+
+&lt;p&gt;Tout d&amp;rsquo;abord, je suis passé de vim à &lt;a href=&#34;http://neovim.org/&#34;&gt;Neovim&lt;/a&gt;. Il n&amp;rsquo;y a
+quasiment aucune différence d&amp;rsquo;un point de vue utilisateur, et c&amp;rsquo;est très bien
+ainsi ! C&amp;rsquo;est très stable et un utilisateur de vim sera comme chez lui.
+D&amp;rsquo;ailleurs, mes fichiers de config sont les mêmes pour vim et neovim, ce sont
+juste des liens symboliques de l&amp;rsquo;un vers l&amp;rsquo;autre.&lt;/p&gt;
+
+&lt;p&gt;Alors, pourquoi changer ? En fait, sous le capot, il y a pas mal de
+changements qui vont porter leurs fruits plus tard. La base de code a été
+nettoyé de pas mal de bizarreries (pour cause de compatibilité avec des
+terminaux que plus personne n&amp;rsquo;utilise). Il y a un gros travail sur les
+plugins : ils peuvent être exécutés à l&amp;rsquo;extérieur du processus principal et
+communiquer avec lui via msgpack. Ainsi, ils peuvent être écrits dans
+différents langages et faire des traitements longs (analyse de code), sans
+bloquer l&amp;rsquo;affichage pendant plusieurs secondes.
+&lt;a href=&#34;https://github.com/benekastah/neomake&#34;&gt;neomake&lt;/a&gt; est un bel exemple
+d&amp;rsquo;utilisation des possibilités de Neovim. Bref, je suis passé à Neovim surtout
+pour montrer mon soutien à ce projet, car je pense qu&amp;rsquo;il va faire avancer vim
+dans le bon sens.&lt;/p&gt;
+
+&lt;p&gt;Pour le shell, je continue d&amp;rsquo;utiliser zsh plutôt que bash. J&amp;rsquo;avoue ne pas trop
+savoir comment a évolué bash ces dernières années, mais je n&amp;rsquo;ai rien lu qui me
+donne envie d&amp;rsquo;y revenir. À l&amp;rsquo;époque où j&amp;rsquo;avais fait le changement, il y avait
+pas mal de choses intéressantes sous zsh (la complétion bien plus efficace,
+&lt;code&gt;**&lt;/code&gt; pour le globbing ou encore la recherche dans l&amp;rsquo;historique dès que
+j&amp;rsquo;appuie sur &lt;code&gt;↑&lt;/code&gt;). Mais j&amp;rsquo;y reste car zsh me convient bien, même si parfois je
+me dis que des alternatives comme &lt;a href=&#34;http://fishshell.com/&#34;&gt;fish&lt;/a&gt; pourraient
+être intéressantes.&lt;/p&gt;
+
+&lt;p&gt;Ce shell tourne dans rxvt-unicode. Rien de nouveau de ce côté-là. Pour les
+couleurs, j&amp;rsquo;utilise maintenant le thème &lt;a href=&#34;http://chriskempson.github.io/base16/#bright&#34;&gt;base16
+bright&lt;/a&gt;. Base16 est pratique et
+permet d&amp;rsquo;avoir le même jeu de couleurs dans pas mal d&amp;rsquo;applications. On trouve
+des thèmes pour l&amp;rsquo;utiliser dans le shell, vim, etc. Il n&amp;rsquo;y a que pour irssi où
+cela a été un peu difficile. J&amp;rsquo;ai testé quelques thèmes mais aucun n&amp;rsquo;allait
+bien. Du coup, j&amp;rsquo;ai écrit mon propre thème :
+&lt;a href=&#34;https://github.com/nono/dotfiles/blob/master/irssi/base16.theme&#34;&gt;base16&lt;/a&gt;
+(oui, j&amp;rsquo;aurais pu faire plus original).&lt;/p&gt;
+
+&lt;p&gt;Et pour la police, j&amp;rsquo;utilise Droid sans mono, &lt;a href=&#34;https://github.com/powerline/fonts&#34;&gt;patchée pour
+powerline&lt;/a&gt;. Je n&amp;rsquo;utilise pas powerline
+mais &lt;a href=&#34;https://github.com/bling/vim-airline&#34;&gt;vim-airline&lt;/a&gt;, et ces symboles me
+servent aussi pour irssi.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;en ai également profiter pour changer de prompt dans zsh. Je suis parti de
+&lt;a href=&#34;https://github.com/sindresorhus/pure&#34;&gt;pure&lt;/a&gt; et je l&amp;rsquo;ai modifié pour qu&amp;rsquo;il
+tienne sur une seule ligne (&lt;a href=&#34;https://github.com/nono/dotfiles/blob/master/zsh/functions/prompt_unpure_setup&#34;&gt;prompt_unpure_setup
+&lt;/a&gt;
+si ça vous intéresse).&lt;/p&gt;
+
+&lt;p&gt;Un autre truc que j&amp;rsquo;ai ajouté récemment dans mon fichier &lt;code&gt;~/.zshrc&lt;/code&gt; est la
+coloration des pages man :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;man() {
+  env LESS_TERMCAP_mb=$&#39;\E[01;31m&#39; \
+  LESS_TERMCAP_md=$&#39;\E[01;38;5;74m&#39; \
+  LESS_TERMCAP_me=$&#39;\E[0m&#39; \
+  LESS_TERMCAP_se=$&#39;\E[0m&#39; \
+  LESS_TERMCAP_so=$&#39;\E[38;5;246m&#39; \
+  LESS_TERMCAP_ue=$&#39;\E[0m&#39; \
+  LESS_TERMCAP_us=$&#39;\E[04;38;5;146m&#39; \
+  man &amp;quot;$@&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ce n&amp;rsquo;est pas grand chose, mais ça peut être pratique. Voilà, j&amp;rsquo;espère que cela
+pourra inspirer certains d&amp;rsquo;entre vous. Et n&amp;rsquo;oubliez pas que ma config traine
+sur &lt;a href=&#34;https://github.com/nono/dotfiles&#34;&gt;github.com/nono/dotfiles&lt;/a&gt;. Il n&amp;rsquo;y a pas
+forcément beaucoup de commentaires, mais on peut y trouver des choses utiles.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hash Code, fnf-detect et HTML Truncator</title>
@@ -649,51 +733,6 @@ Maintenant, ce sera &amp;lsquo;nouveau&amp;rsquo; et &amp;lsquo;modifier&amp;rsq
 
 &lt;p&gt;Enfin, tant qu&amp;rsquo;à resortir ce plugin du grenier, j&amp;rsquo;en ai également profité pour faire quelque chose que j&amp;rsquo;aurais dû faire depuis un certain temps : le passer en gem.
 Il est disponible sur &lt;a href=&#34;http://rubygems.org/gems/french_rails&#34;&gt;Rubygems&lt;/a&gt; et peut donc s&amp;rsquo;installer d&amp;rsquo;un simple &lt;code&gt;gem install french_rails&lt;/code&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Je m&#39;interroge sur twitter</title>
-      <link>http://blog.menfin.info/posts/2009-12-13-je-m-interroge-sur-twitter/</link>
-      <pubDate>Sun, 13 Dec 2009 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.menfin.info/posts/2009-12-13-je-m-interroge-sur-twitter/</guid>
-      <description>
-
-&lt;p&gt;Je connais &lt;a href=&#34;http://twitter.com&#34;&gt;Twitter&lt;/a&gt; depuis longtemps, mais je n&amp;rsquo;ai jamais senti le besoin de m&amp;rsquo;y inscrire.
-Et pourtant, récemment, j&amp;rsquo;ai créé &lt;a href=&#34;http://twitter.com/brmichel&#34;&gt;un compte twitter&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;pourquoi:b5abed3e6edad67f55c6d6c5a872a670&#34;&gt;Pourquoi ?&lt;/h2&gt;
-
-&lt;p&gt;Je n&amp;rsquo;ai pas eu une soudaine révélation sur twitter.
-Je ne vois pas d&amp;rsquo;intérêt particulier à twitter, comparé aux autres moyens de communications à ma disposition.
-Autant pour Facebook, je peux voir un intérêt (mais je ne suis pas prêt à accepter les atteintes à ma vie privée qui en découlerait), autant pour twitter, je reste perplexe.&lt;/p&gt;
-
-&lt;p&gt;Alors pourquoi me suis-je inscrit ?
-Principalement par curiosité.
-Je travaille sur ce que pourrait-être le web de demain (&lt;a href=&#34;http://twitter.com/nodzle&#34;&gt;Nodzle&lt;/a&gt;), et twitter est sensé être le meilleur représentant du web temps-réel.
-On m&amp;rsquo;a fait remarquer que le meilleur moyen de découvrir twitter est encore de l&amp;rsquo;essayer, principe qui peut être illustré par cette citation :&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Twitter is like sex. You can read all the stuff (or look at it) about sex all you want, but if you’ve never had it, you simply have no idea what it’s like.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;et-alors:b5abed3e6edad67f55c6d6c5a872a670&#34;&gt;Et alors ?&lt;/h2&gt;
-
-&lt;p&gt;OK, j&amp;rsquo;ai donc créé un compte twitter et j&amp;rsquo;ai commencé à twitter.
-Mais ai-je été touché par la grâce divine et suis-je devenu un fervent défenseur du twit ?&lt;/p&gt;
-
-&lt;p&gt;Non, loin de là.
-Pour le moment, l&amp;rsquo;usage que j&amp;rsquo;en fais est très proche de l&amp;rsquo;IRC, mais avec de gros défauts :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;je n&amp;rsquo;ai pas trouvé comment faire l&amp;rsquo;auto-complétion des nicks ou des hashtags ;&lt;/li&gt;
-&lt;li&gt;je ne sais pas non plus comment voir les réponses à une question intéressante posée par une personne que je suis ;&lt;/li&gt;
-&lt;li&gt;déjà confronté aux spams :/&lt;/li&gt;
-&lt;li&gt;c&amp;rsquo;est dur de relire les anciens messages&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Bref, je ne me suis pas converti à la religion twitter, mais je vais continuer à l&amp;rsquo;utiliser pour voir si mon opinion évolue.&lt;/p&gt;
 </description>
     </item>
     
