@@ -65,7 +65,7 @@ powerline&lt;/a&gt;. Je n&amp;rsquo;utilise pas powerline
 mais &lt;a href=&#34;https://github.com/bling/vim-airline&#34;&gt;vim-airline&lt;/a&gt;, et ces symboles me
 servent aussi pour irssi.&lt;/p&gt;
 
-&lt;p&gt;J&amp;rsquo;en ai également profiter pour changer de prompt dans zsh. Je suis parti de
+&lt;p&gt;J&amp;rsquo;en ai également profité pour changer de prompt dans zsh. Je suis parti de
 &lt;a href=&#34;https://github.com/sindresorhus/pure&#34;&gt;pure&lt;/a&gt; et je l&amp;rsquo;ai modifié pour qu&amp;rsquo;il
 tienne sur une seule ligne (&lt;a href=&#34;https://github.com/nono/dotfiles/blob/master/zsh/functions/prompt_unpure_setup&#34;&gt;prompt_unpure_setup
 &lt;/a&gt;

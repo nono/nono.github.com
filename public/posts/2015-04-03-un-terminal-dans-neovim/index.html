@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
   <title>
-    Le navigateur web Arora // M&#39;enfin ?!?
+    Un terminal dans Neovim // M&#39;enfin ?!?
   </title>
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
@@ -15,11 +15,11 @@
 <meta name="keywords" content="">
 <meta name="author" content="">
 
-  <meta property="og:title" content="Le navigateur web Arora" />
+  <meta property="og:title" content="Un terminal dans Neovim" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="http://blog.menfin.info/posts/2008-12-02-la-navigateur-web-Aroha/" />
+<meta property="og:url" content="http://blog.menfin.info/posts/2015-04-03-un-terminal-dans-neovim/" />
 
 
   
@@ -113,14 +113,14 @@
 	    
   		<section class="post">
             <h1 class="post-title">
-              <a href="/posts/2008-12-02-la-navigateur-web-Aroha/">Le navigateur web Arora</a>
+              <a href="/posts/2015-04-03-un-terminal-dans-neovim/">Un terminal dans Neovim</a>
             </h1>
             <h3 class="post-subtitle">
             	
             </h3>
             
             	<span class="post-date">
-                	<span class="post-date-day"><sup>2</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Dec</span> <span class="post-date-year">2008</span>
+                	<span class="post-date-day"><sup>3</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Apr</span> <span class="post-date-year">2015</span>
             	</span>
             	
             
@@ -130,7 +130,7 @@
 			
 				<div class="post-categories">
 				
-					<a class="post-category post-category-outils" href="/categories/outils">Outils</a> 
+					<a class="post-category post-category-vim" href="/categories/vim">vim</a> 
 				
 				</div>
 			
@@ -139,16 +139,58 @@
 
 			
 
-            <p>J&rsquo;ai récemment eu besoin de résoudre des bugs sur <a href="http://linuxfr.org/">LinuxFr.org</a> qui était lié au moteur javascript de Safari
-(les <a href="https://linuxfr.org/tracker/883.html">#883</a> et <a href="https://linuxfr.org/tracker/900.html">#900</a> si vous voulez tout savoir).
-Étant sous GNU/Linux, je ne pouvais pas installer Safari, et bien entendu, je n&rsquo;arrivais pas à reproduire les bugs sous Firefox.
-Toutefois, le moteur de Safari, Webkit, est libre, et il en existe des ports sous GNU/Linux.</p>
+            <p>Comme je l&rsquo;ai indiqué dans <a href="http://blog.menfin.info/posts/2015-03-20-ma-config/">un précédent
+billet</a>, je suis passé à
+Neovim. En pratique, cela reste très proche de Vim. Mais, on commence à voir
+de nouvelles fonctionnalités très intéressantes. J&rsquo;avais déjà parlé de
+l&rsquo;exécution asynchrone des plugins, ce qui leur permet de faire des
+traitements longs sans bloquer complètement l&rsquo;éditeur.</p>
 
-<p>J&rsquo;ai d&rsquo;abord essayé epiphany-webkit, et j&rsquo;ai pu constaté le problème mais pas faire grand chose de plus.
-Epiphany ne me donnait pas accès à un débugger javascript et ne me donnait même pas accès à l&rsquo;erreur js.
-Après une phase de recherche sur google, j&rsquo;ai tenté un navigateur web que je ne connaissais pas (même de nom) : <a href="http://code.google.com/p/arora/">Aroha</a>.
-Il dispose de l&rsquo;outil <a href="http://mapopa.blogspot.com/2008/07/enabling-webkits-webinspector-in-arora.html">Web Inspector</a> (en gros, un équivalent de Firebug pour Safari), ce qui m&rsquo;a donné l&rsquo;erreur javascript et permis de faire quelques tests dans la console intégrée.
-Bref, même si ce navigateur n&rsquo;a rien de révolutionnaire, je suis bien content de pouvoir utiliser le Web Inspector de Webkit sous linux.</p>
+<p>Plus récemment, <a href="https://github.com/tarruda">@tarruda</a> a ajouté <a href="https://github.com/neovim/neovim/pull/2198">la prise en
+charge des vraies couleurs</a> dans
+Neovim. Pour les terminaux qui supportent cette possibilité, il est maintenant
+possible d&rsquo;utiliser des couleurs avec des code hexadécimaux, sans se
+restreindre à une palette de 16, 88 ou 256 couleurs comme c&rsquo;est trop souvent
+le cas. Cela devrait notamment plaire aux créateurs de thèmes, vu que ceux-ci
+respecteront mieux les couleurs désormais.</p>
+
+<p>Une autre fonctionnalité qui me semble très intéressante vient d&rsquo;arriver dans
+Neovim : c&rsquo;est <a href="https://github.com/neovim/neovim/pull/2076">l&rsquo;émulation d&rsquo;un terminal</a>.
+Grâce à la <a href="http://www.leonerd.org.uk/code/libvterm/">libvterm</a>, il est
+possible de lancer un terminal dans Neovim, avec <code>:terminal</code> par exemple. Cela
+créée un buffer en mode édition. Il est alors possible d&rsquo;utiliser ce terminal
+pour faire différentes actions (comme un terminal normal), mais également de
+profiter des autres modes de vim. Au hasard, la sélection rectangulaire peut
+être bien pratique !</p>
+
+<p>Pour sortir du mode édition, il faut utiliser la combinaison <code>&lt;C-\&gt; &lt;C-n&gt;</code>. Ce
+n&rsquo;est pas très intuitif, mais comme le mode terminal propose son propre
+binding de touches avec <code>:tnoremap</code>, on peut ajouter ces lignes à son fichier
+<code>/.nvimrc</code> pour utiliser <code>Esc</code> :</p>
+
+<pre><code class="language-vim">if has(&quot;nvim&quot;)
+    tnoremap &lt;Esc&gt; &lt;C-\&gt;&lt;C-n&gt;
+endif
+</code></pre>
+
+<p>Cette fonctionnalité va ouvrir des portes aux développeurs de plugins, pour
+intégrer plus facilement Neovim et des outils externes. À titre d&rsquo;exemple,
+il existe un <a href="https://github.com/tarruda/neovim/blob/refactor-job-api-3/contrib/neovim_gdb/neovim_gdb.vim">plugin pour
+gdb</a>,
+qui permet depuis la vue terminal de Neovim de contrôler le déboggeur et
+d&rsquo;avoir quelques fonctionnalités bien pratiques :</p>
+
+<ul>
+<li>Sauter dans le fichier / ligne quand gdb atteint un point d&rsquo;arrêt</li>
+<li>Garder l&rsquo;état en cours d&rsquo;exécution / en pause</li>
+<li>Contrôler l&rsquo;exécution de gdb depuis n&rsquo;importe quelle fenêtre de l&rsquo;éditeur et
+inspecter des expressions.</li>
+</ul>
+
+<p>Pour finir, voici une petite capture d&rsquo;écran :</p>
+
+<p><img src="/public/Neovim-term.png" alt="Capture d'écran de Neovim avec un terminal" />
+</p>
 
 	
 			
@@ -159,16 +201,11 @@ Bref, même si ce navigateur n&rsquo;a rien de révolutionnaire, je suis bien co
 				<div class="paging">
 					<span class="paging-label">More Reading</span>
 					
-					<div class="paging-newer">
-						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="/posts/2008-12-09-The-broken-window-theory/">The broken window theory</a>
-		            </div>
-		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="/posts/2008-10-31-Nouveaux-tips-Vim/">Encore plus de tips pour Vim</a>
+			            <a class="paging-link" href="/posts/2015-03-20-ma-config/">Ma config</a>
 		            </div>
 		            
 	            </div>
