@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linuxfr on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/linuxfr/</link>
+    <description>Recent content in Linuxfr on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 08 Feb 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/linuxfr/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LinuxFr.org avec des commentaires et des réponses aux commentaires, et des réponses aux réponses, etc.</title>
+      <link>http://blog.menfin.info/posts/2009-02-08-Commentaires-LinuxFr/</link>
+      <pubDate>Sun, 08 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2009-02-08-Commentaires-LinuxFr/</guid>
+      <description>&lt;p&gt;Les développements continuent d&amp;rsquo;avancer pour la refonte en Rails de &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFr.org&lt;/a&gt;.
+Je me suis attaqué à un refactoring des commentaires.
+Les fils de discussions de LinuxFr.org sous forme d&amp;rsquo;arbres sont une des forces du site : ils permettent de suivre les discussions très intéressantes (et les trolls, bien sûr).
+Malheureusement, c&amp;rsquo;est aussi une structure qui se prête assez mal aux bases de données relationnelles.
+J&amp;rsquo;étais d&amp;rsquo;abord sur une technique d&amp;rsquo;ensembles imbriqués (« nested set »), avec le plugin rails &lt;a href=&#34;http://github.com/collectiveidea/awesome_nested_set&#34;&gt;awesome nested set&lt;/a&gt;, mais celui-ci ne fournissait pas les méthodes qui m&amp;rsquo;intéressaient.
+Par exemple, je veux pouvoir construire tout un arbre de discussions en effectuant une seule requête SQL.
+J&amp;rsquo;aurais pu compléter ce plugin, mais quitte à écrire du code, j&amp;rsquo;ai préféré partir sur une structure plus adaptée à mon cas :
+le chemin matérialisé (« materialized path ») consiste à garder pour chaque commentaire la liste de tous les IDs des commentaires parents dans un champs sérialisé.
+J&amp;rsquo;ai fait cela aujourd&amp;rsquo;hui et j&amp;rsquo;ai déjà une version fonctionnelle.
+La preuve en images :
+&lt;a href=&#34;http://blog.menfin.info/public/LinuxFr_refonte_commentaires.png&#34;&gt;Les threads de commentaires en cours de développement&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Dans les jours qui viennent, je pense me concentrer sur les dépêches et les commentaires (nettoyer le code, rajouter les fonctionnalités vraiment essentielles, corriger un ou deux bugs que j&amp;rsquo;ai remarqué, etc.).
+Je pourrais ensuite me pencher sur une nouvelle partie (la tribune ou le tracker, je ne sais pas encore).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Attention les yeux, ça va piquer !</title>
+      <link>http://blog.menfin.info/posts/2009-02-04-Attention-les-yeux/</link>
+      <pubDate>Wed, 04 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2009-02-04-Attention-les-yeux/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai repris mes développements sur LinuxFr.org, avec comme règle, d&amp;rsquo;en faire un peu tous les jours.
+Pour le moment, cela marche pas trop mal.
+Là, ça fait 5 jours de suite que je commite, et j&amp;rsquo;ai pu avancer sur les dépêches (aussi bien, création que toute la partie backend de modération).
+Pourvu que ça dure.&lt;/p&gt;
+
+&lt;p&gt;Sinon, je n&amp;rsquo;avais pas écrit la moindre de ligne de CSS jusque hier, et je commençais sérieusement à m&amp;rsquo;y perdre dans les différents blocs et balises qui structurent les pages.
+J&amp;rsquo;ai donc commencé à faire une CSS temporaire qui me servira juste pour le développement.
+Voici une capture de ce que cela donne (attention les yeux) :
+&lt;a href=&#34;http://blog.menfin.info/public/LinuxFr_refonte_rails.png&#34;&gt;Premier screenshot de la refonte de LinuxFr.org en Rails&lt;/a&gt;
+Je vous rassure, je ne compte pas garder la moindre ligne de cette feuille de style pour la version finale.
+En fait, j&amp;rsquo;espère bien ne pas avoir à faire la feuille de style finale, je ne suis pas très doué pour ça.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LinuxFr.org sur des Rails</title>
+      <link>http://blog.menfin.info/posts/2009-01-19-LinuxFr.org-sur-des-rails/</link>
+      <pubDate>Mon, 19 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2009-01-19-LinuxFr.org-sur-des-rails/</guid>
+      <description>&lt;p&gt;Pour 2009, je n&amp;rsquo;ai pris qu&amp;rsquo;une bonne résolution, mais elle est de taille.
+Ceux qui ont lu &lt;a href=&#34;http://linuxfr.org/~etix/27721.html&#34;&gt;ce journal sur LinuxFr.org&lt;/a&gt; savent déjà en quoi elle consiste.
+Pour les autres, la voici : je compte refaire le site &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFr.org&lt;/a&gt; en &lt;a href=&#34;http://www.rubyonrails.org&#34;&gt;Ruby on Rails&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est un défi de taille, car la version actuelle existe depuis de nombreuses années, et a accumulé un grand nombre de fonctionnalités au fil du temps.
+Pour situer, je viens de récupérer la dernière version, elle comporte 18 000 lignes de code (pour les templates), auxquelles on peut ajouter à peu près autant de lignes pour les feuilles de styles.
+En plus, le site a un fort traffic (en gros, 280 000 pages vues par jour), ce qui oblige à se pencher très sérieusement sur les questions de performance et de sécurité.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai attaqué le développement le 5 janvier, et on peut suivre &lt;a href=&#34;http://github.com/nono/linuxfr.org/commits/master&#34;&gt;les commits sur Github&lt;/a&gt;.
+Pour le moment, j&amp;rsquo;ai commencé à poser les bases pour les utilisateurs et les contenus (principalement, journaux et forums).
+J&amp;rsquo;ai également mis en place les commentaires, mais je ne suis pas satisfait du modèle de données, et je vais donc sûrement refaire ça rapidement.
+Mais la semaine prochaine, je vais surtout me concentrer sur les dépêches : proposition d&amp;rsquo;une dépêche par un lecteur authentifié ou non, relecture et modération par les ??AMR](admodérolecteurs = admins + modérateurs + relecteurs??, puis affichage sur la home page, les listings de dépêches et les flux RSS.&lt;/p&gt;
+
+&lt;p&gt;En bref, c&amp;rsquo;est un projet qui en est encore à ses débuts, et quasiment tout reste à faire.
+Je n&amp;rsquo;ai pas pu avancer beaucoup cette semaine, mais ma motivation reste intacte.
+Je vais tout faire pour éviter ces périodes creuses, car le seul moyen de sortir un projet de cette taille est d&amp;rsquo;en faire un peu tous les jours.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LinuxFR.org a dix ans, soirée Firefox 3 et autres joyeusetés</title>
+      <link>http://blog.menfin.info/posts/2008-06-28-linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes/</link>
+      <pubDate>Sat, 28 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2008-06-28-linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes/</guid>
+      <description>
+
+&lt;p&gt;Je n&amp;rsquo;ai pas pour habitude de faire des billets en vrac, mais ce sera exceptionnellement le cas.
+Je souhaite en effet vous parler de plusieurs points qui n&amp;rsquo;attendront pas :&lt;/p&gt;
+
+&lt;h2 id=&#34;linuxfr-a-10-ans:2d74b9e1016c75dcc50cd4af0516b7e8&#34;&gt;LinuxFR a 10 ans !&lt;/h2&gt;
+
+&lt;p&gt;Hé oui, c&amp;rsquo;est aujourd&amp;rsquo;hui, le 28 juin, que &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFR&lt;/a&gt; fête &lt;a href=&#34;https://linuxfr.org/2008/06/28/24276.html&#34;&gt;10 ans de dépêches, journaux et autres informations autour de Linux et des Logiciels Libres&lt;/a&gt;.
+J&amp;rsquo;espère que LinuxFR pourra continuer à animer la vie de la communauté du Logiciel Libre pour encore quelques années.&lt;/p&gt;
+
+&lt;h2 id=&#34;soirée-firefox-3:2d74b9e1016c75dcc50cd4af0516b7e8&#34;&gt;Soirée Firefox 3&lt;/h2&gt;
+
+&lt;p&gt;Hier soir avait lieu la soirée Firefox 3.
+Je dois avouer que j&amp;rsquo;ai été déçu par la soirée : peu de monde, pas de musique, l&amp;rsquo;ambiance n&amp;rsquo;était pas au rendez-vous :/
+&lt;a href=&#34;http://standblog.org/&#34;&gt;Tristan Nitot&lt;/a&gt; a pris &lt;a href=&#34;http://www.flickr.com/photos/nitot/sets/72157605857467802/&#34;&gt;des photos de la soirée&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;rmll-du-1er-au-5-juillet:2d74b9e1016c75dcc50cd4af0516b7e8&#34;&gt;RMLL du 1er au 5 juillet&lt;/h2&gt;
+
+&lt;p&gt;La semaine prochaine, ce sera &lt;a href=&#34;Rencontre Mondiale du Logiciel Libre&#34;&gt;RMLL&lt;/a&gt;.
+Ca se passe à Mont-de-Marsan, et j&amp;rsquo;y serais pour tenir le stand de &lt;a href=&#34;http://rubyfrance.org/&#34;&gt;Ruby France&lt;/a&gt; et donner &lt;a href=&#34;http://2008.rmll.info/10-ans-de-LinuxFR-org.html&#34;&gt;une conférence sur LinuxFR&lt;/a&gt;.
+J&amp;rsquo;espère y croiser des lecteurs de mon blog ;)&lt;/p&gt;
+
+&lt;p&gt;Un gros merci à &lt;a href=&#34;http://www.af83.com&#34;&gt;AF83&lt;/a&gt; qui me laisse y aller pendant mes jours de boulot.&lt;/p&gt;
+
+&lt;h2 id=&#34;do-you-buzz:2d74b9e1016c75dcc50cd4af0516b7e8&#34;&gt;Do You Buzz&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.doyoubuzz.com/&#34;&gt;Do You Buzz&lt;/a&gt; est un nouveau service en ligne pour publier son CV.
+Chose intéressante, c&amp;rsquo;est le premier site développé avec le framework &lt;a href=&#34;http://turb.ulenc.es/&#34;&gt;Turbulences&lt;/a&gt; en dehors d&amp;rsquo;AF83.&lt;/p&gt;
+
+&lt;p&gt;Le site est encore en bêta privée, mais il marche déjà très bien et l&amp;rsquo;interface est vraiment agréable à utiliser.
+J&amp;rsquo;en sais quelque chose, car je fais parti des premiers beta-testeurs (mon CV est visible sur &lt;a href=&#34;http://www.doyoubuzz.com/bruno-michel&#34;&gt;http://www.doyoubuzz.com/bruno-michel&lt;/a&gt; ).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

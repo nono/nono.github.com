@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Os on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/os/</link>
+    <description>Recent content in Os on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Mon, 22 Oct 2007 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/os/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ce qui me manque sous Mac OSX</title>
+      <link>http://blog.menfin.info/posts/2007-10-22-Mac-OSX/</link>
+      <pubDate>Mon, 22 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2007-10-22-Mac-OSX/</guid>
+      <description>
+
+&lt;p&gt;J&amp;rsquo;utilise GNU/Linux depuis plusieurs années, mais depuis quelques mois, je suis
+sous Mac OSX au boulot. Dans l&amp;rsquo;ensemble, je dois avouer que c&amp;rsquo;est très joli et
+facile à utiliser. Mais sur certains points, j&amp;rsquo;ai trouvé Mac OSX très mal foutu
+par rapport à ce que l&amp;rsquo;on peut trouver sous GNU/Linux. Voici une petite liste
+des trucs qui m&amp;rsquo;ont le plus géné (et qui me gênent encore) :&lt;/p&gt;
+
+&lt;h2 id=&#34;1-le-clavier:654fa52668891b1efcc88daca68a5af6&#34;&gt;#1 - Le clavier&lt;/h2&gt;
+
+&lt;p&gt;Le clavier de mon mac m&amp;rsquo;a longtemps dérouté, et encore maintenant, je ne sais
+pas comment se nomme toutes les touches. Et faire certains caractères est
+mission impossible si personne ne vous aide la première fois : faut savoir que
+pour faire un pipe |, il faut une combinaison de 3 touches dont la lettre l.
+C&amp;rsquo;est pas marqué sur le clavier, et c&amp;rsquo;est vraiment pas intuitif.&lt;/p&gt;
+
+&lt;h2 id=&#34;2-l-absence-de-bureaux-virtuels:654fa52668891b1efcc88daca68a5af6&#34;&gt;#2 - L&amp;rsquo;absence de bureaux virtuels&lt;/h2&gt;
+
+&lt;p&gt;Par défaut, il n&amp;rsquo;y a pas de bureaux virtuels sous Mac OSX. Il parait qu&amp;rsquo;on peut
+installer des softwares pour faire ca, mais je n&amp;rsquo;ai pas essayé. Est-ce qu&amp;rsquo;Apple
+aurait peur d&amp;rsquo;être poursuivi à cause du brevet sur les bureaux virtuels
+$$&lt;a href=&#34;http://yro.slashdot.org/yro/04/02/25/1346201.shtml$$&#34;&gt;http://yro.slashdot.org/yro/04/02/25/1346201.shtml$$&lt;/a&gt; ?&lt;/p&gt;
+
+&lt;h2 id=&#34;3-le-window-manager-sous-évolué:654fa52668891b1efcc88daca68a5af6&#34;&gt;#3 - Le Window Manager sous évolué&lt;/h2&gt;
+
+&lt;p&gt;Je ne comprends pas que le Window Manager soit aussi peu évolué. J&amp;rsquo;ai peut-être
+été habitué à des Window Manager très perfectionnés sous GNU/Linux, mais le
+choc a été dur : je n&amp;rsquo;ai pas trouvé comment garder une fenêtre au premier plan,
+comment avoir l&amp;rsquo;auto-focus, etc. Je ne sais pas pour vous, mais pour moi, ce
+sont vraiment des fonctions de base.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-la-barre-de-menu:654fa52668891b1efcc88daca68a5af6&#34;&gt;#4 - La barre de menu&lt;/h2&gt;
+
+&lt;p&gt;Mais quelle idée d&amp;rsquo;aller mettre la barre de menu à cet endroit ? Je travaille
+sur un portable avec un deuxième écran. Pas de chance, la barre de menu ne
+s&amp;rsquo;affiche que en haut de l&amp;rsquo;écran du portable, et pas du tout sur mon écran LCD
+20&amp;rdquo;. Mon curseur de souris fait des kilomètres à cause de ce menu mal placé.&lt;/p&gt;
+
+&lt;h2 id=&#34;5-le-copier-coller:654fa52668891b1efcc88daca68a5af6&#34;&gt;#5 - Le copier-coller&lt;/h2&gt;
+
+&lt;p&gt;Tout le reste, je pense que je peux survivre avec, mais le copier-coller, c&amp;rsquo;est
+vraiment le truc qui me mine la vie. Explications : sous GNU/Linux, il suffit
+de sélectionner du texte pour qu&amp;rsquo;il soit copié, et un clic avec le bouton du
+milieu de la souris, c&amp;rsquo;est collé. Bref, c&amp;rsquo;est simple, clair, net, efficace.
+Sous Mac OSX, il faut faire &lt;code&gt;&amp;lt;Touche dont je ne connais pas le nom&amp;gt;-C&lt;/code&gt; pour
+copier et &lt;code&gt;&amp;lt;Touche dont je ne connais toujours pas le nom&amp;gt;-V&lt;/code&gt; pour coller. Et là, 100 fois
+par jour, je me retrouve à souligner du texte pour le copier, puis quand je le
+colle, je me rends compte que ce n&amp;rsquo;est pas du tout cela que je voulais coller,
+et &lt;code&gt;#!@%&amp;amp;?&lt;/code&gt;, il faut effacer le texte que je viens de coller, et resélectionner
+le texte qui m&amp;rsquo;intéresse, faire &lt;code&gt;&amp;lt;truc&amp;gt;-C&lt;/code&gt;, &lt;code&gt;&amp;lt;truc&amp;gt;-V&lt;/code&gt;, et tout ca pour un simple
+copier-coller.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai eu beau chercher sur Internet, je n&amp;rsquo;ai rien trouvé pour avoir le
+copier-coller façon UNIX sous Mac OSX. Si quelqu&amp;rsquo;un a la solution, je suis prêt
+à lui payer une pinte de bière.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
