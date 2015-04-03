@@ -6,8 +6,69 @@
     <description>Recent content in Vim on M&#39;enfin ?!?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Fri, 20 Mar 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.menfin.info/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Un terminal dans Neovim</title>
+      <link>http://blog.menfin.info/posts/2015-04-03-un-terminal-dans-neovim/</link>
+      <pubDate>Fri, 03 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2015-04-03-un-terminal-dans-neovim/</guid>
+      <description>&lt;p&gt;Comme je l&amp;rsquo;ai indiqué dans &lt;a href=&#34;http://blog.menfin.info/posts/2015-03-20-ma-config/&#34;&gt;un précédent
+billet&lt;/a&gt;, je suis passé à
+Neovim. En pratique, cela reste très proche de Vim. Mais, on commence à voir
+de nouvelles fonctionnalités très intéressantes. J&amp;rsquo;avais déjà parlé de
+l&amp;rsquo;exécution asynchrone des plugins, ce qui leur permet de faire des
+traitements longs sans bloquer complètement l&amp;rsquo;éditeur.&lt;/p&gt;
+
+&lt;p&gt;Plus récemment, &lt;a href=&#34;https://github.com/tarruda&#34;&gt;@tarruda&lt;/a&gt; a ajouté &lt;a href=&#34;https://github.com/neovim/neovim/pull/2198&#34;&gt;la prise en
+charge des vraies couleurs&lt;/a&gt; dans
+Neovim. Pour les terminaux qui supportent cette possibilité, il est maintenant
+possible d&amp;rsquo;utiliser des couleurs avec des code hexadécimaux, sans se
+restreindre à une palette de 16, 88 ou 256 couleurs comme c&amp;rsquo;est trop souvent
+le cas. Cela devrait notamment plaire aux créateurs de thèmes, vu que ceux-ci
+respecteront mieux les couleurs désormais.&lt;/p&gt;
+
+&lt;p&gt;Une autre fonctionnalité qui me semble très intéressante vient d&amp;rsquo;arriver dans
+Neovim : c&amp;rsquo;est &lt;a href=&#34;https://github.com/neovim/neovim/pull/2076&#34;&gt;l&amp;rsquo;émulation d&amp;rsquo;un terminal&lt;/a&gt;.
+Grâce à la &lt;a href=&#34;http://www.leonerd.org.uk/code/libvterm/&#34;&gt;libvterm&lt;/a&gt;, il est
+possible de lancer un terminal dans Neovim, avec &lt;code&gt;:terminal&lt;/code&gt; par exemple. Cela
+créée un buffer en mode édition. Il est alors possible d&amp;rsquo;utiliser ce terminal
+pour faire différentes actions (comme un terminal normal), mais également de
+profiter des autres modes de vim. Au hasard, la sélection rectangulaire peut
+être bien pratique !&lt;/p&gt;
+
+&lt;p&gt;Pour sortir du mode édition, il faut utiliser la combinaison &lt;code&gt;&amp;lt;C-\&amp;gt; &amp;lt;C-n&amp;gt;&lt;/code&gt;. Ce
+n&amp;rsquo;est pas très intuitif, mais comme le mode terminal propose son propre
+binding de touches avec &lt;code&gt;:tnoremap&lt;/code&gt;, on peut ajouter ces lignes à son fichier
+&lt;code&gt;/.nvimrc&lt;/code&gt; pour utiliser &lt;code&gt;Esc&lt;/code&gt; :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;if has(&amp;quot;nvim&amp;quot;)
+    tnoremap &amp;lt;Esc&amp;gt; &amp;lt;C-\&amp;gt;&amp;lt;C-n&amp;gt;
+endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cette fonctionnalité va ouvrir des portes aux développeurs de plugins, pour
+intégrer plus facilement Neovim et des outils externes. À titre d&amp;rsquo;exemple,
+il existe un &lt;a href=&#34;https://github.com/tarruda/neovim/blob/refactor-job-api-3/contrib/neovim_gdb/neovim_gdb.vim&#34;&gt;plugin pour
+gdb&lt;/a&gt;,
+qui permet depuis la vue terminal de Neovim de contrôler le déboggeur et
+d&amp;rsquo;avoir quelques fonctionnalités bien pratiques :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sauter dans le fichier / ligne quand gdb atteint un point d&amp;rsquo;arrêt&lt;/li&gt;
+&lt;li&gt;Garder l&amp;rsquo;état en cours d&amp;rsquo;exécution / en pause&lt;/li&gt;
+&lt;li&gt;Contrôler l&amp;rsquo;exécution de gdb depuis n&amp;rsquo;importe quelle fenêtre de l&amp;rsquo;éditeur et
+inspecter des expressions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour finir, voici une petite capture d&amp;rsquo;écran :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/Neovim-term.png&#34; alt=&#34;Capture d&#39;écran de Neovim avec un terminal&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Ma config</title>
@@ -65,7 +126,7 @@ powerline&lt;/a&gt;. Je n&amp;rsquo;utilise pas powerline
 mais &lt;a href=&#34;https://github.com/bling/vim-airline&#34;&gt;vim-airline&lt;/a&gt;, et ces symboles me
 servent aussi pour irssi.&lt;/p&gt;
 
-&lt;p&gt;J&amp;rsquo;en ai également profiter pour changer de prompt dans zsh. Je suis parti de
+&lt;p&gt;J&amp;rsquo;en ai également profité pour changer de prompt dans zsh. Je suis parti de
 &lt;a href=&#34;https://github.com/sindresorhus/pure&#34;&gt;pure&lt;/a&gt; et je l&amp;rsquo;ai modifié pour qu&amp;rsquo;il
 tienne sur une seule ligne (&lt;a href=&#34;https://github.com/nono/dotfiles/blob/master/zsh/functions/prompt_unpure_setup&#34;&gt;prompt_unpure_setup
 &lt;/a&gt;

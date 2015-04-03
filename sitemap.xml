@@ -3,8 +3,14 @@
   
   <url>
     <loc>http://blog.menfin.info/</loc>
-    <lastmod>2015-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2015-04-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.menfin.info/posts/2015-04-03-un-terminal-dans-neovim/</loc>
+    <lastmod>2015-04-03T00:00:00+00:00</lastmod>
     
   </url>
   
