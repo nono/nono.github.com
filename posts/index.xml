@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/posts/</link>
+    <description>Recent content in Posts on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 03 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Un terminal dans Neovim</title>
+      <link>http://blog.menfin.info/posts/2015-04-03-un-terminal-dans-neovim/</link>
+      <pubDate>Fri, 03 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2015-04-03-un-terminal-dans-neovim/</guid>
+      <description>&lt;p&gt;Comme je l&amp;rsquo;ai indiqué dans &lt;a href=&#34;http://blog.menfin.info/posts/2015-03-20-ma-config/&#34;&gt;un précédent
+billet&lt;/a&gt;, je suis passé à
+Neovim. En pratique, cela reste très proche de Vim. Mais, on commence à voir
+de nouvelles fonctionnalités très intéressantes. J&amp;rsquo;avais déjà parlé de
+l&amp;rsquo;exécution asynchrone des plugins, ce qui leur permet de faire des
+traitements longs sans bloquer complètement l&amp;rsquo;éditeur.&lt;/p&gt;
+
+&lt;p&gt;Plus récemment, &lt;a href=&#34;https://github.com/tarruda&#34;&gt;@tarruda&lt;/a&gt; a ajouté &lt;a href=&#34;https://github.com/neovim/neovim/pull/2198&#34;&gt;la prise en
+charge des vraies couleurs&lt;/a&gt; dans
+Neovim. Pour les terminaux qui supportent cette possibilité, il est maintenant
+possible d&amp;rsquo;utiliser des couleurs avec des code hexadécimaux, sans se
+restreindre à une palette de 16, 88 ou 256 couleurs comme c&amp;rsquo;est trop souvent
+le cas. Cela devrait notamment plaire aux créateurs de thèmes, vu que ceux-ci
+respecteront mieux les couleurs désormais.&lt;/p&gt;
+
+&lt;p&gt;Une autre fonctionnalité qui me semble très intéressante vient d&amp;rsquo;arriver dans
+Neovim : c&amp;rsquo;est &lt;a href=&#34;https://github.com/neovim/neovim/pull/2076&#34;&gt;l&amp;rsquo;émulation d&amp;rsquo;un terminal&lt;/a&gt;.
+Grâce à la &lt;a href=&#34;http://www.leonerd.org.uk/code/libvterm/&#34;&gt;libvterm&lt;/a&gt;, il est
+possible de lancer un terminal dans Neovim, avec &lt;code&gt;:terminal&lt;/code&gt; par exemple. Cela
+créée un buffer en mode édition. Il est alors possible d&amp;rsquo;utiliser ce terminal
+pour faire différentes actions (comme un terminal normal), mais également de
+profiter des autres modes de vim. Au hasard, la sélection rectangulaire peut
+être bien pratique !&lt;/p&gt;
+
+&lt;p&gt;Pour sortir du mode édition, il faut utiliser la combinaison &lt;code&gt;&amp;lt;C-\&amp;gt; &amp;lt;C-n&amp;gt;&lt;/code&gt;. Ce
+n&amp;rsquo;est pas très intuitif, mais comme le mode terminal propose son propre
+binding de touches avec &lt;code&gt;:tnoremap&lt;/code&gt;, on peut ajouter ces lignes à son fichier
+&lt;code&gt;/.nvimrc&lt;/code&gt; pour utiliser &lt;code&gt;Esc&lt;/code&gt; :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;if has(&amp;quot;nvim&amp;quot;)
+    tnoremap &amp;lt;Esc&amp;gt; &amp;lt;C-\&amp;gt;&amp;lt;C-n&amp;gt;
+endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cette fonctionnalité va ouvrir des portes aux développeurs de plugins, pour
+intégrer plus facilement Neovim et des outils externes. À titre d&amp;rsquo;exemple,
+il existe un &lt;a href=&#34;https://github.com/tarruda/neovim/blob/refactor-job-api-3/contrib/neovim_gdb/neovim_gdb.vim&#34;&gt;plugin pour
+gdb&lt;/a&gt;,
+qui permet depuis la vue terminal de Neovim de contrôler le déboggeur et
+d&amp;rsquo;avoir quelques fonctionnalités bien pratiques :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sauter dans le fichier / ligne quand gdb atteint un point d&amp;rsquo;arrêt&lt;/li&gt;
+&lt;li&gt;Garder l&amp;rsquo;état en cours d&amp;rsquo;exécution / en pause&lt;/li&gt;
+&lt;li&gt;Contrôler l&amp;rsquo;exécution de gdb depuis n&amp;rsquo;importe quelle fenêtre de l&amp;rsquo;éditeur et
+inspecter des expressions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour finir, voici une petite capture d&amp;rsquo;écran :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/Neovim-term.png&#34; alt=&#34;Capture d&#39;écran de Neovim avec un terminal&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ma config</title>
+      <link>http://blog.menfin.info/posts/2015-03-20-ma-config/</link>
+      <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2015-03-20-ma-config/</guid>
+      <description>&lt;p&gt;Je suis un utilisateur de longue date de la ligne de commande, et de vim en
+particulier. J&amp;rsquo;essaye d&amp;rsquo;apprendre régulièrement de nouvelles choses (méthodes,
+outils, astuces) pour m&amp;rsquo;améliorer et être plus efficace. Par exemple, j&amp;rsquo;ai
+écrit par le passé un billet sur &lt;a href=&#34;http://blog.menfin.info/posts/2008-03-15-git-branch-dans-le-prompt-zsh/&#34;&gt;l&amp;rsquo;ajout de la branche git dans le prompt de
+zsh&lt;/a&gt;.
+Je souhaite partager avec vous quelques découvertes récentes.&lt;/p&gt;
+
+&lt;p&gt;Tout d&amp;rsquo;abord, je suis passé de vim à &lt;a href=&#34;http://neovim.org/&#34;&gt;Neovim&lt;/a&gt;. Il n&amp;rsquo;y a
+quasiment aucune différence d&amp;rsquo;un point de vue utilisateur, et c&amp;rsquo;est très bien
+ainsi ! C&amp;rsquo;est très stable et un utilisateur de vim sera comme chez lui.
+D&amp;rsquo;ailleurs, mes fichiers de config sont les mêmes pour vim et neovim, ce sont
+juste des liens symboliques de l&amp;rsquo;un vers l&amp;rsquo;autre.&lt;/p&gt;
+
+&lt;p&gt;Alors, pourquoi changer ? En fait, sous le capot, il y a pas mal de
+changements qui vont porter leurs fruits plus tard. La base de code a été
+nettoyé de pas mal de bizarreries (pour cause de compatibilité avec des
+terminaux que plus personne n&amp;rsquo;utilise). Il y a un gros travail sur les
+plugins : ils peuvent être exécutés à l&amp;rsquo;extérieur du processus principal et
+communiquer avec lui via msgpack. Ainsi, ils peuvent être écrits dans
+différents langages et faire des traitements longs (analyse de code), sans
+bloquer l&amp;rsquo;affichage pendant plusieurs secondes.
+&lt;a href=&#34;https://github.com/benekastah/neomake&#34;&gt;neomake&lt;/a&gt; est un bel exemple
+d&amp;rsquo;utilisation des possibilités de Neovim. Bref, je suis passé à Neovim surtout
+pour montrer mon soutien à ce projet, car je pense qu&amp;rsquo;il va faire avancer vim
+dans le bon sens.&lt;/p&gt;
+
+&lt;p&gt;Pour le shell, je continue d&amp;rsquo;utiliser zsh plutôt que bash. J&amp;rsquo;avoue ne pas trop
+savoir comment a évolué bash ces dernières années, mais je n&amp;rsquo;ai rien lu qui me
+donne envie d&amp;rsquo;y revenir. À l&amp;rsquo;époque où j&amp;rsquo;avais fait le changement, il y avait
+pas mal de choses intéressantes sous zsh (la complétion bien plus efficace,
+&lt;code&gt;**&lt;/code&gt; pour le globbing ou encore la recherche dans l&amp;rsquo;historique dès que
+j&amp;rsquo;appuie sur &lt;code&gt;↑&lt;/code&gt;). Mais j&amp;rsquo;y reste car zsh me convient bien, même si parfois je
+me dis que des alternatives comme &lt;a href=&#34;http://fishshell.com/&#34;&gt;fish&lt;/a&gt; pourraient
+être intéressantes.&lt;/p&gt;
+
+&lt;p&gt;Ce shell tourne dans rxvt-unicode. Rien de nouveau de ce côté-là. Pour les
+couleurs, j&amp;rsquo;utilise maintenant le thème &lt;a href=&#34;http://chriskempson.github.io/base16/#bright&#34;&gt;base16
+bright&lt;/a&gt;. Base16 est pratique et
+permet d&amp;rsquo;avoir le même jeu de couleurs dans pas mal d&amp;rsquo;applications. On trouve
+des thèmes pour l&amp;rsquo;utiliser dans le shell, vim, etc. Il n&amp;rsquo;y a que pour irssi où
+cela a été un peu difficile. J&amp;rsquo;ai testé quelques thèmes mais aucun n&amp;rsquo;allait
+bien. Du coup, j&amp;rsquo;ai écrit mon propre thème :
+&lt;a href=&#34;https://github.com/nono/dotfiles/blob/master/irssi/base16.theme&#34;&gt;base16&lt;/a&gt;
+(oui, j&amp;rsquo;aurais pu faire plus original).&lt;/p&gt;
+
+&lt;p&gt;Et pour la police, j&amp;rsquo;utilise Droid sans mono, &lt;a href=&#34;https://github.com/powerline/fonts&#34;&gt;patchée pour
+powerline&lt;/a&gt;. Je n&amp;rsquo;utilise pas powerline
+mais &lt;a href=&#34;https://github.com/bling/vim-airline&#34;&gt;vim-airline&lt;/a&gt;, et ces symboles me
+servent aussi pour irssi.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;en ai également profité pour changer de prompt dans zsh. Je suis parti de
+&lt;a href=&#34;https://github.com/sindresorhus/pure&#34;&gt;pure&lt;/a&gt; et je l&amp;rsquo;ai modifié pour qu&amp;rsquo;il
+tienne sur une seule ligne (&lt;a href=&#34;https://github.com/nono/dotfiles/blob/master/zsh/functions/prompt_unpure_setup&#34;&gt;prompt_unpure_setup
+&lt;/a&gt;
+si ça vous intéresse).&lt;/p&gt;
+
+&lt;p&gt;Un autre truc que j&amp;rsquo;ai ajouté récemment dans mon fichier &lt;code&gt;~/.zshrc&lt;/code&gt; est la
+coloration des pages man :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;man() {
+  env LESS_TERMCAP_mb=$&#39;\E[01;31m&#39; \
+  LESS_TERMCAP_md=$&#39;\E[01;38;5;74m&#39; \
+  LESS_TERMCAP_me=$&#39;\E[0m&#39; \
+  LESS_TERMCAP_se=$&#39;\E[0m&#39; \
+  LESS_TERMCAP_so=$&#39;\E[38;5;246m&#39; \
+  LESS_TERMCAP_ue=$&#39;\E[0m&#39; \
+  LESS_TERMCAP_us=$&#39;\E[04;38;5;146m&#39; \
+  man &amp;quot;$@&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ce n&amp;rsquo;est pas grand chose, mais ça peut être pratique. Voilà, j&amp;rsquo;espère que cela
+pourra inspirer certains d&amp;rsquo;entre vous. Et n&amp;rsquo;oubliez pas que ma config traine
+sur &lt;a href=&#34;https://github.com/nono/dotfiles&#34;&gt;github.com/nono/dotfiles&lt;/a&gt;. Il n&amp;rsquo;y a pas
+forcément beaucoup de commentaires, mais on peut y trouver des choses utiles.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hash Code, fnf-detect et HTML Truncator</title>
+      <link>http://blog.menfin.info/posts/2015-03-13-Hashcode-fnf-detect-et-html_truncator/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2015-03-13-Hashcode-fnf-detect-et-html_truncator/</guid>
+      <description>
+
+&lt;h2 id=&#34;hash-code-2015:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;Hash Code 2015&lt;/h2&gt;
+
+&lt;p&gt;Google France organise un concours nommé &lt;a href=&#34;https://sites.google.com/site/hashcode2015/home&#34;&gt;Hash
+Code&lt;/a&gt;. J&amp;rsquo;ai participé avec 2
+colllègues d&amp;rsquo;af83 à l&amp;rsquo;édition 2015. Les qualifications pour la finale avait
+lieu hier soir. &lt;a href=&#34;https://docs.google.com/a/google.com/file/d/0B8xe9y1rGAQXRXZjSXl6THBDZXc/view?sle=true&#34;&gt;Les
+règles&lt;/a&gt;
+sont assez simples : il faut disposer des serveurs dans un datacenter de la
+meilleure façon possible pour résister aux pannes d&amp;rsquo;électricité.&lt;/p&gt;
+
+&lt;p&gt;Notre code est disponible sur
+&lt;a href=&#34;https://github.com/AF83/hashcode-2015&#34;&gt;github.com/AF83/hashcode-2015&lt;/a&gt;. Il
+fonctionne de la façon suivante :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Lire les données du problème&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Placer les serveurs dans le datacenter&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Trier les serveurs par efficacité décroissante (le rapport entre la
+capacité et la place qu&amp;rsquo;il prend)&lt;/li&gt;
+&lt;li&gt;Pour chaque serveur, parcourir les lignes de la moins remplie à la plus
+remplie, et regarder s&amp;rsquo;il y a un emplacement pour le mettre&lt;/li&gt;
+&lt;li&gt;S&amp;rsquo;il y a un emplacement, mettre le serveur dans cet emplacement&lt;/li&gt;
+&lt;li&gt;Passer au serveur suivant&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Puis, on assigne les serveurs à des groupes&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Trier les serveurs par capacité décroissante&lt;/li&gt;
+&lt;li&gt;Pour chaque serveur, trouver le groupe avec la capacité garantie la plus
+faible et qui ne soit pas déjà très présent sur la ligne du serveur&lt;/li&gt;
+&lt;li&gt;Assigner le serveur à ce groupe&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Écrire notre solution&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Avec ce fonctionnement et quelques ajustements, nous avons obtenu le score
+très honorable de 379. Nous avons ensuite essayé d&amp;rsquo;ajouter une phase
+d&amp;rsquo;optimisation entre les étapes 3 et 4, en échangeant des serveurs entre 2
+groupes. Mais cela a été un échec : nous avons obtenu de moins bons résultats
+que précédement.&lt;/p&gt;
+
+&lt;p&gt;Bref, ce fût une soirée bien fun et j&amp;rsquo;espère que nous serons qualifiés pour la
+finale.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mise à jour&lt;/strong&gt; : oui, nous sommes bien qualifiés pour la finale !&lt;/p&gt;
+
+&lt;h2 id=&#34;fnf-detect:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;fnf-detect&lt;/h2&gt;
+
+&lt;p&gt;J&amp;rsquo;ai joué un peu avec des bibliothèques de &lt;em&gt;Computer Vision&lt;/em&gt; la semaine
+dernière. Je me suis servi d&amp;rsquo;&lt;a href=&#34;http://opencv.org/&#34;&gt;OpenCV&lt;/a&gt; et de
+&lt;a href=&#34;http://libccv.org/&#34;&gt;ccv&lt;/a&gt; pour détecter des visages sur les photos. Cela
+permet ensuite de retailler les photos en gardant les visages dessus, même
+quand ces visages sont sur les bords.&lt;/p&gt;
+
+&lt;p&gt;Le fruit de ces expérimentations est visible sur &lt;a href=&#34;https://github.com/AF83/fnf-detect&#34;&gt;le dépôt
+fnf-detect&lt;/a&gt;. La version avec OpenCV donne
+des résultats corrects et est rapide. La version avec ccv est un peu plus
+lente, mais améliore grandement les résultats. Au final, nous allons utiliser
+cette seconde version pour un client, car cela donne un aspect mieux fini à
+leur produit.&lt;/p&gt;
+
+&lt;h2 id=&#34;html-truncator:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;HTML Truncator&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/nono/HTML-Truncator&#34;&gt;HTML Truncator&lt;/a&gt;, ma bibliothèque Ruby
+pour tronquer des textes présents sous forme d&amp;rsquo;HTML, semble être de plus en
+plus utilisée. J&amp;rsquo;ai des retours via les issues de github. Certains sont des
+questions, mais j&amp;rsquo;ai également eu un rapport de bug sur les entités HTML
+récemment. J&amp;rsquo;ai donc corrigé le bug et sorti une nouvelle version.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Petite visite à l&#39;Open World Forum</title>
+      <link>http://blog.menfin.info/posts/2014-11-01-petite-visite-a-l-open-world-forum/</link>
+      <pubDate>Sat, 01 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2014-11-01-petite-visite-a-l-open-world-forum/</guid>
+      <description>
+
+&lt;p&gt;L&amp;rsquo;&lt;a href=&#34;http://www.openworldforum.paris/fr/&#34;&gt;Open World Forum&lt;/a&gt; est un événement qui
+se tient une fois par an sur Paris, pour parler des enjeux de l&amp;rsquo;Open Source,
+l&amp;rsquo;Open Data, l&amp;rsquo;Open Hardware, l&amp;rsquo;Open Web, etc. Cette édition était centrée sur
+le thème « Take back control », reprendre le contrôle face à la NSA, aux
+mastodontes américains que sont Google, Apple, Facebook et Amazon et, plus
+généralement, à tous ceux qui veulent à notre vie privée et notre liberté.
+Elle s&amp;rsquo;est tenue les 30 et 31 octobre et, si je n&amp;rsquo;ai pas pu m&amp;rsquo;y rendre jeudi,
+j&amp;rsquo;ai néanmoins assisté aux conférences du vendredi.&lt;/p&gt;
+
+&lt;p&gt;Globalement, j&amp;rsquo;ai beaucoup aimé les présentations que j&amp;rsquo;ai pu regarder. Bien
+sûr, certaines étaient meilleures que d&amp;rsquo;autres mais le niveau général pour les
+&lt;em&gt;tracks&lt;/em&gt; que j&amp;rsquo;ai suivis était très bon. En voici 3 qui m&amp;rsquo;ont particulièrement
+marqué.&lt;/p&gt;
+
+&lt;h2 id=&#34;software-development-analytics-for-the-masses:832cd3044e219d3853e412eb5856568b&#34;&gt;Software development analytics for the masses&lt;/h2&gt;
+
+&lt;p&gt;Le matin, j&amp;rsquo;ai été agréablement surpris par &lt;a href=&#34;http://bitergia.com/dashboards/&#34;&gt;les tableaux de bord produits par
+bitergia&lt;/a&gt; pour des projets Open-Source
+majeurs. Ils reprennent des statistiques extraites d&amp;rsquo;informations publiques
+(dépôts git, listes de diffusion, canaux IRC, etc.) pour faire ressortir des
+tendances. On peut voir quelques sont les entreprises qui participent à un
+projet et si le temps pour qu&amp;rsquo;un patch soit accepté est similaire selon qu&amp;rsquo;il
+provient de l&amp;rsquo;une ou l&amp;rsquo;autre de ses sociétés (cela peut s&amp;rsquo;expliquer par le
+niveau d&amp;rsquo;expertise des développeurs de chaque société ou par des raisons
+politiques). On peut également suivre le temps de résolution des bugs au fil
+du temps et voir les effets de la mise en place d&amp;rsquo;une politique de gestion des
+tickets. Bref, c&amp;rsquo;est un très bon moyen de mieux comprendre des communautés
+autour d&amp;rsquo;un projet Open-Source et de se poser les bonnes questions pour
+qu&amp;rsquo;elles puissent travailler plus efficacement.&lt;/p&gt;
+
+&lt;h2 id=&#34;state-of-the-art-in-machine-learning:832cd3044e219d3853e412eb5856568b&#34;&gt;State Of the Art in Machine Learning&lt;/h2&gt;
+
+&lt;p&gt;Juste après la pause de midi, j&amp;rsquo;ai pu assister à la géniale présentation
+d&amp;rsquo;Olivier Grisel, &lt;a href=&#34;https://speakerdeck.com/ogrisel/the-state-of-deep-learning-in-2014&#34;&gt;The state of deep learning in
+2014&lt;/a&gt;.
+Après une rapide introduction sur le &lt;em&gt;Machine Learning&lt;/em&gt;, nous avons eu le droit
+à 3 exemples d&amp;rsquo;application de &lt;em&gt;deep learning&lt;/em&gt; (= réseaux de neurones avec de
+nombreuses couches) vraiment époustouflants. Il y avait d&amp;rsquo;abord la
+reconnaissance d&amp;rsquo;objets, animaux et formes sur des photos. Le taux d&amp;rsquo;erreur
+diminue très fortement d&amp;rsquo;année en année sur &lt;a href=&#34;http://image-net.org/challenges/LSVRC/2014/index&#34;&gt;le concours
+ImageNet&lt;/a&gt; et le meilleur
+algorithme est maintenant vraiment tout proche de faire aussi bien que les
+humains sur cet exercice. Le deuxième exemple était la construction d&amp;rsquo;une
+représentation du sens d&amp;rsquo;un texte indépendante de la langue. La première
+application est la traduction d&amp;rsquo;une langue à une autre, mais plein d&amp;rsquo;autres
+choses sont rendues possibles via cet outil. Enfin, Olivier nous a montré
+qu&amp;rsquo;il était possible de construire un programme super fort sur les jeux Atari
+à partir d&amp;rsquo;un apprentissage sans supervision avec un signal très faible.&lt;/p&gt;
+
+&lt;p&gt;Le &lt;em&gt;deep learning&lt;/em&gt; est vraiment très puissant, mais il requiert 3 choses :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Des compétences très pointues sur le sujet&lt;/li&gt;
+&lt;li&gt;Beaucoup de puissance de calcul&lt;/li&gt;
+&lt;li&gt;De très gros volumes de données pour entraîner les réseaux de neurones.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Or Google et Facebook rachètent toutes les startups dans ce domaine, ont les
+plus gros datacenters au monde et on leur donne gentiment toutes nos
+données. Ne devrait-on pas s&amp;rsquo;en inquiéter ?&lt;/p&gt;
+
+&lt;h2 id=&#34;caliopen-correspondance-sécurisée:832cd3044e219d3853e412eb5856568b&#34;&gt;CaliOpen, correspondance sécurisée&lt;/h2&gt;
+
+&lt;p&gt;La troisième conférence qui m&amp;rsquo;a vraiment marquée est la présentation de
+&lt;a href=&#34;https://www.caliopen.org/&#34;&gt;CaliOpen&lt;/a&gt;, par Laurent Chemla. L&amp;rsquo;objectif est de
+redonner du contrôle sur sa vie privée, pour se protéger soi, mai surtout pour
+protéger les autres autour de soi. Cela passe par un logiciel libre de
+messagerie privée (emails, chat, SMS, etc.) qui va agir sur deux niveaux :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Redonner de la valeur à la vie privée&lt;/li&gt;
+&lt;li&gt;Rendre beaucoup plus coûteux l&amp;rsquo;espionnage en masse.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;J&amp;rsquo;espère que ce projet et d&amp;rsquo;autres dans le même style vont réussir à faire
+bouger les choses et réussir à atteindre d&amp;rsquo;autres personnes que le cercle très
+restreint des geeks. D&amp;rsquo;ailleurs, si vous êtes un développeur front, sachez que
+Caliopen aurait bien besoin de votre aide.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion:832cd3044e219d3853e412eb5856568b&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;J&amp;rsquo;ai apprécié cette édition de l&amp;rsquo;Open World Forum. Félicitations à Florent
+Zara, le président de cette édition, et aux différents responsable de
+&lt;em&gt;tracks&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le thème « Take back control » est le bienvenu. On voit qu&amp;rsquo;on est très loin
+d&amp;rsquo;y arriver et qu&amp;rsquo;il reste beaucoup de choses à faire. À commencer par les
+organisateurs de l&amp;rsquo;Open World Forum : le site piste les utilisateurs via
+Google Analytics, propose de se connecter avec Twitter et Facebook et envoie
+des emails via MailChimp (une société américaine utilisant la plateforme
+Amazon). Bref, ce n&amp;rsquo;est pas gagné mais c&amp;rsquo;est un combat important pour notre
+futur.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>When one sidekiq instance is not enough</title>
+      <link>http://blog.menfin.info/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/</guid>
+      <description>&lt;p&gt;In the Ruby world, there was a popular gem for queueing jobs: resque. With one
+call to a ruby method, you can put a job in redis. And a daemon, called a
+worker, can take a job from redis, process it, and then go to the next job.&lt;/p&gt;
+
+&lt;p&gt;It works well, but when you want to scale and process more than one job in
+parallel, you have to launch several worker processes, and it can take a lot
+of memory. So, Mike Perham wrote a new gem: Sidekiq. It does the same thing
+than resque, but it enables to perform multiple jobs inside a process by using
+threads. And threads take a lot less memory than processes.&lt;/p&gt;
+
+&lt;p&gt;Sidekiq became more popular than resque, and it is well summed up by its
+headline:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;What if 1 Sidekiq process could do the work of 20 Resque processes?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But, is it true? Well, it depends. For most tasks, like sending mails or
+fetching things from internet, it works really nice.&lt;/p&gt;
+
+&lt;p&gt;In some cases, like CPU-intensive tasks, it&amp;rsquo;s more complicated. The official
+Ruby interpreter (MRI) has something called the Global Interpreter Lock (GIL).
+Its role is to avoid that code from one thread can mess another thread. For
+that, when a thread wants to execute Ruby code, it has to first take the GIL.
+And after some time, it will release the GIL, so that another thread can take
+it and execute other Ruby code: it&amp;rsquo;s cooperative scheduling. There are a few
+exceptions to this rule: waiting the response from a database or an HTTP
+connection can be made by a threading that doesn&amp;rsquo;t have the GIL.&lt;/p&gt;
+
+&lt;p&gt;So, what to do when you are in one those cases?&lt;/p&gt;
+
+&lt;p&gt;First, you can try another interpreter: JRuby, for example, has no GIL and can
+run several threads over all your cores. JRuby is also said to be a bit faster
+than MRI, but it varies a lot from one use case to another. YMMV.&lt;/p&gt;
+
+&lt;p&gt;Last week, I had a sidekiq instance running with MRI that take 100% of CPU, ie
+it used only one core from the 8 there. So, i tried JRuby (and it wasn&amp;rsquo;t
+painless because of some incompatible gems). Yeah, my sidekiq instance running
+with JRuby can use all the 8 cores. But it was still processing jobs 30%
+slower than MRI&amp;hellip; So, I&amp;rsquo;m keeping MRI and I will use the same strategy that
+resque: running several processes. With multiple sidekiq instance, it&amp;rsquo;s
+possible to use more than one core, even on MRI.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>5 links for a rainy day</title>
+      <link>http://blog.menfin.info/posts/2014-10-12-some-links-for-a-rainy-day/</link>
+      <pubDate>Sun, 12 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2014-10-12-some-links-for-a-rainy-day/</guid>
+      <description>
+
+&lt;p&gt;It&amp;rsquo;s sunday, it&amp;rsquo;s raining, so I&amp;rsquo;ve decided to geek. I&amp;rsquo;ve rebuilt this blog.
+Yeah, again ! And to test it, what&amp;rsquo;s better than publishing a new post? So,
+I&amp;rsquo;ve put here 5 links to keep you busy too:&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-http-gohugo-io:0f19108954ca85552c0f69a3099a9fa3&#34;&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Hugo is a fast and modern static website engine. You write some markdown, you
+run hugo and it generates a static website, that you can host on github pages
+for example. It&amp;rsquo;s what I&amp;rsquo;m using now for this blog.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a young project, but it&amp;rsquo;s already very usable, a bit more generic and
+powerful than Jekyll. &lt;a href=&#34;http://gohugo.io/overview/introduction&#34;&gt;The documentation&lt;/a&gt;
+is nice. Since it&amp;rsquo;s written in golang, it&amp;rsquo;s very fast. And the live reload is
+so cool!&lt;/p&gt;
+
+&lt;h2 id=&#34;sweet-alert-https-github-com-t4t5-sweetalert:0f19108954ca85552c0f69a3099a9fa3&#34;&gt;&lt;a href=&#34;https://github.com/t4t5/sweetalert&#34;&gt;Sweet Alert&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;JavaScript&amp;rsquo;s alert and confirm are common. But they are ugly. It was time to
+have a replacement for them. This JS library is easy to install and use. And
+it offers a nice Wow effect for your users.&lt;/p&gt;
+
+&lt;h2 id=&#34;live-blogging-of-dotgo-http-dotgo-sourcegraph-com:0f19108954ca85552c0f69a3099a9fa3&#34;&gt;&lt;a href=&#34;http://dotgo.sourcegraph.com/&#34;&gt;Live blogging of dotGo&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Sourcegraph has live blogged the dotGo conference. If you are interested by
+golang, you should read it. You can learn some news, like the new
+&lt;a href=&#34;https://code.google.com/p/go/source/browse/cmd/gorename/main.go?repo=tools&#34;&gt;gorename&lt;/a&gt;
+command.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-mature-optimization-handbook-https-www-facebook-com-notes-facebook-engineering-the-mature-optimization-handbook-10151784131623920:0f19108954ca85552c0f69a3099a9fa3&#34;&gt;&lt;a href=&#34;https://www.facebook.com/notes/facebook-engineering/the-mature-optimization-handbook/10151784131623920&#34;&gt;The Mature Optimization Handbook&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Carlos Bueno, an engineer at Facebook, has written an handbook about when and
+how optimize our code. I&amp;rsquo;ve just read the first sections, but it seems like a
+very valuable read.&lt;/p&gt;
+
+&lt;h2 id=&#34;code-fights-https-codefights-com:0f19108954ca85552c0f69a3099a9fa3&#34;&gt;&lt;a href=&#34;https://codefights.com/&#34;&gt;Code Fights&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;This game has only one rule:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;There is one logic bug on one line of this JS code. Find it, fix it, hit submit!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;After several tries, my best score is 942. Can you beat it?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Changement de moteur pour ce blog</title>
+      <link>http://blog.menfin.info/posts/2012-02-29-changement-de-moteur-pour-ce-blog/</link>
+      <pubDate>Wed, 29 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2012-02-29-changement-de-moteur-pour-ce-blog/</guid>
+      <description>&lt;p&gt;Ce blog existe depuis quelques années maintenant &amp;ndash; 2006, ça ne me rajeunit
+pas ! Et jusque là, c&amp;rsquo;était un &lt;a href=&#34;http://fr.dotclear.org/&#34;&gt;dotclear&lt;/a&gt; hébergé
+gracieusement chez &lt;a href=&#34;http://gandi.net&#34;&gt;gandi&lt;/a&gt; qui le faisait tourner.
+Techniquement, ça marchait bien, mais j&amp;rsquo;ai quand même eu envie de changer pour
+autre chose, &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; en l&amp;rsquo;occurrence.&lt;/p&gt;
+
+&lt;p&gt;Pourquoi ? J&amp;rsquo;ai déjà du mal à me motiver pour écrire dessus, mais le fait de
+devoir retrouver mes identifiants gandi et redécouvrir la syntaxe wiki de
+dotclear a chaque fois finisse de me décourager. Avec cette nouvelle version,
+je peux écrire et publier des billets avec les outils que j&amp;rsquo;utilise
+quotidiennement : vim, markdown, ruby et git.&lt;/p&gt;
+
+&lt;p&gt;Je vais donc donner une nouvelle chance à ce blog. Pas sûr du tout que je
+publie plus de choses dessus. Mais si je n&amp;rsquo;essaye pas, ça ne risque pas
+d&amp;rsquo;arriver ;-)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rails ou Sinatra ?</title>
+      <link>http://blog.menfin.info/posts/2011-06-27-Rails-ou-sinatra/</link>
+      <pubDate>Mon, 27 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2011-06-27-Rails-ou-sinatra/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Ruby on Rails&lt;/a&gt; ou
+&lt;a href=&#34;http://www.sinatrarb.com/&#34;&gt;Sinatra&lt;/a&gt;, comment choisir entre les deux ? C&amp;rsquo;est
+une question que j&amp;rsquo;entends régulièrement et pour laquelle, je suis toujours un
+peu embêté d&amp;rsquo;avoir un pointeur tout prêt vers un article qui expliquerait
+cela. Encore aujourd&amp;rsquo;hui, la question &lt;a href=&#34;https://twitter.com/#!/delaBruyne/status/85433554179342336&#34;&gt;m&amp;rsquo;a été
+posée&lt;/a&gt; et j&amp;rsquo;ai eu
+beau chercher, je n&amp;rsquo;ai rien trouvé de bien concluant.&lt;/p&gt;
+
+&lt;p&gt;On est jamais mieux servi que par soi-même, et c&amp;rsquo;est donc l&amp;rsquo;occasion de
+réveiller ce blog qui commençait à prendre la poussière.&lt;/p&gt;
+
+&lt;p&gt;Donc Rails ou Sinatra ? Ça dépend mais la plupart du temps, il est assez
+facile de choisir l&amp;rsquo;un ou l&amp;rsquo;autre. Ils ont des philosophies assez différentes
+et couvrent ainsi des problématiques différentes.&lt;/p&gt;
+
+&lt;p&gt;Commençons par Ruby on Rails. Il a été développé par &lt;a href=&#34;http://en.wikipedia.org/wiki/David_Heinemeier_Hansson&#34;&gt;David Heinemeier
+Hansson&lt;/a&gt; pour
+développer des applications web rapidement mais en gardant du code
+maintenable. Rails est donc fait pour permettre aux personnes dont le métier
+est de construire des applications web (développeurs, intégrateurs, etc.) de
+pouvoir faire ça le plus efficacement possible. On retrouve ainsi le
+&lt;em&gt;scaffold&lt;/em&gt; qui permet de gagner du temps en début de projet et de nombreuses
+conventions pour aller plus vite dans les cas courants. Mais cela a aussi des
+inconvénients : Rails est un gros framework et apprendre à s&amp;rsquo;en servir
+correctement demande un investissement initial en temps qui est loin d&amp;rsquo;être
+négligeable. Si on veut vraiment être efficace, il faut respecter l&amp;rsquo;&lt;em&gt;esprit&lt;/em&gt;
+de Ruby on Rails et ses manières de faire, mais aussi connaître les
+bibliothèques qui vont bien, les fameuses &lt;em&gt;gems&lt;/em&gt; comme
+&lt;a href=&#34;https://github.com/plataformatec/devise&#34;&gt;Devise&lt;/a&gt; ou
+&lt;a href=&#34;http://sass-lang.com/&#34;&gt;Sass&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;De l&amp;rsquo;autre coté, Sinatra a des ambitions toutes autres : il veut juste
+permettre à des développeurs Ruby de faire des applications web simples avec
+le minimum d&amp;rsquo;efforts. Cela commence avec une API extrêmement simple qui permet
+de démarrer tout de suite sans avoir à apprendre grand chose. Pour cela,
+Sinatra se contente du minimum et n&amp;rsquo;essaye pas d&amp;rsquo;offrir plein de choses dès le
+départ. C&amp;rsquo;est ainsi un projet avec une taille beaucoup plus réduite mais qui
+offre plus de libertés. Là où les projets Rails sont toujours organisés d&amp;rsquo;une
+façon semblables pour permettre aux développeurs et intégrateurs de passer
+facilement d&amp;rsquo;un projet à l&amp;rsquo;autre, Sinatra est bien plus souple et peut, par
+exemple, venir ajouter une interface web à un projet déjà existant. Sa
+simplicité est également intéressante pour les débutants qui peuvent ainsi
+&lt;a href=&#34;http://www.sinatrarb.com/intro-fr.html&#34;&gt;faire très rapidement des choses&lt;/a&gt;
+sans avoir, au préalable, à lire un bouquin complet. Et rien n&amp;rsquo;interdit de
+passer à Rails plus tard.&lt;/p&gt;
+
+&lt;p&gt;Pour résumer, Ruby on Rails est un rouleur compresseur qui permet de
+construire très rapidement des applications web de qualité pour les personnes
+dont c&amp;rsquo;est le métier, alors que Sinatra couvre d&amp;rsquo;autres besoins : il permet de
+découvrir Ruby ou le développement web en douceur pour les débutants et offre
+une souplesse incroyable pour les hackers confirmés.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nouveau joujou : Giada Slim n10</title>
+      <link>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</link>
+      <pubDate>Sun, 21 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai acheté un &lt;a href=&#34;http://www.giadatech.com/index.php?app=product&amp;amp;act=show&amp;amp;id=37&#34;&gt;Giada Slim n10&lt;/a&gt;. Ça ressemble à ça :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/giada.jpg&#34; alt=&#34;Giada Slim n10&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai commencé à jouer avec en installant dessus :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;une debian (pas de problème particulier)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.openssh.com/&#34;&gt;OpenSSH&lt;/a&gt;, évidemment&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bip.milkypond.org/&#34;&gt;Bip&lt;/a&gt;, un proxy IRC&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.nginx.org/Main&#34;&gt;Nginx&lt;/a&gt;, un serveur web&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.rutschle.net/tech/sslh.shtml&#34;&gt;Sllh&lt;/a&gt; pour avoir ssh ET https sur le port 443.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L&amp;rsquo;achat est tout neuf, donc je n&amp;rsquo;ai pas encore beaucoup de recul, mais dans l&amp;rsquo;ensemble, j&amp;rsquo;en suis très satisfait. Un seul regret, le ventilo n&amp;rsquo;est pas aussi silencieux que je le voudrais. J&amp;rsquo;ai trouvé sur &lt;a href=&#34;http://www.blogeee.net/forum/viewtopic.php?p=209248#p209248&#34;&gt;un forum&lt;/a&gt; comment régler ça dans le bios, mais ce n&amp;rsquo;est pas encore parfait. Pour mémoire, ça se règle dans le menu chipset &amp;gt; MCP fan control, et les valeurs à renseigner sont :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SMART Fan0 Min temperature : 40 (la valeur se modifie avec les touches + et -)&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Max temperature : 90&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Min duty cycle : 30&lt;/li&gt;
+&lt;li&gt;SMART Fan0 Max duty cycle : 255&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Présentation rapide de Ruby 1.9 aux RMLL</title>
+      <link>http://blog.menfin.info/posts/2010-07-11-presentation-rapide-de-ruby-19-aux-RMLL/</link>
+      <pubDate>Sun, 11 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2010-07-11-presentation-rapide-de-ruby-19-aux-RMLL/</guid>
+      <description>&lt;p&gt;Cette semaine, s&amp;rsquo;est tenue la 11ème édition des
+&lt;a href=&#34;http://2010.rmll.info/&#34;&gt;Rencontres Mondiales du Logiciel Libre&lt;/a&gt;
+à Bordeaux. J&amp;rsquo;en ai profité pour faire une
+&lt;a href=&#34;http://2010.rmll.info/Presentation-rapide-de-Ruby-1-9.html&#34;&gt;présentation rapide de Ruby 1.9&lt;/a&gt;.
+Les slides sont en ligne sur &lt;a href=&#34;http://rmll2010-ruby19.heroku.com/&#34;&gt;http://rmll2010-ruby19.heroku.com/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un ami, &lt;a href=&#34;http://wtf.cyprio.net/&#34;&gt;oz&lt;/a&gt;, m&amp;rsquo;a prêté le livre &lt;strong&gt;Confessions of a
+public speaker&lt;/strong&gt; de &lt;a href=&#34;http://www.scottberkun.com/&#34;&gt;Scott Berkun&lt;/a&gt;. C&amp;rsquo;est u
+livre très intéressant qui vous donne des conseils pratiques sur comment
+donner de meilleurs présentations. Je n&amp;rsquo;ai malheureusement pas eu le temps de
+le lire entièrement avant ma présentation aux RMLL, et encore moins
+d&amp;rsquo;appliquer les conseils, mais j&amp;rsquo;ai vraiment le sentiment que les conseils
+sont pertinents et m&amp;rsquo;auraient permis de faire une bien meilleure présentation.
+En tout cas, je suis bien décidé à essayer d&amp;rsquo;en appliquer quelques uns à la
+prochaine présentation que je ferais, puis de plus en plus si cela marche
+comme prévu.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>French_Rails compatible avec Rails3.0.0.beta4</title>
+      <link>http://blog.menfin.info/posts/2010-06-09-frenchrails-compatible-avec-rails3/</link>
+      <pubDate>Wed, 09 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2010-06-09-frenchrails-compatible-avec-rails3/</guid>
+      <description>&lt;p&gt;Une &lt;a href=&#34;http://weblog.rubyonrails.org/2010/6/8/rails-3-0-beta-4-now-rc-in-days&#34;&gt;nouvelle version beta de
+Rails3&lt;/a&gt;
+vient de sortir. Elle utilise une version plus récente
+d&amp;rsquo;&lt;a href=&#34;http://github.com/svenfuchs/i18n&#34;&gt;i18n&lt;/a&gt;, ce qui faisait que mon plugin
+&lt;a href=&#34;http://github.com/nono/french-rails&#34;&gt;French Rails&lt;/a&gt; ne fonctionnait plus. J&amp;rsquo;ai
+corrigé ça et sorti une nouvelle version :
+&lt;a href=&#34;http://rubygems.org/gems/french_rails/versions/0.2.2&#34;&gt;la 0.2.2&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Se fixer des objectifs SMART</title>
+      <link>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</link>
+      <pubDate>Sun, 23 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</guid>
+      <description>&lt;p&gt;Se fixer des objectifs est très souvent une bonne chose. Pour tirer pleinement profit de ces objectifs, il est important de bien les formuler. Pourtant, nous avons souvent tendance à nous contenter d&amp;rsquo;objectifs flous : je veux perdre du poids, je veux faire plus de sport, je veux manger plus sainement, etc. Il existe un truc qui pourra vous aider pour ça : les objectifs &lt;strong&gt;SMART&lt;/strong&gt;. Ce sont 5 critères qui vous forcent à vous poser les bonnes questions quand vous choisissez un objectif :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spécifique : soyez précis sur ce que vous voulez atteindre. Ne vous contentez pas de dire que vous voulez faire du sport, mais demandez-vous quel(s) sport(s) et à quelle fréquence.&lt;/li&gt;
+&lt;li&gt;Mesurable : à tout moment, vous devriez être capable de savoir si vous avez accompli votre objectif sans savoir à réfléchir. Idéalement, vous devriez juste avoir à comparer une mesure avec votre objectif pour savoir si vous l&amp;rsquo;avez atteint. Si vous souhaitez perdre du poids et que vous fixez comme objectif de perdre 3 kilos, il est alors facile de vous peser pour voir si vous avez perdu ces 3 kilos ou non.&lt;/li&gt;
+&lt;li&gt;Atteignable : votre objectif doit être ambitieux, mais vous devez pouvoir l&amp;rsquo;atteindre. Si vous n&amp;rsquo;êtes pas sûr de pouvoir le faire, peut-être feriez-vous mieux de le découper en plusieurs étapes et vous fixer des objectifs intermédiaires. Plutôt que de vouloir courir directement un marathon, commencez par courir 10 Km, puis passez au semi-marathon avant de viser le marathon.&lt;/li&gt;
+&lt;li&gt;Réaliste : votre objectif ne doit pas dépendre de ressources matérielles (argent, matière, temps) que vous n&amp;rsquo;avez pas. De même, il ne doit pas dépendre du comportement d&amp;rsquo;autres personnes. Si votre objectif est d&amp;rsquo;obtenir une promotion, demandez-vous si vous êtes vraiment en position de faire la différence. Une astuce consiste à transformer un objectif qui porte sur des résultats qui ne dépendent pas de nous en un ou plusieurs objectifs sur des moyens pour obtenir ce résultat. Par exemple, un meilleur objectif pourrait être de finir tel projet en avance, ce qui augmenterait grandement vos chances d&amp;rsquo;obtenir la promotion visée.&lt;/li&gt;
+&lt;li&gt;Limité dans le Temps : fixez-vous une date limite à laquelle l&amp;rsquo;objectif devra être accompli. Sans ça, vous risquez très fortement de laisser glisser vos objectifs, privilégiant toujours les tâches urgentes et remettant vos objectifs à plus tard.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Voilà, j&amp;rsquo;espère que ces 5 critères vous permettront de mieux cerner vos objectifs, et d&amp;rsquo;augmenter ainsi les chances de les réussir.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Discipline contre motivation</title>
+      <link>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</link>
+      <pubDate>Sun, 28 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</guid>
+      <description>
+
+&lt;p&gt;Comme beaucoup de personnes, il vous est arrivé d&amp;rsquo;essayer de prendre de nouvelles habitudes.
+Ces résolutions vous semblaient être les bonnes choses, et avec un peu de discipline, ça n&amp;rsquo;aurait pas dû être difficile de les tenir.
+Pourtant, au bout d&amp;rsquo;une semaine ou deux, vous constatez que c&amp;rsquo;est un échec.&lt;/p&gt;
+
+&lt;p&gt;Que s&amp;rsquo;est-il passé et comment faire en sorte de réussir la prochaine fois sont sûrement deux questions qui vous trottent dans la tête.
+Je ne prétends pas avoir toutes les réponses, mais je souhaite vous proposer une piste qui, je l&amp;rsquo;espère, pourra vous aider dans vos réflexions.&lt;/p&gt;
+
+&lt;h3 id=&#34;la-discipline:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;La discipline&lt;/h3&gt;
+
+&lt;p&gt;Comme moi par le passé, vous vous êtes sûrement dit que prendre une nouvelle habitude ne devait pas être difficile.
+C&amp;rsquo;est juste une question de volonté et de discipline après tout.
+Et c&amp;rsquo;est justement là que le bât blesse.&lt;/p&gt;
+
+&lt;p&gt;Nous n&amp;rsquo;avons qu&amp;rsquo;une quantité très limitée de volonté que nous pouvons utiliser chaque jour.
+La majeure partie du temps, nous nous reposons sur des habitudes ou nous faisons des choses plaisantes qui ne demande aucune volonté.
+Demandez-vous combien de fois avez-vous réellement fait preuve de volonté aujourd&amp;rsquo;hui ou hier ?
+Pour ma part, la réponse est invariablement bien peu (trop peu).&lt;/p&gt;
+
+&lt;p&gt;Alors, est-on condamné à ne pouvoir faire que très peu de nouvelles choses, et à faire ça dans la douleur ?
+Non, non et NON ! Il existe d&amp;rsquo;autres leviers qui vous permettront d&amp;rsquo;avancer.
+La motivation est l&amp;rsquo;un d&amp;rsquo;eux.&lt;/p&gt;
+
+&lt;h3 id=&#34;la-motivation:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;La motivation&lt;/h3&gt;
+
+&lt;p&gt;La motivation, c&amp;rsquo;est un ensemble de moyens pour vous encourager à faire une action, quand se dire que « c&amp;rsquo;est la bonne chose à faire » ne suffit plus.
+Ce sont &lt;em&gt;les carottes&lt;/em&gt; pour vous faire avancer.
+Il existe de nombreux moyens pour se motiver, mais généralement ceux-ci rentrent dans l&amp;rsquo;un des deux thèmes suivants :
+apprécier l&amp;rsquo;activité en question et s&amp;rsquo;engager publiquement.&lt;/p&gt;
+
+&lt;h4 id=&#34;apprécier-l-activité:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;Apprécier l&amp;rsquo;activité&lt;/h4&gt;
+
+&lt;p&gt;Il est évident que l&amp;rsquo;on aura beaucoup plus de facilités à faire une action à laquelle on prend du plaisir que si c&amp;rsquo;est une corvée.
+On peut ainsi chercher des éléments qui vont plaisir.
+Par exemple, se mettre au footing peut ne être très plaisant au début, mais si vous accompagnez votre séance de footing par votre album musical préféré sur un lecteur mp3, cela la rendra plus appréciable.&lt;/p&gt;
+
+&lt;p&gt;Si malgré ça, vous avez du mal à rendre l&amp;rsquo;activité elle-même agréable, vous pouvez compenser en vous offrant une récompense.
+Pour ma part, je suis un grand gourmand, et manger une barre céréales avant de faire du sport fait partie des choses que j&amp;rsquo;apprécie.
+Mettre une croix sur un &lt;a href=&#34;http://blog.menfin.info/post/2010/02/15/Se-motiver-avec-un-Seinfeld-Calendar&#34;&gt;Seinfeld Calendar&lt;/a&gt; a également un coté très gratifiant.&lt;/p&gt;
+
+&lt;h4 id=&#34;s-engager-publiquement:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;S&amp;rsquo;engager publiquement&lt;/h4&gt;
+
+&lt;p&gt;L&amp;rsquo;engagement public est également un moyen très efficace pour nous aider à tenir une résolution.
+L&amp;rsquo;idée est que nous détestons profondément ne pas tenir nos engagements, et nous pouvons nous servir de ça pour nous mettre un peu de pression (pas trop quand même), ce qui nous forcera à agir.&lt;/p&gt;
+
+&lt;p&gt;Par exemple, parler à tous vos collègues de votre nouvelle résolution vous obligera à vous y tenir, car ils reviendront vers vous pour en parler.
+Et la crainte de la honte de ne pas avoir tenu ses engagements est une source de motivation très puissante.&lt;/p&gt;
+
+&lt;p&gt;Parler de sa résolution sur son blog ou sur un forum spécialisé peut également une approche très efficace.
+Vous vous sentirez engagé à donner régulièrement des nouvelles, et vous aurez peut-être la chance d&amp;rsquo;avoir des conseils dans les périodes difficiles.&lt;/p&gt;
+
+&lt;p&gt;Pour conclure, je vous encourage à essayer de trouver des éléments de motivation avant d&amp;rsquo;entreprendre une nouvelle habitude.
+Une méthode pour cela est le &lt;a href=&#34;http://www.couchet.org/blog/index.php5?post/2009/12/30/408-le-guide-pour-tenir-nos-resolutions-de-nouvel-an&#34;&gt;le guide pour tenir nos résolutions de nouvel an&lt;/a&gt;.
+Et si vous souhaitez creuser la question de la motivation, il existe un ebook, &lt;a href=&#34;http://themotivationhandbook.com/&#34;&gt;The essential motivation handbook&lt;/a&gt;, très complet sur le sujet, au prix de 15$ (soit environ 11€).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Changement de direction pour ce blog</title>
+      <link>http://blog.menfin.info/posts/2010-02-15-changement-de-direction-pour-ce-blog/</link>
+      <pubDate>Mon, 15 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2010-02-15-changement-de-direction-pour-ce-blog/</guid>
+      <description>&lt;p&gt;Comme vous avez pu le constater, ce blog est encore moins actif ces derniers
+temps qu&amp;rsquo;il n&amp;rsquo;a pu l&amp;rsquo;être auparavant. La raison est simple : j&amp;rsquo;écris
+principalement des billets techniques autour du web et du développement, or
+ces sujets sont également ceux que j&amp;rsquo;utilise pour publier sur le &lt;a href=&#34;http://dev.af83.com&#34;&gt;devblog
+d&amp;rsquo;af83&lt;/a&gt;, la société qui m&amp;rsquo;emploie.&lt;/p&gt;
+
+&lt;p&gt;Pour autant, je ne vais pas fermer ce blog. J&amp;rsquo;ai toujours des choses à dire
+dont je ne souhaite pas qu&amp;rsquo;elle soit associées à mon employeur. Je vais
+également en profiter pour diversifier ce blog. Cela s&amp;rsquo;applique dès
+aujourd&amp;rsquo;hui avec la création d&amp;rsquo;une nouvelle catégorie : « Lifehacks ».&lt;/p&gt;
+
+&lt;p&gt;Ce terme, &lt;em&gt;lifehacks&lt;/em&gt;, est un anglicisme décrivant les astuces, techniques,
+outils, méthodes et habitudes qui permettent d&amp;rsquo;optimiser sa vie quotidienne
+(personnelle et professionnelle). Certains se sont risqués à traduire cela par
+« astuces de vie », mais je préfère nettement la version originale.&lt;/p&gt;
+
+&lt;p&gt;Les &lt;em&gt;lifehacks&lt;/em&gt; peuvent concerner la gestion du temps, de la productivité,
+de la motivation, des connaissances, etc. Bref, beaucoup de choses que l&amp;rsquo;on
+aurait tendance à classer dans la catégorie « Développement personnel ». Je
+vois pourtant une différence importante entre les méthodes de développement
+personnel et les &lt;em&gt;lifehacks&lt;/em&gt;. Les premières cherchent à partir de grands
+principes généraux, et de ces principes découlent des règles qui peuvent nous
+aider dans notre vie de tous les jours. C&amp;rsquo;est un tout que l&amp;rsquo;on accepte ou
+refuse en bloc. A l&amp;rsquo;inverse, les &lt;em&gt;lifehacks&lt;/em&gt; sont un ensemble hétéroclites
+de trucs et astuces faciles à mettre en place dans lequel on peut piocher pour
+choisir ce qui nous conviennent le mieux.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;espère que cette courte introduction vous donnera envie d&amp;rsquo;en savoir plus. Et
+comme j&amp;rsquo;ai conscience que ça doit être encore assez abstrait pour vous, je
+vais rapidement écrire un billet montrant un de ces &lt;em&gt;lifehacks&lt;/em&gt; : le
+&lt;em&gt;Seinfeld Calendar&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Se motiver avec un Seinfeld Calendar</title>
+      <link>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</link>
+      <pubDate>Mon, 15 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</guid>
+      <description>&lt;p&gt;Comme promis, pour vous éclairer sur les
+&lt;a href=&#34;http://blog.menfin.info/post/2010/02/15/Changement-de-direction-pour-ce-blog&#34;&gt;&lt;strong&gt;lifehacks&lt;/strong&gt;&lt;/a&gt;, je
+vais donner un premier exemple : le &lt;a href=&#34;http://lifehacker.com/281626/jerry-seinfelds-productivity-secret&#34;&gt;Seinfeld
+Calendar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;La légende veut que ce soit Jerry Seinfeld l&amp;rsquo;inventeur de ce hack. Quand on a
+lui a demandé quel était son secret, il a commencé à répondre de manière
+plutôt banale : « Pour devenir un bon comique, il faut faire de bonnes
+blagues, et pour faire de bonnes blagues, il faut travailler chaque jour ». Le
+secret est donc de s&amp;rsquo;entrainer tous les jours.&lt;/p&gt;
+
+&lt;p&gt;Mais là où ça devient intéressant, c&amp;rsquo;est qu&amp;rsquo;il ne s&amp;rsquo;est pas arrêté là. Il a
+monté un système ingénieux pour se forcer à travailler chaque jour. Pour ça,
+le matériel nécessaire est réduit à un calendrier (si possible, assez grand et
+surtout bien visible) et à un feutre (rouge de préférence). Il explique alors
+que chaque jour où le travail est fait, il coche le jour sur le calendrier
+avec le feutre rouge. Au bout de quelques jours, les croix au feutre
+commencent à former une chaîne, et le but est alors de ne pas casser la chaîne
+: « &lt;em&gt;Don&amp;rsquo;t break the chain&lt;/em&gt; ».&lt;/p&gt;
+
+&lt;p&gt;Cette technique est très efficace pour se motiver, car elle nous oblige à
+dépasser nos excuses. Même si la journée a été difficile, on a envie de cocher
+sa case pour ne pas avoir à recommencer à zéro une chaîne de 10, 20 ou 30
+cases. Par contre, le revers de la médaille est que si l&amp;rsquo;on rate un jour, même
+pour une raison valable, le risque est grand de ne pas recommencer tout de
+suite, voir de ne pas recommencer du tout.&lt;/p&gt;
+
+&lt;p&gt;Pour mettre en place cette technique, vous pouvez bien entendu utiliser le
+calendrier et le feutre, mais si vous pouvez également vous tourner vers une
+version électronique. Les sites suivants permettent de faire son &lt;strong&gt;Seinfeld
+Calendar&lt;/strong&gt; en ligne :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://dailystamp.com/home&#34;&gt;Daily Stamp&lt;/a&gt; (mon préféré)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dontbreakthechain.com/&#34;&gt;Don&amp;rsquo;t break the chain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://smarterfitter.com/chain&#34;&gt;Seinfeldian Chain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://calendaraboutnothing.com/&#34;&gt;Calendar about nothing&lt;/a&gt; (les cases
+sont cochés automatiquement en fonction des commits sur github -&amp;gt; &lt;a href=&#34;http://calendaraboutnothing.com/~nono&#34;&gt;exemple
+avec mon compte&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bon, ce n&amp;rsquo;est pas tout ça, mais je dois vous laisser : j&amp;rsquo;ai du travail à faire
+sur &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; pour cocher &lt;a href=&#34;http://dailystamp.com/stamps/2082&#34;&gt;ma case
+d&amp;rsquo;aujourd&amp;rsquo;hui&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
