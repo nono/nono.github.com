@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Templates dans vim 2 / 2 // M&#39;enfin ?!?
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+  <meta property="og:title" content="Templates dans vim 2 / 2" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://blog.menfin.info/posts/2006-07-09-templates-dans-vim-2-sur2/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://blog.menfin.info//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="M&#39;enfin ?!?" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">M&#39;enfin ?!?</h1>
+    <h2 class="brand-tagline">Some blah blah by Bruno Michel</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://blog.menfin.info/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/index.xml">Feed</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="https://www.twitter.com/brmichel" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="https://github.com/nono" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://linuxfr.org/users/nono" target="_blank"><i class='fa fa-linux'></i></a>
+        
+      
+        
+        <a href="http://www.doyoubuzz.com/bruno-michel" target="_blank"><i class='fa fa-file-text-o'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/2006-07-09-templates-dans-vim-2-sur2/">Templates dans vim 2 / 2</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>9</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Jul</span> <span class="post-date-year">2006</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-vim" href="http://blog.menfin.info//categories/vim">Vim</a>
+				
+				</div>
+			
+
+			
+
+			
+
+            <p>Comme promis, nous allons donc voir comment avoir des templates un peu plus dynamiques. Le langage de script de vim n&rsquo;étant pas des plus sympathiques, je préfère appeler un programme externe.
+Pour cela, nous allons remplacer la ligne que nous avions insérée dans le fichier vimrc par celle-là :</p>
+
+<pre><code class="language-vim">au BufNewFile * 0r! ~/.vim/skeleton.rb
+</code></pre>
+
+<p>Ici, c&rsquo;est un script en ruby (<code>skeleton.rb</code>) qui est appelé.
+Pour le moment, ce script ne reçoit aucun paramètre.
+Pas terrible pour savoir quel template utiliser !
+Pour régler ce problème, nous pouvons passer par exemple le nom du fichier, avec son chemin complet.
+Il suffit de rajouter <code>%:p</code> toujours à la me ligne du fichier vimrc.
+<code>%</code> indique le fichier courant, et <code>:p</code> est un modificateur pour avoir le chemin complet.</p>
+
+<p>Mais, <strong>ViM</strong> fait déjà de la détection de <em>filetype</em>, aussi il peut être intéressant de passer ce <em>filetype</em> à notre script.
+Pour cela, nous allons encore modifier notre ligne :</p>
+
+<pre><code class="language-vim">au BufNewFile * :exe(&quot;0r! ~/.vim/skeleton.rb %:p &quot; . &amp;filetype)
+</code></pre>
+
+<p><strong>Note</strong> : comme il n&rsquo;est pas possible à ma connaissance de passer directement le filtype à la commande r!, je construit d&rsquo;abord la chaîne de cractère avec toute la commande et le filetype, puis je l&rsquo;éxécute.</p>
+
+<p>Maintenant que nous pouvons appeller un script avec le chemin du fichier et son <em>filetype</em>, je pense qu&rsquo;on peut dire que c&rsquo;est gagné.
+Voici à titre d&rsquo;exemple le script que j&rsquo;utilise :</p>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+# Author: Bruno Michel &lt;bmichel@menfin.info&gt;
+# Licence: MIT &lt;http://www.opensource.org/licenses/mit-license.html&gt;
+
+require 'erb'
+
+
+SKELETON_DIR = File.expand_path(&quot;~/.vim/skeleton&quot;);
+EXTENSION  = &quot;erb&quot;
+
+file, filetype = ARGV
+filename  = File.basename(file)
+skeletons = [filename, filetype]
+skeleton  = skeletons.map { |s|
+	File.join(SKELETON_DIR, &quot;#{s}.#{EXTENSION}&quot;)
+}.find { |s|
+	File.exist?(s) &amp;&amp; File.readable?(s)
+}
+
+exit if skeleton.nil?
+
+File.open(skeleton) do |f|
+	puts ERB.new(f.read, nil, '&lt;&gt;').result(binding)
+end
+</code></pre>
+
+<p><strong>Note</strong> : si vous voulez utiliser ce script, n&rsquo;oubliez pas de le rendre exécutable (<code>chmod a+x ~/.vim/skeleton.rb</code>)</p>
+
+<p>Ce script va chercher un fichier <code>.erb</code> dans le répertoire <code>~/.vim/skeleton</code> dont le nom correspond soit au nom du nouveau fichier, soit à son filetype.
+Et dans ce répertoire, on trouve, par exemple, <code>ruby.erb</code> :</p>
+
+<pre><code class="language-ruby">#!/usr/bin/env ruby
+# Author: Bruno Michel &lt;bmichel@menfin.info&gt;
+# Licence: MIT &lt;http://www.opensource.org/licenses/mit-license.html&gt;
+</code></pre>
+
+<p>ou <code>README.erb</code> :</p>
+
+<pre><code>&lt;%= `figlet -c README` %&gt;
+&lt;%# figlet: http://www.figlet.org %&gt;
+
+Author: Bruno Michel &lt;bmichel@menfin.info&gt;
+Date: &lt;%= Date.today.strftime(&quot;%d/%m/%y&quot;) %&gt;
+Time: &lt;%= Time.now.strftime(&quot;%H:%M:%S&quot;) %&gt;
+&lt;% directory = File.dirname(file) %&gt;
+Project: &lt;%= File.split(directory).last %&gt;
+</code></pre>
+
+<p>Et voilà, mission accomplie, nous avons des templates dynamiques, avec notamment la possibilité d&rsquo;insérer la date ou l&rsquo;heure courante.</p>
+
+	
+			
+
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/2006-07-10-fichier-de-syntaxe-vim-pour-dotclear/">Coloration syntaxique dans Vim pour les billets Dotclear</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/2006-07-05-templates-dans-vim-1-sur2/">Templates dans vim 1 / 2</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>♡2006 by Bruno Michel. Copying is an act of love. Please copy and share.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  <script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100784575);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100784575ns.gif" /></p></noscript>
+<style>img { max-width: 100%; }</style>
+
+</body>
+</html>
