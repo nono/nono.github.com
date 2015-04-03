@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Rails et la sécurité // M&#39;enfin ?!?
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+  <meta property="og:title" content="Rails et la sécurité" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://blog.menfin.info/posts/2008-07-18-programmez-rails-et-la-securite/" />
+
+
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://blog.menfin.info//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="M&#39;enfin ?!?" />
+
+  
+  <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/tomorrow-night-bright.min.css">
+  <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">M&#39;enfin ?!?</h1>
+    <h2 class="brand-tagline">Some blah blah by Bruno Michel</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://blog.menfin.info/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/index.xml">Feed</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="https://github.com/nono" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://linuxfr.org/users/nono" target="_blank"><i class='fa fa-linux'></i></a>
+        
+      
+        
+        <a href="http://www.doyoubuzz.com/bruno-michel" target="_blank"><i class='fa fa-file-text-o'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/brmichel" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#introduction:4d02830947b03e6f8dd82c30534e40c6">Introduction</a></li>
+<li><a href="#injections-sql:4d02830947b03e6f8dd82c30534e40c6">Injections SQL</a></li>
+<li><a href="#l-authentification-et-la-gestion-des-droits:4d02830947b03e6f8dd82c30534e40c6">L&rsquo;authentification et la gestion des droits</a></li>
+<li><a href="#se-protéger-des-données-forgées:4d02830947b03e6f8dd82c30534e40c6">Se protéger des données forgées</a></li>
+<li><a href="#cross-site-scripting:4d02830947b03e6f8dd82c30534e40c6">Cross-Site Scripting</a></li>
+<li><a href="#cross-site-request-forgeries:4d02830947b03e6f8dd82c30534e40c6">Cross-Site Request Forgeries</a></li>
+<li><a href="#conclusion:4d02830947b03e6f8dd82c30534e40c6">Conclusion</a></li>
+<li><a href="#références:4d02830947b03e6f8dd82c30534e40c6">Références</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/2008-07-18-programmez-rails-et-la-securite/">Rails et la sécurité</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>18</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Jul</span> <span class="post-date-year">2008</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-rails" href="/categories/rails">Rails</a> 
+				
+				</div>
+			
+
+			
+
+			
+
+            
+
+<h2 id="introduction:4d02830947b03e6f8dd82c30534e40c6">Introduction</h2>
+
+<p>La sécurité des applications web est souvent un sujet délicat : peu de temps à y consacrer, mais cela peut avoir des conséquences assez graves.
+Pas de panique !
+<a href="http://rubyonrails.com">Ruby on Rails</a> est bien armé et avec un peu de rigueur, on peut se protéger sans trop de difficultés.
+Nous allons voir les principaux types d&rsquo;attaques et comment les éviter.</p>
+
+<h2 id="injections-sql:4d02830947b03e6f8dd82c30534e40c6">Injections SQL</h2>
+
+<p>Commençons par un grand classique : <a href="http://fr.wikipedia.org/wiki/Injection_SQL">les injections SQL</a>.
+Une injection SQL consiste simplement à envoyer des données non prévues dans une requête SQL.
+Prenons comme exemple une application web où les utilisateurs sont authentifiés de la manière suivante :</p>
+
+<pre><code class="language-ruby">@current_user = User.find(:first, :conditions =&gt; &quot;login='#{params[:login)}' AND password='#{params[:password)}'&quot;)
+</code></pre>
+
+<p>En temps normal, quand Joe s&rsquo;authentifie, la requête SQL suivante est exécutée :</p>
+
+<pre><code class="language-sql">SELECT * FROM users WHERE login='Joe' AND password='0521bc575b0ff61daa62494c7ae9c5b6' LIMIT 1;
+</code></pre>
+
+<p>Mais supposons maintenant que Kevin, un Script Kiddie, passe dans le coin et décide de mettre <code>&quot;Joe'; --&quot;</code> dans le champ login.
+La requête SQL va alors ressembler à :</p>
+
+<pre><code class="language-sql">SELECT * FROM users WHERE login='Joe'; --' AND password='00000000000000000000000000000000' LIMIT 1;
+</code></pre>
+
+<p>Kevin a réussi à se faire passer pour Joe sans connaître son mot de passe !</p>
+
+<p>Heureusement, Active Record permet de <a href="http://manuals.rubyonrails.com/read/chapter/43">nous en protéger assez facilement</a>.
+Pour cela, il suffit d&rsquo;utiliser les formes échappées comme cela :</p>
+
+<pre><code class="language-ruby">@current_user = User.find(:first, :conditions =&gt; [&quot;login=? AND password=?&quot;, params[:login), params[:password)))
+</code></pre>
+
+<p>ou de façon équivalente :</p>
+
+<pre><code class="language-ruby">@current_user = User.find(:first, :conditions =&gt; {:login =&gt; params[:login), :password =&gt; params[:password)})
+</code></pre>
+
+<p>Dans les 2 cas, Active Record rajoutera un caractère <code>'\'</code> devant chaque apostrophe de façon à éviter les injections SQL.</p>
+
+<h2 id="l-authentification-et-la-gestion-des-droits:4d02830947b03e6f8dd82c30534e40c6">L&rsquo;authentification et la gestion des droits</h2>
+
+<p>Pour la grande majorité des projets, l&rsquo;authentification (et la gestion des droits qui vont avec) est un passage obligé.
+Pour cela, il existe un certain nombre de points importants à respecter comme le chiffrement des mots de passe stockés en base de données
+(ce que nous n&rsquo;avons pas fait dans l&rsquo;exemple précédent).
+Les erreurs sont vite arrivées, aussi je vous recommande d&rsquo;utiliser des plugins reconnus comme <a href="http://agilewebdevelopment.com/plugins/restful_authentication">Restful Authentication</a>, <a href="http://agilewebdevelopment.com/plugins/openidauthentication">OpenID Authentication</a> et <a href="http://www.writertopia.com/developers/authorization">Authorization</a>.</p>
+
+<p>Il ne vous reste plus qu&rsquo;à faire attention à un dernier détail : mettre en cache des pages nécessitant une authentification est une mauvaise idée.
+En effet, ces pages vont alors être servies par le serveur web sans passer Rails, et donc sans vérification de l&rsquo;authentification.</p>
+
+<h2 id="se-protéger-des-données-forgées:4d02830947b03e6f8dd82c30534e40c6">Se protéger des données forgées</h2>
+
+<p>L&rsquo;étape suivante consiste à bien sécuriser l&rsquo;accès aux données, aussi bien en lecture qu&rsquo;en écriture.
+En effet, Rails possède quelques raccourcis très pratiques, mais qui peuvent poser problème quand ils sont mal maîtrisés.
+Le plus courant est <a href="http://manuals.rubyonrails.com/read/chapter/47">l&rsquo;affectation de masse</a>, technique qui consiste à créer un objet Active Record directement depuis les paramètres de la requête HTTP.
+Par exemple, la création d&rsquo;un compte utilisateur pourra s&rsquo;effectuer de la façon suivante :</p>
+
+<pre><code class="language-ruby">@user = User.create(params[:user))
+</code></pre>
+
+<p>Supposons maintenant que la table <code>'users'</code> comporte un champ <code>'admin'</code> qui vaut <code>0</code> par défaut ou <code>1</code> pour les super-utilisateurs.
+Un utilisateur malveillant pourrait forger la requête HTTP pour ajouter un paramètre <code>user[admin)=1</code> afin de gagner les pouvoirs réservés aux admins.
+La première solution pour se protéger de cette attaque consiste à écrire explicitement quels sont les paramètres autorisés :</p>
+
+<pre><code class="language-ruby">@user = User.create(
+	:login =&gt; params[:user)[:login),
+	:email =&gt; params[:user)[:email),
+	:password =&gt; params[:user)[:password),
+	:cgu =&gt; params[:user)[:cgu))
+</code></pre>
+
+<p>Mais ceci peut vite devenir pénible quand on commence à avoir des formulaires un peu conséquents.
+C&rsquo;est pourquoi on lui préfère généralement la deuxième solution : la déclaration dans le modèle de la liste des attributs qui ne peuvent pas être modifiés.
+Cette déclaration se fait à l&rsquo;aide de la méthode <strong><code>attr_protected</code></strong> comme suit :</p>
+
+<pre><code class="language-ruby">class User &lt; ActiveRecord::Base
+	attr_protected :admin
+	...
+end
+</code></pre>
+
+<p>Nous pouvons de nouveau utiliser l&rsquo;affectation de masse sans craindre qu&rsquo;un utilisateur se fasse passer pour un admin, Rails s&rsquo;occupe de filtrer les paramètres.</p>
+
+<p>Dans le même style, un attaquant peut essayer de <a href="http://www.therailsway.com/2007/3/26/association-proxies-are-your-friend">forger des URL</a>.
+Si, par exemple, l&rsquo;utilisateur authentifié peut supprimer l&rsquo;item n°123 qui lui appartient, en appelant l&rsquo;URL <code>/items/delete/123</code>, alors que se passera-t-il s&rsquo;il appelle la même URL pour l&rsquo;item n°456 qui ne lui appartient pas ?
+La réponse dépend du code de la méthode <code>delete</code>.
+Une implémentation de base pourrait ressembler à :</p>
+
+<pre><code class="language-ruby">class ItemsController &lt; ApplicationController
+	def delete
+		Item.delete(params[:id))
+	end
+end
+</code></pre>
+
+<p>Pour se protéger des URL forgées, on pourrait la transformer en :</p>
+
+<pre><code class="language-ruby">class ItemsController &lt; ApplicationController
+	def delete
+		@item = @current_user.items.find(params[:id))
+		@item.delete if @item
+	end
+end
+</code></pre>
+
+<p>Ce n&rsquo;est pas parfait (on pourrait vérifier que c&rsquo;est bien une requête de type POST), mais c&rsquo;est déjà beaucoup mieux.</p>
+
+<p>Un dernier petit truc pour la route avant de passer à autre chose.
+Si vous avez une API pour laquelle vous utilisez la sérialisation XML, il peut être intéressant de surcharger <code>ActiveRecord#to_xml</code> pour que le champ <code>secret_field</code> n&rsquo;y apparaisse pas :</p>
+
+<pre><code class="language-ruby">class Item &lt; ActiveRecord::Base
+	def to_xml(args={})
+		super({:except =&gt; [:secret_field)}.merge(args))
+	end
+end
+</code></pre>
+
+<h2 id="cross-site-scripting:4d02830947b03e6f8dd82c30534e40c6">Cross-Site Scripting</h2>
+
+<p>Jusque maintenant, nous avons vu des attaques directes : un utilisateur essaye de s&rsquo;en prendre à notre site.
+Il existe également des attaques plus pernicieuses que l&rsquo;on classe sous le nom de <a href="http://fr.wikipedia.org/wiki/Cross_site_scripting">Cross-Site Scripting</a> (XSS en abrégé).
+Leur but est de s&rsquo;en prendre aux utilisateurs de notre site en glissant des cochonneries sur notre site.
+Ceci peut aller du spammeur qui mettra une balise <code>&lt;iframe&gt;</code> vers son site dans tous les formulaires qui lui passent sous la main à l&rsquo;injection de javascript non maîtrisé.</p>
+
+<p>Par exemple, quelqu&rsquo;un crée un item dont la description est la suivante :</p>
+
+<pre><code class="language-html">&lt;script&gt;document.location='http://www.programmez.com/';&lt;/script&gt;
+</code></pre>
+
+<p>Si maintenant un visiteur affiche la description de cet item, il sera redirigé vers le site www.programmez.com.
+Vous vous dites que c&rsquo;est ennuyeux mais pas bien méchant ?
+Oui, mais la même technique permet de voler les cookies et donc les sessions associées.
+Nous allons donc chercher à nous protéger de ces failles XSS.</p>
+
+<p>Pour cela, il est important de faire une distinction entre 2 cas : est-ce que le champ que vous allez afficher peut contenir des balises HTML ou non ?
+Pour afficher le nom d&rsquo;un item, on sera dans le premier cas, à savoir pas de balises HTML : on veut juste afficher le nom tel que l&rsquo;a rentré son propriétaire.
+Par contre, on peut souhaiter être plus souple pour la description de l&rsquo;item et laisser la possibilité d&rsquo;avoir un titre (balise <code>&lt;h1&gt;</code>), du gras (<code>&lt;b&gt;</code>) ou de l&rsquo;italique (<code>&lt;i&gt;</code>).
+Ces 2 cas ne se traitent pas de la même façon.
+Pour le premier cas, Rails nous offre un moyen simple de nous en protéger : le helper <strong><code>h</code></strong>.
+En pratique, à chaque fois que l&rsquo;on souhaitera afficher le titre d&rsquo;un item, on procédera de la manière suivante :</p>
+
+<pre><code>&lt;%=h @item.title %&gt;
+</code></pre>
+
+<p>Ce <code>h</code> va convertir les caractères qui pourraient être interprétés par un navigateur web en l&rsquo;entité HTML correspondante. Problème résolu.</p>
+
+<p>Le deuxième cas est par contre plus difficile à traiter.
+Vous pouvez être tenté d&rsquo;utiliser un moteur de formatage de texte comme <a href="http://whytheluckystiff.net/ruby/redcloth/">RedCloth</a>.
+Attention, cela ne suffit pas à filtrer <a href="http://www.rorsecurity.info/2007/08/20/redcloth-security-thoughts/">toutes les attaques</a> !
+Pour votre tranquillité, il vaut mieux utiliser le plugin <a href="http://svn.techno-weenie.net/projects/plugins/white_list/">WhiteList</a>.
+Depuis Rails 2.0, ce plugin fait partie du framework et peut s&rsquo;utiliser de la façon suivante :</p>
+
+<pre><code>&lt;%= sanitize @item.description, :tags =&gt; %w(b i h1) %&gt;
+</code></pre>
+
+<p>Il est possible de déclarer les balises autorisées de manière globale : je vous renvoie à la <a href="http://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html#M000936">documentation officielle</a>.
+Et pour ceux qui veulent être sûrs de ne pas oublier d&rsquo;appel à <code>h</code> ou à <code>sanitize</code>, il existe des moteurs de template alternatifs comme <a href="http://wiki.rubyonrails.com/rails/pages/Safe+ERB">Safe ERB</a> ou <a href="http://www.kuwata-lab.com/erubis/">Erubis</a>.
+Ces moteurs adoptent l&rsquo;approche opposée :
+ils filtrent par défaut tous les éléments <code>&lt;%= %&gt;</code>, charge au développeur d&rsquo;indiquer explicitement ceux pour lequel le moteur ne fera pas de filtrage.</p>
+
+<h2 id="cross-site-request-forgeries:4d02830947b03e6f8dd82c30534e40c6">Cross-Site Request Forgeries</h2>
+
+<p>Juste avant de finir, je voudrais juste dire un mot sur un dernier type d&rsquo;attaques.
+Les CSRF, abréviation de Cross-Site Request Forgery, sont des attaques complexes qui visent à forcer l&rsquo;utilisateur à envoyer une requête HTTP vers notre site lorsque celui-ci visitera le site de l&rsquo;attaquant.
+Je vous renvoie à <a href="http://fr.wikipedia.org/wiki/Cross-Site_Request_Forgeries">wikipedia</a> si vous voulez comprendre comment fonctionne ce type d&rsquo;attaques.
+Sachez que Rails vous protège de celles-ci depuis la version 2.0 et qu&rsquo;il existe un plugin pour les versions plus anciennes : <a href="http://svn.techno-weenie.net/projects/plugins/csrf_killer/">CSRF-killer</a>.</p>
+
+<h2 id="conclusion:4d02830947b03e6f8dd82c30534e40c6">Conclusion</h2>
+
+<p>Nous avons pu voir qu&rsquo;en prenant quelques bonnes habitudes, on pouvait développer des applications sûres en Rails.
+Il reste cependant des sujets que je n&rsquo;ai pas abordés comme <a href="http://www.igvita.com/blog/2006/10/10/securing-your-rails-environment/">l&rsquo;administration de Rails</a>, <a href="http://www.rorsecurity.info/2007/03/15/apache-2-file-privileges-and-modules/">apache</a> ou <a href="http://www.rorsecurity.info/2007/02/25/securing-mysql/">MySQL</a> (<a href="http://www.rorsecurity.info/2007/02/27/rails%e2%80%99-friends-securing-mysql-continued/">suite</a>), <a href="http://www.rorsecurity.info/2007/03/27/working-with-files-in-rails/">la manipulation des fichiers</a> ou encore <a href="http://railscasts.com/episodes/9">le filtrage des informations sensibles dans les logs</a>.
+Il est également important de se tenir au courant des mises à jour de sécurité de Rails et des plugins que vous utilisez.</p>
+
+<p>Je remercie Benoît Sibaud pour sa relecture attentive.</p>
+
+<h2 id="références:4d02830947b03e6f8dd82c30534e40c6">Références</h2>
+
+<p><a href="http://www.rorsecurity.info/ruby-on-rails-security-cheatsheet/">http://www.rorsecurity.info/ruby-on-rails-security-cheatsheet/</a>
+<a href="http://www.quarkruby.com/2007/9/20/ruby-on-rails-security-guide">http://www.quarkruby.com/2007/9/20/ruby-on-rails-security-guide</a>
+<a href="http://blog.innerewut.de/2008/1/3/24c3-ruby-on-rails-security">http://blog.innerewut.de/2008/1/3/24c3-ruby-on-rails-security</a>
+<a href="http://www.owasp.org/index.php/OWASP_AppSec_FAQ">http://www.owasp.org/index.php/OWASP_AppSec_FAQ</a>
+<a href="http://www.owasp.org/index.php/Top_10_2007">http://www.owasp.org/index.php/Top_10_2007</a></p>
+
+	
+			
+
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/2008-08-18-firefox-et-about-config/">Firefox et about:config</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/2008-06-28-linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes/">LinuxFR.org a dix ans, soirée Firefox 3 et autres joyeusetés</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>♡2006 by Bruno Michel. Copying is an act of love. Please copy and share.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  <script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100784575);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100784575ns.gif" /></p></noscript>
+<style>img { max-width: 100%; }</style>
+
+</body>
+</html>

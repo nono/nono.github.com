@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matériel on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/mat%C3%A9riel/</link>
+    <description>Recent content in Matériel on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 01 Dec 2007 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/mat%C3%A9riel/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mercurial sur mon MyBook</title>
+      <link>http://blog.menfin.info/posts/2007-12-01-mercurial-sur-mon-MyBook/</link>
+      <pubDate>Sat, 01 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2007-12-01-mercurial-sur-mon-MyBook/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai installé &lt;a href=&#34;http://www.selenic.com/mercurial/&#34;&gt;mercurial&lt;/a&gt; sur mon MyBook.
+Ce n&amp;rsquo;est pas très compliqué, mais voici quand même la méthode que j&amp;rsquo;ai utilisée pour ceux qui n&amp;rsquo;ont pas envie de chercher.
+La première chose à faire, c&amp;rsquo;est se connecter en ssh (si sshd n&amp;rsquo;est activé, vous pouvez le faire grâce à &lt;a href=&#34;http://martin.hinner.info/mybook/sshaccess.php&#34;&gt;la méthode de Martin Hinner&lt;/a&gt;).
+Ensuite, comme mercurial est en &lt;a href=&#34;http://www.python.org/&#34;&gt;Python&lt;/a&gt;, il faut installer Python :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd /tmp
+$ wget http://www.python.org/ftp/python/2.5.1/Python-2.5.1.tar.bz2
+$ tar xvjf Python-2.5.1.tar.bz2
+$ cd Python-2.5.1
+$ ./configure --disable-ipv6 --disable-shared --with-cxx=no --with-threads
+$ make
+$ sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Puis, on peut passer à l&amp;rsquo;install de mercurial proprement dit :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd /tmp
+$ wget http://www.selenic.com/mercurial/release/mercurial-0.9.5.tar.gz
+$ tar xvzf mercurial-0.9.5.tar.gz
+$ cd mercurial-0.9.5
+$ make
+$ sudo make install-bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Un petit &lt;code&gt;hg -v&lt;/code&gt; pour tester, et c&amp;rsquo;est déjà fini.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nouveau disque dur : MyBook World Edition</title>
+      <link>http://blog.menfin.info/posts/2007-11-26-disque-dur-MyBook/</link>
+      <pubDate>Mon, 26 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2007-11-26-disque-dur-MyBook/</guid>
+      <description>
+
+&lt;p&gt;Je viens de m&amp;rsquo;acheter un disque dur externe Western Digital MyBook World
+Edition. La bête doit principalement me servir pour mes sauvegardes, mais avec
+ses 500 Go, je devrais avoir de la place pour d&amp;rsquo;autres choses. J&amp;rsquo;ai choisi ce
+modèle car je voulais un disque dur branché sur de l&amp;rsquo;ethernet, pas en usb, et
+qu&amp;rsquo;en plus j&amp;rsquo;avais lu sur
+&lt;a href=&#34;http://jeromeandrieux.blogspot.com/2007/06/nastty-convi-wd-mybook.html&#34;&gt;http://jeromeandrieux.blogspot.com/2007/06/nastty-convi-wd-mybook.html&lt;/a&gt; qu&amp;rsquo;il
+avait le bon goût de tourner sous linux (les sources du firmware sous licence
+GPL sont disponibles sur
+&lt;a href=&#34;http://support.wdc.com/download/index.asp?cxml=n&amp;amp;pid=30&amp;amp;swid=64&#34;&gt;http://support.wdc.com/download/index.asp?cxml=n&amp;amp;pid=30&amp;amp;swid=64&lt;/a&gt; ).&lt;/p&gt;
+
+&lt;h2 id=&#34;ce-que-j-ai-déjà-fait:467ce7606cfe053d99265ea2732869cd&#34;&gt;Ce que j&amp;rsquo;ai déjà fait&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;le brancher&lt;/li&gt;
+&lt;li&gt;aller sur l&amp;rsquo;interface web : &lt;a href=&#34;http://admin:123456@&#34;&gt;http://admin:123456@&lt;/a&gt;&lt;l&#39;adresse IP du Mybook&gt;&lt;/li&gt;
+&lt;li&gt;rajouter un utilisateur sur cette interface&lt;/li&gt;
+&lt;li&gt;activer l&amp;rsquo;accès ssh grâce à [la méthode de Martin Hinner|&lt;a href=&#34;http://martin.hinner.info/mybook/sshaccess.php&#34;&gt;http://martin.hinner.info/mybook/sshaccess.php&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;se logger en ssh dessus avec l&amp;rsquo;utilisateur créé précédement&lt;/li&gt;
+&lt;li&gt;désactiver mionet toujours grâce à [&lt;a href=&#34;http://martin.hinner.info/mybook/disable_mionet.php|Martin&#34;&gt;http://martin.hinner.info/mybook/disable_mionet.php|Martin&lt;/a&gt; Hinner]&lt;/li&gt;
+&lt;li&gt;faire joujou avec l&amp;rsquo;interface web&lt;/li&gt;
+&lt;li&gt;et finalement commencer mes sauvegardes à la main (à coups de scp)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ce-qu-il-reste-à-faire:467ce7606cfe053d99265ea2732869cd&#34;&gt;Ce qu&amp;rsquo;il reste à faire&lt;/h2&gt;
+
+&lt;p&gt;Visiblement, il est possible de faire des choses bien sympathiques comme
+installer &lt;a href=&#34;http://vsftpd.beasts.org/|vsftpd&#34;&gt;vsftpd&lt;/a&gt; (un serveur FTP bien secure),
+&lt;a href=&#34;http://samba.anu.edu.au/rsync/&#34;&gt;rsync&lt;/a&gt; ou encore &lt;a href=&#34;http://php.net&#34;&gt;PHP&lt;/a&gt; (en
+réutilisant le lighttpd de l&amp;rsquo;interface web) dessus :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://martin.hinner.info/mybook/packages.php&#34;&gt;http://martin.hinner.info/mybook/packages.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mybookworld.wikidot.com/hacks-and-howto&#34;&gt;http://mybookworld.wikidot.com/hacks-and-howto&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://chayden.dyndns.info/info/mybookworld:top&#34;&gt;http://chayden.dyndns.info/info/mybookworld:top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.welped.com/2007/08/29/hacking-the-mybook-world-edition-into-a-php-powered-web-server/&#34;&gt;http://www.welped.com/2007/08/29/hacking-the-mybook-world-edition-into-a-php-powered-web-server/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il est également possible de mettre en veille le disque dur d&amp;rsquo;après
+&lt;a href=&#34;http://kyyhkynen.net/stuff/mybook/&#34;&gt;http://kyyhkynen.net/stuff/mybook/&lt;/a&gt; .&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

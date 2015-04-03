@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Afficher la branche Git courante dans le prompt de ZSH // M&#39;enfin ?!?
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+  <meta property="og:title" content="Afficher la branche Git courante dans le prompt de ZSH" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://blog.menfin.info/posts/2008-03-15-git-branch-dans-le-prompt-zsh/" />
+
+
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://blog.menfin.info//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="M&#39;enfin ?!?" />
+
+  
+  <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/tomorrow-night-bright.min.css">
+  <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    <h1 class="brand-title">M&#39;enfin ?!?</h1>
+    <h2 class="brand-tagline">Some blah blah by Bruno Michel</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://blog.menfin.info/">Home</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/index.xml">Feed</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="https://github.com/nono" target="_blank"><i class='fa fa-github'></i></a>
+        
+      
+        
+        <a href="http://linuxfr.org/users/nono" target="_blank"><i class='fa fa-linux'></i></a>
+        
+      
+        
+        <a href="http://www.doyoubuzz.com/bruno-michel" target="_blank"><i class='fa fa-file-text-o'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/brmichel" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/posts/2008-03-15-git-branch-dans-le-prompt-zsh/">Afficher la branche Git courante dans le prompt de ZSH</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>15</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Mar</span> <span class="post-date-year">2008</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-git" href="/categories/git">Git</a> 
+				
+				</div>
+			
+
+			
+
+			
+
+            <p>Je suis tombé sur un tips bien sympa :
+<a href="http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/">Show Your GIT Branch Name In Your Prompt</a>.
+Il y est expliqué comment avoir la branche <a href="http://git.or.cz/">Git</a> en cours dans son prompt avec <a href="http://www.gnu.org/software/bash/">Bash</a>.</p>
+
+<p>J&rsquo;ai adapaté ca pour <a href="http://www.zsh.org/">zsh</a>. Voici un extrait de mon <code>zshrc</code> :</p>
+
+<pre><code>export PS1='%~ $(git_branch)%# '
+
+function git_branch {
+  git branch --no-color 2&gt; /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
+}
+
+setopt PROMPT_SUBST
+</code></pre>
+
+<p>La seule difficulté fût de se rendre compte qu&rsquo;il fallait activer une option pour que ca marche, et de savoir quelle était cette option (<code>PROMPT_SUBST</code> en l&rsquo;occurence).</p>
+
+<p>Ainsi que je suis sous un répertoire normal, j&rsquo;ai un prompt de la forme <code>~/Desktop %</code>, et quand je suis dans un répertoire versionné sous Git, ca donne : <code>~/mon_projet (ma_branche) %</code>.
+Ce n&rsquo;est pas grand chose, mais comme il paraît que c&rsquo;est une bonne pratique de faire des branches sous Git, autant avoir en permance le nom de la branche courante sous les yeux.</p>
+
+<p><strong>PS</strong> : j&rsquo;ai des invitations pour <a href="https://github.com/">GitHub</a> si ca intéresse des gens.</p>
+
+	
+			
+
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/posts/2008-04-02-mon-article-dans-programmez/">Dossier Ruby on Rails dans programmez</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/posts/2008-02-12-Portrait-of-a-noob/">Portrait of a N00b</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>♡2006 by Bruno Michel. Copying is an act of love. Please copy and share.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  <script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(100784575);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100784575ns.gif" /></p></noscript>
+<style>img { max-width: 100%; }</style>
+
+</body>
+</html>
