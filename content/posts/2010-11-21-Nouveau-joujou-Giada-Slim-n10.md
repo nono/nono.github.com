@@ -5,7 +5,7 @@ title: "Nouveau joujou : Giada Slim n10"
 aliases:
 - "/Lifehacks/2010/11/21/Nouveau-joujou-Giada-Slim-n10"
 categories:
-- Lifehacks
+- Matériel
 ---
 J'ai acheté un [Giada Slim n10](http://www.giadatech.com/index.php?app=product&act=show&id=37). Ça ressemble à ça :
 
