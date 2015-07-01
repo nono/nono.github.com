@@ -6,40 +6,8 @@
     <description>Recent content in Lifehacks on M&#39;enfin ?!?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 21 Nov 2010 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 May 2010 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.menfin.info/categories/lifehacks/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Nouveau joujou : Giada Slim n10</title>
-      <link>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</link>
-      <pubDate>Sun, 21 Nov 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</guid>
-      <description>&lt;p&gt;J&amp;rsquo;ai acheté un &lt;a href=&#34;http://www.giadatech.com/index.php?app=product&amp;amp;act=show&amp;amp;id=37&#34;&gt;Giada Slim n10&lt;/a&gt;. Ça ressemble à ça :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/giada.jpg&#34; alt=&#34;Giada Slim n10&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;J&amp;rsquo;ai commencé à jouer avec en installant dessus :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;une debian (pas de problème particulier)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.openssh.com/&#34;&gt;OpenSSH&lt;/a&gt;, évidemment&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bip.milkypond.org/&#34;&gt;Bip&lt;/a&gt;, un proxy IRC&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://wiki.nginx.org/Main&#34;&gt;Nginx&lt;/a&gt;, un serveur web&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.rutschle.net/tech/sslh.shtml&#34;&gt;Sllh&lt;/a&gt; pour avoir ssh ET https sur le port 443.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;L&amp;rsquo;achat est tout neuf, donc je n&amp;rsquo;ai pas encore beaucoup de recul, mais dans l&amp;rsquo;ensemble, j&amp;rsquo;en suis très satisfait. Un seul regret, le ventilo n&amp;rsquo;est pas aussi silencieux que je le voudrais. J&amp;rsquo;ai trouvé sur &lt;a href=&#34;http://www.blogeee.net/forum/viewtopic.php?p=209248#p209248&#34;&gt;un forum&lt;/a&gt; comment régler ça dans le bios, mais ce n&amp;rsquo;est pas encore parfait. Pour mémoire, ça se règle dans le menu chipset &amp;gt; MCP fan control, et les valeurs à renseigner sont :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;SMART Fan0 Min temperature : 40 (la valeur se modifie avec les touches + et -)&lt;/li&gt;
-&lt;li&gt;SMART Fan0 Max temperature : 90&lt;/li&gt;
-&lt;li&gt;SMART Fan0 Min duty cycle : 30&lt;/li&gt;
-&lt;li&gt;SMART Fan0 Max duty cycle : 255&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>Se fixer des objectifs SMART</title>
