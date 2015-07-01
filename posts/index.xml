@@ -6,8 +6,112 @@
     <description>Recent content in Posts on M&#39;enfin ?!?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Fri, 03 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.menfin.info/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sur un petit nuage, Cozy</title>
+      <link>http://blog.menfin.info/posts/2015-07-01-sur-un-petit-nuage-cozy/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2015-07-01-sur-un-petit-nuage-cozy/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://cozy.io/fr/&#34;&gt;Cozy&lt;/a&gt; est un Cloud personnel que vous pouvez héberger,
+personnaliser et entièrement contrôler. Il permet de reprendre la main sur ses
+données personnelles, comme ses contacts, calendriers, courriels, fichiers,
+plutôt que de les laisser aux mains des GAFA (Google, Apple, Facebook,
+Amazon). En tant que fervent défenseur du respect à la vie privée, je suis le
+projet Cozy depuis quelques temps. Avec &lt;a href=&#34;http://blog.cozycloud.cc/news/2015/06/16/releasing-cozy-2/&#34;&gt;l&amp;rsquo;arrivée de la version
+2.0&lt;/a&gt; et &lt;a href=&#34;http://standblog.org/blog/tag/loirenseignement&#34;&gt;la loi
+sur le renseignement&lt;/a&gt;, j&amp;rsquo;ai
+sauté le pas et j&amp;rsquo;ai installé mon instance de Cozy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/cozy.png&#34; alt=&#34;Logo de Cozy Cloud&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est un projet encore jeune. Dans ce billet, je vais détailler ce que j&amp;rsquo;aime
+et les choses que j&amp;rsquo;aimerais voir améliorées. Je risque de paraître difficile,
+mais c&amp;rsquo;est uniquement parce que j&amp;rsquo;ai de grands espoirs dans Cozy. Ces
+critiques sont là pour encourager d&amp;rsquo;autres personnes à franchir le pas et
+installer leur instance de Cozy en connaissance de cause, et pour donner un
+retour à l&amp;rsquo;équipe Cozy pour permettre d&amp;rsquo;améliorer leur produit.&lt;/p&gt;
+
+&lt;p&gt;Commençons par &lt;strong&gt;ce que j&amp;rsquo;aime&lt;/strong&gt;. L&amp;rsquo;application &lt;strong&gt;Home&lt;/strong&gt; a été refaite. C&amp;rsquo;est
+elle qui vous accueille et permet de naviguer entre les différentes
+applications installées sur Cozy. En effet, Cozy possède un coeur, qui
+s&amp;rsquo;occupe du stockage des données, des permissions d&amp;rsquo;accès pour celles-ci et de
+la gestion des applications, mais toutes les fonctionnalités viennent dans des
+applications séparées. Par exemple, nous avons une application pour les
+calendriers, une autre pour gérer les contacts, etc. Et pour en revenir à
+Home, c&amp;rsquo;est l&amp;rsquo;interface qui permet de passer d&amp;rsquo;une application à une autre. La
+nouvelle version est plus jolie et plus pratique à mon goût. Ça pourrait être
+pas mal de pouvoir reprendre des informations des applications sur Home
+(afficher le nombre de mails non-lus ou le prochain rendez-vous), mais ça fait
+déjà bien le boulot.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;aime aussi l&amp;rsquo;aspect &lt;strong&gt;applications séparées&lt;/strong&gt; où l&amp;rsquo;on installe que ce dont
+on a besoin, et surtout qui permet d&amp;rsquo;installer toutes les applications que
+l&amp;rsquo;on veut sans avoir à demander la permission sur un store. L&amp;rsquo;interface de
+Cozy propose d&amp;rsquo;installer des applications depuis une liste mais a aussi une
+option pour installer une application directement depuis un dépôt git. C&amp;rsquo;est
+bien vu !&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;&lt;strong&gt;installation&lt;/strong&gt; via &lt;a href=&#34;http://cozy.io/fr/host/install/install-on-debian.html&#34;&gt;un paquet
+debian&lt;/a&gt; est très simple
+et la gestion via l&amp;rsquo;interface web se fait facilement. On sent que de gros
+efforts ont été faits sur ces points. Bien entendu, ce n&amp;rsquo;est pas parfait et il
+y a toujours des petits trucs qui peuvent être améliorés, mais je suis
+confiant que ça va continuer à se peaufiner. Et comme Cozy est un &lt;strong&gt;Logiciel
+Libre&lt;/strong&gt;, c&amp;rsquo;est encore plus facile de contribuer.&lt;/p&gt;
+
+&lt;p&gt;Petit à côté : vivement septembre, que l&amp;rsquo;on ait des certificats SSL simplement
+avec &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Enfin, pour ne rien gâcher, &lt;strong&gt;l&amp;rsquo;équipe&lt;/strong&gt; derrière le projet est très sympa. On
+sent qu&amp;rsquo;elle a à coeur les problématiques de respect de la vie privée et de
+contrôle des données personnelles. Elle est très active, à l&amp;rsquo;écoute sur &lt;a href=&#34;https://forum.cozy.io/&#34;&gt;les
+forums&lt;/a&gt; et organise régulièrement des &lt;a href=&#34;http://www.meetup.com/Meetup-des-utilisateurs-de-Cozy-Cloud-en-France/&#34;&gt;événements avec
+la communauté&lt;/a&gt;.
+Un gros merci à vous !&lt;/p&gt;
+
+&lt;p&gt;Et maintenant, je vais aborder les points qui &lt;strong&gt;me gênent&lt;/strong&gt; et dont j&amp;rsquo;espère
+qu&amp;rsquo;ils pourront être corrigés dans le futur. Tout d&amp;rsquo;abord, je trouve très
+dommage de ne pas avoir un tutoriel pour &lt;strong&gt;sortir ces données de Cozy&lt;/strong&gt;. Une
+des promesses de Cozy est de ne pas enfermer l&amp;rsquo;utilisateur. On peut
+effectivement &lt;a href=&#34;https://cozy.io/fr/host/uninstall.html&#34;&gt;supprimer son instance Cozy et les données
+associées&lt;/a&gt; (ce qui est déjà mieux que
+pour les GAFA), mais franchement, si on met des données dans Cozy, c&amp;rsquo;est
+qu&amp;rsquo;elles sont importantes et le jour où l&amp;rsquo;on veut sortir de Cozy (si jamais ce
+jour arrive), on voudra pouvoir prendre nos données avec nous. On peut
+exporter certaines données de Cozy de différentes façons, mais c&amp;rsquo;est loin
+d&amp;rsquo;être aussi facile que d&amp;rsquo;installer une instance de Cozy. Ça mériterait d&amp;rsquo;être
+unifié et documenté.&lt;/p&gt;
+
+&lt;p&gt;Ensuite, je regrette certains &lt;strong&gt;choix techniques&lt;/strong&gt; et les conséquences
+associées. CouchDB n&amp;rsquo;est plus très populaire ces derniers temps. Cela peut
+compliquer la vie des développeurs (même si cet aspect est masqué en partie
+par une couche d&amp;rsquo;abstraction, &lt;a href=&#34;https://github.com/cozy/cozy-db&#34;&gt;cozy-db&lt;/a&gt;).
+Et je ne suis vraiment pas fan de l&amp;rsquo;idée de mettre des fichiers binaires
+dedans. J&amp;rsquo;ai beaucoup de mal à synchroniser mes photos depuis mon smartphone
+vers Cozy. Je spécule, mais je ne serais pas étonné que le problème vienne de
+là (il faudra que j&amp;rsquo;investigue).&lt;/p&gt;
+
+&lt;p&gt;Et pour la partie authentification et autorisations, je trouve dommage que
+l&amp;rsquo;architecture n&amp;rsquo;ait pas été plus loin. A priori, proposer du &lt;strong&gt;oAuth2&lt;/strong&gt;
+n&amp;rsquo;aurait pas été très compliqué et aurait permis d&amp;rsquo;avoir quelque chose de plus
+standard et mieux fini que la solution actuelle. Ceci dit, je comprends que ce
+n&amp;rsquo;est pas facile d&amp;rsquo;avancer sur ce sujet très complexe et qui bouge rapidement.&lt;/p&gt;
+
+&lt;p&gt;Pour finir, le point qui me dérange le plus est &lt;strong&gt;le manque de traction&lt;/strong&gt;. Il
+y a encore très peu d&amp;rsquo;applications disponibles. Du côté des applications
+officielles, aucune ne me paraît pouvoir devenir une killer app. Je connais
+peu de gens qui soient passé à Cozy. Et j&amp;rsquo;ai peur que l&amp;rsquo;équipe de Cozy
+n&amp;rsquo;arrive pas à accélérer le rythme de développement pour pouvoir proposer
+suffisamment de nouvelles choses pour réussir à faire naître un écosystème
+autour d&amp;rsquo;eux. J&amp;rsquo;espère me tromper sur ce point et je souhaite vraiment à Cozy
+de réussir. D&amp;rsquo;ailleurs, la prochaine étape pour moi sera de me lancer dans le
+développement d&amp;rsquo;une app pour Cozy. Un premier pas pour aider Cozy ?&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Un terminal dans Neovim</title>
@@ -724,59 +828,6 @@ choisir ce qui nous conviennent le mieux.&lt;/p&gt;
 comme j&amp;rsquo;ai conscience que ça doit être encore assez abstrait pour vous, je
 vais rapidement écrire un billet montrant un de ces &lt;em&gt;lifehacks&lt;/em&gt; : le
 &lt;em&gt;Seinfeld Calendar&lt;/em&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Se motiver avec un Seinfeld Calendar</title>
-      <link>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</link>
-      <pubDate>Mon, 15 Feb 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.menfin.info/posts/2010-02-15-se-motiver-avec-un-seinfeld-calendar/</guid>
-      <description>&lt;p&gt;Comme promis, pour vous éclairer sur les
-&lt;a href=&#34;http://blog.menfin.info/post/2010/02/15/Changement-de-direction-pour-ce-blog&#34;&gt;&lt;strong&gt;lifehacks&lt;/strong&gt;&lt;/a&gt;, je
-vais donner un premier exemple : le &lt;a href=&#34;http://lifehacker.com/281626/jerry-seinfelds-productivity-secret&#34;&gt;Seinfeld
-Calendar&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;La légende veut que ce soit Jerry Seinfeld l&amp;rsquo;inventeur de ce hack. Quand on a
-lui a demandé quel était son secret, il a commencé à répondre de manière
-plutôt banale : « Pour devenir un bon comique, il faut faire de bonnes
-blagues, et pour faire de bonnes blagues, il faut travailler chaque jour ». Le
-secret est donc de s&amp;rsquo;entrainer tous les jours.&lt;/p&gt;
-
-&lt;p&gt;Mais là où ça devient intéressant, c&amp;rsquo;est qu&amp;rsquo;il ne s&amp;rsquo;est pas arrêté là. Il a
-monté un système ingénieux pour se forcer à travailler chaque jour. Pour ça,
-le matériel nécessaire est réduit à un calendrier (si possible, assez grand et
-surtout bien visible) et à un feutre (rouge de préférence). Il explique alors
-que chaque jour où le travail est fait, il coche le jour sur le calendrier
-avec le feutre rouge. Au bout de quelques jours, les croix au feutre
-commencent à former une chaîne, et le but est alors de ne pas casser la chaîne
-: « &lt;em&gt;Don&amp;rsquo;t break the chain&lt;/em&gt; ».&lt;/p&gt;
-
-&lt;p&gt;Cette technique est très efficace pour se motiver, car elle nous oblige à
-dépasser nos excuses. Même si la journée a été difficile, on a envie de cocher
-sa case pour ne pas avoir à recommencer à zéro une chaîne de 10, 20 ou 30
-cases. Par contre, le revers de la médaille est que si l&amp;rsquo;on rate un jour, même
-pour une raison valable, le risque est grand de ne pas recommencer tout de
-suite, voir de ne pas recommencer du tout.&lt;/p&gt;
-
-&lt;p&gt;Pour mettre en place cette technique, vous pouvez bien entendu utiliser le
-calendrier et le feutre, mais si vous pouvez également vous tourner vers une
-version électronique. Les sites suivants permettent de faire son &lt;strong&gt;Seinfeld
-Calendar&lt;/strong&gt; en ligne :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dailystamp.com/home&#34;&gt;Daily Stamp&lt;/a&gt; (mon préféré)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dontbreakthechain.com/&#34;&gt;Don&amp;rsquo;t break the chain&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://smarterfitter.com/chain&#34;&gt;Seinfeldian Chain&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://calendaraboutnothing.com/&#34;&gt;Calendar about nothing&lt;/a&gt; (les cases
-sont cochés automatiquement en fonction des commits sur github -&amp;gt; &lt;a href=&#34;http://calendaraboutnothing.com/~nono&#34;&gt;exemple
-avec mon compte&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Bon, ce n&amp;rsquo;est pas tout ça, mais je dois vous laisser : j&amp;rsquo;ai du travail à faire
-sur &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; pour cocher &lt;a href=&#34;http://dailystamp.com/stamps/2082&#34;&gt;ma case
-d&amp;rsquo;aujourd&amp;rsquo;hui&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
