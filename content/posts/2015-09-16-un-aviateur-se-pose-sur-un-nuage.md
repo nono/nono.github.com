@@ -45,7 +45,7 @@ Photo, la Réunion des Musées Nationaux et du Grand Palais, Canal+, etc. Mais
 ces trois là donnent déjà un bon aperçu de ce sur quoi j'ai pu travailler chez
 af83.
 
-Ha, et pour ceux qui souhaite savoir où je vais, il suffit de regarder mon
+Ha, et pour ceux qui souhaitent savoir où je vais, il suffit de regarder mon
 [précédent billet de blog](http://blog.menfin.info/posts/2015-07-01-sur-un-petit-nuage-cozy/).
 Je rejoins Cozy Cloud, car je veux me battre pour que nous puissions reprendre
 la main sur nos données vis-à-vis des grosses sociétés et je crois que Cozy a
