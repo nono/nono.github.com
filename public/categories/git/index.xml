@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Git on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/git/index.xml</link>
+    <title>Git on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/git/</link>
+    <description>Recent content in Git on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Fri, 20 Mar 2015 00:00:00 UTC</updated>
+    <lastBuildDate>Fri, 20 Mar 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/git/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ma config</title>
       <link>http://blog.menfin.info/posts/2015-03-20-ma-config/</link>
-      <pubDate>Fri, 20 Mar 2015 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2015-03-20-ma-config/</guid>
       <description>&lt;p&gt;Je suis un utilisateur de longue date de la ligne de commande, et de vim en
 particulier. J&amp;rsquo;essaye d&amp;rsquo;apprendre régulièrement de nouvelles choses (méthodes,
@@ -74,7 +74,7 @@ si ça vous intéresse).&lt;/p&gt;
 &lt;p&gt;Un autre truc que j&amp;rsquo;ai ajouté récemment dans mon fichier &lt;code&gt;~/.zshrc&lt;/code&gt; est la
 coloration des pages man :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;sh&#34;&gt;man() {
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;man() {
   env LESS_TERMCAP_mb=$&#39;\E[01;31m&#39; \
   LESS_TERMCAP_md=$&#39;\E[01;38;5;74m&#39; \
   LESS_TERMCAP_me=$&#39;\E[0m&#39; \
@@ -96,8 +96,8 @@ forcément beaucoup de commentaires, mais on peut y trouver des choses utiles.&l
     <item>
       <title>Afficher la branche Git courante dans le prompt de ZSH</title>
       <link>http://blog.menfin.info/posts/2008-03-15-git-branch-dans-le-prompt-zsh/</link>
-      <pubDate>Sat, 15 Mar 2008 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sat, 15 Mar 2008 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2008-03-15-git-branch-dans-le-prompt-zsh/</guid>
       <description>&lt;p&gt;Je suis tombé sur un tips bien sympa :
 &lt;a href=&#34;http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/&#34;&gt;Show Your GIT Branch Name In Your Prompt&lt;/a&gt;.

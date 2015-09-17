@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Astuces on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/astuces/index.xml</link>
+    <title>Astuces on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/astuces/</link>
+    <description>Recent content in Astuces on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Mon, 18 Aug 2008 00:00:00 UTC</updated>
+    <lastBuildDate>Mon, 18 Aug 2008 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/astuces/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Firefox et about:config</title>
       <link>http://blog.menfin.info/posts/2008-08-18-firefox-et-about-config/</link>
-      <pubDate>Mon, 18 Aug 2008 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Mon, 18 Aug 2008 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2008-08-18-firefox-et-about-config/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.mozilla-europe.org/fr/&#34;&gt;Firefox&lt;/a&gt; est le navigateur que j&amp;rsquo;utilise tous les jours, et ce depuis un certain nombre d&amp;rsquo;années.
 Au fil du temps, je me suis habitué à un certain nombre de préférences, dont certaines doivent être configurées depuis la page &lt;code&gt;about:config&lt;/code&gt;.

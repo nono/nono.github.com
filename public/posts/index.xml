@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Posts on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/posts/index.xml</link>
+    <title>Posts on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/posts/</link>
+    <description>Recent content in Posts on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Wed, 16 Sep 2015 00:00:00 UTC</updated>
+    <lastBuildDate>Wed, 16 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Un aviateur se pose sur un nuage</title>
       <link>http://blog.menfin.info/posts/2015-09-16-un-aviateur-se-pose-sur-un-nuage/</link>
-      <pubDate>Wed, 16 Sep 2015 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2015-09-16-un-aviateur-se-pose-sur-un-nuage/</guid>
       <description>&lt;p&gt;Je suis actuellement le directeur technique d&amp;rsquo;af83, mais plus pour très
 longtemps. En effet, après 8 ans de bons et loyaux services, j&amp;rsquo;ai décidé de
@@ -41,8 +41,7 @@ d&amp;rsquo;écrire mon premier pilote d&amp;rsquo;imprimante (une imprimante th
 ticket de caisse, pour que les voyageurs puissent garder une trace de leur
 parcours).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://dev.af83.com/img/borne_ADP.jpg&#34; alt=&#34;Borne orientation voyageurs pour les Aéroports de Paris&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://dev.af83.com/img/borne_ADP.jpg&#34; alt=&#34;Borne orientation voyageurs pour les Aéroports de Paris&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Le dernier est le live de France Télévisions. Vous pouvez le voir dans la
 colonne de gauche de &lt;a href=&#34;http://www.francetvinfo.fr/&#34;&gt;francetvinfo&lt;/a&gt;. Sorti en
@@ -67,8 +66,8 @@ le potentiel pour arriver à changer les choses de ce côté-là.&lt;/p&gt;
     <item>
       <title>Sur un petit nuage, Cozy</title>
       <link>http://blog.menfin.info/posts/2015-07-01-sur-un-petit-nuage-cozy/</link>
-      <pubDate>Wed, 01 Jul 2015 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2015-07-01-sur-un-petit-nuage-cozy/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://cozy.io/fr/&#34;&gt;Cozy&lt;/a&gt; est un Cloud personnel que vous pouvez héberger,
 personnaliser et entièrement contrôler. Il permet de reprendre la main sur ses
@@ -80,8 +79,7 @@ projet Cozy depuis quelques temps. Avec &lt;a href=&#34;http://blog.cozycloud.cc
 sur le renseignement&lt;/a&gt;, j&amp;rsquo;ai
 sauté le pas et j&amp;rsquo;ai installé mon instance de Cozy.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/public/cozy.png&#34; alt=&#34;Logo de Cozy Cloud&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/cozy.png&#34; alt=&#34;Logo de Cozy Cloud&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;C&amp;rsquo;est un projet encore jeune. Dans ce billet, je vais détailler ce que j&amp;rsquo;aime
 et les choses que j&amp;rsquo;aimerais voir améliorées. Je risque de paraître difficile,
@@ -171,8 +169,8 @@ développement d&amp;rsquo;une app pour Cozy. Un premier pas pour aider Cozy ?&l
     <item>
       <title>Un terminal dans Neovim</title>
       <link>http://blog.menfin.info/posts/2015-04-03-un-terminal-dans-neovim/</link>
-      <pubDate>Fri, 03 Apr 2015 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Fri, 03 Apr 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2015-04-03-un-terminal-dans-neovim/</guid>
       <description>&lt;p&gt;Comme je l&amp;rsquo;ai indiqué dans &lt;a href=&#34;http://blog.menfin.info/posts/2015-03-20-ma-config/&#34;&gt;un précédent
 billet&lt;/a&gt;, je suis passé à
@@ -203,7 +201,7 @@ n&amp;rsquo;est pas très intuitif, mais comme le mode terminal propose son prop
 binding de touches avec &lt;code&gt;:tnoremap&lt;/code&gt;, on peut ajouter ces lignes à son fichier
 &lt;code&gt;/.nvimrc&lt;/code&gt; pour utiliser &lt;code&gt;Esc&lt;/code&gt; :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;vim&#34;&gt;if has(&amp;quot;nvim&amp;quot;)
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;if has(&amp;quot;nvim&amp;quot;)
     tnoremap &amp;lt;Esc&amp;gt; &amp;lt;C-\&amp;gt;&amp;lt;C-n&amp;gt;
 endif
 &lt;/code&gt;&lt;/pre&gt;
@@ -224,16 +222,15 @@ inspecter des expressions.&lt;/li&gt;
 
 &lt;p&gt;Pour finir, voici une petite capture d&amp;rsquo;écran :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/public/Neovim-term.png&#34; alt=&#34;Capture d&#39;écran de Neovim avec un terminal&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/Neovim-term.png&#34; alt=&#34;Capture d&#39;écran de Neovim avec un terminal&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Ma config</title>
       <link>http://blog.menfin.info/posts/2015-03-20-ma-config/</link>
-      <pubDate>Fri, 20 Mar 2015 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2015-03-20-ma-config/</guid>
       <description>&lt;p&gt;Je suis un utilisateur de longue date de la ligne de commande, et de vim en
 particulier. J&amp;rsquo;essaye d&amp;rsquo;apprendre régulièrement de nouvelles choses (méthodes,
@@ -294,7 +291,7 @@ si ça vous intéresse).&lt;/p&gt;
 &lt;p&gt;Un autre truc que j&amp;rsquo;ai ajouté récemment dans mon fichier &lt;code&gt;~/.zshrc&lt;/code&gt; est la
 coloration des pages man :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;sh&#34;&gt;man() {
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;man() {
   env LESS_TERMCAP_mb=$&#39;\E[01;31m&#39; \
   LESS_TERMCAP_md=$&#39;\E[01;38;5;74m&#39; \
   LESS_TERMCAP_me=$&#39;\E[0m&#39; \
@@ -316,12 +313,12 @@ forcément beaucoup de commentaires, mais on peut y trouver des choses utiles.&l
     <item>
       <title>Hash Code, fnf-detect et HTML Truncator</title>
       <link>http://blog.menfin.info/posts/2015-03-13-Hashcode-fnf-detect-et-html_truncator/</link>
-      <pubDate>Fri, 13 Mar 2015 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2015-03-13-Hashcode-fnf-detect-et-html_truncator/</guid>
       <description>
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Hash Code 2015&lt;/h2&gt;
+&lt;h2 id=&#34;hash-code-2015:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;Hash Code 2015&lt;/h2&gt;
 
 &lt;p&gt;Google France organise un concours nommé &lt;a href=&#34;https://sites.google.com/site/hashcode2015/home&#34;&gt;Hash
 Code&lt;/a&gt;. J&amp;rsquo;ai participé avec 2
@@ -372,7 +369,7 @@ finale.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Mise à jour&lt;/strong&gt; : oui, nous sommes bien qualifiés pour la finale !&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;fnf-detect&lt;/h2&gt;
+&lt;h2 id=&#34;fnf-detect:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;fnf-detect&lt;/h2&gt;
 
 &lt;p&gt;J&amp;rsquo;ai joué un peu avec des bibliothèques de &lt;em&gt;Computer Vision&lt;/em&gt; la semaine
 dernière. Je me suis servi d&amp;rsquo;&lt;a href=&#34;http://opencv.org/&#34;&gt;OpenCV&lt;/a&gt; et de
@@ -387,7 +384,7 @@ lente, mais améliore grandement les résultats. Au final, nous allons utiliser
 cette seconde version pour un client, car cela donne un aspect mieux fini à
 leur produit.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;HTML Truncator&lt;/h2&gt;
+&lt;h2 id=&#34;html-truncator:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;HTML Truncator&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/nono/HTML-Truncator&#34;&gt;HTML Truncator&lt;/a&gt;, ma bibliothèque Ruby
 pour tronquer des textes présents sous forme d&amp;rsquo;HTML, semble être de plus en
@@ -400,8 +397,8 @@ récemment. J&amp;rsquo;ai donc corrigé le bug et sorti une nouvelle version.&l
     <item>
       <title>Petite visite à l&#39;Open World Forum</title>
       <link>http://blog.menfin.info/posts/2014-11-01-petite-visite-a-l-open-world-forum/</link>
-      <pubDate>Sat, 01 Nov 2014 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sat, 01 Nov 2014 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2014-11-01-petite-visite-a-l-open-world-forum/</guid>
       <description>
 
@@ -419,7 +416,7 @@ sûr, certaines étaient meilleures que d&amp;rsquo;autres mais le niveau géné
 &lt;em&gt;tracks&lt;/em&gt; que j&amp;rsquo;ai suivis était très bon. En voici 3 qui m&amp;rsquo;ont particulièrement
 marqué.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Software development analytics for the masses&lt;/h2&gt;
+&lt;h2 id=&#34;software-development-analytics-for-the-masses:832cd3044e219d3853e412eb5856568b&#34;&gt;Software development analytics for the masses&lt;/h2&gt;
 
 &lt;p&gt;Le matin, j&amp;rsquo;ai été agréablement surpris par &lt;a href=&#34;http://bitergia.com/dashboards/&#34;&gt;les tableaux de bord produits par
 bitergia&lt;/a&gt; pour des projets Open-Source
@@ -435,7 +432,7 @@ tickets. Bref, c&amp;rsquo;est un très bon moyen de mieux comprendre des commun
 autour d&amp;rsquo;un projet Open-Source et de se poser les bonnes questions pour
 qu&amp;rsquo;elles puissent travailler plus efficacement.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;State Of the Art in Machine Learning&lt;/h2&gt;
+&lt;h2 id=&#34;state-of-the-art-in-machine-learning:832cd3044e219d3853e412eb5856568b&#34;&gt;State Of the Art in Machine Learning&lt;/h2&gt;
 
 &lt;p&gt;Juste après la pause de midi, j&amp;rsquo;ai pu assister à la géniale présentation
 d&amp;rsquo;Olivier Grisel, &lt;a href=&#34;https://speakerdeck.com/ogrisel/the-state-of-deep-learning-in-2014&#34;&gt;The state of deep learning in
@@ -466,7 +463,7 @@ qu&amp;rsquo;il était possible de construire un programme super fort sur les je
 plus gros datacenters au monde et on leur donne gentiment toutes nos
 données. Ne devrait-on pas s&amp;rsquo;en inquiéter ?&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;CaliOpen, correspondance sécurisée&lt;/h2&gt;
+&lt;h2 id=&#34;caliopen-correspondance-sécurisée:832cd3044e219d3853e412eb5856568b&#34;&gt;CaliOpen, correspondance sécurisée&lt;/h2&gt;
 
 &lt;p&gt;La troisième conférence qui m&amp;rsquo;a vraiment marquée est la présentation de
 &lt;a href=&#34;https://www.caliopen.org/&#34;&gt;CaliOpen&lt;/a&gt;, par Laurent Chemla. L&amp;rsquo;objectif est de
@@ -484,7 +481,7 @@ bouger les choses et réussir à atteindre d&amp;rsquo;autres personnes que le c
 restreint des geeks. D&amp;rsquo;ailleurs, si vous êtes un développeur front, sachez que
 Caliopen aurait bien besoin de votre aide.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;conclusion:832cd3044e219d3853e412eb5856568b&#34;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;J&amp;rsquo;ai apprécié cette édition de l&amp;rsquo;Open World Forum. Félicitations à Florent
 Zara, le président de cette édition, et aux différents responsable de
@@ -503,8 +500,8 @@ futur.&lt;/p&gt;
     <item>
       <title>When one sidekiq instance is not enough</title>
       <link>http://blog.menfin.info/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/</link>
-      <pubDate>Tue, 14 Oct 2014 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/</guid>
       <description>&lt;p&gt;In the Ruby world, there was a popular gem for queueing jobs: resque. With one
 call to a ruby method, you can put a job in redis. And a daemon, called a
@@ -554,8 +551,8 @@ possible to use more than one core, even on MRI.&lt;/p&gt;
     <item>
       <title>5 links for a rainy day</title>
       <link>http://blog.menfin.info/posts/2014-10-12-some-links-for-a-rainy-day/</link>
-      <pubDate>Sun, 12 Oct 2014 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sun, 12 Oct 2014 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2014-10-12-some-links-for-a-rainy-day/</guid>
       <description>
 
@@ -563,7 +560,7 @@ possible to use more than one core, even on MRI.&lt;/p&gt;
 Yeah, again ! And to test it, what&amp;rsquo;s better than publishing a new post? So,
 I&amp;rsquo;ve put here 5 links to keep you busy too:&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;hugo-http-gohugo-io:0f19108954ca85552c0f69a3099a9fa3&#34;&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;Hugo is a fast and modern static website engine. You write some markdown, you
 run hugo and it generates a static website, that you can host on github pages
@@ -574,26 +571,26 @@ powerful than Jekyll. &lt;a href=&#34;http://gohugo.io/overview/introduction&#34
 is nice. Since it&amp;rsquo;s written in golang, it&amp;rsquo;s very fast. And the live reload is
 so cool!&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;&lt;a href=&#34;https://github.com/t4t5/sweetalert&#34;&gt;Sweet Alert&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;sweet-alert-https-github-com-t4t5-sweetalert:0f19108954ca85552c0f69a3099a9fa3&#34;&gt;&lt;a href=&#34;https://github.com/t4t5/sweetalert&#34;&gt;Sweet Alert&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;JavaScript&amp;rsquo;s alert and confirm are common. But they are ugly. It was time to
 have a replacement for them. This JS library is easy to install and use. And
 it offers a nice Wow effect for your users.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;&lt;a href=&#34;http://dotgo.sourcegraph.com/&#34;&gt;Live blogging of dotGo&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;live-blogging-of-dotgo-http-dotgo-sourcegraph-com:0f19108954ca85552c0f69a3099a9fa3&#34;&gt;&lt;a href=&#34;http://dotgo.sourcegraph.com/&#34;&gt;Live blogging of dotGo&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;Sourcegraph has live blogged the dotGo conference. If you are interested by
 golang, you should read it. You can learn some news, like the new
 &lt;a href=&#34;https://code.google.com/p/go/source/browse/cmd/gorename/main.go?repo=tools&#34;&gt;gorename&lt;/a&gt;
 command.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;&lt;a href=&#34;https://www.facebook.com/notes/facebook-engineering/the-mature-optimization-handbook/10151784131623920&#34;&gt;The Mature Optimization Handbook&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;the-mature-optimization-handbook-https-www-facebook-com-notes-facebook-engineering-the-mature-optimization-handbook-10151784131623920:0f19108954ca85552c0f69a3099a9fa3&#34;&gt;&lt;a href=&#34;https://www.facebook.com/notes/facebook-engineering/the-mature-optimization-handbook/10151784131623920&#34;&gt;The Mature Optimization Handbook&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;Carlos Bueno, an engineer at Facebook, has written an handbook about when and
 how optimize our code. I&amp;rsquo;ve just read the first sections, but it seems like a
 very valuable read.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;&lt;a href=&#34;https://codefights.com/&#34;&gt;Code Fights&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;code-fights-https-codefights-com:0f19108954ca85552c0f69a3099a9fa3&#34;&gt;&lt;a href=&#34;https://codefights.com/&#34;&gt;Code Fights&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;This game has only one rule:&lt;/p&gt;
 
@@ -608,8 +605,8 @@ very valuable read.&lt;/p&gt;
     <item>
       <title>Changement de moteur pour ce blog</title>
       <link>http://blog.menfin.info/posts/2012-02-29-changement-de-moteur-pour-ce-blog/</link>
-      <pubDate>Wed, 29 Feb 2012 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Wed, 29 Feb 2012 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2012-02-29-changement-de-moteur-pour-ce-blog/</guid>
       <description>&lt;p&gt;Ce blog existe depuis quelques années maintenant &amp;ndash; 2006, ça ne me rajeunit
 pas ! Et jusque là, c&amp;rsquo;était un &lt;a href=&#34;http://fr.dotclear.org/&#34;&gt;dotclear&lt;/a&gt; hébergé
@@ -632,8 +629,8 @@ d&amp;rsquo;arriver ;-)&lt;/p&gt;
     <item>
       <title>Rails ou Sinatra ?</title>
       <link>http://blog.menfin.info/posts/2011-06-27-Rails-ou-sinatra/</link>
-      <pubDate>Mon, 27 Jun 2011 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Mon, 27 Jun 2011 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2011-06-27-Rails-ou-sinatra/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Ruby on Rails&lt;/a&gt; ou
 &lt;a href=&#34;http://www.sinatrarb.com/&#34;&gt;Sinatra&lt;/a&gt;, comment choisir entre les deux ? C&amp;rsquo;est
@@ -692,13 +689,12 @@ une souplesse incroyable pour les hackers confirmés.&lt;/p&gt;
     <item>
       <title>Nouveau joujou : Giada Slim n10</title>
       <link>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</link>
-      <pubDate>Sun, 21 Nov 2010 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sun, 21 Nov 2010 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2010-11-21-Nouveau-joujou-Giada-Slim-n10/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai acheté un &lt;a href=&#34;http://www.giadatech.com/index.php?app=product&amp;amp;act=show&amp;amp;id=37&#34;&gt;Giada Slim n10&lt;/a&gt;. Ça ressemble à ça :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/public/giada.jpg&#34; alt=&#34;Giada Slim n10&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/giada.jpg&#34; alt=&#34;Giada Slim n10&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;J&amp;rsquo;ai commencé à jouer avec en installant dessus :&lt;/p&gt;
 
@@ -724,8 +720,8 @@ une souplesse incroyable pour les hackers confirmés.&lt;/p&gt;
     <item>
       <title>Présentation rapide de Ruby 1.9 aux RMLL</title>
       <link>http://blog.menfin.info/posts/2010-07-11-presentation-rapide-de-ruby-19-aux-RMLL/</link>
-      <pubDate>Sun, 11 Jul 2010 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sun, 11 Jul 2010 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2010-07-11-presentation-rapide-de-ruby-19-aux-RMLL/</guid>
       <description>&lt;p&gt;Cette semaine, s&amp;rsquo;est tenue la 11ème édition des
 &lt;a href=&#34;http://2010.rmll.info/&#34;&gt;Rencontres Mondiales du Logiciel Libre&lt;/a&gt;
@@ -749,8 +745,8 @@ comme prévu.&lt;/p&gt;
     <item>
       <title>French_Rails compatible avec Rails3.0.0.beta4</title>
       <link>http://blog.menfin.info/posts/2010-06-09-frenchrails-compatible-avec-rails3/</link>
-      <pubDate>Wed, 09 Jun 2010 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Wed, 09 Jun 2010 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2010-06-09-frenchrails-compatible-avec-rails3/</guid>
       <description>&lt;p&gt;Une &lt;a href=&#34;http://weblog.rubyonrails.org/2010/6/8/rails-3-0-beta-4-now-rc-in-days&#34;&gt;nouvelle version beta de
 Rails3&lt;/a&gt;
@@ -765,8 +761,8 @@ corrigé ça et sorti une nouvelle version :
     <item>
       <title>Se fixer des objectifs SMART</title>
       <link>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</link>
-      <pubDate>Sun, 23 May 2010 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sun, 23 May 2010 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2010-05-23-objectifs-smart/</guid>
       <description>&lt;p&gt;Se fixer des objectifs est très souvent une bonne chose. Pour tirer pleinement profit de ces objectifs, il est important de bien les formuler. Pourtant, nous avons souvent tendance à nous contenter d&amp;rsquo;objectifs flous : je veux perdre du poids, je veux faire plus de sport, je veux manger plus sainement, etc. Il existe un truc qui pourra vous aider pour ça : les objectifs &lt;strong&gt;SMART&lt;/strong&gt;. Ce sont 5 critères qui vous forcent à vous poser les bonnes questions quand vous choisissez un objectif :&lt;/p&gt;
 
@@ -785,8 +781,8 @@ corrigé ça et sorti une nouvelle version :
     <item>
       <title>Discipline contre motivation</title>
       <link>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</link>
-      <pubDate>Sun, 28 Feb 2010 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sun, 28 Feb 2010 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</guid>
       <description>
 
@@ -797,7 +793,7 @@ Pourtant, au bout d&amp;rsquo;une semaine ou deux, vous constatez que c&amp;rsqu
 &lt;p&gt;Que s&amp;rsquo;est-il passé et comment faire en sorte de réussir la prochaine fois sont sûrement deux questions qui vous trottent dans la tête.
 Je ne prétends pas avoir toutes les réponses, mais je souhaite vous proposer une piste qui, je l&amp;rsquo;espère, pourra vous aider dans vos réflexions.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;La discipline&lt;/h3&gt;
+&lt;h3 id=&#34;la-discipline:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;La discipline&lt;/h3&gt;
 
 &lt;p&gt;Comme moi par le passé, vous vous êtes sûrement dit que prendre une nouvelle habitude ne devait pas être difficile.
 C&amp;rsquo;est juste une question de volonté et de discipline après tout.
@@ -812,14 +808,14 @@ Pour ma part, la réponse est invariablement bien peu (trop peu).&lt;/p&gt;
 Non, non et NON ! Il existe d&amp;rsquo;autres leviers qui vous permettront d&amp;rsquo;avancer.
 La motivation est l&amp;rsquo;un d&amp;rsquo;eux.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;La motivation&lt;/h3&gt;
+&lt;h3 id=&#34;la-motivation:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;La motivation&lt;/h3&gt;
 
 &lt;p&gt;La motivation, c&amp;rsquo;est un ensemble de moyens pour vous encourager à faire une action, quand se dire que « c&amp;rsquo;est la bonne chose à faire » ne suffit plus.
 Ce sont &lt;em&gt;les carottes&lt;/em&gt; pour vous faire avancer.
 Il existe de nombreux moyens pour se motiver, mais généralement ceux-ci rentrent dans l&amp;rsquo;un des deux thèmes suivants :
 apprécier l&amp;rsquo;activité en question et s&amp;rsquo;engager publiquement.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_2&#34;&gt;Apprécier l&amp;rsquo;activité&lt;/h4&gt;
+&lt;h4 id=&#34;apprécier-l-activité:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;Apprécier l&amp;rsquo;activité&lt;/h4&gt;
 
 &lt;p&gt;Il est évident que l&amp;rsquo;on aura beaucoup plus de facilités à faire une action à laquelle on prend du plaisir que si c&amp;rsquo;est une corvée.
 On peut ainsi chercher des éléments qui vont plaisir.
@@ -829,7 +825,7 @@ Par exemple, se mettre au footing peut ne être très plaisant au début, mais s
 Pour ma part, je suis un grand gourmand, et manger une barre céréales avant de faire du sport fait partie des choses que j&amp;rsquo;apprécie.
 Mettre une croix sur un &lt;a href=&#34;http://blog.menfin.info/post/2010/02/15/Se-motiver-avec-un-Seinfeld-Calendar&#34;&gt;Seinfeld Calendar&lt;/a&gt; a également un coté très gratifiant.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_3&#34;&gt;S&amp;rsquo;engager publiquement&lt;/h4&gt;
+&lt;h4 id=&#34;s-engager-publiquement:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;S&amp;rsquo;engager publiquement&lt;/h4&gt;
 
 &lt;p&gt;L&amp;rsquo;engagement public est également un moyen très efficace pour nous aider à tenir une résolution.
 L&amp;rsquo;idée est que nous détestons profondément ne pas tenir nos engagements, et nous pouvons nous servir de ça pour nous mettre un peu de pression (pas trop quand même), ce qui nous forcera à agir.&lt;/p&gt;

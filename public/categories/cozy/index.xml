@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Cozy on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/cozy/index.xml</link>
+    <title>Cozy on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/cozy/</link>
+    <description>Recent content in Cozy on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Wed, 16 Sep 2015 00:00:00 UTC</updated>
+    <lastBuildDate>Wed, 16 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/cozy/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Un aviateur se pose sur un nuage</title>
       <link>http://blog.menfin.info/posts/2015-09-16-un-aviateur-se-pose-sur-un-nuage/</link>
-      <pubDate>Wed, 16 Sep 2015 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2015-09-16-un-aviateur-se-pose-sur-un-nuage/</guid>
       <description>&lt;p&gt;Je suis actuellement le directeur technique d&amp;rsquo;af83, mais plus pour très
 longtemps. En effet, après 8 ans de bons et loyaux services, j&amp;rsquo;ai décidé de
@@ -41,8 +41,7 @@ d&amp;rsquo;écrire mon premier pilote d&amp;rsquo;imprimante (une imprimante th
 ticket de caisse, pour que les voyageurs puissent garder une trace de leur
 parcours).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://dev.af83.com/img/borne_ADP.jpg&#34; alt=&#34;Borne orientation voyageurs pour les Aéroports de Paris&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://dev.af83.com/img/borne_ADP.jpg&#34; alt=&#34;Borne orientation voyageurs pour les Aéroports de Paris&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Le dernier est le live de France Télévisions. Vous pouvez le voir dans la
 colonne de gauche de &lt;a href=&#34;http://www.francetvinfo.fr/&#34;&gt;francetvinfo&lt;/a&gt;. Sorti en
@@ -67,8 +66,8 @@ le potentiel pour arriver à changer les choses de ce côté-là.&lt;/p&gt;
     <item>
       <title>Sur un petit nuage, Cozy</title>
       <link>http://blog.menfin.info/posts/2015-07-01-sur-un-petit-nuage-cozy/</link>
-      <pubDate>Wed, 01 Jul 2015 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2015-07-01-sur-un-petit-nuage-cozy/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://cozy.io/fr/&#34;&gt;Cozy&lt;/a&gt; est un Cloud personnel que vous pouvez héberger,
 personnaliser et entièrement contrôler. Il permet de reprendre la main sur ses
@@ -80,8 +79,7 @@ projet Cozy depuis quelques temps. Avec &lt;a href=&#34;http://blog.cozycloud.cc
 sur le renseignement&lt;/a&gt;, j&amp;rsquo;ai
 sauté le pas et j&amp;rsquo;ai installé mon instance de Cozy.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/public/cozy.png&#34; alt=&#34;Logo de Cozy Cloud&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/cozy.png&#34; alt=&#34;Logo de Cozy Cloud&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;C&amp;rsquo;est un projet encore jeune. Dans ce billet, je vais détailler ce que j&amp;rsquo;aime
 et les choses que j&amp;rsquo;aimerais voir améliorées. Je risque de paraître difficile,
