@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Outils on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/outils/index.xml</link>
+    <title>Outils on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/outils/</link>
+    <description>Recent content in Outils on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Fri, 20 Mar 2015 00:00:00 UTC</updated>
+    <lastBuildDate>Fri, 20 Mar 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/outils/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ma config</title>
       <link>http://blog.menfin.info/posts/2015-03-20-ma-config/</link>
-      <pubDate>Fri, 20 Mar 2015 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2015-03-20-ma-config/</guid>
       <description>&lt;p&gt;Je suis un utilisateur de longue date de la ligne de commande, et de vim en
 particulier. J&amp;rsquo;essaye d&amp;rsquo;apprendre régulièrement de nouvelles choses (méthodes,
@@ -74,7 +74,7 @@ si ça vous intéresse).&lt;/p&gt;
 &lt;p&gt;Un autre truc que j&amp;rsquo;ai ajouté récemment dans mon fichier &lt;code&gt;~/.zshrc&lt;/code&gt; est la
 coloration des pages man :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;sh&#34;&gt;man() {
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;man() {
   env LESS_TERMCAP_mb=$&#39;\E[01;31m&#39; \
   LESS_TERMCAP_md=$&#39;\E[01;38;5;74m&#39; \
   LESS_TERMCAP_me=$&#39;\E[0m&#39; \
@@ -96,8 +96,8 @@ forcément beaucoup de commentaires, mais on peut y trouver des choses utiles.&l
     <item>
       <title>Le navigateur web Arora</title>
       <link>http://blog.menfin.info/posts/2008-12-02-la-navigateur-web-Aroha/</link>
-      <pubDate>Tue, 02 Dec 2008 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Tue, 02 Dec 2008 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2008-12-02-la-navigateur-web-Aroha/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai récemment eu besoin de résoudre des bugs sur &lt;a href=&#34;http://linuxfr.org/&#34;&gt;LinuxFr.org&lt;/a&gt; qui était lié au moteur javascript de Safari
 (les &lt;a href=&#34;https://linuxfr.org/tracker/883.html&#34;&gt;#883&lt;/a&gt; et &lt;a href=&#34;https://linuxfr.org/tracker/900.html&#34;&gt;#900&lt;/a&gt; si vous voulez tout savoir).
@@ -115,8 +115,8 @@ Bref, même si ce navigateur n&amp;rsquo;a rien de révolutionnaire, je suis bie
     <item>
       <title>Outils pour tracer des graphes</title>
       <link>http://blog.menfin.info/posts/2008-05-09-outils-pour-tracer-des-graphes/</link>
-      <pubDate>Fri, 09 May 2008 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Fri, 09 May 2008 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2008-05-09-outils-pour-tracer-des-graphes/</guid>
       <description>&lt;p&gt;Je cherche depuis un certain temps un outil pour tracer des graphes.
 En général, j&amp;rsquo;utilise la suite &lt;a href=&#34;http://www.graphviz.org/&#34;&gt;Graphviz&lt;/a&gt; pour faire cela.

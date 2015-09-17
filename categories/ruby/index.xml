@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Ruby on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/ruby/index.xml</link>
+    <title>Ruby on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/ruby/</link>
+    <description>Recent content in Ruby on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Tue, 14 Oct 2014 00:00:00 UTC</updated>
+    <lastBuildDate>Tue, 14 Oct 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>When one sidekiq instance is not enough</title>
       <link>http://blog.menfin.info/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/</link>
-      <pubDate>Tue, 14 Oct 2014 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2014-10-15-when-one-sidekiq-instance-is-not-enough/</guid>
       <description>&lt;p&gt;In the Ruby world, there was a popular gem for queueing jobs: resque. With one
 call to a ruby method, you can put a job in redis. And a daemon, called a
@@ -63,8 +63,8 @@ possible to use more than one core, even on MRI.&lt;/p&gt;
     <item>
       <title>Présentation rapide de Ruby 1.9 aux RMLL</title>
       <link>http://blog.menfin.info/posts/2010-07-11-presentation-rapide-de-ruby-19-aux-RMLL/</link>
-      <pubDate>Sun, 11 Jul 2010 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sun, 11 Jul 2010 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2010-07-11-presentation-rapide-de-ruby-19-aux-RMLL/</guid>
       <description>&lt;p&gt;Cette semaine, s&amp;rsquo;est tenue la 11ème édition des
 &lt;a href=&#34;http://2010.rmll.info/&#34;&gt;Rencontres Mondiales du Logiciel Libre&lt;/a&gt;
@@ -88,8 +88,8 @@ comme prévu.&lt;/p&gt;
     <item>
       <title>RubyflowFr, premiers retours</title>
       <link>http://blog.menfin.info/posts/2008-09-10-rubyflowfr-premiers-retours/</link>
-      <pubDate>Wed, 10 Sep 2008 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Wed, 10 Sep 2008 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2008-09-10-rubyflowfr-premiers-retours/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://flow.rubyfrance.org&#34;&gt;RubyflowFr&lt;/a&gt; est en ligne depuis une dizaine de jours.
 C&amp;rsquo;est l&amp;rsquo;occasion de faire un premier retour dessus :&lt;/p&gt;
@@ -110,8 +110,8 @@ Bref, cela démarre pas mal, même si j&amp;rsquo;aimerais bien que plus de pers
     <item>
       <title>RubyflowFr est en ligne</title>
       <link>http://blog.menfin.info/posts/2008-09-02-rubyflowfr-est-en-ligne/</link>
-      <pubDate>Tue, 02 Sep 2008 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Tue, 02 Sep 2008 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2008-09-02-rubyflowfr-est-en-ligne/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.rubyflow.com/&#34;&gt;Rubyflow&lt;/a&gt; est une application de publications de liens à destination de la communauté Ruby.
 Peter Cooper a libéré le code source de cette application, aussi &lt;a href=&#34;http://rubyfrance.org/&#34;&gt;Ruby France&lt;/a&gt; a décidé d&amp;rsquo;en sortir une version française destinée à la communauté française des rubyistes et railers.&lt;/p&gt;
@@ -125,8 +125,8 @@ Vous savez ce qu&amp;rsquo;il vous reste à faire ;)&lt;/p&gt;
     <item>
       <title>Dossier Ruby on Rails dans programmez</title>
       <link>http://blog.menfin.info/posts/2008-04-02-mon-article-dans-programmez/</link>
-      <pubDate>Wed, 02 Apr 2008 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Wed, 02 Apr 2008 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2008-04-02-mon-article-dans-programmez/</guid>
       <description>&lt;p&gt;La revue &lt;a href=&#34;http://www.programmez.com&#34;&gt;Programmez&lt;/a&gt; sort un dossier sur &lt;a href=&#34;http://www.rubyonrails.com&#34;&gt;Ruby on Rails&lt;/a&gt;.
 La &lt;a href=&#34;http://programmez.com/magazine_articles.php?id_article=1031&amp;amp;&amp;amp;titre=RUBY on Railq&#34;&gt;première partie de ce dossier&lt;/a&gt;
@@ -139,15 +139,15 @@ Vous n&amp;rsquo;aurez plus d&amp;rsquo;excuses pour ne pas suivre les règles d
     <item>
       <title>IRB, un outil à (re)découvrir</title>
       <link>http://blog.menfin.info/posts/2007-11-30-irbrc/</link>
-      <pubDate>Fri, 30 Nov 2007 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Fri, 30 Nov 2007 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2007-11-30-irbrc/</guid>
       <description>&lt;p&gt;IRB est un outil génial pour tester rapidement un truc en &lt;a href=&#34;http://www.ruby-lang.org/fr/&#34;&gt;Ruby&lt;/a&gt;.
 C&amp;rsquo;est une sorte d&amp;rsquo;interpréteur Ruby qui fonctionne comme un shell :
 vous tapez une ligne de Ruby, irb l&amp;rsquo;interprête et vous donne le résultat, vous tapez une autre ligne, irb l&amp;rsquo;interprête en tenant compte de la première ligne, et ainsi de suite.
 Voici par exemple ce que cela donne (avec en gras, ce que j&amp;rsquo;ai tapé) :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;&amp;gt; titi = 2 + 3
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;&amp;gt; titi = 2 + 3
 5
 &amp;gt; toto = titi * 4
 20
@@ -168,7 +168,7 @@ Voici par exemple ce que cela donne (avec en gras, ce que j&amp;rsquo;ai tapé) 
 &lt;a href=&#34;http://romeda.org/blog/2006/11/irbrc.html&#34;&gt;moi&lt;/a&gt;,
 je poste mon fichier de conf &lt;code&gt;.irbrc&lt;/code&gt; pour que chacun puisse s&amp;rsquo;en inspirer (et aussi pour le retrouver plus facilement quand je ne suis pas chez moi ;-)&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;ruby&#34;&gt;require &amp;quot;yaml&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;require &amp;quot;yaml&amp;quot;
 require &amp;quot;irb/completion&amp;quot;
 
 IRB.conf[:USE_REALINE] = true
