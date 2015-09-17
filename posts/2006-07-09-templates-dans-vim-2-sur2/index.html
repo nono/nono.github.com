@@ -14,6 +14,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
+<meta name="generator" content="Hugo 0.15-DEV" />
 
   <meta property="og:title" content="Templates dans vim 2 / 2" />
 <meta property="og:description" content="" />
@@ -23,18 +24,18 @@
 
 
   
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/base-min.css">
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
   
   
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
   
   
 
   <link rel="stylesheet" href="http://blog.menfin.info/css/redlounge.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
 
   
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
@@ -43,10 +44,13 @@
   
   <link href="" rel="alternate" type="application/rss+xml" title="M&#39;enfin ?!?" />
 
+    
   
-  <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/tomorrow-night-bright.min.css">
-  <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+
 
   
 
@@ -62,6 +66,8 @@
     <div class="sidebar pure-u-1 pure-u-md-1-4">
   <div class="header">
     
+
+	
 
     <h1 class="brand-title">M&#39;enfin ?!?</h1>
     <h2 class="brand-tagline">Some blah blah by Bruno Michel</h2>
@@ -79,6 +85,10 @@
     <div class="social-buttons">
       
         
+        <a href="https://www.twitter.com/brmichel" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
         <a href="https://github.com/nono" target="_blank"><i class='fa fa-github'></i></a>
         
       
@@ -88,10 +98,6 @@
       
         
         <a href="http://www.doyoubuzz.com/bruno-michel" target="_blank"><i class='fa fa-file-text-o'></i></a>
-        
-      
-        
-        <a href="https://www.twitter.com/brmichel" target="_blank"><i class='fa fa-twitter'></i></a>
         
       
       
@@ -128,9 +134,10 @@
             
 
 			
+			
 				<div class="post-categories">
 				
-					<a class="post-category post-category-vim" href="/categories/vim">Vim</a> 
+					<a class="post-category post-category-vim" href="http://blog.menfin.info/categories/vim">Vim</a>
 				
 				</div>
 			
@@ -142,7 +149,7 @@
             <p>Comme promis, nous allons donc voir comment avoir des templates un peu plus dynamiques. Le langage de script de vim n&rsquo;étant pas des plus sympathiques, je préfère appeler un programme externe.
 Pour cela, nous allons remplacer la ligne que nous avions insérée dans le fichier vimrc par celle-là :</p>
 
-<pre><code class="vim">au BufNewFile * 0r! ~/.vim/skeleton.rb
+<pre><code class="language-vim">au BufNewFile * 0r! ~/.vim/skeleton.rb
 </code></pre>
 
 <p>Ici, c&rsquo;est un script en ruby (<code>skeleton.rb</code>) qui est appelé.
@@ -155,7 +162,7 @@ Il suffit de rajouter <code>%:p</code> toujours à la me ligne du fichier vimrc.
 <p>Mais, <strong>ViM</strong> fait déjà de la détection de <em>filetype</em>, aussi il peut être intéressant de passer ce <em>filetype</em> à notre script.
 Pour cela, nous allons encore modifier notre ligne :</p>
 
-<pre><code class="vim">au BufNewFile * :exe(&quot;0r! ~/.vim/skeleton.rb %:p &quot; . &amp;filetype)
+<pre><code class="language-vim">au BufNewFile * :exe(&quot;0r! ~/.vim/skeleton.rb %:p &quot; . &amp;filetype)
 </code></pre>
 
 <p><strong>Note</strong> : comme il n&rsquo;est pas possible à ma connaissance de passer directement le filtype à la commande r!, je construit d&rsquo;abord la chaîne de cractère avec toute la commande et le filetype, puis je l&rsquo;éxécute.</p>
@@ -163,7 +170,7 @@ Pour cela, nous allons encore modifier notre ligne :</p>
 <p>Maintenant que nous pouvons appeller un script avec le chemin du fichier et son <em>filetype</em>, je pense qu&rsquo;on peut dire que c&rsquo;est gagné.
 Voici à titre d&rsquo;exemple le script que j&rsquo;utilise :</p>
 
-<pre><code class="ruby">#!/usr/bin/env ruby
+<pre><code class="language-ruby">#!/usr/bin/env ruby
 # Author: Bruno Michel &lt;bmichel@menfin.info&gt;
 # Licence: MIT &lt;http://www.opensource.org/licenses/mit-license.html&gt;
 
@@ -194,7 +201,7 @@ end
 <p>Ce script va chercher un fichier <code>.erb</code> dans le répertoire <code>~/.vim/skeleton</code> dont le nom correspond soit au nom du nouveau fichier, soit à son filetype.
 Et dans ce répertoire, on trouve, par exemple, <code>ruby.erb</code> :</p>
 
-<pre><code class="ruby">#!/usr/bin/env ruby
+<pre><code class="language-ruby">#!/usr/bin/env ruby
 # Author: Bruno Michel &lt;bmichel@menfin.info&gt;
 # Licence: MIT &lt;http://www.opensource.org/licenses/mit-license.html&gt;
 </code></pre>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Humour on M&#39;enfin ?!? </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.menfin.info/categories/humour/index.xml</link>
+    <title>Humour on M&#39;enfin ?!?</title>
+    <link>http://blog.menfin.info/categories/humour/</link>
+    <description>Recent content in Humour on M&#39;enfin ?!?</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <author>Bruno Michel</author>
-    
-    <updated>Sat, 25 Oct 2008 00:00:00 UTC</updated>
+    <lastBuildDate>Sat, 25 Oct 2008 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.menfin.info/categories/humour/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Recherches Google</title>
       <link>http://blog.menfin.info/posts/2008-10-25-recherches-google/</link>
-      <pubDate>Sat, 25 Oct 2008 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sat, 25 Oct 2008 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2008-10-25-recherches-google/</guid>
       <description>&lt;p&gt;Voici quelques recherches google qui ont amenées des personnes sur ce blog :&lt;/p&gt;
 
@@ -32,8 +32,8 @@
     <item>
       <title>SEPT RAISONS POUR LESQUELLES JE CONTINUE A UTILISER TEMPLEET ALORS QUE JE POURRAIS UTILISER RUBY ON RAILS</title>
       <link>http://blog.menfin.info/posts/2007-09-23-7-raisons-pour-continuer-avec-templeet/</link>
-      <pubDate>Sun, 23 Sep 2007 00:00:00 UTC</pubDate>
-      <author>Bruno Michel</author>
+      <pubDate>Sun, 23 Sep 2007 00:00:00 +0000</pubDate>
+      
       <guid>http://blog.menfin.info/posts/2007-09-23-7-raisons-pour-continuer-avec-templeet/</guid>
       <description>
 
@@ -44,7 +44,7 @@ C&amp;rsquo;est codé avec le merveilleux framework &lt;a href=&#34;http://templ
 Le site pourrait être refait avec &lt;a href=&#34;http://rubyonrails.com/&#34;&gt;Ruby On Rails&lt;/a&gt;,
 mais je vais vous expliquer en 7 raisons pourquoi je préfère Templeet.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;#1 - Templeet fait tout ce dont j&amp;rsquo;ai besoin&lt;/h2&gt;
+&lt;h2 id=&#34;1-templeet-fait-tout-ce-dont-j-ai-besoin:ae2b9c6347e53045dfd4a52fd31cde12&#34;&gt;#1 - Templeet fait tout ce dont j&amp;rsquo;ai besoin&lt;/h2&gt;
 
 &lt;p&gt;Qu&amp;rsquo;est-ce que Ruby on Rails peut faire que Templeet ne peut pas faire ?
 … &lt;em&gt;je réfléchis&lt;/em&gt; …
@@ -52,39 +52,39 @@ Bon, en fait, la liste est longue, mais est-ce que j&amp;rsquo;ai vraiment besoi
 C&amp;rsquo;est vrai qui se sert de Jabber, OpenID, de validation automatique de formulaire ou encore d&amp;rsquo;AJAX ?
 Sur LinuxFR.org, on utilise rien de tout ca, c&amp;rsquo;est donc que je n&amp;rsquo;en ai pas besoin.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;#2 - Les vrais hommes travaillent directement sur la prod&lt;/h2&gt;
+&lt;h2 id=&#34;2-les-vrais-hommes-travaillent-directement-sur-la-prod:ae2b9c6347e53045dfd4a52fd31cde12&#34;&gt;#2 - Les vrais hommes travaillent directement sur la prod&lt;/h2&gt;
 
 &lt;p&gt;Sur LinuxFR.org, on travaille directement sur le serveur de prod.
 On est des vrais hommes, on n&amp;rsquo;a pas besoin d&amp;rsquo;un serveur de dev.
 Puis, franchement, changer les habitudes du jour au lendemain, ce serait trop dur.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;#3 - La vie serait trop monotone sans les bugs templeet&lt;/h2&gt;
+&lt;h2 id=&#34;3-la-vie-serait-trop-monotone-sans-les-bugs-templeet:ae2b9c6347e53045dfd4a52fd31cde12&#34;&gt;#3 - La vie serait trop monotone sans les bugs templeet&lt;/h2&gt;
 
 &lt;p&gt;J&amp;rsquo;admire l&amp;rsquo;équipe qui développe Ruby on Rails,
 travailler en permanence sur du code testé et qui fonctionne correctement, ca doit lassant.
 Pour ma part, je préfère travailler avec les bugs de templeet, sans tests unitaires.
 C&amp;rsquo;est beaucoup plus joyeux :)&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;#4 - Templeet, c&amp;rsquo;est super performant&lt;/h2&gt;
+&lt;h2 id=&#34;4-templeet-c-est-super-performant:ae2b9c6347e53045dfd4a52fd31cde12&#34;&gt;#4 - Templeet, c&amp;rsquo;est super performant&lt;/h2&gt;
 
 &lt;p&gt;Vous ne me croyez pas ?
 Et pourtant, un benchmark a prouvé scientifiquement que Templeet est plus rapide qu&amp;rsquo;Apache :
 &lt;a href=&#34;https://linuxfr.org//2003/04/07/12001.html&#34;&gt;https://linuxfr.org//2003/04/07/12001.html&lt;/a&gt;
 Alors que Ruby on Rails, c&amp;rsquo;est bien connu depuis l&amp;rsquo;affaire twitter, ca scale pas.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;#5 - J&amp;rsquo;aime la syntaxe LISP&lt;/h2&gt;
+&lt;h2 id=&#34;5-j-aime-la-syntaxe-lisp:ae2b9c6347e53045dfd4a52fd31cde12&#34;&gt;#5 - J&amp;rsquo;aime la syntaxe LISP&lt;/h2&gt;
 
 &lt;p&gt;Avec Templeet, pas de risque de se reposer sur un éditeur de texte :
 je fais tout de tête, y compris compter les parenthèses.
 Ainsi, l&amp;rsquo;édition du code repose uniquement sur moi, et je peux faire exactement ce que je veux.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_5&#34;&gt;#6 - Configurer templeet, j&amp;rsquo;en rêve la nuit&lt;/h2&gt;
+&lt;h2 id=&#34;6-configurer-templeet-j-en-rêve-la-nuit:ae2b9c6347e53045dfd4a52fd31cde12&#34;&gt;#6 - Configurer templeet, j&amp;rsquo;en rêve la nuit&lt;/h2&gt;
 
 &lt;p&gt;A propos de ce que j&amp;rsquo;aime, la configuration de templeet, c&amp;rsquo;est que du bonheur !
 Je passe des nuits à imaginer des solutions pour éliminer ce &lt;code&gt;templeet.php&lt;/code&gt; de l&amp;rsquo;URL
 ou à réfléchir sur des algorithmes évolutionnaires pour ajuster les variables templeet.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_6&#34;&gt;#7 - Les sites web c&amp;rsquo;est comme les petites amies : je veux être le seul à m&amp;rsquo;en occupper&lt;/h2&gt;
+&lt;h2 id=&#34;7-les-sites-web-c-est-comme-les-petites-amies-je-veux-être-le-seul-à-m-en-occupper:ae2b9c6347e53045dfd4a52fd31cde12&#34;&gt;#7 - Les sites web c&amp;rsquo;est comme les petites amies : je veux être le seul à m&amp;rsquo;en occupper&lt;/h2&gt;
 
 &lt;p&gt;Avec templeet, je suis de n&amp;rsquo;avoir jamais à partager mon site web avec qui que ce soit.&lt;/p&gt;
 </description>
