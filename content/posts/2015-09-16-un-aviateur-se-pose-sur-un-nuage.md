@@ -14,7 +14,7 @@ allez me manquer.
 
 J'aurais beaucoup à raconter à ce sujet, trop pour un seul billet de blog et
 c'est un peu trop intime pour être exposé ici. Je vais plutôt vous parler de 3
-projets dont je suis très fiers.
+projets dont je suis très fier.
 
 Le premier, c'est le site de la Cantine, le premier espace de coworking
 parisien. J'ai codé ce site début 2008 avec Ruby on Rails, dans l'urgence, et
