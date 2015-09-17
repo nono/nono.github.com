@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Events on M&#39;enfin ?!?</title>
-    <link>http://blog.menfin.info/categories/events/</link>
-    <description>Recent content in Events on M&#39;enfin ?!?</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>Events on M&#39;enfin ?!? </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://blog.menfin.info/categories/events/index.xml</link>
     <language>fr-fr</language>
-    <lastBuildDate>Sat, 01 Nov 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.menfin.info/categories/events/index.xml" rel="self" type="application/rss+xml" />
+    <author>Bruno Michel</author>
+    
+    <updated>Sat, 01 Nov 2014 00:00:00 UTC</updated>
     
     <item>
       <title>Petite visite à l&#39;Open World Forum</title>
       <link>http://blog.menfin.info/posts/2014-11-01-petite-visite-a-l-open-world-forum/</link>
-      <pubDate>Sat, 01 Nov 2014 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sat, 01 Nov 2014 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
       <guid>http://blog.menfin.info/posts/2014-11-01-petite-visite-a-l-open-world-forum/</guid>
       <description>
 
@@ -31,7 +31,7 @@ sûr, certaines étaient meilleures que d&amp;rsquo;autres mais le niveau géné
 &lt;em&gt;tracks&lt;/em&gt; que j&amp;rsquo;ai suivis était très bon. En voici 3 qui m&amp;rsquo;ont particulièrement
 marqué.&lt;/p&gt;
 
-&lt;h2 id=&#34;software-development-analytics-for-the-masses:832cd3044e219d3853e412eb5856568b&#34;&gt;Software development analytics for the masses&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Software development analytics for the masses&lt;/h2&gt;
 
 &lt;p&gt;Le matin, j&amp;rsquo;ai été agréablement surpris par &lt;a href=&#34;http://bitergia.com/dashboards/&#34;&gt;les tableaux de bord produits par
 bitergia&lt;/a&gt; pour des projets Open-Source
@@ -47,7 +47,7 @@ tickets. Bref, c&amp;rsquo;est un très bon moyen de mieux comprendre des commun
 autour d&amp;rsquo;un projet Open-Source et de se poser les bonnes questions pour
 qu&amp;rsquo;elles puissent travailler plus efficacement.&lt;/p&gt;
 
-&lt;h2 id=&#34;state-of-the-art-in-machine-learning:832cd3044e219d3853e412eb5856568b&#34;&gt;State Of the Art in Machine Learning&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;State Of the Art in Machine Learning&lt;/h2&gt;
 
 &lt;p&gt;Juste après la pause de midi, j&amp;rsquo;ai pu assister à la géniale présentation
 d&amp;rsquo;Olivier Grisel, &lt;a href=&#34;https://speakerdeck.com/ogrisel/the-state-of-deep-learning-in-2014&#34;&gt;The state of deep learning in
@@ -78,7 +78,7 @@ qu&amp;rsquo;il était possible de construire un programme super fort sur les je
 plus gros datacenters au monde et on leur donne gentiment toutes nos
 données. Ne devrait-on pas s&amp;rsquo;en inquiéter ?&lt;/p&gt;
 
-&lt;h2 id=&#34;caliopen-correspondance-sécurisée:832cd3044e219d3853e412eb5856568b&#34;&gt;CaliOpen, correspondance sécurisée&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;CaliOpen, correspondance sécurisée&lt;/h2&gt;
 
 &lt;p&gt;La troisième conférence qui m&amp;rsquo;a vraiment marquée est la présentation de
 &lt;a href=&#34;https://www.caliopen.org/&#34;&gt;CaliOpen&lt;/a&gt;, par Laurent Chemla. L&amp;rsquo;objectif est de
@@ -96,7 +96,7 @@ bouger les choses et réussir à atteindre d&amp;rsquo;autres personnes que le c
 restreint des geeks. D&amp;rsquo;ailleurs, si vous êtes un développeur front, sachez que
 Caliopen aurait bien besoin de votre aide.&lt;/p&gt;
 
-&lt;h2 id=&#34;conclusion:832cd3044e219d3853e412eb5856568b&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;J&amp;rsquo;ai apprécié cette édition de l&amp;rsquo;Open World Forum. Félicitations à Florent
 Zara, le président de cette édition, et aux différents responsable de

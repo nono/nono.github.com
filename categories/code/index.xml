@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Code on M&#39;enfin ?!?</title>
-    <link>http://blog.menfin.info/categories/code/</link>
-    <description>Recent content in Code on M&#39;enfin ?!?</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>Code on M&#39;enfin ?!? </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://blog.menfin.info/categories/code/index.xml</link>
     <language>fr-fr</language>
-    <lastBuildDate>Fri, 13 Mar 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.menfin.info/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    <author>Bruno Michel</author>
+    
+    <updated>Fri, 13 Mar 2015 00:00:00 UTC</updated>
     
     <item>
       <title>Hash Code, fnf-detect et HTML Truncator</title>
       <link>http://blog.menfin.info/posts/2015-03-13-Hashcode-fnf-detect-et-html_truncator/</link>
-      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
-      
+      <pubDate>Fri, 13 Mar 2015 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
       <guid>http://blog.menfin.info/posts/2015-03-13-Hashcode-fnf-detect-et-html_truncator/</guid>
       <description>
 
-&lt;h2 id=&#34;hash-code-2015:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;Hash Code 2015&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Hash Code 2015&lt;/h2&gt;
 
 &lt;p&gt;Google France organise un concours nommé &lt;a href=&#34;https://sites.google.com/site/hashcode2015/home&#34;&gt;Hash
 Code&lt;/a&gt;. J&amp;rsquo;ai participé avec 2
@@ -68,7 +68,7 @@ finale.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Mise à jour&lt;/strong&gt; : oui, nous sommes bien qualifiés pour la finale !&lt;/p&gt;
 
-&lt;h2 id=&#34;fnf-detect:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;fnf-detect&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;fnf-detect&lt;/h2&gt;
 
 &lt;p&gt;J&amp;rsquo;ai joué un peu avec des bibliothèques de &lt;em&gt;Computer Vision&lt;/em&gt; la semaine
 dernière. Je me suis servi d&amp;rsquo;&lt;a href=&#34;http://opencv.org/&#34;&gt;OpenCV&lt;/a&gt; et de
@@ -83,7 +83,7 @@ lente, mais améliore grandement les résultats. Au final, nous allons utiliser
 cette seconde version pour un client, car cela donne un aspect mieux fini à
 leur produit.&lt;/p&gt;
 
-&lt;h2 id=&#34;html-truncator:3afc5d781eca6ba0109a465cf0c28b11&#34;&gt;HTML Truncator&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;HTML Truncator&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/nono/HTML-Truncator&#34;&gt;HTML Truncator&lt;/a&gt;, ma bibliothèque Ruby
 pour tronquer des textes présents sous forme d&amp;rsquo;HTML, semble être de plus en
