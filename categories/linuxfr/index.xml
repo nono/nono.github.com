@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linuxfr on M&#39;enfin ?!?</title>
-    <link>http://blog.menfin.info/categories/linuxfr/</link>
-    <description>Recent content in Linuxfr on M&#39;enfin ?!?</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>Linuxfr on M&#39;enfin ?!? </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://blog.menfin.info/categories/linuxfr/index.xml</link>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 08 Feb 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.menfin.info/categories/linuxfr/index.xml" rel="self" type="application/rss+xml" />
+    <author>Bruno Michel</author>
+    
+    <updated>Sun, 08 Feb 2009 00:00:00 UTC</updated>
     
     <item>
       <title>LinuxFr.org avec des commentaires et des réponses aux commentaires, et des réponses aux réponses, etc.</title>
       <link>http://blog.menfin.info/posts/2009-02-08-Commentaires-LinuxFr/</link>
-      <pubDate>Sun, 08 Feb 2009 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Feb 2009 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
       <guid>http://blog.menfin.info/posts/2009-02-08-Commentaires-LinuxFr/</guid>
       <description>&lt;p&gt;Les développements continuent d&amp;rsquo;avancer pour la refonte en Rails de &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFr.org&lt;/a&gt;.
 Je me suis attaqué à un refactoring des commentaires.
@@ -25,7 +25,7 @@ J&amp;rsquo;aurais pu compléter ce plugin, mais quitte à écrire du code, j&am
 le chemin matérialisé (« materialized path ») consiste à garder pour chaque commentaire la liste de tous les IDs des commentaires parents dans un champs sérialisé.
 J&amp;rsquo;ai fait cela aujourd&amp;rsquo;hui et j&amp;rsquo;ai déjà une version fonctionnelle.
 La preuve en images :
-&lt;a href=&#34;http://blog.menfin.info/public/LinuxFr_refonte_commentaires.png&#34;&gt;Les threads de commentaires en cours de développement&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;/public/LinuxFr_refonte_commentaires.png&#34;&gt;Les threads de commentaires en cours de développement&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Dans les jours qui viennent, je pense me concentrer sur les dépêches et les commentaires (nettoyer le code, rajouter les fonctionnalités vraiment essentielles, corriger un ou deux bugs que j&amp;rsquo;ai remarqué, etc.).
 Je pourrais ensuite me pencher sur une nouvelle partie (la tribune ou le tracker, je ne sais pas encore).&lt;/p&gt;
@@ -35,8 +35,8 @@ Je pourrais ensuite me pencher sur une nouvelle partie (la tribune ou le tracker
     <item>
       <title>Attention les yeux, ça va piquer !</title>
       <link>http://blog.menfin.info/posts/2009-02-04-Attention-les-yeux/</link>
-      <pubDate>Wed, 04 Feb 2009 00:00:00 +0000</pubDate>
-      
+      <pubDate>Wed, 04 Feb 2009 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
       <guid>http://blog.menfin.info/posts/2009-02-04-Attention-les-yeux/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai repris mes développements sur LinuxFr.org, avec comme règle, d&amp;rsquo;en faire un peu tous les jours.
 Pour le moment, cela marche pas trop mal.
@@ -46,7 +46,7 @@ Pourvu que ça dure.&lt;/p&gt;
 &lt;p&gt;Sinon, je n&amp;rsquo;avais pas écrit la moindre de ligne de CSS jusque hier, et je commençais sérieusement à m&amp;rsquo;y perdre dans les différents blocs et balises qui structurent les pages.
 J&amp;rsquo;ai donc commencé à faire une CSS temporaire qui me servira juste pour le développement.
 Voici une capture de ce que cela donne (attention les yeux) :
-&lt;a href=&#34;http://blog.menfin.info/public/LinuxFr_refonte_rails.png&#34;&gt;Premier screenshot de la refonte de LinuxFr.org en Rails&lt;/a&gt;
+&lt;a href=&#34;/public/LinuxFr_refonte_rails.png&#34;&gt;Premier screenshot de la refonte de LinuxFr.org en Rails&lt;/a&gt;
 Je vous rassure, je ne compte pas garder la moindre ligne de cette feuille de style pour la version finale.
 En fait, j&amp;rsquo;espère bien ne pas avoir à faire la feuille de style finale, je ne suis pas très doué pour ça.&lt;/p&gt;
 </description>
@@ -55,8 +55,8 @@ En fait, j&amp;rsquo;espère bien ne pas avoir à faire la feuille de style fina
     <item>
       <title>LinuxFr.org sur des Rails</title>
       <link>http://blog.menfin.info/posts/2009-01-19-LinuxFr.org-sur-des-rails/</link>
-      <pubDate>Mon, 19 Jan 2009 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 19 Jan 2009 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
       <guid>http://blog.menfin.info/posts/2009-01-19-LinuxFr.org-sur-des-rails/</guid>
       <description>&lt;p&gt;Pour 2009, je n&amp;rsquo;ai pris qu&amp;rsquo;une bonne résolution, mais elle est de taille.
 Ceux qui ont lu &lt;a href=&#34;http://linuxfr.org/~etix/27721.html&#34;&gt;ce journal sur LinuxFr.org&lt;/a&gt; savent déjà en quoi elle consiste.
@@ -80,26 +80,26 @@ Je vais tout faire pour éviter ces périodes creuses, car le seul moyen de sort
     <item>
       <title>LinuxFR.org a dix ans, soirée Firefox 3 et autres joyeusetés</title>
       <link>http://blog.menfin.info/posts/2008-06-28-linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes/</link>
-      <pubDate>Sat, 28 Jun 2008 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sat, 28 Jun 2008 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
       <guid>http://blog.menfin.info/posts/2008-06-28-linuxfr-a-10-ans-soiree-fx3-et-autres-joyeusetes/</guid>
       <description>
 
 &lt;p&gt;Je n&amp;rsquo;ai pas pour habitude de faire des billets en vrac, mais ce sera exceptionnellement le cas.
 Je souhaite en effet vous parler de plusieurs points qui n&amp;rsquo;attendront pas :&lt;/p&gt;
 
-&lt;h2 id=&#34;linuxfr-a-10-ans:2d74b9e1016c75dcc50cd4af0516b7e8&#34;&gt;LinuxFR a 10 ans !&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;LinuxFR a 10 ans !&lt;/h2&gt;
 
 &lt;p&gt;Hé oui, c&amp;rsquo;est aujourd&amp;rsquo;hui, le 28 juin, que &lt;a href=&#34;http://linuxfr.org&#34;&gt;LinuxFR&lt;/a&gt; fête &lt;a href=&#34;https://linuxfr.org/2008/06/28/24276.html&#34;&gt;10 ans de dépêches, journaux et autres informations autour de Linux et des Logiciels Libres&lt;/a&gt;.
 J&amp;rsquo;espère que LinuxFR pourra continuer à animer la vie de la communauté du Logiciel Libre pour encore quelques années.&lt;/p&gt;
 
-&lt;h2 id=&#34;soirée-firefox-3:2d74b9e1016c75dcc50cd4af0516b7e8&#34;&gt;Soirée Firefox 3&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Soirée Firefox 3&lt;/h2&gt;
 
 &lt;p&gt;Hier soir avait lieu la soirée Firefox 3.
 Je dois avouer que j&amp;rsquo;ai été déçu par la soirée : peu de monde, pas de musique, l&amp;rsquo;ambiance n&amp;rsquo;était pas au rendez-vous :/
 &lt;a href=&#34;http://standblog.org/&#34;&gt;Tristan Nitot&lt;/a&gt; a pris &lt;a href=&#34;http://www.flickr.com/photos/nitot/sets/72157605857467802/&#34;&gt;des photos de la soirée&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;rmll-du-1er-au-5-juillet:2d74b9e1016c75dcc50cd4af0516b7e8&#34;&gt;RMLL du 1er au 5 juillet&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;RMLL du 1er au 5 juillet&lt;/h2&gt;
 
 &lt;p&gt;La semaine prochaine, ce sera &lt;a href=&#34;Rencontre Mondiale du Logiciel Libre&#34;&gt;RMLL&lt;/a&gt;.
 Ca se passe à Mont-de-Marsan, et j&amp;rsquo;y serais pour tenir le stand de &lt;a href=&#34;http://rubyfrance.org/&#34;&gt;Ruby France&lt;/a&gt; et donner &lt;a href=&#34;http://2008.rmll.info/10-ans-de-LinuxFR-org.html&#34;&gt;une conférence sur LinuxFR&lt;/a&gt;.
@@ -107,7 +107,7 @@ J&amp;rsquo;espère y croiser des lecteurs de mon blog ;)&lt;/p&gt;
 
 &lt;p&gt;Un gros merci à &lt;a href=&#34;http://www.af83.com&#34;&gt;AF83&lt;/a&gt; qui me laisse y aller pendant mes jours de boulot.&lt;/p&gt;
 
-&lt;h2 id=&#34;do-you-buzz:2d74b9e1016c75dcc50cd4af0516b7e8&#34;&gt;Do You Buzz&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Do You Buzz&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.doyoubuzz.com/&#34;&gt;Do You Buzz&lt;/a&gt; est un nouveau service en ligne pour publier son CV.
 Chose intéressante, c&amp;rsquo;est le premier site développé avec le framework &lt;a href=&#34;http://turb.ulenc.es/&#34;&gt;Turbulences&lt;/a&gt; en dehors d&amp;rsquo;AF83.&lt;/p&gt;

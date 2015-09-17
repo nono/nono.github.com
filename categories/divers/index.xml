@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Divers on M&#39;enfin ?!?</title>
-    <link>http://blog.menfin.info/categories/divers/</link>
-    <description>Recent content in Divers on M&#39;enfin ?!?</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>Divers on M&#39;enfin ?!? </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://blog.menfin.info/categories/divers/index.xml</link>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 13 Dec 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.menfin.info/categories/divers/index.xml" rel="self" type="application/rss+xml" />
+    <author>Bruno Michel</author>
+    
+    <updated>Sun, 13 Dec 2009 00:00:00 UTC</updated>
     
     <item>
       <title>Je m&#39;interroge sur twitter</title>
       <link>http://blog.menfin.info/posts/2009-12-13-je-m-interroge-sur-twitter/</link>
-      <pubDate>Sun, 13 Dec 2009 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 13 Dec 2009 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
       <guid>http://blog.menfin.info/posts/2009-12-13-je-m-interroge-sur-twitter/</guid>
       <description>
 
 &lt;p&gt;Je connais &lt;a href=&#34;http://twitter.com&#34;&gt;Twitter&lt;/a&gt; depuis longtemps, mais je n&amp;rsquo;ai jamais senti le besoin de m&amp;rsquo;y inscrire.
 Et pourtant, récemment, j&amp;rsquo;ai créé &lt;a href=&#34;http://twitter.com/brmichel&#34;&gt;un compte twitter&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;pourquoi:b5abed3e6edad67f55c6d6c5a872a670&#34;&gt;Pourquoi ?&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Pourquoi ?&lt;/h2&gt;
 
 &lt;p&gt;Je n&amp;rsquo;ai pas eu une soudaine révélation sur twitter.
 Je ne vois pas d&amp;rsquo;intérêt particulier à twitter, comparé aux autres moyens de communications à ma disposition.
@@ -35,7 +35,7 @@ On m&amp;rsquo;a fait remarquer que le meilleur moyen de découvrir twitter est 
 &lt;p&gt;Twitter is like sex. You can read all the stuff (or look at it) about sex all you want, but if you’ve never had it, you simply have no idea what it’s like.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;et-alors:b5abed3e6edad67f55c6d6c5a872a670&#34;&gt;Et alors ?&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Et alors ?&lt;/h2&gt;
 
 &lt;p&gt;OK, j&amp;rsquo;ai donc créé un compte twitter et j&amp;rsquo;ai commencé à twitter.
 Mais ai-je été touché par la grâce divine et suis-je devenu un fervent défenseur du twit ?&lt;/p&gt;
@@ -57,8 +57,8 @@ Pour le moment, l&amp;rsquo;usage que j&amp;rsquo;en fais est très proche de l&
     <item>
       <title>The broken window theory</title>
       <link>http://blog.menfin.info/posts/2008-12-09-The-broken-window-theory/</link>
-      <pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate>
-      
+      <pubDate>Tue, 09 Dec 2008 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
       <guid>http://blog.menfin.info/posts/2008-12-09-The-broken-window-theory/</guid>
       <description>&lt;p&gt;La théorie des fenêtres cassées (« The broken window theory ») a inspiré les forces de police de New York et d&amp;rsquo;autres villes importantes pour lutter contre la criminalité.&lt;/p&gt;
 
@@ -82,8 +82,8 @@ Le même développeur qui aurait une base de code propre, sans &lt;em&gt;fenêtr
     <item>
       <title>Portrait of a N00b</title>
       <link>http://blog.menfin.info/posts/2008-02-12-Portrait-of-a-noob/</link>
-      <pubDate>Tue, 12 Feb 2008 00:00:00 +0000</pubDate>
-      
+      <pubDate>Tue, 12 Feb 2008 00:00:00 UTC</pubDate>
+      <author>Bruno Michel</author>
       <guid>http://blog.menfin.info/posts/2008-02-12-Portrait-of-a-noob/</guid>
       <description>&lt;p&gt;Steve Yegge, un blogger influent qui travaille chez Google, a posté un article
 intitulé « &lt;a href=&#34;http://steve-yegge.blogspot.com/2008/02/portrait-of-n00b.html&#34;&gt;Portrait of a N00b&lt;/a&gt; ».
