@@ -6,8 +6,59 @@
     <description>Recent content in Posts on M&#39;enfin ?!?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Wed, 16 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 May 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.menfin.info/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>J&#39;ai enfin reçu mon librem</title>
+      <link>http://blog.menfin.info/posts/2016-05-25-Enfin-mon-librem/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2016-05-25-Enfin-mon-librem/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai commandé en septembre 2015 un ordinateur portable
+&lt;a href=&#34;https://puri.sm/librem-15/&#34;&gt;Librem 15&amp;rdquo;&lt;/a&gt; de la marque Purism. Et depuis,
+l&amp;rsquo;attente fût très longue. En effet, ce n&amp;rsquo;était pas une commande classique
+mais du &lt;em&gt;crowd-funding&lt;/em&gt; et Purism a subi beaucoup de déconvenues avec ses
+fournisseurs, ce qui a allongé très fortement le délai de fabrication. Mais
+j&amp;rsquo;ai finalement reçu mon ordinateur Et voici mes premières impressions toute
+fraîche.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/librem.jpg&#34; alt=&#34;Librem 15&amp;quot; de Purism&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Côté packaging, on pourrait faire mieux. Le carton n&amp;rsquo;est pas spécialement
+joli, et dedans il y a juste l&amp;rsquo;ordinateur et son chargeur, aucun autre cable,
+ni la moindre notice ou explication sur la garantie. Bon, personnellement, ça
+ne me dérange pas, mais ça fait un peu bizarre à l&amp;rsquo;ouverture.&lt;/p&gt;
+
+&lt;p&gt;Ensuite, je déballe l&amp;rsquo;ordinateur. Sa taille est tout à fait convenable, fin
+comme beaucoup de portables modernes. Par contre, pour le poids, c&amp;rsquo;est plus
+lourd que ce que je m&amp;rsquo;attendais.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;écran mat a l&amp;rsquo;air très confortable (même si je n&amp;rsquo;ai pas encore passé
+beaucoup de temps dessus). Pareil pour le clavier, et la possibilité de le
+rétro-éclairer est cool. Je regrette l&amp;rsquo;absence de port RJ45, même si c&amp;rsquo;est de
+plus en plus fréquent sur les portables à cause de leur finesse. Côté
+performances, avec un core i7 et un disque SSD, pas de soucis, ça va vite.&lt;/p&gt;
+
+&lt;p&gt;Il vient pré-installé avec &lt;a href=&#34;https://puri.sm/pureos/&#34;&gt;Pure OS&lt;/a&gt;, un fork de
+Debian Testing avec les drivers qui vont bien. Bon, les dépôts de Debian ne
+sont pas activés par défaut et, du coup, on n&amp;rsquo;a pas accès à grand chose (&lt;code&gt;apt
+install git&lt;/code&gt; va échouer par exemple). Bref, ça m&amp;rsquo;a l&amp;rsquo;air d&amp;rsquo;être plutôt une
+distribution gadget et j&amp;rsquo;ai préféré revenir à une xubuntu 16.04. Le matériel
+fonctionne directement. Par contre, le touchpad n&amp;rsquo;a plus l&amp;rsquo;air de prendre en
+charge le scroll. Va falloir que j&amp;rsquo;aille voir du côté de
+&lt;a href=&#34;https://github.com/kylerankin/psmouse-byd-dkms&#34;&gt;https://github.com/kylerankin/psmouse-byd-dkms&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pour la batterie, j&amp;rsquo;ai tenu 5 ou 6h en installant pas mal de choses, ce qui
+est plutôt gourmand en ressources. Mais c&amp;rsquo;est trop tôt pour donner un avis.&lt;/p&gt;
+
+&lt;p&gt;Au final, j&amp;rsquo;ai un avis mitigé. On verra comment le librem tient la route. Côté
+positif, c&amp;rsquo;est un ordinateur moderne, avec de bons clavier et écran, fait par
+une boîte qui pousse pour du code libre. Côté négatif, attendre aussi
+longtemps pour un portable, ça fait mal, et il coûte cher (surtout avec les
+taxes françaises en supplément du prix public annoncé).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Un aviateur se pose sur un nuage</title>
@@ -775,70 +826,6 @@ corrigé ça et sorti une nouvelle version :
 &lt;/ul&gt;
 
 &lt;p&gt;Voilà, j&amp;rsquo;espère que ces 5 critères vous permettront de mieux cerner vos objectifs, et d&amp;rsquo;augmenter ainsi les chances de les réussir.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Discipline contre motivation</title>
-      <link>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</link>
-      <pubDate>Sun, 28 Feb 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.menfin.info/posts/2010-02-28-discipline-contre-motivation/</guid>
-      <description>
-
-&lt;p&gt;Comme beaucoup de personnes, il vous est arrivé d&amp;rsquo;essayer de prendre de nouvelles habitudes.
-Ces résolutions vous semblaient être les bonnes choses, et avec un peu de discipline, ça n&amp;rsquo;aurait pas dû être difficile de les tenir.
-Pourtant, au bout d&amp;rsquo;une semaine ou deux, vous constatez que c&amp;rsquo;est un échec.&lt;/p&gt;
-
-&lt;p&gt;Que s&amp;rsquo;est-il passé et comment faire en sorte de réussir la prochaine fois sont sûrement deux questions qui vous trottent dans la tête.
-Je ne prétends pas avoir toutes les réponses, mais je souhaite vous proposer une piste qui, je l&amp;rsquo;espère, pourra vous aider dans vos réflexions.&lt;/p&gt;
-
-&lt;h3 id=&#34;la-discipline:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;La discipline&lt;/h3&gt;
-
-&lt;p&gt;Comme moi par le passé, vous vous êtes sûrement dit que prendre une nouvelle habitude ne devait pas être difficile.
-C&amp;rsquo;est juste une question de volonté et de discipline après tout.
-Et c&amp;rsquo;est justement là que le bât blesse.&lt;/p&gt;
-
-&lt;p&gt;Nous n&amp;rsquo;avons qu&amp;rsquo;une quantité très limitée de volonté que nous pouvons utiliser chaque jour.
-La majeure partie du temps, nous nous reposons sur des habitudes ou nous faisons des choses plaisantes qui ne demande aucune volonté.
-Demandez-vous combien de fois avez-vous réellement fait preuve de volonté aujourd&amp;rsquo;hui ou hier ?
-Pour ma part, la réponse est invariablement bien peu (trop peu).&lt;/p&gt;
-
-&lt;p&gt;Alors, est-on condamné à ne pouvoir faire que très peu de nouvelles choses, et à faire ça dans la douleur ?
-Non, non et NON ! Il existe d&amp;rsquo;autres leviers qui vous permettront d&amp;rsquo;avancer.
-La motivation est l&amp;rsquo;un d&amp;rsquo;eux.&lt;/p&gt;
-
-&lt;h3 id=&#34;la-motivation:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;La motivation&lt;/h3&gt;
-
-&lt;p&gt;La motivation, c&amp;rsquo;est un ensemble de moyens pour vous encourager à faire une action, quand se dire que « c&amp;rsquo;est la bonne chose à faire » ne suffit plus.
-Ce sont &lt;em&gt;les carottes&lt;/em&gt; pour vous faire avancer.
-Il existe de nombreux moyens pour se motiver, mais généralement ceux-ci rentrent dans l&amp;rsquo;un des deux thèmes suivants :
-apprécier l&amp;rsquo;activité en question et s&amp;rsquo;engager publiquement.&lt;/p&gt;
-
-&lt;h4 id=&#34;apprécier-l-activité:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;Apprécier l&amp;rsquo;activité&lt;/h4&gt;
-
-&lt;p&gt;Il est évident que l&amp;rsquo;on aura beaucoup plus de facilités à faire une action à laquelle on prend du plaisir que si c&amp;rsquo;est une corvée.
-On peut ainsi chercher des éléments qui vont plaisir.
-Par exemple, se mettre au footing peut ne être très plaisant au début, mais si vous accompagnez votre séance de footing par votre album musical préféré sur un lecteur mp3, cela la rendra plus appréciable.&lt;/p&gt;
-
-&lt;p&gt;Si malgré ça, vous avez du mal à rendre l&amp;rsquo;activité elle-même agréable, vous pouvez compenser en vous offrant une récompense.
-Pour ma part, je suis un grand gourmand, et manger une barre céréales avant de faire du sport fait partie des choses que j&amp;rsquo;apprécie.
-Mettre une croix sur un &lt;a href=&#34;http://blog.menfin.info/post/2010/02/15/Se-motiver-avec-un-Seinfeld-Calendar&#34;&gt;Seinfeld Calendar&lt;/a&gt; a également un coté très gratifiant.&lt;/p&gt;
-
-&lt;h4 id=&#34;s-engager-publiquement:2cc2ed93f50311cc6a17aa145a771539&#34;&gt;S&amp;rsquo;engager publiquement&lt;/h4&gt;
-
-&lt;p&gt;L&amp;rsquo;engagement public est également un moyen très efficace pour nous aider à tenir une résolution.
-L&amp;rsquo;idée est que nous détestons profondément ne pas tenir nos engagements, et nous pouvons nous servir de ça pour nous mettre un peu de pression (pas trop quand même), ce qui nous forcera à agir.&lt;/p&gt;
-
-&lt;p&gt;Par exemple, parler à tous vos collègues de votre nouvelle résolution vous obligera à vous y tenir, car ils reviendront vers vous pour en parler.
-Et la crainte de la honte de ne pas avoir tenu ses engagements est une source de motivation très puissante.&lt;/p&gt;
-
-&lt;p&gt;Parler de sa résolution sur son blog ou sur un forum spécialisé peut également une approche très efficace.
-Vous vous sentirez engagé à donner régulièrement des nouvelles, et vous aurez peut-être la chance d&amp;rsquo;avoir des conseils dans les périodes difficiles.&lt;/p&gt;
-
-&lt;p&gt;Pour conclure, je vous encourage à essayer de trouver des éléments de motivation avant d&amp;rsquo;entreprendre une nouvelle habitude.
-Une méthode pour cela est le &lt;a href=&#34;http://www.couchet.org/blog/index.php5?post/2009/12/30/408-le-guide-pour-tenir-nos-resolutions-de-nouvel-an&#34;&gt;le guide pour tenir nos résolutions de nouvel an&lt;/a&gt;.
-Et si vous souhaitez creuser la question de la motivation, il existe un ebook, &lt;a href=&#34;http://themotivationhandbook.com/&#34;&gt;The essential motivation handbook&lt;/a&gt;, très complet sur le sujet, au prix de 15$ (soit environ 11€).&lt;/p&gt;
 </description>
     </item>
     

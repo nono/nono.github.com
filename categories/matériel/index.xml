@@ -6,8 +6,59 @@
     <description>Recent content in Matériel on M&#39;enfin ?!?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 21 Nov 2010 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 May 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.menfin.info/categories/mat%C3%A9riel/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>J&#39;ai enfin reçu mon librem</title>
+      <link>http://blog.menfin.info/posts/2016-05-25-Enfin-mon-librem/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.menfin.info/posts/2016-05-25-Enfin-mon-librem/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai commandé en septembre 2015 un ordinateur portable
+&lt;a href=&#34;https://puri.sm/librem-15/&#34;&gt;Librem 15&amp;rdquo;&lt;/a&gt; de la marque Purism. Et depuis,
+l&amp;rsquo;attente fût très longue. En effet, ce n&amp;rsquo;était pas une commande classique
+mais du &lt;em&gt;crowd-funding&lt;/em&gt; et Purism a subi beaucoup de déconvenues avec ses
+fournisseurs, ce qui a allongé très fortement le délai de fabrication. Mais
+j&amp;rsquo;ai finalement reçu mon ordinateur Et voici mes premières impressions toute
+fraîche.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.menfin.info/public/librem.jpg&#34; alt=&#34;Librem 15&amp;quot; de Purism&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Côté packaging, on pourrait faire mieux. Le carton n&amp;rsquo;est pas spécialement
+joli, et dedans il y a juste l&amp;rsquo;ordinateur et son chargeur, aucun autre cable,
+ni la moindre notice ou explication sur la garantie. Bon, personnellement, ça
+ne me dérange pas, mais ça fait un peu bizarre à l&amp;rsquo;ouverture.&lt;/p&gt;
+
+&lt;p&gt;Ensuite, je déballe l&amp;rsquo;ordinateur. Sa taille est tout à fait convenable, fin
+comme beaucoup de portables modernes. Par contre, pour le poids, c&amp;rsquo;est plus
+lourd que ce que je m&amp;rsquo;attendais.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;écran mat a l&amp;rsquo;air très confortable (même si je n&amp;rsquo;ai pas encore passé
+beaucoup de temps dessus). Pareil pour le clavier, et la possibilité de le
+rétro-éclairer est cool. Je regrette l&amp;rsquo;absence de port RJ45, même si c&amp;rsquo;est de
+plus en plus fréquent sur les portables à cause de leur finesse. Côté
+performances, avec un core i7 et un disque SSD, pas de soucis, ça va vite.&lt;/p&gt;
+
+&lt;p&gt;Il vient pré-installé avec &lt;a href=&#34;https://puri.sm/pureos/&#34;&gt;Pure OS&lt;/a&gt;, un fork de
+Debian Testing avec les drivers qui vont bien. Bon, les dépôts de Debian ne
+sont pas activés par défaut et, du coup, on n&amp;rsquo;a pas accès à grand chose (&lt;code&gt;apt
+install git&lt;/code&gt; va échouer par exemple). Bref, ça m&amp;rsquo;a l&amp;rsquo;air d&amp;rsquo;être plutôt une
+distribution gadget et j&amp;rsquo;ai préféré revenir à une xubuntu 16.04. Le matériel
+fonctionne directement. Par contre, le touchpad n&amp;rsquo;a plus l&amp;rsquo;air de prendre en
+charge le scroll. Va falloir que j&amp;rsquo;aille voir du côté de
+&lt;a href=&#34;https://github.com/kylerankin/psmouse-byd-dkms&#34;&gt;https://github.com/kylerankin/psmouse-byd-dkms&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pour la batterie, j&amp;rsquo;ai tenu 5 ou 6h en installant pas mal de choses, ce qui
+est plutôt gourmand en ressources. Mais c&amp;rsquo;est trop tôt pour donner un avis.&lt;/p&gt;
+
+&lt;p&gt;Au final, j&amp;rsquo;ai un avis mitigé. On verra comment le librem tient la route. Côté
+positif, c&amp;rsquo;est un ordinateur moderne, avec de bons clavier et écran, fait par
+une boîte qui pousse pour du code libre. Côté négatif, attendre aussi
+longtemps pour un portable, ça fait mal, et il coûte cher (surtout avec les
+taxes françaises en supplément du prix public annoncé).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Nouveau joujou : Giada Slim n10</title>
