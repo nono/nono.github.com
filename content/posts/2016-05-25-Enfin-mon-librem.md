@@ -47,3 +47,15 @@ positif, c'est un ordinateur moderne, avec de bons clavier et écran, fait par
 une boîte qui pousse pour du code libre. Côté négatif, attendre aussi
 longtemps pour un portable, ça fait mal, et il coûte cher (surtout avec les
 taxes françaises en supplément du prix public annoncé).
+
+**Mise à jour 26/07/2016** : je reste sur mon avis mitigé. La batterie est un
+peu plus faible qu'aux débuts, ce qui la rend un peu juste. J'ai beaucoup de
+mal me faire au clavier, les espaces entre les touches sont trop réguliers et
+c'est donc difficile de trouver les touches comme entrée. Pour le touchpad,
+j'ai fini par installer un kernel récent, qui vient de la future ubuntu 16.10.
+Ça empêche Virtual Box et Docker de fonctionner, mais je m'en passe assez
+bien. Je n'ai pas de nouvelles de Purism pour le clavier qwerty, et non pas
+azerty comme je l'avais commandé : je devais recevoir des autocollants pour
+les touches mais je ne vois rien venir. Mais pour le reste, ça marche bien et
+il ne serait pas si cher et long à recevoir, je le recommanderais sûrement à
+d'autres.
